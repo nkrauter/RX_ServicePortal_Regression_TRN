@@ -247,6 +247,9 @@ namespace Service_Portal_Regression_STG
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(39));
             repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
             
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(40));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
+            
         }
 
 #region Image Feature Data

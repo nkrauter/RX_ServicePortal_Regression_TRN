@@ -27,6 +27,7 @@ namespace Service_Portal_Regression_STG
     public partial class Service_Portal_Regression_STGRepository : RepoGenBaseFolder
     {
         static Service_Portal_Regression_STGRepository instance = new Service_Portal_Regression_STGRepository();
+        Service_Portal_Regression_STGRepositoryFolders.NewTabGoogleChromeAppFolder _newtabgooglechrome;
 
         /// <summary>
         /// Gets the singleton class instance representing the Service_Portal_Regression_STGRepository element repository.
@@ -43,6 +44,7 @@ namespace Service_Portal_Regression_STG
         public Service_Portal_Regression_STGRepository() 
             : base("Service_Portal_Regression_STGRepository", "/", null, 0, false, "c66c0921-a4a6-4c30-8218-6aa696d3aa91", ".\\RepositoryImages\\Service_Portal_Regression_STGRepositoryc66c0921.rximgres")
         {
+            _newtabgooglechrome = new Service_Portal_Regression_STGRepositoryFolders.NewTabGoogleChromeAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace Service_Portal_Regression_STG
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The NewTabGoogleChrome folder.
+        /// </summary>
+        [RepositoryFolder("af9e3e25-9f1f-420d-a386-24b3debe2acc")]
+        public virtual Service_Portal_Regression_STGRepositoryFolders.NewTabGoogleChromeAppFolder NewTabGoogleChrome
+        {
+            get { return _newtabgooglechrome; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace Service_Portal_Regression_STG
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class Service_Portal_Regression_STGRepositoryFolders
     {
+        /// <summary>
+        /// The NewTabGoogleChromeAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("af9e3e25-9f1f-420d-a386-24b3debe2acc")]
+        public partial class NewTabGoogleChromeAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _paneInfo;
+
+            /// <summary>
+            /// Creates a new NewTabGoogleChrome  folder.
+            /// </summary>
+            public NewTabGoogleChromeAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("NewTabGoogleChrome", "/form[@title='New Tab - Google Chrome']", parentFolder, 30000, null, true, "af9e3e25-9f1f-420d-a386-24b3debe2acc", "")
+            {
+                _paneInfo = new RepoItemInfo(this, "Pane", "container[@accessiblename='New Tab - Google Chrome']/container[@accessiblename='Google Chrome']/container[2]/container[1]/container[2]/container[1]/container[2]", 30000, null, "cdc7b3ec-b8e1-43f5-8770-442e6422b950");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("af9e3e25-9f1f-420d-a386-24b3debe2acc")]
+            public virtual Ranorex.Form Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.Form>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("af9e3e25-9f1f-420d-a386-24b3debe2acc")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Pane item.
+            /// </summary>
+            [RepositoryItem("cdc7b3ec-b8e1-43f5-8770-442e6422b950")]
+            public virtual Ranorex.Container Pane
+            {
+                get
+                {
+                    return _paneInfo.CreateAdapter<Ranorex.Container>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Pane item info.
+            /// </summary>
+            [RepositoryItemInfo("cdc7b3ec-b8e1-43f5-8770-442e6422b950")]
+            public virtual RepoItemInfo PaneInfo
+            {
+                get
+                {
+                    return _paneInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

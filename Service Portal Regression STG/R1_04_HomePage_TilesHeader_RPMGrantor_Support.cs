@@ -24,29 +24,29 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R1_03_HomePage_TilesHeader_RPMGrantor_Support recording.
+    ///The R1_04_HomePage_TilesHeader_RPMGrantor_Support recording.
     /// </summary>
     [TestModule("40367529-267b-4309-83c8-352c3e2f8303", ModuleType.Recording, 1)]
-    public partial class R1_03_HomePage_TilesHeader_RPMGrantor_Support : ITestModule
+    public partial class R1_04_HomePage_TilesHeader_RPMGrantor_Support : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_TSTRepository repository.
         /// </summary>
         public static Service_Portal_Regression_TSTRepository repo = Service_Portal_Regression_TSTRepository.Instance;
 
-        static R1_03_HomePage_TilesHeader_RPMGrantor_Support instance = new R1_03_HomePage_TilesHeader_RPMGrantor_Support();
+        static R1_04_HomePage_TilesHeader_RPMGrantor_Support instance = new R1_04_HomePage_TilesHeader_RPMGrantor_Support();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R1_03_HomePage_TilesHeader_RPMGrantor_Support()
+        public R1_04_HomePage_TilesHeader_RPMGrantor_Support()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R1_03_HomePage_TilesHeader_RPMGrantor_Support Instance
+        public static R1_04_HomePage_TilesHeader_RPMGrantor_Support Instance
         {
             get { return instance; }
         }
@@ -270,6 +270,9 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(46));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
+            
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(47));
             repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
             
         }

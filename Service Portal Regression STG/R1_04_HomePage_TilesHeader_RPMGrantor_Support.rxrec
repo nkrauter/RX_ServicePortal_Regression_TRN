@@ -19,7 +19,7 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="R1_03_HomePage_TilesHeader_RPMGrantor_Support"
+	classname="R1_04_HomePage_TilesHeader_RPMGrantor_Support"
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
@@ -1960,6 +1960,71 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				</path>
 			</info>
 		</WaitForRecordItem>
+		<WaitForRecordItem
+		duration="100ms"
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c8030bf2-cb7f-4ae8-9227-4c705f30fc82"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="330,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Gunther Central-Perk!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Gunther Central-Perk!']
+				</path>
+			</info>
+		</WaitForRecordItem>
 	</recorditems>
 	<repository
 	id="397b7e53-e586-48d3-9e3a-97c6142574e7"
@@ -1976,7 +2041,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		R1_03_HomePage_TilesHeader_RPMGrantor_Support.UserCode.cs
+		R1_04_HomePage_TilesHeader_RPMGrantor_Support.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>
