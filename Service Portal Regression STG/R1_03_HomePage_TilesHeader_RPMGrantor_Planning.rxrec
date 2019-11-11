@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="cd4f6f0a-a02b-44cb-85dd-d3e9eb21606f"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="R1_03_HomePage_TilesHeader_RPMGrantor_Planning"
+	namespace="Service_Portal_Regression_STG">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Header Links
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="46b9ed14-c925-4cc4-8326-4f84dacdbea9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="69191536-428f-42c7-b530-8c6c3029841b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="ffc51656-b06d-4622-8921-3f522d5816b0">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="f8235e09-ed9e-42db-bd69-a41edb3dab29">
+			<comment>
+				Planning Tile
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24740187-b536-4cb5-9778-b080d2e7db11"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Planning ']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				&#32;Planning&#32;
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="109;58"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="5194ee85-a927-48f4-896d-897f1158b7c3"
+		sx="935"
+		sy="380"
+		warnoutofbounds="False">
+			<comment>
+				Planning Tile
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24740187-b536-4cb5-9778-b080d2e7db11"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Planning ']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="f171176e-cd62-49fd-b951-825bdbbf82cf">
+			<comment>
+				Planning -&gt; Programs
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="09dccd75-e029-4776-9a0d-6eea5bc6814d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Programs']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Programs
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="c40df58a-4274-4f24-9bc7-1f8094984982">
+			<comment>
+				Planning -&gt; Projects
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="85934da6-f4c5-4f7f-beac-1e09fba87116"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Projects']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Projects
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Homepage Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Programs
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="59;23"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8e6ce433-b144-4f33-9ab5-4af070c73a98"
+		sx="887"
+		sy="457"
+		warnoutofbounds="False">
+			<comment>
+				Planning -&gt; Programs
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="09dccd75-e029-4776-9a0d-6eea5bc6814d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Programs']
+				</path>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="46b9ed14-c925-4cc4-8326-4f84dacdbea9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="69191536-428f-42c7-b530-8c6c3029841b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="ffc51656-b06d-4622-8921-3f522d5816b0">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="db65055e-d2e1-4884-be7f-2bf76994ab10">
+			<comment>
+				Program Table
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="32801c02-b335-430d-9faf-a6cba6930b19"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext&gt;'Federal Assistance Progra']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Federal Assistance Programs
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Program Table Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e99beba6-0e18-48dc-860c-659aa7195a9f"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c8030bf2-cb7f-4ae8-9227-4c705f30fc82"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="330,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Gunther Central-Perk!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Gunther Central-Perk!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Projects
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="87;67"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="bebe5176-9bef-4ae7-8f57-8f87c4eb34a8"
+		sx="913"
+		sy="389"
+		warnoutofbounds="False">
+			<comment>
+				Planning Tile
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24740187-b536-4cb5-9778-b080d2e7db11"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Planning ']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="77;12"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="22845cd0-169c-4ce5-9c3b-a64ea0d8dd9a"
+		sx="905"
+		sy="485"
+		warnoutofbounds="False">
+			<comment>
+				Planning -&gt; Projects
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="85934da6-f4c5-4f7f-beac-1e09fba87116"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Projects']
+				</path>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="46b9ed14-c925-4cc4-8326-4f84dacdbea9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="69191536-428f-42c7-b530-8c6c3029841b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="ffc51656-b06d-4622-8921-3f522d5816b0">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="bf1f01d1-fc77-48b5-95cb-a55b7eaf6e7f">
+			<comment>
+				Project Table
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4a9067b6-53ca-435b-bcfc-31ce5d9941d0"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext&gt;'Federal Assistance Projec']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Federal Assistance Projects
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Project Table Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e99beba6-0e18-48dc-860c-659aa7195a9f"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="c8030bf2-cb7f-4ae8-9227-4c705f30fc82"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="330,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Gunther Central-Perk!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Gunther Central-Perk!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="397b7e53-e586-48d3-9e3a-97c6142574e7"
+	name="Service_Portal_Regression_TSTRepository"
+	relativepath="Service_Portal_Regression_TSTRepository.rxrep">
+		<codegen
+		classname="Service_Portal_Regression_TSTRepository"
+		namespace="Service_Portal_Regression_STG">
+		</codegen>
+		<rootfolder
+		id="a0fd5e98-cc86-407f-8298-a96653699a20"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		R1_03_HomePage_TilesHeader_RPMGrantor_Planning.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

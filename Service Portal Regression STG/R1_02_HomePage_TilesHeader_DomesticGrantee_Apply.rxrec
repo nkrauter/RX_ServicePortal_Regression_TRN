@@ -1,0 +1,1816 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="0772a59b-a706-4091-918c-7575d2a6aed8"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="R1_02_HomePage_TilesHeader_DomesticGrantee_Apply"
+	namespace="Service_Portal_Regression_STG">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Header
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="7dcb78a3-b5fa-4500-bef4-b25f68a599eb">
+			<comment>
+				Apply
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65a195f4-237b-4a0f-8ee3-3e8d14beb3dc"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="633,195,103,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Apply&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				&#32;Apply&#32;
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="93;58"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1cb1b5fb-ed83-4e49-bb03-3ca47aacbf6b"
+		sx="1042"
+		sy="380"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65a195f4-237b-4a0f-8ee3-3e8d14beb3dc"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="633,195,103,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Apply&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="48a31f9b-25e1-4fbe-95d2-eeb4a5268237">
+			<comment>
+				Funding Opportunity
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4b4e74ce-42f2-4af5-8f73-fa0cd20ed4ff"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Funding Opportunities
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_funding_opportunity&amp;id=grants_funding_opportunity_list&amp;table=u_domestic_funding_opportunity&amp;view=Grantee&amp;d=desc&amp;o=number
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Funding Opportunities']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Funding Opportunities
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="98bff875-3b93-4dee-8e00-fdcf6e621acb">
+			<comment>
+				Navigate to Grants.gov
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8c42b958-9dac-4192-8124-82525c867050"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Navigate to Grants.gov
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://training.grants.gov/
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_blank
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Navigate to Grants.gov']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Navigate to Grants.gov
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="8fc91210-4f85-48cb-a070-cc495f943eee">
+			<comment>
+				About the Process
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="90f158b8-7d94-4536-8d4c-dfe5068dc7a5"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						About the Process
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='About the Process']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				About the Process
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
+			<comment>
+				Apply Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Funding Opportunity
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="92;18"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="12155cda-dec5-4288-acc1-9120ce7af06c"
+		sx="1043"
+		sy="452"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4b4e74ce-42f2-4af5-8f73-fa0cd20ed4ff"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Funding Opportunities
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_funding_opportunity&amp;id=grants_funding_opportunity_list&amp;table=u_domestic_funding_opportunity&amp;view=Grantee&amp;d=desc&amp;o=number
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Funding Opportunities']
+				</path>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="69191536-428f-42c7-b530-8c6c3029841b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browser"
+					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
+						{Form:Knowledge Article View - My Grants - Service Portal - Google Chrome}
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="6a3b2ff1-5525-4f80-a165-01332f9aad4c">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="2f2f7d01-532d-49bb-a231-84b5218867c7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext='Funding Opportunities']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Funding Opportunities
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
+			<comment>
+				Funding Opportunity Table
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e99beba6-0e18-48dc-860c-659aa7195a9f"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Rachel Green!"
+		optional="False"
+		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Rachel Green!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Navigate to Grants.gov
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="93;58"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="1cb1b5fb-ed83-4e49-bb03-3ca47aacbf6b"
+		sx="1042"
+		sy="380"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65a195f4-237b-4a0f-8ee3-3e8d14beb3dc"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="633,195,103,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Apply&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="112;14"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="d49c8d1d-97d2-47bb-b614-cd4ff600fbcb"
+		sx="1063"
+		sy="487"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8c42b958-9dac-4192-8124-82525c867050"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Navigate to Grants.gov
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://training.grants.gov/
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_blank
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Navigate to Grants.gov']
+				</path>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a377f00e-983a-4200-97da-698571d1bad9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="42b108fd-c163-4f5e-a439-92b6570af60e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']
+				</path>
+			</info>
+			<arguments
+			id="b3b23931-7a8a-4ad7-9a8e-4eb36338b54b">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="4fceb49b-4e37-4a81-bc36-1f68f81c4572">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1b169cc9-356e-498e-bc04-5c10a0b4ac45"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']//div[#'logo']/?/?/img[@alt='GRANTS.GOV']
+				</path>
+			</info>
+			<matchname>
+				Src
+			</matchname>
+			<matchvalue>
+				https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
+			<comment>
+				Grants.gov Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<keyitem
+		action="Press"
+		data="W, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="b1dd7d00-2798-4f6d-9f61-dc8967b86006"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="42b108fd-c163-4f5e-a439-92b6570af60e"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']
+				</path>
+			</info>
+		</keyitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				About the Process
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="72;58"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8e75b177-491b-4343-bfe2-9e6e01bfbd8b"
+		sx="1021"
+		sy="380"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="65a195f4-237b-4a0f-8ee3-3e8d14beb3dc"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="633,195,103,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Apply&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="100;21"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="db3f34cf-4312-44bb-aeaf-ae0d3654cad6"
+		sx="1051"
+		sy="532"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="90f158b8-7d94-4536-8d4c-dfe5068dc7a5"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						About the Process
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='About the Process']
+				</path>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="69191536-428f-42c7-b530-8c6c3029841b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browser"
+					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
+						{Form:Knowledge Article View - My Grants - Service Portal - Google Chrome}
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="59ab1ee1-ba03-405d-9694-1457f1ccd960">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7d0f6404-b9de-4dac-b6d5-c2ac5c9c6c67"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h2tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h2tag"
+				rect="288,341,1088,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						widget-header kb-title-header ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						About the Process
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						kb-title-header ng-binding widget-header
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h2
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext='About the Process']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				About the Process
+			</matchvalue>
+		</validationitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="69191536-428f-42c7-b530-8c6c3029841b"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browser"
+					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
+						{Form:Knowledge Article View - My Grants - Service Portal - Google Chrome}
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
+			</arguments>
+		</invokeactionrecorditem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
+			<comment>
+				About the Process Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e99beba6-0e18-48dc-860c-659aa7195a9f"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Rachel Green!"
+		optional="False"
+		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="330,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Rachel Green!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Rachel Green!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="397b7e53-e586-48d3-9e3a-97c6142574e7"
+	name="Service_Portal_Regression_TSTRepository"
+	relativepath="Service_Portal_Regression_TSTRepository.rxrep">
+		<codegen
+		classname="Service_Portal_Regression_TSTRepository"
+		namespace="Service_Portal_Regression_STG">
+		</codegen>
+		<rootfolder
+		id="a0fd5e98-cc86-407f-8298-a96653699a20"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		R1_02_HomePage_TilesHeader_DomesticGrantee_Apply.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

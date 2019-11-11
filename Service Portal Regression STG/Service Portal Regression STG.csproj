@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{406A6B50-34DB-4FC7-B92F-FA833252470F}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Service_Portal_Regression_STG</RootNamespace>
+    <AssemblyName>Service Portal Regression STG</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>465bf5ca-bf72-44d2-832b-12e0c8b532ba</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>d6425573-66c8-42bc-b805-f5cf28819bb5</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <id>67dbf70b-8328-4650-b5e2-77f3d2ffd3f5</id>
+      <BoundTo>2ba446aa-9406-4804-8f62-5ed9be563416</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="Login.UserCode.cs">
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <id>d1b1b5ca-6968-442b-87d8-f44320c45431</id>
+      <BoundTo>2ba446aa-9406-4804-8f62-5ed9be563416</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>bf56f88b-1e97-4de9-8a07-2e280f1b53ae</id>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Administration.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Administration.rxrec</DependentUpon>
+      <id>710e4117-50ed-4461-8be1-d72adb5e17ab</id>
+      <BoundTo>94818e00-cb18-4a25-a72e-692d70c400a3</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Administration.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Administration.rxrec</DependentUpon>
+      <id>f1532a24-9603-40b3-8692-a9f8b9e39852</id>
+      <BoundTo>94818e00-cb18-4a25-a72e-692d70c400a3</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Award.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Award.rxrec</DependentUpon>
+      <id>7952245c-e72a-4e04-9d7b-62768bff0ecf</id>
+      <BoundTo>6527a0dc-e86a-4c47-b6a8-577627d1c85f</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Award.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Award.rxrec</DependentUpon>
+      <id>d2cfe27c-1aad-4b19-a805-91306f598130</id>
+      <BoundTo>6527a0dc-e86a-4c47-b6a8-577627d1c85f</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Planning.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Planning.rxrec</DependentUpon>
+      <id>48f1544a-dd97-4519-96eb-a9ab73679e5e</id>
+      <BoundTo>ef0160a9-6958-4063-8744-acb47c23e278</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Planning.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Planning.rxrec</DependentUpon>
+      <id>f7a4226c-ceb3-4e62-a6da-66cea1ece496</id>
+      <BoundTo>ef0160a9-6958-4063-8744-acb47c23e278</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_PreAward.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_PreAward.rxrec</DependentUpon>
+      <id>ea878e04-8003-47d1-90b6-87dd81cf92b9</id>
+      <BoundTo>9d4c2544-0536-4df8-9013-85fd6387b4b2</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_PreAward.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_PreAward.rxrec</DependentUpon>
+      <id>39a4052a-dc4a-4689-b436-b7055452f0b6</id>
+      <BoundTo>9d4c2544-0536-4df8-9013-85fd6387b4b2</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Support.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Support.rxrec</DependentUpon>
+      <id>18c00298-55b1-4a22-be65-901d957e33be</id>
+      <BoundTo>5d54f33c-a262-4396-932a-6f851ddb95fd</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_Footer_DomesticGrantor_Support.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_Footer_DomesticGrantor_Support.rxrec</DependentUpon>
+      <id>7f4531a2-573b-4109-8006-16e80fdb01df</id>
+      <BoundTo>5d54f33c-a262-4396-932a-6f851ddb95fd</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Administration.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Administration.rxrec</DependentUpon>
+      <id>1bb469cf-5aaa-4669-aa7e-e28dab7aa192</id>
+      <BoundTo>ebbcfadb-2d17-4a1a-a969-d570ec7e1b7e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Administration.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Administration.rxrec</DependentUpon>
+      <id>4f513007-9d84-4db7-aec5-52d485c34cbb</id>
+      <BoundTo>ebbcfadb-2d17-4a1a-a969-d570ec7e1b7e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Award.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Award.rxrec</DependentUpon>
+      <id>95b1c6cd-a6de-4203-80b8-de545917fd5e</id>
+      <BoundTo>425ebafd-f839-49d8-bdbd-2d8a3e8164b5</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Award.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Award.rxrec</DependentUpon>
+      <id>b5937697-7b43-4658-bd83-be6fe7ad2ae3</id>
+      <BoundTo>425ebafd-f839-49d8-bdbd-2d8a3e8164b5</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Planning.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Planning.rxrec</DependentUpon>
+      <id>96449707-8af9-4c5b-8904-9cc19f5970c2</id>
+      <BoundTo>4e9d76f0-20b0-4cef-8c6d-c50f3f158dfe</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Planning.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Planning.rxrec</DependentUpon>
+      <id>66fd6033-1049-4e08-a69c-23df7b86d407</id>
+      <BoundTo>4e9d76f0-20b0-4cef-8c6d-c50f3f158dfe</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward.rxrec</DependentUpon>
+      <id>0543828d-3130-4d6f-ae8c-be1e075f2bf2</id>
+      <BoundTo>44b2ce73-2fd0-4a86-b292-50f77e3e3e56</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward.rxrec</DependentUpon>
+      <id>cd72d9e6-4d71-4c82-9a6c-05c8fad9f30c</id>
+      <BoundTo>44b2ce73-2fd0-4a86-b292-50f77e3e3e56</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Support.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Support.rxrec</DependentUpon>
+      <id>f200de45-e50f-4c56-b419-32a513ee3189</id>
+      <BoundTo>2c883876-cc49-4dc8-9745-2678110fb088</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Support.UserCode.cs">
+      <DependentUpon>R1_01_HomePage_TilesHeader_DomesticGrantor_Support.rxrec</DependentUpon>
+      <id>9fe63892-8059-43c7-bedc-304817a5deac</id>
+      <BoundTo>2c883876-cc49-4dc8-9745-2678110fb088</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_Apply.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_Apply.rxrec</DependentUpon>
+      <id>bf715323-1ded-4c66-9efe-5293a000016f</id>
+      <BoundTo>c2eef0f8-ff17-450c-a5d7-9a4b671c77ca</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_Apply.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_Apply.rxrec</DependentUpon>
+      <id>8ee8dae1-3b25-4657-a762-b493d44b3a41</id>
+      <BoundTo>c2eef0f8-ff17-450c-a5d7-9a4b671c77ca</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_Award.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_Award.rxrec</DependentUpon>
+      <id>9d8a1537-fa3b-4fca-8991-5aca239d6408</id>
+      <BoundTo>f91260bb-3ce8-473e-87bb-0f1a70b77154</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_Award.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_Award.rxrec</DependentUpon>
+      <id>420ee54e-7b46-447f-8255-feeb48955723</id>
+      <BoundTo>f91260bb-3ce8-473e-87bb-0f1a70b77154</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_MyApplications.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_MyApplications.rxrec</DependentUpon>
+      <id>b3c616c3-5ee6-40bb-bbe5-0ee90b42fe01</id>
+      <BoundTo>653fab67-7c28-40ea-91d5-77bd25d4db4d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_MyApplications.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_MyApplications.rxrec</DependentUpon>
+      <id>a7d9abc6-f49d-4844-84bb-57462a2e08c8</id>
+      <BoundTo>653fab67-7c28-40ea-91d5-77bd25d4db4d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_Support.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_Support.rxrec</DependentUpon>
+      <id>ae49a5d2-45eb-452d-8138-3d1454494e8d</id>
+      <BoundTo>3067d0cd-6356-4716-8a25-c6435ddcfd6a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_Footer_DomesticGrantee_Support.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_Footer_DomesticGrantee_Support.rxrec</DependentUpon>
+      <id>590053a0-4314-49d4-a8be-f90365f894b1</id>
+      <BoundTo>3067d0cd-6356-4716-8a25-c6435ddcfd6a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Apply.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_Apply.rxrec</DependentUpon>
+      <id>f048b560-d591-4777-874b-d2ec3b686937</id>
+      <BoundTo>d9d5dbd5-0b85-457f-90e4-c0c1c010cf4b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Apply.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_Apply.rxrec</DependentUpon>
+      <id>2eff779c-8302-457a-ba3f-fa9e0efcae72</id>
+      <BoundTo>d9d5dbd5-0b85-457f-90e4-c0c1c010cf4b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Award.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_Award.rxrec</DependentUpon>
+      <id>131c131e-f476-47c1-9882-789f47d6d7eb</id>
+      <BoundTo>6fe9cff4-f37e-48af-b033-de7a3e7a65d5</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Award.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_Award.rxrec</DependentUpon>
+      <id>1dc123b2-4014-4ae9-a6d3-d0963f098106</id>
+      <BoundTo>6fe9cff4-f37e-48af-b033-de7a3e7a65d5</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications.rxrec</DependentUpon>
+      <id>301108a5-682b-4e3a-8926-2026117eb0f1</id>
+      <BoundTo>bd15ab83-924f-44ca-ac00-92450a93f822</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications.rxrec</DependentUpon>
+      <id>11cbc399-1bab-4649-bb21-e647abeb349c</id>
+      <BoundTo>bd15ab83-924f-44ca-ac00-92450a93f822</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Support.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_Support.rxrec</DependentUpon>
+      <id>ec7b565f-9e4c-46e6-9bf5-c52af3b7a770</id>
+      <BoundTo>fef84022-3367-4969-a21d-750ca67cf03e</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Support.UserCode.cs">
+      <DependentUpon>R1_02_HomePage_TilesHeader_DomesticGrantee_Support.rxrec</DependentUpon>
+      <id>f6e591f9-f905-4257-a3bf-f00a175f3cdd</id>
+      <BoundTo>fef84022-3367-4969-a21d-750ca67cf03e</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Administration.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Administration.rxrec</DependentUpon>
+      <id>ce17ec33-f4ac-4f23-813a-bac0c9b2f69a</id>
+      <BoundTo>05e7a85c-d5e1-4325-9a68-18f28ffe8252</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Administration.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Administration.rxrec</DependentUpon>
+      <id>4ee5af58-7e4f-4278-9736-a7edc7685955</id>
+      <BoundTo>05e7a85c-d5e1-4325-9a68-18f28ffe8252</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Award.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Award.rxrec</DependentUpon>
+      <id>13ce1811-9f01-4761-b5ff-dea36a6df474</id>
+      <BoundTo>d3ba3343-3a9f-4d07-af11-ac237160bf6f</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Award.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Award.rxrec</DependentUpon>
+      <id>e1f1efdb-bd61-4905-86b4-c88200039040</id>
+      <BoundTo>d3ba3343-3a9f-4d07-af11-ac237160bf6f</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Planning.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Planning.rxrec</DependentUpon>
+      <id>a4c3b99d-2362-4960-a01b-0feb8e705b08</id>
+      <BoundTo>8ffc54ba-be42-4764-ad11-2e50e1a00df5</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Planning.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Planning.rxrec</DependentUpon>
+      <id>1b8cece0-c9f5-4885-a401-0b83190d0430</id>
+      <BoundTo>8ffc54ba-be42-4764-ad11-2e50e1a00df5</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_PreAward.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_PreAward.rxrec</DependentUpon>
+      <id>7c990653-274e-44f7-9da1-0754a339bd32</id>
+      <BoundTo>514d3388-d3d3-4487-9b35-30255f5ea59d</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_PreAward.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_PreAward.rxrec</DependentUpon>
+      <id>aa03f327-2a14-4027-98bb-9aec6c3f6fa5</id>
+      <BoundTo>514d3388-d3d3-4487-9b35-30255f5ea59d</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Support.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Support.rxrec</DependentUpon>
+      <id>f380a76e-ccb9-417a-8842-328fa7fdf4ec</id>
+      <BoundTo>6151ef04-8bec-432e-829e-c9be1360256b</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_Footer_RPMGrantor_Support.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_Footer_RPMGrantor_Support.rxrec</DependentUpon>
+      <id>8f77f8f3-90cc-4be9-9cbb-b2aac4a082f3</id>
+      <BoundTo>6151ef04-8bec-432e-829e-c9be1360256b</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Administration.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Administration.rxrec</DependentUpon>
+      <id>741d9bf7-6bf9-47c4-a087-a22cd6d08fe9</id>
+      <BoundTo>afdfe005-003c-4843-b8e8-c30287f4a4a6</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Administration.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Administration.rxrec</DependentUpon>
+      <id>57268648-641b-48d9-9bce-53875afb6f20</id>
+      <BoundTo>afdfe005-003c-4843-b8e8-c30287f4a4a6</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Award.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Award.rxrec</DependentUpon>
+      <id>136b0b89-4e99-4cc6-82ee-a407db622f72</id>
+      <BoundTo>81ef88bf-c9d9-49b8-a759-78266de9937a</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Award.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Award.rxrec</DependentUpon>
+      <id>b40ac401-d77b-4b07-ba4d-390d0141d5ec</id>
+      <BoundTo>81ef88bf-c9d9-49b8-a759-78266de9937a</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Planning.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Planning.rxrec</DependentUpon>
+      <id>ae867a22-a92f-4927-a7ef-6715900f1c42</id>
+      <BoundTo>9c1a0c1e-ce61-48a5-9d06-48f7e8e15a04</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Planning.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Planning.rxrec</DependentUpon>
+      <id>758979f6-2eae-4e4c-90c9-9725a520dcee</id>
+      <BoundTo>9c1a0c1e-ce61-48a5-9d06-48f7e8e15a04</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_PreAward.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_PreAward.rxrec</DependentUpon>
+      <id>216e4df0-9b76-406a-a843-5676efa35178</id>
+      <BoundTo>3733a818-255f-4685-a896-c9f86a580a13</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_PreAward.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_PreAward.rxrec</DependentUpon>
+      <id>0ae5863a-99a2-4904-b52f-0f98e0ab18e8</id>
+      <BoundTo>3733a818-255f-4685-a896-c9f86a580a13</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Support.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Support.rxrec</DependentUpon>
+      <id>9f6d11b7-b459-4a58-b37d-86ca0063200d</id>
+      <BoundTo>400bd553-82e2-4212-9efd-a158fbce24df</BoundTo>
+      <RecorderCode>true</RecorderCode>
+    </Compile>
+    <Compile Include="R1_03_HomePage_TilesHeader_RPMGrantor_Support.UserCode.cs">
+      <DependentUpon>R1_03_HomePage_TilesHeader_RPMGrantor_Support.rxrec</DependentUpon>
+      <id>190246a6-3fa6-4f4b-a954-5779d08a77fe</id>
+      <BoundTo>400bd553-82e2-4212-9efd-a158fbce24df</BoundTo>
+      <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>5aab852f-2804-4187-808e-36edaadbae68</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1dd2d2c-3963-4019-96cc-27fe2ac53b2d</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>5aab852f-2804-4187-808e-36edaadbae68</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>792dbb48-b2ec-40e6-91e4-2f47f6719c29</id>
+    </Compile>
+    <Compile Include="Service_Portal_Regression_STGRepository.cs">
+      <BoundTo>465bf5ca-bf72-44d2-832b-12e0c8b532ba</BoundTo>
+      <DependentUpon>Service_Portal_Regression_STGRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>8ae2b3a1-ab04-44e3-aaff-7c5adace330f</id>
+    </Compile>
+    <Compile Include="Service_Portal_Regression_TSTRepository.cs">
+      <DependentUpon>Service_Portal_Regression_TSTRepository.rxrep</DependentUpon>
+      <id>cc460ec3-8cbe-4445-85be-ad36db8b247f</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>84a70d24-8da2-4691-99d8-407c877b9c21</id>
+    </None>
+    <None Include="Login.rxrec">
+      <id>2ba446aa-9406-4804-8f62-5ed9be563416</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>68086a46-1ad9-4c16-a525-de0c870322a0</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_Footer_DomesticGrantor_Administration.rxrec">
+      <id>94818e00-cb18-4a25-a72e-692d70c400a3</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>41ffe6fb-a0ac-4251-bec8-66f415228330</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_Footer_DomesticGrantor_Award.rxrec">
+      <id>6527a0dc-e86a-4c47-b6a8-577627d1c85f</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>5bf8e82a-a032-4788-ac6a-e507f0ae3b32</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_Footer_DomesticGrantor_Planning.rxrec">
+      <id>ef0160a9-6958-4063-8744-acb47c23e278</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>0ea5c09d-c9c4-4ce9-90bc-267f88cce7af</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_Footer_DomesticGrantor_PreAward.rxrec">
+      <id>9d4c2544-0536-4df8-9013-85fd6387b4b2</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>42afc825-6231-4bdf-bad7-2f499f969d9e</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_Footer_DomesticGrantor_Support.rxrec">
+      <id>5d54f33c-a262-4396-932a-6f851ddb95fd</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>81f3395c-00a6-445c-9216-cc28d35ccf96</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Administration.rxrec">
+      <id>ebbcfadb-2d17-4a1a-a969-d570ec7e1b7e</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>0cb415e9-e508-48da-9231-db32ed4d3d92</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Award.rxrec">
+      <id>425ebafd-f839-49d8-bdbd-2d8a3e8164b5</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>cc3fef92-97af-46cf-8cd8-bddbdb326080</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Planning.rxrec">
+      <id>4e9d76f0-20b0-4cef-8c6d-c50f3f158dfe</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>2499f831-bdf8-4dfe-b805-9f431aa36d01</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward.rxrec">
+      <id>44b2ce73-2fd0-4a86-b292-50f77e3e3e56</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>9d499e39-36a9-4b11-9fb0-8cab82ddc53a</recordtableid>
+    </None>
+    <None Include="R1_01_HomePage_TilesHeader_DomesticGrantor_Support.rxrec">
+      <id>2c883876-cc49-4dc8-9745-2678110fb088</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>ebfda99b-b63d-4789-9b14-7560dda4859c</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_Footer_DomesticGrantee_Apply.rxrec">
+      <id>c2eef0f8-ff17-450c-a5d7-9a4b671c77ca</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>ca81681b-8cd4-4768-a0d8-3b67e57adf2a</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_Footer_DomesticGrantee_Award.rxrec">
+      <id>f91260bb-3ce8-473e-87bb-0f1a70b77154</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>89e191ec-4ee8-4227-b20e-cda61aeac02c</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_Footer_DomesticGrantee_MyApplications.rxrec">
+      <id>653fab67-7c28-40ea-91d5-77bd25d4db4d</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>a2d3e4ec-0522-4286-8d6e-c5595283e6cb</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_Footer_DomesticGrantee_Support.rxrec">
+      <id>3067d0cd-6356-4716-8a25-c6435ddcfd6a</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>0753aec0-5189-4a06-8438-9b79a93ec017</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Apply.rxrec">
+      <id>d9d5dbd5-0b85-457f-90e4-c0c1c010cf4b</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>0772a59b-a706-4091-918c-7575d2a6aed8</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Award.rxrec">
+      <id>6fe9cff4-f37e-48af-b033-de7a3e7a65d5</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>90eb44c3-0c7a-4df0-8771-a0617da091b9</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications.rxrec">
+      <id>bd15ab83-924f-44ca-ac00-92450a93f822</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>1db0ae61-6fac-4b48-a9f3-2cb7c51371ca</recordtableid>
+    </None>
+    <None Include="R1_02_HomePage_TilesHeader_DomesticGrantee_Support.rxrec">
+      <id>fef84022-3367-4969-a21d-750ca67cf03e</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>cd40ceb2-899b-4dcf-a5ba-089a6ae3c05d</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_Footer_RPMGrantor_Administration.rxrec">
+      <id>05e7a85c-d5e1-4325-9a68-18f28ffe8252</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>d38e477a-d6fc-401f-92ce-580089607ced</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_Footer_RPMGrantor_Award.rxrec">
+      <id>d3ba3343-3a9f-4d07-af11-ac237160bf6f</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>651966e7-7522-4081-8aa4-484db859120b</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_Footer_RPMGrantor_Planning.rxrec">
+      <id>8ffc54ba-be42-4764-ad11-2e50e1a00df5</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>c20cc2d5-1905-474e-9b7d-49f3f80d33dd</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_Footer_RPMGrantor_PreAward.rxrec">
+      <id>514d3388-d3d3-4487-9b35-30255f5ea59d</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>9c002048-383c-4165-a458-b779adef7105</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_Footer_RPMGrantor_Support.rxrec">
+      <id>6151ef04-8bec-432e-829e-c9be1360256b</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>d598876c-a0a8-4134-a656-687fc2721926</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_TilesHeader_RPMGrantor_Administration.rxrec">
+      <id>afdfe005-003c-4843-b8e8-c30287f4a4a6</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>dd274591-fcaa-4e8e-8ea1-26dc62fb27b2</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_TilesHeader_RPMGrantor_Award.rxrec">
+      <id>81ef88bf-c9d9-49b8-a759-78266de9937a</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>c88759ba-41e1-4262-82db-462e221f6b30</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_TilesHeader_RPMGrantor_Planning.rxrec">
+      <id>9c1a0c1e-ce61-48a5-9d06-48f7e8e15a04</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>cd4f6f0a-a02b-44cb-85dd-d3e9eb21606f</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_TilesHeader_RPMGrantor_PreAward.rxrec">
+      <id>3733a818-255f-4685-a896-c9f86a580a13</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>3a756bcc-c399-45e0-9317-d97c1eaea98d</recordtableid>
+    </None>
+    <None Include="R1_03_HomePage_TilesHeader_RPMGrantor_Support.rxrec">
+      <id>400bd553-82e2-4212-9efd-a158fbce24df</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <recordtableid>40367529-267b-4309-83c8-352c3e2f8303</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>465bf5ca-bf72-44d2-832b-12e0c8b532ba</BoundTo>
+      <id>5aab852f-2804-4187-808e-36edaadbae68</id>
+      <recordtableid>6bc66069-b66b-49f8-8d44-fc9e3f3af047</recordtableid>
+    </None>
+    <None Include="Service_Portal_Regression_STGRepository.rximg">
+      <BoundTo>465bf5ca-bf72-44d2-832b-12e0c8b532ba</BoundTo>
+      <DependentUpon>Service_Portal_Regression_STGRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>617951ad-3e51-4f68-aaa8-da1e1b5f0466</id>
+    </None>
+    <None Include="Service_Portal_Regression_STGRepository.rxrep">
+      <id>465bf5ca-bf72-44d2-832b-12e0c8b532ba</id>
+      <repoid>bc8eb910-3cf8-4d8e-8d15-b57254f8606a</repoid>
+      <reporootid>c66c0921-a4a6-4c30-8218-6aa696d3aa91</reporootid>
+    </None>
+    <None Include="Service_Portal_Regression_TSTRepository.rximg">
+      <DependentUpon>Service_Portal_Regression_TSTRepository.rxrep</DependentUpon>
+      <id>9ba0833c-c105-49d2-b7c3-a0f45eb784ea</id>
+      <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Service_Portal_Regression_TSTRepository.rxrep">
+      <id>ed59620c-d1f0-4100-9675-f4a777e0dc40</id>
+      <repoid>397b7e53-e586-48d3-9e3a-97c6142574e7</repoid>
+      <reporootid>a0fd5e98-cc86-407f-8298-a96653699a20</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service_Portal_Regression_STG.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a44ccb2d-c3f9-426c-bd11-8cfb291f24ac</id>
+    </Content>
+    <Content Include="Service_Portal_Regression_STG.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>38d7bfa1-5e46-4b0a-a704-4d3bf5a09055</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>
