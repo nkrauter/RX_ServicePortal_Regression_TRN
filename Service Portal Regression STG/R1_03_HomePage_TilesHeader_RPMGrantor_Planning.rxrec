@@ -23,6 +23,11 @@ mode="Global">
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
+		<var
+		id="b66e7411-b33c-4391-bbce-81573adcdd55"
+		name="RPM_Grantor_WM">
+			Hi, Gunther Central-Perk!
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -376,6 +381,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RPM_Grantor_WM">
+				</binding>
 			</bindings>
 			<info
 			id="c8030bf2-cb7f-4ae8-9227-4c705f30fc82"
@@ -659,6 +668,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RPM_Grantor_WM">
+				</binding>
 			</bindings>
 			<info
 			id="c8030bf2-cb7f-4ae8-9227-4c705f30fc82"

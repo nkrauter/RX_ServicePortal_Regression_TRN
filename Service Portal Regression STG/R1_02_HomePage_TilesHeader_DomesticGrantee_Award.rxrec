@@ -23,6 +23,11 @@ mode="Global">
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
+		<var
+		id="cf7e26f5-f20e-4bc6-b32f-904968776643"
+		name="Domestic_Grantee_WM">
+			Hi, Rachel Green!
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -694,11 +699,6 @@ mode="Global">
 						SAMS - Service Portal - My Grants - Service Portal
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -1210,11 +1210,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 						SAMS - Service Portal - My Grants - Service Portal
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -1392,6 +1387,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantee_WM">
+				</binding>
 			</bindings>
 			<info
 			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"
@@ -1671,11 +1670,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					name="caption"
 					type="System.String">
 						SAMS - Service Portal - My Grants - Service Portal
-					</attribute>
-					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
 					</attribute>
 					<attribute
 					name="browsername"
@@ -2151,11 +2145,6 @@ gAooooAKKKKACiiigDQ0f/j4f/drXrI0f/j4f/drXrlq/EddL4QooorM1CiiigAooooA/9k=
 						SAMS - Service Portal - My Grants - Service Portal
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -2333,6 +2322,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantee_WM">
+				</binding>
 			</bindings>
 			<info
 			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"

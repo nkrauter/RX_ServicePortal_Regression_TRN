@@ -23,6 +23,11 @@ mode="Global">
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
+		<var
+		id="8e905888-bbb5-441a-ba12-75ef7ca4d73a"
+		name="Domestic_Grantor_WM">
+			Hi, Joey Tribbiani!
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -629,11 +634,6 @@ mode="Global">
 						SAMS - Service Portal - My Grants - Service Portal
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -876,10 +876,58 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantor_WM">
+				</binding>
 			</bindings>
 			<info
 			id="749a03d3-0be3-4b9f-8b8f-beae74c7e4e7"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Joey Tribbiani!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Joey Tribbiani!']
 				</path>
@@ -1111,11 +1159,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					name="caption"
 					type="System.String">
 						SAMS - Service Portal - My Grants - Service Portal
-					</attribute>
-					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
 					</attribute>
 					<attribute
 					name="browsername"
@@ -1360,10 +1403,58 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantor_WM">
+				</binding>
 			</bindings>
 			<info
 			id="749a03d3-0be3-4b9f-8b8f-beae74c7e4e7"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Joey Tribbiani!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Joey Tribbiani!']
 				</path>
@@ -1595,11 +1686,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					name="caption"
 					type="System.String">
 						SAMS - Service Portal - My Grants - Service Portal
-					</attribute>
-					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:SAMS - Service Portal - My Grants - Service Portal - Google Chrome}
 					</attribute>
 					<attribute
 					name="browsername"
@@ -1847,10 +1933,58 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantor_WM">
+				</binding>
 			</bindings>
 			<info
 			id="749a03d3-0be3-4b9f-8b8f-beae74c7e4e7"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Joey Tribbiani!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Joey Tribbiani!']
 				</path>

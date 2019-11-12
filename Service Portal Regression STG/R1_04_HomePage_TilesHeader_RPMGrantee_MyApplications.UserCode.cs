@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Service_Portal_Regression_STG
 {
-    public partial class R1_04_HomePage_TilesHeader_RPMGrantor_Support
+    public partial class R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

@@ -24,46 +24,46 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R1_02_HomePage_TilesHeader_DomesticGrantee_Award recording.
+    ///The R1_04_HomePage_TilesHeader_RPMGrantee_Award recording.
     /// </summary>
-    [TestModule("90eb44c3-0c7a-4df0-8771-a0617da091b9", ModuleType.Recording, 1)]
-    public partial class R1_02_HomePage_TilesHeader_DomesticGrantee_Award : ITestModule
+    [TestModule("36c64f35-8dc0-419c-98fe-f7e62443afc0", ModuleType.Recording, 1)]
+    public partial class R1_04_HomePage_TilesHeader_RPMGrantee_Award : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the Service_Portal_Regression_TSTRepository repository.
+        /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
-        public static Service_Portal_Regression_TSTRepository repo = Service_Portal_Regression_TSTRepository.Instance;
+        public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R1_02_HomePage_TilesHeader_DomesticGrantee_Award instance = new R1_02_HomePage_TilesHeader_DomesticGrantee_Award();
+        static R1_04_HomePage_TilesHeader_RPMGrantee_Award instance = new R1_04_HomePage_TilesHeader_RPMGrantee_Award();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R1_02_HomePage_TilesHeader_DomesticGrantee_Award()
+        public R1_04_HomePage_TilesHeader_RPMGrantee_Award()
         {
-            Domestic_Grantee_WM = "Hi, Rachel Green!";
+            RPM_Grantee_WM = "Hi, Monica Geller!";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R1_02_HomePage_TilesHeader_DomesticGrantee_Award Instance
+        public static R1_04_HomePage_TilesHeader_RPMGrantee_Award Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Domestic_Grantee_WM;
+        string _RPM_Grantee_WM;
 
         /// <summary>
-        /// Gets or sets the value of variable Domestic_Grantee_WM.
+        /// Gets or sets the value of variable RPM_Grantee_WM.
         /// </summary>
-        [TestVariable("cf7e26f5-f20e-4bc6-b32f-904968776643")]
-        public string Domestic_Grantee_WM
+        [TestVariable("4eecdf9d-265b-4a30-816f-cb8c04c1cab0")]
+        public string RPM_Grantee_WM
         {
-            get { return _Domestic_Grantee_WM; }
-            set { _Domestic_Grantee_WM = value; }
+            get { return _RPM_Grantee_WM; }
+            set { _RPM_Grantee_WM = value; }
         }
 
 #endregion
@@ -96,30 +96,30 @@ namespace Service_Portal_Regression_STG
             Report.Log(ReportLevel.Info, "Section", "Header Links", new RecordItemIndex(0));
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText=' Award ') on item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward'.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAwardInfo, new RecordItemIndex(1));
-                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.ATagAwardInfo, "InnerText", " Award ", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText=' Award ') on item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward1'.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1Info, new RecordItemIndex(1));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1Info, "InnerText", " Award ", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward' at 106;60.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAwardInfo, new RecordItemIndex(2));
-            repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward.Click("106;60");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward1' at 106;60.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1Info, new RecordItemIndex(2));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1.Click("106;60");
             Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='View Awards') on item 'Login1.NavNavbarNavSamsNavbarNav.ViewAwards'.", repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwardsInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwardsInfo, "InnerText", "View Awards", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='View Awards') on item 'Login1.NavNavbarNavSamsNavbarNav.ViewAwards1'.", repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwards1Info, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwards1Info, "InnerText", "View Awards", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities') on item 'Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities'.", repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivitiesInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivitiesInfo, "InnerText", "Post Award Activities", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities') on item 'Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities1'.", repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities1Info, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities1Info, "InnerText", "Post Award Activities", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Awards Dashboard') on item 'Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard'.", repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboardInfo, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboardInfo, "InnerText", "Awards Dashboard", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Awards Dashboard') on item 'Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard1'.", repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard1Info, new RecordItemIndex(5));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard1Info, "InnerText", "Awards Dashboard", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
@@ -129,8 +129,8 @@ namespace Service_Portal_Regression_STG
             // View Awards
             Report.Log(ReportLevel.Info, "Section", "View Awards", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ViewAwards' at 84;17.", repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwardsInfo, new RecordItemIndex(8));
-            repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwards.Click("84;17");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ViewAwards1' at 84;17.", repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwards1Info, new RecordItemIndex(8));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ViewAwards1.Click("84;17");
             Delay.Milliseconds(200);
             
             try {
@@ -151,18 +151,18 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Rachel Green!'. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(13));
-            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Rachel Green!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(13));
+            repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
             // Post Award Activities
             Report.Log(ReportLevel.Info, "Section", "Post Award Activities", new RecordItemIndex(14));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward' at 71;57.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAwardInfo, new RecordItemIndex(15));
-            repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward.Click("71;57");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward1' at 71;57.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1Info, new RecordItemIndex(15));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1.Click("71;57");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities' at 96;23.", repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivitiesInfo, new RecordItemIndex(16));
-            repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities.Click("96;23");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities1' at 96;23.", repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities1Info, new RecordItemIndex(16));
+            repo.Login1.NavNavbarNavSamsNavbarNav.PostAwardActivities1.Click("96;23");
             Delay.Milliseconds(200);
             
             try {
@@ -183,18 +183,18 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(21));
-            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(21));
+            repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
             // Awards Dashboard
             Report.Log(ReportLevel.Info, "Section", "Awards Dashboard", new RecordItemIndex(22));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward' at 92;67.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAwardInfo, new RecordItemIndex(23));
-            repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward.Click("92;67");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagAward1' at 92;67.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1Info, new RecordItemIndex(23));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagAward1.Click("92;67");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard' at 109;21.", repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboardInfo, new RecordItemIndex(24));
-            repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard.Click("109;21");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard1' at 109;21.", repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard1Info, new RecordItemIndex(24));
+            repo.Login1.NavNavbarNavSamsNavbarNav.AwardsDashboard1.Click("109;21");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(25));
@@ -225,8 +225,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(31));
-            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(31));
+            repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
         }
 

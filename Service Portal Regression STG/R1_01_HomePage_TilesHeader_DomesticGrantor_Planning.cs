@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_01_HomePage_TilesHeader_DomesticGrantor_Planning()
         {
+            Domestic_Grantor_WM = "Hi, Joey Tribbiani!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _Domestic_Grantor_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable Domestic_Grantor_WM.
+        /// </summary>
+        [TestVariable("fee03c45-2a37-4fc7-a6a6-9f0f5c661609")]
+        public string Domestic_Grantor_WM
+        {
+            get { return _Domestic_Grantor_WM; }
+            set { _Domestic_Grantor_WM = value; }
+        }
 
 #endregion
 
@@ -141,8 +154,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("17;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Joey Tribbiani!'. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(13));
-            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Joey Tribbiani!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantor_WM. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(13));
+            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantor_WM);
             
             // Projects
             Report.Log(ReportLevel.Info, "Section", "Projects", new RecordItemIndex(14));
@@ -175,8 +188,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("17;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Joey Tribbiani!'. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(21));
-            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Joey Tribbiani!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantor_WM. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(21));
+            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantor_WM);
             
         }
 

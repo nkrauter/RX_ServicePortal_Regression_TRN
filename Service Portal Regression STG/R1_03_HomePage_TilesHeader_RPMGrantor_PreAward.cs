@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_03_HomePage_TilesHeader_RPMGrantor_PreAward()
         {
+            RPM_Grantor_WM = "Hi, Gunther Central-Perk!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _RPM_Grantor_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable RPM_Grantor_WM.
+        /// </summary>
+        [TestVariable("693db3e4-3fab-4455-9b81-6069b39bb52b")]
+        public string RPM_Grantor_WM
+        {
+            get { return _RPM_Grantor_WM; }
+            set { _RPM_Grantor_WM = value; }
+        }
 
 #endregion
 
@@ -148,8 +161,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(15));
-            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(15));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // Application
             Report.Log(ReportLevel.Info, "Section", "Application", new RecordItemIndex(16));
@@ -180,8 +193,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(23));
-            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(23));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // Funding Package
             Report.Log(ReportLevel.Info, "Section", "Funding Package", new RecordItemIndex(24));
@@ -212,8 +225,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(31));
-            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(31));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // Proposal
             Report.Log(ReportLevel.Info, "Section", "Proposal", new RecordItemIndex(32));
@@ -244,11 +257,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(39));
-            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Gunther Central-Perk!'. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(40));
-            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Gunther Central-Perk!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(39));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
         }
 

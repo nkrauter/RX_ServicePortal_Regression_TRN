@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_02_HomePage_TilesHeader_DomesticGrantee_Support()
         {
+            Domestic_Grantee_WM = "Hi, Rachel Green!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _Domestic_Grantee_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable Domestic_Grantee_WM.
+        /// </summary>
+        [TestVariable("6544dca7-a22f-41c6-91f0-b126226799d7")]
+        public string Domestic_Grantee_WM
+        {
+            get { return _Domestic_Grantee_WM; }
+            set { _Domestic_Grantee_WM = value; }
+        }
 
 #endregion
 
@@ -136,8 +149,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Rachel Green!'. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(13));
-            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Rachel Green!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(13));
+            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
             
             // Support TO BE CONTINUED
             Report.Log(ReportLevel.Info, "Section", "Support TO BE CONTINUED", new RecordItemIndex(14));

@@ -2,6 +2,20 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<testmodule
+			id="0121a368-8c7d-4078-9e2f-98a1f80deb2f"
+			name="R1_04_HomePage_TilesHeader_RPMGrantee_Award"
+			ref="36c64f35-8dc0-419c-98fe-f7e62443afc0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="4eecdf9d-265b-4a30-816f-cb8c04c1cab0"
+					variablename="RPM_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -23,15 +37,17 @@
 			</testsuite>
 			<testmodule
 			id="0afd1646-95c1-4887-ae6d-83a35ca74681"
-			name="R1_04_HomePage_TilesHeader_RPMGrantor_Support"
+			name="R1_03_HomePage_TilesHeader_RPMGrantor_Support"
 			ref="40367529-267b-4309-83c8-352c3e2f8303"
 			type="Recording">
-			</testmodule>
-			<testmodule
-			id="0d2e2827-161b-499c-a933-f85f41f1fa59"
-			name="R1_04"
-			ref="77f4a98b-d503-484e-a1ba-cc56e0e14e27"
-			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="e2f28ddc-5a0f-4dc6-b68e-7e938e1c4631"
+					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="265b6a06-81a0-443d-9ddc-66debeccce0a"
@@ -53,6 +69,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="2ddb13c9-c3d0-4651-a1af-804b5b42d845"
+			name="R1_04_HomePage_TilesHeader_RPMGrantee_Apply"
+			ref="63d75886-fedc-4821-bf71-d2863735800f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="7066e907-e9b4-4c80-8ee5-f1cb8224ec8c"
+					variablename="RPM_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
 			<smartfoldernode
 			id="31b804de-90d1-4d17-a6d3-1ceb9505eeb9"
 			name="Scenario_1_Tiles/Header/Footer">
@@ -62,18 +92,48 @@
 			name="R1_01_HomePage_TilesHeader_DomesticGrantor_Administration"
 			ref="0cb415e9-e508-48da-9231-db32ed4d3d92"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="09fde596-7e2c-40b4-936e-d831cdc4aac4"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
+			<testcase
+			datasource="Users"
+			id="3651c15e-45f0-43e8-9199-feb725998984"
+			name="1.04_Grants_HomePage_Tiles/Header/Footer_RPMGrantee">
+			</testcase>
 			<testmodule
-			enabled="False"
 			id="4007112d-10ec-4a42-8806-ca0fc073bb3d"
 			name="R1_01_HomePage_Footer_DomesticGrantor_Planning"
 			ref="0ea5c09d-c9c4-4ce9-90bc-267f88cce7af"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="c96fec93-a0d4-4374-b4b9-ac2bb3431c07"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="40941c28-a1a8-470b-98ee-bfe25900713e"
 			name="Service_Portal_Regression_STG"
 			reportlevel="Info;20">
+			</testcase>
+			<testmodule
+			id="582b4f73-f825-4da5-925b-401667b3779f"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="5a678c55-e524-40f1-b136-a68d3160d17a"
+			name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMGrantee">
 			</testcase>
 			<testmodule
 			id="5c8664ba-a7f9-4795-9bc6-75387c1cf093"
@@ -100,29 +160,61 @@
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_Administration"
 			ref="dd274591-fcaa-4e8e-8ea1-26dc62fb27b2"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="9e2cb52e-78b7-4c1c-afb4-b5eddb5939a6"
+					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6847d883-832d-43f3-85af-bdca0b882fb5"
 			name="R1_02_HomePage_TilesHeader_DomesticGrantee_Support"
 			ref="cd40ceb2-899b-4dcf-a5ba-089a6ae3c05d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="6544dca7-a22f-41c6-91f0-b126226799d7"
+					variablename="Domestic_Grantee_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			datasource="Users"
 			id="68a55f35-841a-4dca-ab3e-802f1208c091"
-			name="1.02_Grant_HomePage_Tiles/Header/Footer_DomesticGrantee">
+			name="1.02_Grants_HomePage_Tiles/Header/Footer_DomesticGrantee">
 			</testcase>
 			<testmodule
 			id="68c8bb60-7270-4440-83bf-167928c48ded"
 			name="R1_01_HomePage_TilesHeader_DomesticGrantor_Award"
 			ref="cc3fef92-97af-46cf-8cd8-bddbdb326080"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="3ad9ab9e-db49-4323-bd6b-e60622e5b0fe"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="69fc2e80-7f8f-4026-a8d4-33e738cfe3e0"
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_Award"
 			ref="c88759ba-41e1-4262-82db-462e221f6b30"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="c97ac951-d0e2-48f6-b165-eebd3b36eec4"
+					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6c85933a-e119-45d5-85a5-d66c4a3bf83c"
@@ -152,62 +244,201 @@
 			<testcase
 			datasource="Users"
 			id="741d5699-9b69-462a-8a34-812de6abf9f3"
-			name="1.02_Grant_HomePage_Tiles/Header/Footer_RPMGrantor">
+			name="1.03_Grants_HomePage_Tiles/Header/Footer_RPMGrantor">
 			</testcase>
+			<testmodule
+			id="809c2780-7226-404f-89e7-138898a72efd"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantee Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+					<var
+					dataname="RPM Grantee Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="882cff20-4e87-40a9-98b3-1dd50ba6b9d6"
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_PreAward"
 			ref="3a756bcc-c399-45e0-9317-d97c1eaea98d"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="693db3e4-3fab-4455-9b81-6069b39bb52b"
+					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
-			enabled="False"
+			id="890af1fe-8fc7-4b1f-aa31-40659d4f1457"
+			name="R1_05_HomePage_TilesHeader_RPMAdmin_Planning"
+			ref="abb785a4-c2d3-456f-8b64-d228d5166594"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="95e6623d-7c55-4680-99de-512984059a80"
 			name="R1_01_HomePage_Footer_DomesticGrantor_PreAward"
 			ref="42afc825-6231-4bdf-bad7-2f499f969d9e"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="5cd309c0-2ee2-49be-ad34-76d4f6e54bde"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="a97648fb-4266-4104-b055-6bfae0a45326"
 			name="R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward"
 			ref="9d499e39-36a9-4b11-9fb0-8cab82ddc53a"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="204475d5-69d9-49bc-a9f3-7b5b709e3486"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="b42d81e5-b2cc-4741-a4be-1fd81b7fd5ad"
 			name="R1_01_HomePage_TilesHeader_DomesticGrantor_Planning"
 			ref="2499f831-bdf8-4dfe-b805-9f431aa36d01"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="fee03c45-2a37-4fc7-a6a6-9f0f5c661609"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="cdf3512c-43b5-4919-9c84-3cd672fee818"
+			name="R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications"
+			ref="1a957683-dbc8-4ba7-b48b-f6efe83fca6d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="1dfb6f77-44d2-4dd5-8a89-09bccc744ba1"
+					variablename="RPM_Grantee_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ce58a8de-f99c-4cc5-9db9-12b471dfdabd"
 			name="R1_02_HomePage_TilesHeader_DomesticGrantee_Award"
 			ref="90eb44c3-0c7a-4df0-8771-a0617da091b9"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="cf7e26f5-f20e-4bc6-b32f-904968776643"
+					variablename="Domestic_Grantee_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d47247d7-0bea-4b1e-a2f7-0af701929706"
 			name="R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications"
 			ref="1db0ae61-6fac-4b48-a9f3-2cb7c51371ca"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="e3dfcb3b-e9b8-4b31-ac08-a6c34120bf72"
+					variablename="Domestic_Grantee_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="d5528042-5280-4625-bee6-56145e3471e8"
 			name="R1_02_HomePage_TilesHeader_DomesticGrantee_Apply"
 			ref="0772a59b-a706-4091-918c-7575d2a6aed8"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="000c60ab-97a0-45a0-a5d8-4eec77016a7a"
+					variablename="Domestic_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e5f86097-b6dd-4c3d-8047-8a8ed5177a81"
+			name="R1_04_HomePage_TilesHeader_RPMGrantee_Monitoring"
+			ref="6425adbf-6320-49cf-85ec-15dfa0b21c53"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="1cd2daf7-5d47-455f-ab60-3ee3425651a2"
+					variablename="RPM_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ec444e1f-2203-4da1-94a1-18e4122d2880"
+			name="R1_04_HomePage_TIlesHeader_RPMGrantee_Support"
+			ref="295c3690-d2fc-44bc-97fb-5ca69872d9e4"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="c76221d9-7242-40bc-9ce2-914b5e3d31ba"
+					variablename="RPM_Grantee_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="ecf2a991-7690-4854-947f-e9e44b9cc07e"
 			name="R1_01_HomePage_TilesHeader_DomesticGrantor_Support"
 			ref="ebfda99b-b63d-4789-9b14-7560dda4859c"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="8e905888-bbb5-441a-ba12-75ef7ca4d73a"
+					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="fb734ca4-a0f1-4b98-aa52-ef4d5b66b22d"
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_Planning"
 			ref="cd4f6f0a-a02b-44cb-85dd-d3e9eb21606f"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="b66e7411-b33c-4391-bbce-81573adcdd55"
+					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -232,16 +463,8 @@
 							name="R1_01_HomePage_TilesHeader_DomesticGrantor_Planning">
 							</testmodule>
 							<testmodule
-							id="4007112d-10ec-4a42-8806-ca0fc073bb3d"
-							name="R1_01_HomePage_Footer_DomesticGrantor_Planning">
-							</testmodule>
-							<testmodule
 							id="a97648fb-4266-4104-b055-6bfae0a45326"
 							name="R1_01_HomePage_TilesHeader_DomesticGrantor_PreAward">
-							</testmodule>
-							<testmodule
-							id="95e6623d-7c55-4680-99de-512984059a80"
-							name="R1_01_HomePage_Footer_DomesticGrantor_PreAward">
 							</testmodule>
 							<testmodule
 							id="68c8bb60-7270-4440-83bf-167928c48ded"
@@ -255,10 +478,18 @@
 							id="ecf2a991-7690-4854-947f-e9e44b9cc07e"
 							name="R1_01_HomePage_TilesHeader_DomesticGrantor_Support">
 							</testmodule>
+							<testmodule
+							id="4007112d-10ec-4a42-8806-ca0fc073bb3d"
+							name="R1_01_HomePage_Footer_DomesticGrantor_Planning">
+							</testmodule>
+							<testmodule
+							id="95e6623d-7c55-4680-99de-512984059a80"
+							name="R1_01_HomePage_Footer_DomesticGrantor_PreAward">
+							</testmodule>
 						</testcase>
 						<testcase
 						id="68a55f35-841a-4dca-ab3e-802f1208c091"
-						name="1.02_Grant_HomePage_Tiles/Header/Footer_DomesticGrantee">
+						name="1.02_Grants_HomePage_Tiles/Header/Footer_DomesticGrantee">
 							<testmodule
 							id="5c8664ba-a7f9-4795-9bc6-75387c1cf093"
 							name="Login">
@@ -282,7 +513,7 @@
 						</testcase>
 						<testcase
 						id="741d5699-9b69-462a-8a34-812de6abf9f3"
-						name="1.02_Grant_HomePage_Tiles/Header/Footer_RPMGrantor">
+						name="1.03_Grants_HomePage_Tiles/Header/Footer_RPMGrantor">
 							<testmodule
 							id="6c85933a-e119-45d5-85a5-d66c4a3bf83c"
 							name="Login">
@@ -305,11 +536,47 @@
 							</testmodule>
 							<testmodule
 							id="0afd1646-95c1-4887-ae6d-83a35ca74681"
-							name="R1_04_HomePage_TilesHeader_RPMGrantor_Support">
+							name="R1_03_HomePage_TilesHeader_RPMGrantor_Support">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="3651c15e-45f0-43e8-9199-feb725998984"
+						name="1.04_Grants_HomePage_Tiles/Header/Footer_RPMGrantee">
+							<testmodule
+							id="809c2780-7226-404f-89e7-138898a72efd"
+							name="Login">
 							</testmodule>
 							<testmodule
-							id="0d2e2827-161b-499c-a933-f85f41f1fa59"
-							name="R1_04">
+							id="2ddb13c9-c3d0-4651-a1af-804b5b42d845"
+							name="R1_04_HomePage_TilesHeader_RPMGrantee_Apply">
+							</testmodule>
+							<testmodule
+							id="cdf3512c-43b5-4919-9c84-3cd672fee818"
+							name="R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications">
+							</testmodule>
+							<testmodule
+							id="e5f86097-b6dd-4c3d-8047-8a8ed5177a81"
+							name="R1_04_HomePage_TilesHeader_RPMGrantee_Monitoring">
+							</testmodule>
+							<testmodule
+							id="0121a368-8c7d-4078-9e2f-98a1f80deb2f"
+							name="R1_04_HomePage_TilesHeader_RPMGrantee_Award">
+							</testmodule>
+							<testmodule
+							id="ec444e1f-2203-4da1-94a1-18e4122d2880"
+							name="R1_04_HomePage_TIlesHeader_RPMGrantee_Support">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="5a678c55-e524-40f1-b136-a68d3160d17a"
+						name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMGrantee">
+							<testmodule
+							id="582b4f73-f825-4da5-925b-401667b3779f"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="890af1fe-8fc7-4b1f-aa31-40659d4f1457"
+							name="R1_05_HomePage_TilesHeader_RPMAdmin_Planning">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
@@ -335,16 +602,43 @@
 					Domestic Grantor Password
 				</column>
 				<column>
+					Domestic Grantor WM
+				</column>
+				<column>
 					Domestic Grantee Username
 				</column>
 				<column>
 					Domestic Grantee Password
 				</column>
 				<column>
+					Domestic Grantee WM
+				</column>
+				<column>
 					RPM Grantor Username
 				</column>
 				<column>
 					RPM Grantor Password
+				</column>
+				<column>
+					RPM Grantor WM
+				</column>
+				<column>
+					RPM Grantee Username
+				</column>
+				<column>
+					RPM Grantee Password
+				</column>
+				<column>
+					RPM Grantee WM
+				</column>
+				<column>
+					RPM Admin Username
+				</column>
+				<column>
+					RPM Admin Password
+				</column>
+				<column>
+					RPM Admin WM
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

@@ -23,6 +23,11 @@ mode="Global">
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
+		<var
+		id="6544dca7-a22f-41c6-91f0-b126226799d7"
+		name="Domestic_Grantee_WM">
+			Hi, Rachel Green!
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -709,6 +714,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantee_WM">
+				</binding>
 			</bindings>
 			<info
 			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"

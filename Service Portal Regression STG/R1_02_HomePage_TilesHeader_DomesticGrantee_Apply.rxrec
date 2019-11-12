@@ -23,6 +23,11 @@ mode="Global">
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
+		<var
+		id="000c60ab-97a0-45a0-a5d8-4eec77016a7a"
+		name="Domestic_Grantee_WM">
+			Hi, Rachel Green!
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -650,11 +655,6 @@ mode="Global">
 						Knowledge Article View - My Grants - Service Portal
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:Knowledge Article View - My Grants - Service Portal - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -857,6 +857,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantee_WM">
+				</binding>
 			</bindings>
 			<info
 			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"
@@ -869,11 +873,16 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				hasfocus="False"
 				index="0"
 				prefcap="h1tag"
-				rect="0,71,0,0"
+				rect="330,324,1020,69"
 				role="unknown"
 				snapElem=""
-				valid="False"
-				visible="False">
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
 					<attribute
 					name="draggable"
 					type="System.String">
@@ -883,6 +892,16 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					name="hidden"
 					type="System.String">
 						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Rachel Green!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
 					</attribute>
 					<attribute
 					name="tagname"
@@ -1401,11 +1420,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 						Knowledge Article View - My Grants - Service Portal
 					</attribute>
 					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:Knowledge Article View - My Grants - Service Portal - Google Chrome}
-					</attribute>
-					<attribute
 					name="browsername"
 					type="System.String">
 						Chrome
@@ -1556,11 +1570,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					name="caption"
 					type="System.String">
 						Knowledge Article View - My Grants - Service Portal
-					</attribute>
-					<attribute
-					name="browser"
-					type="Ranorex.Form, Ranorex.Core, Culture=neutral">
-						{Form:Knowledge Article View - My Grants - Service Portal - Google Chrome}
 					</attribute>
 					<attribute
 					name="browsername"
@@ -1740,6 +1749,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<comment>
 			</comment>
 			<bindings>
+				<binding
+				target="MatchValue"
+				variable="Domestic_Grantee_WM">
+				</binding>
 			</bindings>
 			<info
 			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"

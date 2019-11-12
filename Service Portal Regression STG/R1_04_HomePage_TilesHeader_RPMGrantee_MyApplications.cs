@@ -24,46 +24,46 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications recording.
+    ///The R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications recording.
     /// </summary>
-    [TestModule("1db0ae61-6fac-4b48-a9f3-2cb7c51371ca", ModuleType.Recording, 1)]
-    public partial class R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications : ITestModule
+    [TestModule("1a957683-dbc8-4ba7-b48b-f6efe83fca6d", ModuleType.Recording, 1)]
+    public partial class R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications : ITestModule
     {
         /// <summary>
-        /// Holds an instance of the Service_Portal_Regression_TSTRepository repository.
+        /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
-        public static Service_Portal_Regression_TSTRepository repo = Service_Portal_Regression_TSTRepository.Instance;
+        public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications instance = new R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications();
+        static R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications instance = new R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications()
+        public R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications()
         {
-            Domestic_Grantee_WM = "Hi, Rachel Green!";
+            RPM_Grantee_WM = "Hi, Monica Geller!";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications Instance
+        public static R1_04_HomePage_TilesHeader_RPMGrantee_MyApplications Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _Domestic_Grantee_WM;
+        string _RPM_Grantee_WM;
 
         /// <summary>
-        /// Gets or sets the value of variable Domestic_Grantee_WM.
+        /// Gets or sets the value of variable RPM_Grantee_WM.
         /// </summary>
-        [TestVariable("e3dfcb3b-e9b8-4b31-ac08-a6c34120bf72")]
-        public string Domestic_Grantee_WM
+        [TestVariable("1dfb6f77-44d2-4dd5-8a89-09bccc744ba1")]
+        public string RPM_Grantee_WM
         {
-            get { return _Domestic_Grantee_WM; }
-            set { _Domestic_Grantee_WM = value; }
+            get { return _RPM_Grantee_WM; }
+            set { _RPM_Grantee_WM = value; }
         }
 
 #endregion
@@ -149,8 +149,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(13));
-            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(13));
+            repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
             // My Organizations Applications
             Report.Log(ReportLevel.Info, "Section", "My Organizations Applications", new RecordItemIndex(14));
@@ -185,8 +185,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(22));
-            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(22));
+            repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
         }
 

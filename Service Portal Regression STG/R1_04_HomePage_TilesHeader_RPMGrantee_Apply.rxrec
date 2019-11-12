@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="1db0ae61-6fac-4b48-a9f3-2cb7c51371ca"
+id="63d75886-fedc-4821-bf71-d2863735800f"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications"
+	classname="R1_04_HomePage_TilesHeader_RPMGrantee_Apply"
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
 		<var
-		id="e3dfcb3b-e9b8-4b31-ac08-a6c34120bf72"
-		name="Domestic_Grantee_WM">
-			Hi, Rachel Green!
+		id="7066e907-e9b4-4c80-8ee5-f1cb8224ec8c"
+		name="RPM_Grantee_WM">
+			Hi, Monica Geller!
 		</var>
 	</variables>
 	<recorditems>
@@ -34,23 +34,25 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				Header Links
+				Header
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
 		<validationitem
 		action="AttributeEqual"
+		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="5fd6566c-f5a1-49df-b600-d8f78b0d54ed">
+		searchpropertyid="7dcb78a3-b5fa-4500-bef4-b25f68a599eb">
 			<comment>
+				Apply
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="793fd147-7efe-4c71-8355-e211e87f23fc"
+			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -60,7 +62,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="737,195,179,69"
+				rect="633,195,103,69"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -83,7 +85,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						&#32;My Applications&#32;
+						&#32;Apply&#32;
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -127,14 +129,14 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/a[@innertext=' My Applications ']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
 				</path>
 			</info>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
-				&#32;My Applications&#32;
+				&#32;Apply&#32;
 			</matchvalue>
 		</validationitem>
 		<mouseitem
@@ -142,19 +144,19 @@ mode="Global">
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc="145;60"
+		loc="93;58"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="f27aa730-9dd1-4125-99a3-3b7838343c16"
-		sx="1250"
-		sy="382"
+		searchpropertyid="1cb1b5fb-ed83-4e49-bb03-3ca47aacbf6b"
+		sx="1042"
+		sy="380"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="793fd147-7efe-4c71-8355-e211e87f23fc"
+			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -164,7 +166,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="737,195,179,69"
+				rect="633,195,103,69"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -187,7 +189,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						&#32;My Applications&#32;
+						&#32;Apply&#32;
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -231,22 +233,24 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/a[@innertext=' My Applications ']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
 				</path>
 			</info>
 		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
+		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="9b041861-85fd-40af-a2c3-0fce84c34b0a">
+		searchpropertyid="48a31f9b-25e1-4fbe-95d2-eeb4a5268237">
 			<comment>
+				Funding Opportunity
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="27d6fa42-b4ff-4a8d-aab5-ca8c0ff4c3bd"
+			id="10408d9b-dae3-46f3-b350-4f1629914394"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -279,7 +283,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						My Applications
+						Funding Opportunities
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -294,7 +298,7 @@ mode="Global">
 					<attribute
 					name="href"
 					type="System.String">
-						https://mygrantstrain.service-now.com/grants?grants_pid=grants_application&amp;id=grants_application_list&amp;table=u_domestic_application&amp;view=Grantee&amp;p=1&amp;o=number&amp;d=desc&amp;filter=opened_by%3D4f755bcddb94c450f7bcf81d0f96199e%5EORu_grants_gov_applicant%3D4f755bcddb94c450f7bcf81d0f96199e
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_funding_opportunity&amp;id=grants_funding_opportunity_list&amp;table=u_domestic_funding_opportunity&amp;view=Grantee&amp;d=desc&amp;o=number
 					</attribute>
 					<attribute
 					name="target"
@@ -314,28 +318,30 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/ul/?/?/a[@innertext='My Applications']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Funding Opportunities']
 				</path>
 			</info>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
-				My Applications
+				Funding Opportunities
 			</matchvalue>
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
+		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="312ccb12-d415-4dbf-9061-140ced1b4ca0">
+		searchpropertyid="98bff875-3b93-4dee-8e00-fdcf6e621acb">
 			<comment>
+				Navigate to Grants.gov
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="78617983-2e99-4f8d-a95e-f95abd50ace8"
+			id="863f6add-f0e7-4abb-aaad-a201774d5091"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -368,7 +374,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						My Organizations Applications
+						Navigate to Grants.gov
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -383,7 +389,99 @@ mode="Global">
 					<attribute
 					name="href"
 					type="System.String">
-						https://mygrantstrain.service-now.com/grants?grants_pid=grants_application&amp;id=grants_application_list&amp;table=u_domestic_application&amp;view=Grantee&amp;p=1&amp;o=number&amp;d=desc&amp;filter=opened_by!%3D4f755bcddb94c450f7bcf81d0f96199e%5Eu_grants_gov_applicantISEMPTY%5E
+						https://training.grants.gov/
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_blank
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Navigate to Grants.gov']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Navigate to Grants.gov
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="8fc91210-4f85-48cb-a070-cc495f943eee">
+			<comment>
+				About the Process
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bab60436-0264-43aa-b4d1-67a605caaf76"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						About the Process
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
 					</attribute>
 					<attribute
 					name="target"
@@ -403,14 +501,14 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/ul/?/?/a[@innertext&gt;'My Organizations Applicat']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='About the Process']
 				</path>
 			</info>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
-				My Organizations Applications
+				About the Process
 			</matchvalue>
 		</validationitem>
 		<loggingrecorditem
@@ -420,9 +518,9 @@ mode="Global">
 		message=""
 		optional="False"
 		reportlevel="Success;110"
-		searchpropertyid="c4422c77-5616-42ad-ab87-e15d24ba1f17">
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
 			<comment>
-				MyApplication Screenshot
+				Apply Screenshot
 			</comment>
 			<bindings>
 			</bindings>
@@ -431,7 +529,7 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				My Applications
+				Funding Opportunity
 			</comment>
 			<bindings>
 			</bindings>
@@ -441,19 +539,19 @@ mode="Global">
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc="74;3"
+		loc="92;18"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="232906d1-ca80-4d9c-adc4-38c5e4b2f031"
-		sx="812"
-		sy="293"
+		searchpropertyid="12155cda-dec5-4288-acc1-9120ce7af06c"
+		sx="1043"
+		sy="452"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="27d6fa42-b4ff-4a8d-aab5-ca8c0ff4c3bd"
+			id="10408d9b-dae3-46f3-b350-4f1629914394"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -486,7 +584,7 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						My Applications
+						Funding Opportunities
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -501,7 +599,7 @@ mode="Global">
 					<attribute
 					name="href"
 					type="System.String">
-						https://mygrantstrain.service-now.com/grants?grants_pid=grants_application&amp;id=grants_application_list&amp;table=u_domestic_application&amp;view=Grantee&amp;p=1&amp;o=number&amp;d=desc&amp;filter=opened_by%3D4f755bcddb94c450f7bcf81d0f96199e%5EORu_grants_gov_applicant%3D4f755bcddb94c450f7bcf81d0f96199e
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_funding_opportunity&amp;id=grants_funding_opportunity_list&amp;table=u_domestic_funding_opportunity&amp;view=Grantee&amp;d=desc&amp;o=number
 					</attribute>
 					<attribute
 					name="target"
@@ -521,7 +619,7 @@ mode="Global">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/ul/?/?/a[@innertext='My Applications']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Funding Opportunities']
 				</path>
 			</info>
 		</mouseitem>
@@ -529,66 +627,111 @@ mode="Global">
 		action="WaitForDocumentLoaded"
 		enabled="True"
 		optional="False"
-		searchpropertyid="a1e461f6-e6d5-4348-a891-85718ac5d12e">
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="69191536-428f-42c7-b530-8c6c3029841b"
+			id="24452dfa-3989-4117-95af-19f02606a30d"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']
 				</path>
 			</info>
 			<arguments
-			id="c8cfbd6f-7dbb-42ab-88bd-967a229a71f4">
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
 			</arguments>
 		</invokeactionrecorditem>
 		<validationitem
 		action="AttributeEqual"
+		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="18d7c7d6-441c-4c60-8372-08eafd0a457b">
+		searchpropertyid="6a3b2ff1-5525-4f80-a165-01332f9aad4c">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="43231e1c-f850-4c6a-87f9-5eb0229f002a"
+			id="fc801dfd-f791-4548-b27c-df29837dc46c"
 			sourcename="RepositoryEditor">
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext='Applications']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext='Funding Opportunities']
 				</path>
 			</info>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
-				Applications
+				Funding Opportunities
 			</matchvalue>
 		</validationitem>
-		<invokeactionrecorditem
-		action="WaitForDocumentLoaded"
-		enabled="True"
-		optional="False"
-		searchpropertyid="a1e461f6-e6d5-4348-a891-85718ac5d12e">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="69191536-428f-42c7-b530-8c6c3029841b"
-			sourcename="RepositoryEditor">
-				<path>
-					/dom[@domain='mygrantstrain.service-now.com']
-				</path>
-			</info>
-			<arguments
-			id="c8cfbd6f-7dbb-42ab-88bd-967a229a71f4">
-			</arguments>
-		</invokeactionrecorditem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -596,9 +739,9 @@ mode="Global">
 		message=""
 		optional="False"
 		reportlevel="Success;110"
-		searchpropertyid="c4422c77-5616-42ad-ab87-e15d24ba1f17">
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
 			<comment>
-				My Application Table Screenshot
+				Funding Opportunity Table
 			</comment>
 			<bindings>
 			</bindings>
@@ -621,7 +764,7 @@ mode="Global">
 			<bindings>
 			</bindings>
 			<info
-			id="e99beba6-0e18-48dc-860c-659aa7195a9f"
+			id="880827b3-2ce9-4485-9455-975ebddaabda"
 			sourcename="Recorder">
 				<element
 				capabilities="webelement, spantag"
@@ -706,7 +849,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		<WaitForRecordItem
 		enabled="True"
 		matchname="InnerText"
-		matchvalue="Hi, Rachel Green!"
+		matchvalue="Hi, Monica Geller!"
 		optional="False"
 		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
@@ -716,11 +859,11 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Domestic_Grantee_WM">
+				variable="RPM_Grantee_WM">
 				</binding>
 			</bindings>
 			<info
-			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"
+			id="7c6362aa-5a7d-482f-863c-091046bfe754"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -730,7 +873,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				hasfocus="False"
 				index="0"
 				prefcap="h1tag"
-				rect="330,324,1020,69"
+				rect="322,324,1020,69"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -753,7 +896,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Rachel Green!
+						Hi, Monica Geller!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -767,7 +910,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Rachel Green!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -775,7 +918,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		enabled="True"
 		optional="False">
 			<comment>
-				My Organizations Applications
+				Navigate to Grants.gov
 			</comment>
 			<bindings>
 			</bindings>
@@ -785,19 +928,19 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc="147;63"
+		loc="93;58"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="06c4e393-5b02-4d96-b09d-beec48c49a57"
-		sx="1252"
-		sy="385"
+		searchpropertyid="1cb1b5fb-ed83-4e49-bb03-3ca47aacbf6b"
+		sx="1042"
+		sy="380"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="793fd147-7efe-4c71-8355-e211e87f23fc"
+			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -807,7 +950,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="737,195,179,69"
+				rect="633,195,103,69"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -830,7 +973,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						&#32;My Applications&#32;
+						&#32;Apply&#32;
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -874,7 +1017,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/a[@innertext=' My Applications ']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
 				</path>
 			</info>
 		</mouseitem>
@@ -883,19 +1026,19 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc="98;15"
+		loc="112;14"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="05517a37-3660-4ef3-b88e-01a8b6e965b1"
-		sx="1205"
-		sy="488"
+		searchpropertyid="d49c8d1d-97d2-47bb-b614-cd4ff600fbcb"
+		sx="1063"
+		sy="487"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="78617983-2e99-4f8d-a95e-f95abd50ace8"
+			id="863f6add-f0e7-4abb-aaad-a201774d5091"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -928,7 +1071,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						My Organizations Applications
+						Navigate to Grants.gov
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -943,7 +1086,285 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="href"
 					type="System.String">
-						https://mygrantstrain.service-now.com/grants?grants_pid=grants_application&amp;id=grants_application_list&amp;table=u_domestic_application&amp;view=Grantee&amp;p=1&amp;o=number&amp;d=desc&amp;filter=opened_by!%3D4f755bcddb94c450f7bcf81d0f96199e%5Eu_grants_gov_applicantISEMPTY%5E
+						https://training.grants.gov/
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+						_blank
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-href"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Navigate to Grants.gov']
+				</path>
+			</info>
+		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a377f00e-983a-4200-97da-698571d1bad9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b8f78547-b880-47b5-92cd-f3906c1bc3d7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']
+				</path>
+			</info>
+			<arguments
+			id="b3b23931-7a8a-4ad7-9a8e-4eb36338b54b">
+			</arguments>
+		</invokeactionrecorditem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="4fceb49b-4e37-4a81-bc36-1f68f81c4572">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="e61852a4-9ba1-4cab-ae8c-76b0c6ed0e19"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']//div[#'logo']/?/?/img[@alt='GRANTS.GOV']
+				</path>
+			</info>
+			<matchname>
+				Src
+			</matchname>
+			<matchvalue>
+				https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
+			<comment>
+				Grants.gov Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<keyitem
+		action="Press"
+		data="W, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="b1dd7d00-2798-4f6d-9f61-dc8967b86006"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b8f78547-b880-47b5-92cd-f3906c1bc3d7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']
+				</path>
+			</info>
+		</keyitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				About the Process
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="72;58"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="8e75b177-491b-4343-bfe2-9e6e01bfbd8b"
+		sx="1021"
+		sy="380"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="633,195,103,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						&#32;Apply&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						dropdown-toggle ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-expanded"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-haspopup"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
+				</path>
+			</info>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="100ms"
+		enabled="True"
+		loc="100;21"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="db3f34cf-4312-44bb-aeaf-ae0d3654cad6"
+		sx="1051"
+		sy="532"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="bab60436-0264-43aa-b4d1-67a605caaf76"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="False">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						About the Process
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
 					</attribute>
 					<attribute
 					name="target"
@@ -963,7 +1384,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[3]/ul/?/?/a[@innertext&gt;'My Organizations Applicat']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='About the Process']
 				</path>
 			</info>
 		</mouseitem>
@@ -971,64 +1392,236 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		action="WaitForDocumentLoaded"
 		enabled="True"
 		optional="False"
-		searchpropertyid="a1e461f6-e6d5-4348-a891-85718ac5d12e">
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="69191536-428f-42c7-b530-8c6c3029841b"
+			id="24452dfa-3989-4117-95af-19f02606a30d"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']
 				</path>
 			</info>
 			<arguments
-			id="c8cfbd6f-7dbb-42ab-88bd-967a229a71f4">
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
 			</arguments>
 		</invokeactionrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
 		enabled="True"
-		optional="True"
-		searchpropertyid="cef0d567-3fba-4e51-aedd-8519bdaa0b14">
+		optional="False"
+		searchpropertyid="59ab1ee1-ba03-405d-9694-1457f1ccd960">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="43231e1c-f850-4c6a-87f9-5eb0229f002a"
+			id="b22cd960-dabb-403e-b933-e979cf4ef408"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h2tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h2tag"
+				rect="288,341,1088,30"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						widget-header kb-title-header ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						About the Process
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						kb-title-header ng-binding widget-header
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h2
+					</attribute>
+				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext='Applications']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext='About the Process']
 				</path>
 			</info>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
-				Applications
+				About the Process
 			</matchvalue>
 		</validationitem>
 		<invokeactionrecorditem
 		action="WaitForDocumentLoaded"
 		enabled="True"
 		optional="False"
-		searchpropertyid="a1e461f6-e6d5-4348-a891-85718ac5d12e">
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="69191536-428f-42c7-b530-8c6c3029841b"
+			id="24452dfa-3989-4117-95af-19f02606a30d"
 			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']
 				</path>
 			</info>
 			<arguments
-			id="c8cfbd6f-7dbb-42ab-88bd-967a229a71f4">
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
 			</arguments>
 		</invokeactionrecorditem>
 		<loggingrecorditem
@@ -1038,9 +1631,9 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		message=""
 		optional="False"
 		reportlevel="Success;110"
-		searchpropertyid="c4422c77-5616-42ad-ab87-e15d24ba1f17">
+		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
 			<comment>
-				My Organizations Applications Table Screenshot
+				About the Process Screenshot
 			</comment>
 			<bindings>
 			</bindings>
@@ -1063,7 +1656,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 			</bindings>
 			<info
-			id="e99beba6-0e18-48dc-860c-659aa7195a9f"
+			id="880827b3-2ce9-4485-9455-975ebddaabda"
 			sourcename="Recorder">
 				<element
 				capabilities="webelement, spantag"
@@ -1148,7 +1741,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 		<WaitForRecordItem
 		enabled="True"
 		matchname="InnerText"
-		matchvalue="Hi, Rachel Green!"
+		matchvalue="Hi, Monica Geller!"
 		optional="False"
 		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
@@ -1158,11 +1751,11 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="Domestic_Grantee_WM">
+				variable="RPM_Grantee_WM">
 				</binding>
 			</bindings>
 			<info
-			id="7a06d3e3-4760-4d0a-90d7-de450392ec87"
+			id="7c6362aa-5a7d-482f-863c-091046bfe754"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -1172,7 +1765,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				hasfocus="False"
 				index="0"
 				prefcap="h1tag"
-				rect="330,324,1020,69"
+				rect="322,324,1020,69"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -1195,7 +1788,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Rachel Green!
+						Hi, Monica Geller!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1209,27 +1802,27 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Rachel Green!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']
 				</path>
 			</info>
 		</WaitForRecordItem>
 	</recorditems>
 	<repository
-	id="397b7e53-e586-48d3-9e3a-97c6142574e7"
-	name="Service_Portal_Regression_TSTRepository"
-	relativepath="Service_Portal_Regression_TSTRepository.rxrep">
+	id="bc8eb910-3cf8-4d8e-8d15-b57254f8606a"
+	name="Service_Portal_Regression_STGRepository"
+	relativepath="Service_Portal_Regression_STGRepository.rxrep">
 		<codegen
-		classname="Service_Portal_Regression_TSTRepository"
+		classname="Service_Portal_Regression_STGRepository"
 		namespace="Service_Portal_Regression_STG">
 		</codegen>
 		<rootfolder
-		id="a0fd5e98-cc86-407f-8298-a96653699a20"
+		id="c66c0921-a4a6-4c30-8218-6aa696d3aa91"
 		name="_rootdummy_">
 		</rootfolder>
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		R1_02_HomePage_TilesHeader_DomesticGrantee_MyApplications.UserCode.cs
+		R1_04_HomePage_TilesHeader_RPMGrantee_Apply.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

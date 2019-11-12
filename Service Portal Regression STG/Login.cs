@@ -119,8 +119,8 @@ namespace Service_Portal_Regression_STG
             Keyboard.Press(System.Windows.Forms.Keys.F4 | System.Windows.Forms.Keys.Alt, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://mygrantstrain.service-now.com/grants/portal_login.do' with browser 'Chrome' in maximized mode.", new RecordItemIndex(4));
-            Host.Current.OpenBrowser("https://mygrantstrain.service-now.com/grants/portal_login.do", "Chrome", "", false, true, false, false, false, true);
+            Report.Log(ReportLevel.Info, "Website", "Opening web site 'https://mygrantstrain.service-now.com/ilms/portal_login.do' with browser 'Chrome' in maximized mode.", new RecordItemIndex(4));
+            Host.Current.OpenBrowser("https://mygrantstrain.service-now.com/ilms/portal_login.do", "Chrome", "", false, true, false, false, false, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LWin down}{Up down}{LWin up}{Up up}' with focus on 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(5));
