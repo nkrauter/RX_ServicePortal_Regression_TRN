@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_03_HomePage_Footer_RPMGrantor_Support()
         {
+            RPM_Grantor_WM = "Hi, Gunther Central-Perk!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _RPM_Grantor_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable RPM_Grantor_WM.
+        /// </summary>
+        [TestVariable("0d3845cb-53d9-4340-a72a-9a5f904195f5")]
+        public string RPM_Grantor_WM
+        {
+            get { return _RPM_Grantor_WM; }
+            set { _RPM_Grantor_WM = value; }
+        }
 
 #endregion
 
@@ -87,200 +100,176 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(500);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login.NgScope4.Support'.", repo.Login.NgScope4.SupportInfo, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.Login.NgScope4.SupportInfo, "InnerText", "Support", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NgScope3.Support'.", repo.Login1.NgScope3.SupportInfo, new RecordItemIndex(2));
+                Validate.AttributeEqual(repo.Login1.NgScope3.SupportInfo, "InnerText", "Support", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantor Training Resources') on item 'Login.NgScope4.GrantorTrainingResources'.", repo.Login.NgScope4.GrantorTrainingResourcesInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login.NgScope4.GrantorTrainingResourcesInfo, "InnerText", "Grantor Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantor Training Resources') on item 'Login1.NgScope3.GrantorTrainingResources'.", repo.Login1.NgScope3.GrantorTrainingResourcesInfo, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NgScope3.GrantorTrainingResourcesInfo, "InnerText", "Grantor Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantee Training Resources') on item 'Login.NgScope4.GranteeTrainingResources'.", repo.Login.NgScope4.GranteeTrainingResourcesInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login.NgScope4.GranteeTrainingResourcesInfo, "InnerText", "Grantee Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantee Training Resources') on item 'Login1.NgScope3.GranteeTrainingResources'.", repo.Login1.NgScope3.GranteeTrainingResourcesInfo, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NgScope3.GranteeTrainingResourcesInfo, "InnerText", "Grantee Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Results Performance Monitoring Grantor Training Resources') on item 'Login.NgScope4.ResultsPerformanceMonitoringGrantorT'.", repo.Login.NgScope4.ResultsPerformanceMonitoringGrantorTInfo, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.Login.NgScope4.ResultsPerformanceMonitoringGrantorTInfo, "InnerText", "Results Performance Monitoring Grantor Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Results Performance Monitoring Grantor Training Resources') on item 'Login1.NgScope3.ResultsPerformanceMonitoringGrantorT'.", repo.Login1.NgScope3.ResultsPerformanceMonitoringGrantorTInfo, new RecordItemIndex(5));
+                Validate.AttributeEqual(repo.Login1.NgScope3.ResultsPerformanceMonitoringGrantorTInfo, "InnerText", "Results Performance Monitoring Grantor Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Results Performance Monitoring Grantee Training Resources') on item 'Login.NgScope4.ResultsPerformanceMonitoringGranteeT'.", repo.Login.NgScope4.ResultsPerformanceMonitoringGranteeTInfo, new RecordItemIndex(6));
-                Validate.AttributeEqual(repo.Login.NgScope4.ResultsPerformanceMonitoringGranteeTInfo, "InnerText", "Results Performance Monitoring Grantee Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Results Performance Monitoring Grantee Training Resources') on item 'Login1.NgScope3.ResultsPerformanceMonitoringGranteeT'.", repo.Login1.NgScope3.ResultsPerformanceMonitoringGranteeTInfo, new RecordItemIndex(6));
+                Validate.AttributeEqual(repo.Login1.NgScope3.ResultsPerformanceMonitoringGranteeTInfo, "InnerText", "Results Performance Monitoring Grantee Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(6)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login.NgScope4.Support2'.", repo.Login.NgScope4.Support2Info, new RecordItemIndex(7));
-                Validate.AttributeEqual(repo.Login.NgScope4.Support2Info, "InnerText", "Support", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NgScope3.Support2'.", repo.Login1.NgScope3.Support2Info, new RecordItemIndex(7));
+                Validate.AttributeEqual(repo.Login1.NgScope3.Support2Info, "InnerText", "Support", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(8));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             // Grantor Training
-            Report.Log(ReportLevel.Info, "Section", "Grantor Training", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Section", "Grantor Training", new RecordItemIndex(8));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope4.GrantorTrainingResources' at 70;14.", repo.Login.NgScope4.GrantorTrainingResourcesInfo, new RecordItemIndex(10));
-            repo.Login.NgScope4.GrantorTrainingResources.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope3.GrantorTrainingResources' at 70;14.", repo.Login1.NgScope3.GrantorTrainingResourcesInfo, new RecordItemIndex(9));
+            repo.Login1.NgScope3.GrantorTrainingResources.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(11));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='') on item 'Login.HttpsMygrantstestServiceNowComDef'.", repo.Login.HttpsMygrantstestServiceNowComDefInfo, new RecordItemIndex(12));
-                Validate.AttributeEqual(repo.Login.HttpsMygrantstestServiceNowComDefInfo, "InnerText", "", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Login1.HttpsMygrantstrainServiceNowComDe'.", repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, new RecordItemIndex(10));
+                Validate.Exists(repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(12)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
             
             // Grantor Training Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(13));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(11));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 86;57.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(14));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("86;57");
+            // Home Button
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(12));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(15));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(13));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // Grantee Training
-            Report.Log(ReportLevel.Info, "Section", "Grantee Training", new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Section", "Grantee Training", new RecordItemIndex(14));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(17));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(15));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope4.GranteeTrainingResources' at 70;14.", repo.Login.NgScope4.GranteeTrainingResourcesInfo, new RecordItemIndex(18));
-            repo.Login.NgScope4.GranteeTrainingResources.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope3.GranteeTrainingResources' at 70;14.", repo.Login1.NgScope3.GranteeTrainingResourcesInfo, new RecordItemIndex(16));
+            repo.Login1.NgScope3.GranteeTrainingResources.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(19));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='') on item 'Login.HttpsMygrantstestServiceNowComDef'.", repo.Login.HttpsMygrantstestServiceNowComDefInfo, new RecordItemIndex(20));
-                Validate.AttributeEqual(repo.Login.HttpsMygrantstestServiceNowComDefInfo, "InnerText", "", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Login1.HttpsMygrantstrainServiceNowComDe'.", repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, new RecordItemIndex(17));
+                Validate.Exists(repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(20)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
             
             // Grantee Training Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(21));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(18));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 86;57.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(22));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("86;57");
+            // Home Button
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(19));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(23));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(20));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // RPM Grantor Training
-            Report.Log(ReportLevel.Info, "Section", "RPM Grantor Training", new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Section", "RPM Grantor Training", new RecordItemIndex(21));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(22));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope4.ResultsPerformanceMonitoringGrantorT' at 70;14.", repo.Login.NgScope4.ResultsPerformanceMonitoringGrantorTInfo, new RecordItemIndex(26));
-            repo.Login.NgScope4.ResultsPerformanceMonitoringGrantorT.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope3.ResultsPerformanceMonitoringGrantorT' at 70;14.", repo.Login1.NgScope3.ResultsPerformanceMonitoringGrantorTInfo, new RecordItemIndex(23));
+            repo.Login1.NgScope3.ResultsPerformanceMonitoringGrantorT.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(27));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://mygrantstest.service-now.com/default_knowledge_base.svg') on item 'Login.HttpsMygrantstestServiceNowComDef'.", repo.Login.HttpsMygrantstestServiceNowComDefInfo, new RecordItemIndex(28));
-                Validate.AttributeEqual(repo.Login.HttpsMygrantstestServiceNowComDefInfo, "Src", "https://mygrantstest.service-now.com/default_knowledge_base.svg", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Login1.HttpsMygrantstrainServiceNowComDe'.", repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, new RecordItemIndex(24));
+                Validate.Exists(repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(28)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(24)); }
             
             // RPM Grantor Training Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(29));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(25));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 86;57.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(30));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("86;57");
+            // Home Button
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(26));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(31));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(27));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // RPM Grantee Training
-            Report.Log(ReportLevel.Info, "Section", "RPM Grantee Training", new RecordItemIndex(32));
+            Report.Log(ReportLevel.Info, "Section", "RPM Grantee Training", new RecordItemIndex(28));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(33));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(29));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope4.ResultsPerformanceMonitoringGranteeT' at 70;14.", repo.Login.NgScope4.ResultsPerformanceMonitoringGranteeTInfo, new RecordItemIndex(34));
-            repo.Login.NgScope4.ResultsPerformanceMonitoringGranteeT.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope3.ResultsPerformanceMonitoringGranteeT' at 70;14.", repo.Login1.NgScope3.ResultsPerformanceMonitoringGranteeTInfo, new RecordItemIndex(30));
+            repo.Login1.NgScope3.ResultsPerformanceMonitoringGranteeT.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(35));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://mygrantstest.service-now.com/default_knowledge_base.svg') on item 'Login.HttpsMygrantstestServiceNowComDef'.", repo.Login.HttpsMygrantstestServiceNowComDefInfo, new RecordItemIndex(36));
-                Validate.AttributeEqual(repo.Login.HttpsMygrantstestServiceNowComDefInfo, "Src", "https://mygrantstest.service-now.com/default_knowledge_base.svg", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Login1.HttpsMygrantstrainServiceNowComDe'.", repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, new RecordItemIndex(31));
+                Validate.Exists(repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(36)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(31)); }
             
             // RPM Grantee Training Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(37));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(32));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 86;57.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(38));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("86;57");
+            // Home Button
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(33));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(39));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(34));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // Support
-            Report.Log(ReportLevel.Info, "Section", "Support", new RecordItemIndex(40));
+            Report.Log(ReportLevel.Info, "Section", "Support", new RecordItemIndex(35));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(41));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(36));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope4.Support2' at 70;14.", repo.Login.NgScope4.Support2Info, new RecordItemIndex(42));
-            repo.Login.NgScope4.Support2.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope3.Support2' at 70;14.", repo.Login1.NgScope3.Support2Info, new RecordItemIndex(37));
+            repo.Login1.NgScope3.Support2.Click("70;14");
             Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(43));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Most Viewed') on item 'Login.MostViewed'.", repo.Login.MostViewedInfo, new RecordItemIndex(44));
-                Validate.AttributeEqual(repo.Login.MostViewedInfo, "InnerText", "Most Viewed", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantor Training Resource') on item 'Login1.GrantorTrainingResource'.", repo.Login1.GrantorTrainingResourceInfo, new RecordItemIndex(38));
+                Validate.AttributeEqual(repo.Login1.GrantorTrainingResourceInfo, "InnerText", "Grantor Training Resource", null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(44)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(38)); }
             
             // Support Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(45));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(39));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 86;57.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(46));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("86;57");
+            // Home Button
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(40));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(47));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(41));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
         }
 

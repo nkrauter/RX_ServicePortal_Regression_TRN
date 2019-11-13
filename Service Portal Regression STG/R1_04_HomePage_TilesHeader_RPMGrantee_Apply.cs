@@ -137,88 +137,72 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.FundingOpportunities1.Click("92;18");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(9));
-            repo.Login1.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Funding Opportunities') on item 'Login1.FormInlinePanelHeading.FundingOpportunities'.", repo.Login1.FormInlinePanelHeading.FundingOpportunitiesInfo, new RecordItemIndex(10));
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Funding Opportunities') on item 'Login1.FormInlinePanelHeading.FundingOpportunities'.", repo.Login1.FormInlinePanelHeading.FundingOpportunitiesInfo, new RecordItemIndex(9));
                 Validate.AttributeEqual(repo.Login1.FormInlinePanelHeading.FundingOpportunitiesInfo, "InnerText", "Funding Opportunities", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
             // Funding Opportunity Table
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(11));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(10));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(11));
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(12));
             repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
             // Navigate to Grants.gov
-            Report.Log(ReportLevel.Info, "Section", "Navigate to Grants.gov", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Section", "Navigate to Grants.gov", new RecordItemIndex(13));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagApply' at 93;58.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagApplyInfo, new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagApply' at 93;58.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagApplyInfo, new RecordItemIndex(14));
             repo.Login1.NavNavbarNavSamsNavbarNav.ATagApply.Click("93;58");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov' at 112;14.", repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGovInfo, new RecordItemIndex(16));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov' at 112;14.", repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGovInfo, new RecordItemIndex(15));
             repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov.Click("112;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(17));
-            repo.HomeGRANTSGOV.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(18));
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(16));
                 Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(16)); }
             
             // Grants.gov Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(19));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(17));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(20));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(18));
             Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
             Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
             // About the Process
-            Report.Log(ReportLevel.Info, "Section", "About the Process", new RecordItemIndex(21));
+            Report.Log(ReportLevel.Info, "Section", "About the Process", new RecordItemIndex(19));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagApply' at 72;58.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagApplyInfo, new RecordItemIndex(22));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagApply' at 72;58.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagApplyInfo, new RecordItemIndex(20));
             repo.Login1.NavNavbarNavSamsNavbarNav.ATagApply.Click("72;58");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.AboutTheProcess' at 100;21.", repo.Login1.NavNavbarNavSamsNavbarNav.AboutTheProcessInfo, new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.AboutTheProcess' at 100;21.", repo.Login1.NavNavbarNavSamsNavbarNav.AboutTheProcessInfo, new RecordItemIndex(21));
             repo.Login1.NavNavbarNavSamsNavbarNav.AboutTheProcess.Click("100;21");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(24));
-            repo.Login1.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='About the Process') on item 'Login1.AboutTheProcess'.", repo.Login1.AboutTheProcessInfo, new RecordItemIndex(25));
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (InnerText='About the Process') on item 'Login1.AboutTheProcess'.", repo.Login1.AboutTheProcessInfo, new RecordItemIndex(22));
             Validate.AttributeEqual(repo.Login1.AboutTheProcessInfo, "InnerText", "About the Process");
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(26));
-            repo.Login1.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             // About the Process Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(27));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(23));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(28));
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(24));
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(29));
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantee_WM. Associated repository item: 'Login1.HiMonicaGeller'", repo.Login1.HiMonicaGellerInfo, new RecordItemIndex(25));
             repo.Login1.HiMonicaGellerInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantee_WM);
             
         }
