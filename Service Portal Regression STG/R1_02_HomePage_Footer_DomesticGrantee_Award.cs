@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_02_HomePage_Footer_DomesticGrantee_Award()
         {
+            Domestic_Grantee_WM = "Hi, Rachel Green!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _Domestic_Grantee_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable Domestic_Grantee_WM.
+        /// </summary>
+        [TestVariable("00774d75-a3ba-452b-a921-5047de01fd2e")]
+        public string Domestic_Grantee_WM
+        {
+            get { return _Domestic_Grantee_WM; }
+            set { _Domestic_Grantee_WM = value; }
+        }
 
 #endregion
 
@@ -87,150 +100,114 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(500);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Award') on item 'Login.NgScope2.Award'.", repo.Login.NgScope2.AwardInfo, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.Login.NgScope2.AwardInfo, "InnerText", "Award", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Award') on item 'Login1.NgScope1.Award'.", repo.Login1.NgScope1.AwardInfo, new RecordItemIndex(2));
+                Validate.AttributeEqual(repo.Login1.NgScope1.AwardInfo, "InnerText", "Award", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='View Awards') on item 'Login.NgScope2.ViewAwards'.", repo.Login.NgScope2.ViewAwardsInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login.NgScope2.ViewAwardsInfo, "InnerText", "View Awards", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='View Awards') on item 'Login1.NgScope1.ViewAwards'.", repo.Login1.NgScope1.ViewAwardsInfo, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NgScope1.ViewAwardsInfo, "InnerText", "View Awards", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities') on item 'Login.NgScope2.PostAwardActivities'.", repo.Login.NgScope2.PostAwardActivitiesInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login.NgScope2.PostAwardActivitiesInfo, "InnerText", "Post Award Activities", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities') on item 'Login1.NgScope1.PostAwardActivities'.", repo.Login1.NgScope1.PostAwardActivitiesInfo, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NgScope1.PostAwardActivitiesInfo, "InnerText", "Post Award Activities", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Awards Dashboard') on item 'Login.NgScope2.AwardsDashboard'.", repo.Login.NgScope2.AwardsDashboardInfo, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.Login.NgScope2.AwardsDashboardInfo, "InnerText", "Awards Dashboard", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Awards Dashboard') on item 'Login1.NgScope1.AwardsDashboard'.", repo.Login1.NgScope1.AwardsDashboardInfo, new RecordItemIndex(5));
+                Validate.AttributeEqual(repo.Login1.NgScope1.AwardsDashboardInfo, "InnerText", "Awards Dashboard", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
             // View Awards
             Report.Log(ReportLevel.Info, "Section", "View Awards", new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope2.ViewAwards' at 70;14.", repo.Login.NgScope2.ViewAwardsInfo, new RecordItemIndex(7));
-            repo.Login.NgScope2.ViewAwards.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope1.ViewAwards' at 70;14.", repo.Login1.NgScope1.ViewAwardsInfo, new RecordItemIndex(7));
+            repo.Login1.NgScope1.ViewAwards.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(8));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Notice of Awards') on item 'Login.FormInlinePanelHeading.NoticeOfAwards'.", repo.Login.FormInlinePanelHeading.NoticeOfAwardsInfo, new RecordItemIndex(9));
-                Validate.AttributeEqual(repo.Login.FormInlinePanelHeading.NoticeOfAwardsInfo, "InnerText", "Notice of Awards", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Notice of Awards') on item 'Login1.FormInlinePanelHeading.NoticeOfAwards'.", repo.Login1.FormInlinePanelHeading.NoticeOfAwardsInfo, new RecordItemIndex(8));
+                Validate.AttributeEqual(repo.Login1.FormInlinePanelHeading.NoticeOfAwardsInfo, "InnerText", "Notice of Awards", null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(10));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
             // View Awards Table Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(11));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(9));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 71;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(12));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("71;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(10));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'InnerText' to equal the specified value 'Hi, Rachel Green!'. Associated repository item: 'Login.HiRachelGreen'", repo.Login.HiRachelGreenInfo, new RecordItemIndex(13));
-            repo.Login.HiRachelGreenInfo.WaitForAttributeEqual(30000, "InnerText", "Hi, Rachel Green!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(11));
+            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
             
             // Post Award Activities
-            Report.Log(ReportLevel.Info, "Section", "Post Award Activities", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Section", "Post Award Activities", new RecordItemIndex(12));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(13));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope2.PostAwardActivities' at 70;14.", repo.Login.NgScope2.PostAwardActivitiesInfo, new RecordItemIndex(16));
-            repo.Login.NgScope2.PostAwardActivities.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope1.PostAwardActivities' at 70;14.", repo.Login1.NgScope1.PostAwardActivitiesInfo, new RecordItemIndex(14));
+            repo.Login1.NgScope1.PostAwardActivities.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(17));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities') on item 'Login.FormInlinePanelHeading.PostAwardActivities'.", repo.Login.FormInlinePanelHeading.PostAwardActivitiesInfo, new RecordItemIndex(18));
-                Validate.AttributeEqual(repo.Login.FormInlinePanelHeading.PostAwardActivitiesInfo, "InnerText", "Post Award Activities", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities') on item 'Login1.FormInlinePanelHeading.PostAwardActivities'.", repo.Login1.FormInlinePanelHeading.PostAwardActivitiesInfo, new RecordItemIndex(15));
+                Validate.AttributeEqual(repo.Login1.FormInlinePanelHeading.PostAwardActivitiesInfo, "InnerText", "Post Award Activities", null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(19));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
             // PAA Table Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(20));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(16));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 71;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(21));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("71;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(17));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'InnerText' to equal the specified value 'Hi, Rachel Green!'. Associated repository item: 'Login.HiRachelGreen'", repo.Login.HiRachelGreenInfo, new RecordItemIndex(22));
-            repo.Login.HiRachelGreenInfo.WaitForAttributeEqual(30000, "InnerText", "Hi, Rachel Green!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(18));
+            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
             
             // Awards Dashboard
-            Report.Log(ReportLevel.Info, "Section", "Awards Dashboard", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Section", "Awards Dashboard", new RecordItemIndex(19));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(20));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope2.AwardsDashboard' at 70;14.", repo.Login.NgScope2.AwardsDashboardInfo, new RecordItemIndex(25));
-            repo.Login.NgScope2.AwardsDashboard.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope1.AwardsDashboard' at 70;14.", repo.Login1.NgScope1.AwardsDashboardInfo, new RecordItemIndex(21));
+            repo.Login1.NgScope1.AwardsDashboard.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(26));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            try {
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Notice of Award - Status') on item 'Login1.NoticeOfAwardStatus'.", repo.Login1.NoticeOfAwardStatusInfo, new RecordItemIndex(22));
+                Validate.AttributeEqual(repo.Login1.NoticeOfAwardStatusInfo, "InnerText", "Notice of Award - Status", null, false);
+                Delay.Milliseconds(100);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(22)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='\n  Notice of Award - Status\n ') on item 'Login.DivTagNoticeOfAwardStatus'.", repo.Login.DivTagNoticeOfAwardStatusInfo, new RecordItemIndex(27));
-                Validate.AttributeEqual(repo.Login.DivTagNoticeOfAwardStatusInfo, "InnerText", "\n  Notice of Award - Status\n ", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Post Award Activities - Status') on item 'Login1.PostAwardActivitiesStatus'.", repo.Login1.PostAwardActivitiesStatusInfo, new RecordItemIndex(23));
+                Validate.AttributeEqual(repo.Login1.PostAwardActivitiesStatusInfo, "InnerText", "Post Award Activities - Status", null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(27)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='\n  Post Award Activities - Status\n ') on item 'Login.DivTagPostAwardActivitiesStatus'.", repo.Login.DivTagPostAwardActivitiesStatusInfo, new RecordItemIndex(28));
-                Validate.AttributeEqual(repo.Login.DivTagPostAwardActivitiesStatusInfo, "InnerText", "\n  Post Award Activities - Status\n ", null, false);
-                Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(28)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='') on item 'Login.Highcharts66mqfmg38.Path'.", repo.Login.Highcharts66mqfmg38.PathInfo, new RecordItemIndex(29));
-                Validate.AttributeEqual(repo.Login.Highcharts66mqfmg38.PathInfo, "InnerText", "", null, false);
-                Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(29)); }
-            
-            try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='') on item 'Login.Highcharts66mqfmg38.Path2'.", repo.Login.Highcharts66mqfmg38.Path2Info, new RecordItemIndex(30));
-                Validate.AttributeEqual(repo.Login.Highcharts66mqfmg38.Path2Info, "InnerText", "", null, false);
-                Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(30)); }
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(31));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(23)); }
             
             // Awards Dashboard Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(32));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(24));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 71;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(33));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("71;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(25));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'InnerText' to equal the specified value 'Hi, Rachel Green!'. Associated repository item: 'Login.HiRachelGreen'", repo.Login.HiRachelGreenInfo, new RecordItemIndex(34));
-            repo.Login.HiRachelGreenInfo.WaitForAttributeEqual(30000, "InnerText", "Hi, Rachel Green!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(26));
+            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
             
         }
 

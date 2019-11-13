@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_01_HomePage_Footer_DomesticGrantor_Administration()
         {
+            Domestic_Grantor_WM = "Hi, Joey Tribbiani!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _Domestic_Grantor_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable Domestic_Grantor_WM.
+        /// </summary>
+        [TestVariable("8189fafc-d44e-40f0-8aca-6b3913dda5b2")]
+        public string Domestic_Grantor_WM
+        {
+            get { return _Domestic_Grantor_WM; }
+            set { _Domestic_Grantor_WM = value; }
+        }
 
 #endregion
 
@@ -88,131 +101,111 @@ namespace Service_Portal_Regression_STG
             
             // Footer - Administration
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Administration\r\nValidating AttributeEqual (InnerText='Administration') on item 'Login.NgScope3.Administration'.", repo.Login.NgScope3.AdministrationInfo, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.Login.NgScope3.AdministrationInfo, "InnerText", "Administration", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Administration\r\nValidating AttributeEqual (InnerText='Administration') on item 'Login1.NgScope2.Administration'.", repo.Login1.NgScope2.AdministrationInfo, new RecordItemIndex(2));
+                Validate.AttributeEqual(repo.Login1.NgScope2.AdministrationInfo, "InnerText", "Administration", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             // Footer - Grantee Accounts
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Grantee Accounts\r\nValidating AttributeEqual (InnerText='Grantee Accounts') on item 'Login.NgScope3.GranteeAccounts'.", repo.Login.NgScope3.GranteeAccountsInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login.NgScope3.GranteeAccountsInfo, "InnerText", "Grantee Accounts", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Grantee Accounts\r\nValidating AttributeEqual (InnerText='Grantee Accounts') on item 'Login1.NgScope2.GranteeAccounts'.", repo.Login1.NgScope2.GranteeAccountsInfo, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NgScope2.GranteeAccountsInfo, "InnerText", "Grantee Accounts", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // Footer - Organization Records
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Organization Records\r\nValidating AttributeEqual (InnerText='Organization Records') on item 'Login.NgScope3.OrganizationRecords'.", repo.Login.NgScope3.OrganizationRecordsInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login.NgScope3.OrganizationRecordsInfo, "InnerText", "Organization Records", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Organization Records\r\nValidating AttributeEqual (InnerText='Organization Records') on item 'Login1.NgScope2.OrganizationRecords'.", repo.Login1.NgScope2.OrganizationRecordsInfo, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NgScope2.OrganizationRecordsInfo, "InnerText", "Organization Records", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             // Footer - Pending User Registration
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Pending User Registration\r\nValidating AttributeEqual (InnerText='Pending User Registrations') on item 'Login.NgScope3.PendingUserRegistrations'.", repo.Login.NgScope3.PendingUserRegistrationsInfo, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.Login.NgScope3.PendingUserRegistrationsInfo, "InnerText", "Pending User Registrations", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Pending User Registration\r\nValidating AttributeEqual (InnerText='Pending User Registrations') on item 'Login1.NgScope2.PendingUserRegistrations'.", repo.Login1.NgScope2.PendingUserRegistrationsInfo, new RecordItemIndex(5));
+                Validate.AttributeEqual(repo.Login1.NgScope2.PendingUserRegistrationsInfo, "InnerText", "Pending User Registrations", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(6));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             // Grantee Accounts
-            Report.Log(ReportLevel.Info, "Section", "Grantee Accounts", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Section", "Grantee Accounts", new RecordItemIndex(6));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope3.GranteeAccounts' at 70;14.", repo.Login.NgScope3.GranteeAccountsInfo, new RecordItemIndex(8));
-            repo.Login.NgScope3.GranteeAccounts.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.GranteeAccounts' at 70;14.", repo.Login1.NgScope2.GranteeAccountsInfo, new RecordItemIndex(7));
+            repo.Login1.NgScope2.GranteeAccounts.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(9));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Users') on item 'Login.FormInlinePanelHeading.Users'.", repo.Login.FormInlinePanelHeading.UsersInfo, new RecordItemIndex(10));
-                Validate.AttributeEqual(repo.Login.FormInlinePanelHeading.UsersInfo, "InnerText", "Users", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Users') on item 'Login1.FormInlinePanelHeading.Users'.", repo.Login1.FormInlinePanelHeading.UsersInfo, new RecordItemIndex(8));
+                Validate.AttributeEqual(repo.Login1.FormInlinePanelHeading.UsersInfo, "InnerText", "Users", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(10)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
             
             // Grantee Accounts Table Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(11));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(9));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 71;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(12));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("71;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(10));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Joey Tribbiani!'. Associated repository item: 'Login.HiJoeyTribbiani'", repo.Login.HiJoeyTribbianiInfo, new RecordItemIndex(13));
-            repo.Login.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Joey Tribbiani!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantor_WM. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(11));
+            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantor_WM);
             
             // Organization Records
-            Report.Log(ReportLevel.Info, "Section", "Organization Records", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Section", "Organization Records", new RecordItemIndex(12));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(15));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(13));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope3.OrganizationRecords' at 70;14.", repo.Login.NgScope3.OrganizationRecordsInfo, new RecordItemIndex(16));
-            repo.Login.NgScope3.OrganizationRecords.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.OrganizationRecords' at 70;14.", repo.Login1.NgScope2.OrganizationRecordsInfo, new RecordItemIndex(14));
+            repo.Login1.NgScope2.OrganizationRecords.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(17));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Companies') on item 'Login.FormInlinePanelHeading.Companies'.", repo.Login.FormInlinePanelHeading.CompaniesInfo, new RecordItemIndex(18));
-                Validate.AttributeEqual(repo.Login.FormInlinePanelHeading.CompaniesInfo, "InnerText", "Companies", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Companies') on item 'Login1.FormInlinePanelHeading.Companies'.", repo.Login1.FormInlinePanelHeading.CompaniesInfo, new RecordItemIndex(15));
+                Validate.AttributeEqual(repo.Login1.FormInlinePanelHeading.CompaniesInfo, "InnerText", "Companies", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
             // Organization Records Table Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(19));
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(20));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(16));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 62;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(21));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("62;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(17));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Joey Tribbiani!'. Associated repository item: 'Login.HiJoeyTribbiani'", repo.Login.HiJoeyTribbianiInfo, new RecordItemIndex(22));
-            repo.Login.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Joey Tribbiani!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantor_WM. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(18));
+            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantor_WM);
             
             // Pending User Records
-            Report.Log(ReportLevel.Info, "Section", "Pending User Records", new RecordItemIndex(23));
+            Report.Log(ReportLevel.Info, "Section", "Pending User Records", new RecordItemIndex(19));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(24));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(20));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope3.PendingUserRegistrations' at 70;14.", repo.Login.NgScope3.PendingUserRegistrationsInfo, new RecordItemIndex(25));
-            repo.Login.NgScope3.PendingUserRegistrations.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.PendingUserRegistrations' at 70;14.", repo.Login1.NgScope2.PendingUserRegistrationsInfo, new RecordItemIndex(21));
+            repo.Login1.NgScope2.PendingUserRegistrations.Click("70;14");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(26));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
-            
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='User Registration Requests') on item 'Login.FormInlinePanelHeading.UserRegistrationRequests'.", repo.Login.FormInlinePanelHeading.UserRegistrationRequestsInfo, new RecordItemIndex(27));
-                Validate.AttributeEqual(repo.Login.FormInlinePanelHeading.UserRegistrationRequestsInfo, "InnerText", "User Registration Requests", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='User Registration Requests') on item 'Login1.FormInlinePanelHeading.UserRegistrationRequests'.", repo.Login1.FormInlinePanelHeading.UserRegistrationRequestsInfo, new RecordItemIndex(22));
+                Validate.AttributeEqual(repo.Login1.FormInlinePanelHeading.UserRegistrationRequestsInfo, "InnerText", "User Registration Requests", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(27)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(22)); }
             
             // Pending User Records Table Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(28));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(23));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 62;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(29));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("62;63");
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(24));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value 'Hi, Joey Tribbiani!'. Associated repository item: 'Login.HiJoeyTribbiani'", repo.Login.HiJoeyTribbianiInfo, new RecordItemIndex(30));
-            repo.Login.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", "Hi, Joey Tribbiani!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantor_WM. Associated repository item: 'Login1.HiJoeyTribbiani'", repo.Login1.HiJoeyTribbianiInfo, new RecordItemIndex(25));
+            repo.Login1.HiJoeyTribbianiInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantor_WM);
             
         }
 

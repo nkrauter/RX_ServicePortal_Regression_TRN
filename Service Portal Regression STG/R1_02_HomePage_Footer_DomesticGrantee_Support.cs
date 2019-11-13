@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_02_HomePage_Footer_DomesticGrantee_Support()
         {
+            Domestic_Grantee_WM = "Hi, Rachel Green!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _Domestic_Grantee_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable Domestic_Grantee_WM.
+        /// </summary>
+        [TestVariable("ab9fa78c-f466-414c-bdc3-59ecd1c432ce")]
+        public string Domestic_Grantee_WM
+        {
+            get { return _Domestic_Grantee_WM; }
+            set { _Domestic_Grantee_WM = value; }
+        }
 
 #endregion
 
@@ -87,59 +100,51 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(500);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login.NgScope3.Support'.", repo.Login.NgScope3.SupportInfo, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.Login.NgScope3.SupportInfo, "InnerText", "Support", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NgScope2.Support'.", repo.Login1.NgScope2.SupportInfo, new RecordItemIndex(2));
+                Validate.AttributeEqual(repo.Login1.NgScope2.SupportInfo, "InnerText", "Support", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantee Training Resources') on item 'Login.NgScope3.GranteeTrainingResources'.", repo.Login.NgScope3.GranteeTrainingResourcesInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login.NgScope3.GranteeTrainingResourcesInfo, "InnerText", "Grantee Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantee Training Resources') on item 'Login1.NgScope2.GranteeTrainingResources'.", repo.Login1.NgScope2.GranteeTrainingResourcesInfo, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NgScope2.GranteeTrainingResourcesInfo, "InnerText", "Grantee Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login.NgScope3.Support1'.", repo.Login.NgScope3.Support1Info, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login.NgScope3.Support1Info, "InnerText", "Support", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NgScope2.Support1'.", repo.Login1.NgScope2.Support1Info, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NgScope2.Support1Info, "InnerText", "Support", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             // View Awards
             Report.Log(ReportLevel.Info, "Section", "View Awards", new RecordItemIndex(5));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope3.GranteeTrainingResources' at 70;14.", repo.Login.NgScope3.GranteeTrainingResourcesInfo, new RecordItemIndex(6));
-            repo.Login.NgScope3.GranteeTrainingResources.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.GranteeTrainingResources' at 70;14.", repo.Login1.NgScope2.GranteeTrainingResourcesInfo, new RecordItemIndex(6));
+            repo.Login1.NgScope2.GranteeTrainingResources.Click("70;14");
             Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(7));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://mygrantstest.service-now.com/default_knowledge_base.svg') on item 'Login.HttpsMygrantstestServiceNowComDef'.", repo.Login.HttpsMygrantstestServiceNowComDefInfo, new RecordItemIndex(8));
-                Validate.AttributeEqual(repo.Login.HttpsMygrantstestServiceNowComDefInfo, "Src", "https://mygrantstest.service-now.com/default_knowledge_base.svg", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Login1.HttpsMygrantstrainServiceNowComDe'.", repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, new RecordItemIndex(7));
+                Validate.Exists(repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(8)); }
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(9));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(7)); }
             
             // Grantee Training Resources Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(10));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(8));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 71;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(11));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("71;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(9));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s for the attribute 'InnerText' to equal the specified value 'Hi, Rachel Green!'. Associated repository item: 'Login.HiRachelGreen'", repo.Login.HiRachelGreenInfo, new RecordItemIndex(12));
-            repo.Login.HiRachelGreenInfo.WaitForAttributeEqual(30000, "InnerText", "Hi, Rachel Green!");
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $Domestic_Grantee_WM. Associated repository item: 'Login1.HiRachelGreen'", repo.Login1.HiRachelGreenInfo, new RecordItemIndex(10));
+            repo.Login1.HiRachelGreenInfo.WaitForAttributeEqual(5000, "InnerText", Domestic_Grantee_WM);
             
             // Support - TO BE CONTINUED
-            Report.Log(ReportLevel.Info, "Section", "Support - TO BE CONTINUED", new RecordItemIndex(13));
+            Report.Log(ReportLevel.Info, "Section", "Support - TO BE CONTINUED", new RecordItemIndex(11));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(14));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(12));
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             

@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_03_HomePage_Footer_RPMGrantor_Planning()
         {
+            RPM_Grantor_WM = "Hi, Gunther Central-Perk!";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _RPM_Grantor_WM;
+
+        /// <summary>
+        /// Gets or sets the value of variable RPM_Grantor_WM.
+        /// </summary>
+        [TestVariable("ca170c6c-e156-4691-8dc0-3c72b9394a07")]
+        public string RPM_Grantor_WM
+        {
+            get { return _RPM_Grantor_WM; }
+            set { _RPM_Grantor_WM = value; }
+        }
 
 #endregion
 
@@ -88,44 +101,45 @@ namespace Service_Portal_Regression_STG
             
             // Footer - Planning
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Planning\r\nValidating AttributeEqual (InnerText='Planning') on item 'Login.NgScope.Planning'.", repo.Login.NgScope.PlanningInfo, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.Login.NgScope.PlanningInfo, "InnerText", "Planning", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Planning\r\nValidating AttributeEqual (InnerText='Planning') on item 'Login1.NgScope.Planning'.", repo.Login1.NgScope.PlanningInfo, new RecordItemIndex(2));
+                Validate.AttributeEqual(repo.Login1.NgScope.PlanningInfo, "InnerText", "Planning", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
             
             // Footer - Programs
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Programs\r\nValidating AttributeEqual (InnerText='Programs') on item 'Login.NgScope.Programs'.", repo.Login.NgScope.ProgramsInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login.NgScope.ProgramsInfo, "InnerText", "Programs", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Programs\r\nValidating AttributeEqual (InnerText='Programs') on item 'Login1.NgScope.Programs1'.", repo.Login1.NgScope.Programs1Info, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NgScope.Programs1Info, "InnerText", "Programs", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             // Footer - Projects
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Projects\r\nValidating AttributeEqual (InnerText='Projects') on item 'Login.NgScope.Projects'.", repo.Login.NgScope.ProjectsInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login.NgScope.ProjectsInfo, "InnerText", "Projects", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nFooter - Projects\r\nValidating AttributeEqual (InnerText='Projects') on item 'Login1.NgScope.Projects'.", repo.Login1.NgScope.ProjectsInfo, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NgScope.ProjectsInfo, "InnerText", "Projects", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
-            // Planning Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(5));
-            
-            // Programs
-            Report.Log(ReportLevel.Info, "Section", "Programs", new RecordItemIndex(6));
-            
             // Footer - Programs
-            Report.Log(ReportLevel.Info, "Mouse", "Footer - Programs\r\nMouse Left Click item 'Login.NgScope.Programs' at 34;7.", repo.Login.NgScope.ProgramsInfo, new RecordItemIndex(7));
-            repo.Login.NgScope.Programs.Click("34;7");
+            Report.Log(ReportLevel.Info, "Mouse", "Footer - Programs\r\nMouse Left Click item 'Login1.NgScope.Planning' at 34;7.", repo.Login1.NgScope.PlanningInfo, new RecordItemIndex(5));
+            repo.Login1.NgScope.Planning.Click("34;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(8));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            // Planning Screenshot
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(6));
+            
+            // Programs
+            Report.Log(ReportLevel.Info, "Section", "Programs", new RecordItemIndex(7));
+            
+            // Footer - Programs
+            Report.Log(ReportLevel.Info, "Mouse", "Footer - Programs\r\nMouse Left Click item 'Login1.NgScope.Programs1' at 34;7.", repo.Login1.NgScope.Programs1Info, new RecordItemIndex(8));
+            repo.Login1.NgScope.Programs1.Click("34;7");
+            Delay.Milliseconds(200);
             
             // Program Table
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nProgram Table\r\nValidating AttributeEqual (InnerText='Federal Assistance Programs') on item 'Login.FederalAssistancePrograms'.", repo.Login.FederalAssistanceProgramsInfo, new RecordItemIndex(9));
-                Validate.AttributeEqual(repo.Login.FederalAssistanceProgramsInfo, "InnerText", "Federal Assistance Programs", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nProgram Table\r\nValidating AttributeEqual (InnerText='Federal Assistance Programs') on item 'Login1.FederalAssistancePrograms'.", repo.Login1.FederalAssistanceProgramsInfo, new RecordItemIndex(9));
+                Validate.AttributeEqual(repo.Login1.FederalAssistanceProgramsInfo, "InnerText", "Federal Assistance Programs", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(9)); }
             
@@ -133,13 +147,12 @@ namespace Service_Portal_Regression_STG
             Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(10));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 71;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(11));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("71;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(11));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(12));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(12));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
             // Projects
             Report.Log(ReportLevel.Info, "Section", "Projects", new RecordItemIndex(13));
@@ -148,32 +161,27 @@ namespace Service_Portal_Regression_STG
             Mouse.ScrollWheel(-840);
             Delay.Milliseconds(500);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login.NgScope.Projects' at 70;14.", repo.Login.NgScope.ProjectsInfo, new RecordItemIndex(15));
-            repo.Login.NgScope.Projects.Click("70;14");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope.Projects' at 70;14.", repo.Login1.NgScope.ProjectsInfo, new RecordItemIndex(15));
+            repo.Login1.NgScope.Projects.Click("70;14");
             Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(16));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
             
             // Project Table
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nProject Table\r\nValidating AttributeEqual (InnerText='Federal Assistance Projects') on item 'Login.FederalAssistanceProjects'.", repo.Login.FederalAssistanceProjectsInfo, new RecordItemIndex(17));
-                Validate.AttributeEqual(repo.Login.FederalAssistanceProjectsInfo, "InnerText", "Federal Assistance Projects", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nProject Table\r\nValidating AttributeEqual (InnerText='Federal Assistance Projects') on item 'Login1.FederalAssistanceProjects'.", repo.Login1.FederalAssistanceProjectsInfo, new RecordItemIndex(16));
+                Validate.AttributeEqual(repo.Login1.FederalAssistanceProjectsInfo, "InnerText", "Federal Assistance Projects", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(17)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(16)); }
             
             // Project Table Screenshot
-            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(18));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(17));
             
             // Home Button
-            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login.NavNavbarNavSamsNavbarNav.ATagHome' at 62;63.", repo.Login.NavNavbarNavSamsNavbarNav.ATagHomeInfo, new RecordItemIndex(19));
-            repo.Login.NavNavbarNavSamsNavbarNav.ATagHome.Click("62;63");
+            Report.Log(ReportLevel.Info, "Mouse", "Home Button\r\nMouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.HOME' at 12;9.", repo.Login1.NavNavbarNavSamsNavbarNav.HOMEInfo, new RecordItemIndex(18));
+            repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("12;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login'.", repo.Login.SelfInfo, new RecordItemIndex(20));
-            repo.Login.Self.WaitForDocumentLoaded();
-            Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $RPM_Grantor_WM. Associated repository item: 'Login1.HiGuntherCentralPerk'", repo.Login1.HiGuntherCentralPerkInfo, new RecordItemIndex(19));
+            repo.Login1.HiGuntherCentralPerkInfo.WaitForAttributeEqual(5000, "InnerText", RPM_Grantor_WM);
             
         }
 
