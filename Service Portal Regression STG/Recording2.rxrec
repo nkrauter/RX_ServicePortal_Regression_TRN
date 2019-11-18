@@ -1,0 +1,1659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="873f5d65-a910-493d-8ed5-7e4342354905"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="Recording2"
+	namespace="Service_Portal_Regression_STG">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Editable
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="7251561b-a8dc-4786-bf48-b6f3ff866c96"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="427acc67-d588-4763-89fd-f0c511dae5ea"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="847,674,539,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-valid ng-scope ng-valid-maxlength ng-dirty ng-valid-parse ng-touched ng-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_score_string
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						form-control ng-dirty ng-empty ng-scope ng-touched ng-valid ng-valid-maxlength ng-valid-parse
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_score_string
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-original-title"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-attr-placeholder"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-top"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_score_string']
+				</path>
+			</info>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="{delete}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="dd16fe52-b060-4a22-9fc6-32728212342f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="427acc67-d588-4763-89fd-f0c511dae5ea"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="847,674,539,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-valid ng-scope ng-valid-maxlength ng-dirty ng-valid-parse ng-touched ng-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_score_string
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						form-control ng-dirty ng-empty ng-scope ng-touched ng-valid ng-valid-maxlength ng-valid-parse
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_score_string
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-original-title"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-attr-placeholder"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-top"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_score_string']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="EDITABILITY TEST"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="2878df90-0eb0-4c5f-bf19-1d4b3ade98b5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="427acc67-d588-4763-89fd-f0c511dae5ea"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="847,674,539,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-valid ng-scope ng-valid-maxlength ng-dirty ng-valid-parse ng-touched ng-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_score_string
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						form-control ng-dirty ng-empty ng-scope ng-touched ng-valid ng-valid-maxlength ng-valid-parse
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_score_string
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-original-title"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-attr-placeholder"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-top"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_score_string']
+				</path>
+			</info>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8a11d570-8574-487c-a4dd-cee448f96204">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="427acc67-d588-4763-89fd-f0c511dae5ea"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="847,674,539,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-valid ng-scope ng-valid-maxlength ng-dirty ng-valid-parse ng-touched ng-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_score_string
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						form-control ng-dirty ng-empty ng-scope ng-touched ng-valid ng-valid-maxlength ng-valid-parse
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_score_string
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-original-title"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-attr-placeholder"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-top"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_score_string']
+				</path>
+			</info>
+			<matchname>
+				Value
+			</matchname>
+			<matchvalue>
+				EDITABILITY TEST
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeNotEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8a11d570-8574-487c-a4dd-cee448f96204">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="427acc67-d588-4763-89fd-f0c511dae5ea"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="True"
+				index="0"
+				prefcap="inputtag"
+				rect="847,674,539,34"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control ng-valid ng-scope ng-valid-maxlength ng-dirty ng-valid-parse ng-touched ng-empty
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_score_string
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						form-control ng-dirty ng-empty ng-scope ng-touched ng-valid ng-valid-maxlength ng-valid-parse
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						16
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_score_string
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="title"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-original-title"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-attr-placeholder"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-toggle"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="tooltip-top"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_score_string']
+				</path>
+			</info>
+			<matchname>
+				Value
+			</matchname>
+			<matchvalue>
+				edt
+			</matchvalue>
+		</validationitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Read Only
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="442;255"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="7bba8b9c-8477-42a9-9b63-34903924cf95"
+		sx="705"
+		sy="667"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b8be0de0-fbfc-49f2-8252-5709a1431c84"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, divtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="divtag"
+				rect="263,412,1138,376"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						row
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						row
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						div
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-hidden"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-show"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div[1]/section/main/div/?/?/tag[@tagname='sp-page-row']/div/?/?/span/div/div/div/div[2]/div[2]/tag[@tagname='ng-include']/div/div[2]/div
+				</path>
+			</info>
+			<helperscreenshot
+			guid="a56b6955-e89b-4a57-9532-47fc08710d68">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAH0AfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACoGtVZnJd9rnLKCMH9M1PTGkAOME/SgCN7VGZjucBiCVGMZFKbZCX+ZgGbdgY4PqKf5o/ut
+R5o/utQAqoQhVnZs9zwf0qP7Mrf6x3k+UqNxHAP0p/mj+61Hmj+61AERs0IYNJI25NmSR0/KlNqj
+Bt7uxYAZOMgD8Kk80f3Wo80f3WoAa9uj+Zkt+8ABx7Uj2yNvyWBcg5HYjpin+aP7rUeaP7rUARm1
+Ul8u5343dOo79OtOaDcoDSOSDuDcZB/KneaP7rUeaP7rUAJDEIt2GZix3Et61JTPNH91qPNH91qA
+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
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+qTAiRmhWVJsjoDtf69qt0UAUthxKPLb7QS219v5c03y/lbyYnQeSQwKkZPb6n3q/RQBnvBt8sbB5
+ZTn92W+b1wO/vV6MFY1BJYgAZPenUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFAFbYf+ekn/fVGw/8APST/AL6p9FADNh/56Sf99UbD/wA9JP8Avqn0
+UAM2H/npJ/31RsP/AD0k/wC+qfRQAzYf+ekn/fVGw/8APST/AL6p9FADNh/56Sf99UbD/wA9JP8A
+vqn0UAM2H/npJ/31RsP/AD0k/wC+qfRQAzYf+ekn/fVGw/8APST/AL6p9FADNh/56Sf99UbD/wA9
+JP8Avqn0UAM2H/npJ/31RsP/AD0k/wC+qfRQAzYf+ekn/fVGw/8APST/AL6p9FADNh/56Sf99UbD
+/wA9JP8Avqn0UAM2H/npJ/31RsP/AD0k/wC+qfRQAzYf+ekn/fVGw/8APST/AL6p9FADNh/56Sf9
+9UbD/wA9JP8Avqn0UAM2H/npJ/30algYspzyVOM02i26Sf75/pQBNRRRQAUwDfkknrjg0+mp90/U
+/wA6ADyx/eb/AL6NHlj+83/fRolkEUTSNkhQScVEbnbC0rwyKqjPO3n8jQBL5Y/vN/30aPLH95v+
++jUX2pQsm9HRkXcVOMke3OKHutjovkSNv+6Rt54z60AS+WP7zf8AfRo8sf3m/wC+jTBcIbgQEMH2
+7ueg9vrTPta7iDHIFD7C/GM/nmgCbyx/eb/vo0eWP7zf99Go/tKZxhv9Z5f4055gkix7WZmUkAY7
+f/roAd5Y/vN/30aPLH95v++jUH20YctBKqocMTt4/X3qZZQ0jooJKYye2fSgBfLH95v++jR5Y/vN
+/wB9GokuS8jJ5EoK43E7eP1ojug8XmmKRI9u7e2MY/A5oAl8sf3m/wC+jR5Y/vN/30ajWdmXIt5e
+mQPl5H50tvP567hG6qehbHP5GgB/lj+83/fRo8sf3m/76NOooAb5Y/vN/wB9Gjyx/eb/AL6NOooA
+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
+v5//AFqAHUU3L/3V/P8A+tRQA6iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACqklxKpmYFNsRHBByePXNW6
+qSWhaSSQbN+8MhPsOhoAn8+Pfs3fNnHQ4z6Z6ZpPtEWW+bhc5ODjj36VEtsRKSQGQvv++wwfp0NH
+2eX7ObfKbB0bJz1yMigCX7TFsZixAXGcqQR+FJ9rh/vEY65U8fWopbeWbezbFZlCgAkjrn0p01u7
++fgr+8CgZ9qAJGuoUYqz4KnB4OB+NKLiIoX3YAODkEHP0qJ7Z2WUAr88isPoMf4UklqztIwYZLh1
+5I6DHNAEpuYgB8x+YkAbTnI9qPtEWxW3Ehvu4BJP4VGluwljfAXBYsNxbORjqaSO3liKMuxmXcCC
+SBgnPpQA6K6UwK8hwWzwoJ4BpZ7lI42Knc2zcMAke2cVCtpIgQ5DMAQQHKjk56inNbSKJFiCbZEC
+kEn5eMfjQBJLM6wxMu3c7KORkDNIlxtMizEZRgAVB5z2x60ssBkhijO07WUsD0IFRm0ZV2oVCo+5
+Bkjg9RkUATG4iCq24ndwAFJP5daQ3CKXLMAqgHPOefwpggdGSSNU3DIZS5IOfeo7qN1jlkO35ggw
+PUGgCc3KbcqeQwBDAjr+FOE8Zk2BvmzjocZ9M9Khe3lkZnbYGJXABJGAc+lEdsUk5AZQxYHeePw6
+UASLdQv91icgkfKecenrRFcebbeaqNnGduDUcds6rbglf3ec/iKkgjkitxGdm5RhT1B+tAEYuJPs
+rzBonwmcKDwfQ81KlxGyk5PABI2n/JqGS2klLsRGjMhX5STuPvxTpIJTIWjYA7AvXHfmgCQ3MQjL
+lsKDtOQcg/Sj7RFuC7iCcdVPGemfSoRayfNnaMyK+NxPAx3pzWx85zgMjsGILkY/AcHpQBNJMkWA
+5OT0ABJ/SonuMzxJGQVcbt20ninSRv54lj2k7dpDHFNhtmieI7gQikH6k5oAUySvK6xbAE4JYE5N
+Pe4jRtrtgjGeCQPqe1MMcscrtFsIfkhiRg0x7eU+aqlCsuNxOcjjBwKAJmuI1ZlySV64Umi3mE8K
+yAEZHQg1EYJPNBTai55IY5YY7jp+NSWyPHAsb7cqMAg5zQBLRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFRfaYxd/ZiSJNoYZHBznjPr8p4/+vQBLRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFIWUHBYD8aWmoBgnHc/wA6ADen95fzo3p/eX86dgegowPQUAN3p/eX86N6f3l/
+OnYHoKMD0FADd6f3l/Ojen95fzp2B6CjA9BQA3en95fzo3p/eX86dgegowPQUAJvT+8v50m9P7y/
+nQQPMHHY/wBKdgegoAbvT+8v50b0/vL+dOwPQUYHoKAG70/vL+dG9P7y/nTsD0FGB6CgBu9P7y/n
+RvT+8v507A9BRgegoAbvT+8v50b0/vL+dOwPQUYHoKAG70/vL+dG9P7y/nTsD0FGB6CgBu9P7y/n
+RvT+8v507A9BRgegoAbvT+8v50b0/vL+dOwPQUYHoKAG70/vL+dG9P7y/nTsD0FGB6CgBu9P7y/n
+RvT+8v507A9BRgegoAbvT+8v50U7A9BRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFVDGs
+uoXCOMqYYvb+J+fY1bqnNbzy3ku1zFFJEimRT82QW4Hp1HP5eoAJY5GjcQznLH7knTf7ezfz6juB
+PWZbJE96XuIIjM55YoMrIoAIBPIBADL3xk1p0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+TVOEJ9Cf506mpnacdcn+dAEENy7QNPIqiPG5cNk49D706KaRpxG4Ufug5x6k1A1vLJ55KLGWQrhT
+w59alCyO6XMIUlo9pVyR7+lAEYu5GEYJjj3lhvYHHBwB161I0k/nrEpjB8vcSVJGc/WkWCWOBYgs
+UqkHcHyMknPvTY7aeFozH5b7YynzMRjnPpQBJFcl/KJUAOSpHow//UasVUEOxreLO4qxkZsfX+pq
+3QBFPcJb7TICEY4L9l+tLBMJ496KwXPBIxuHqPansoZSrAEHgg96XpQA0/6wfQ/0p1NP+sH0P9Kd
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQBH9ni8/ztvz/U4zjGcdM44z1xxUlFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAU1Oh+p/nTqQqpOSoP4UALRTdif3V/KjYn91fyoAdRTdif3V/KjYn91fyoAdRTd
+if3V/KjYn91fyoAdRTdif3V/KjYn91fyoAD/AKwfQ/0p1JsT+6v5UmxP7q/lQA6im7E/ur+VGxP7
+q/lQA6im7E/ur+VGxP7q/lQA6im7E/ur+VGxP7q/lQA6im7E/ur+VGxP7q/lQA6im7E/ur+VGxP7
+q/lQA6im7E/ur+VGxP7q/lQA6im7E/ur+VGxP7q/lQA6im7E/ur+VGxP7q/lQA6im7E/ur+VGxP7
+q/lQA6im7E/ur+VFADqKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig
+AooooAKKKKACiiigAooooAKKKKACiiozcQAkGaMEdQWFAElFFFABRSbhu25G7GcZ5pGljRgrOqse
+gJwTQA6iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACi
+iigAooooAKrycX0f/XNv5irFJtG4NgZHAOKAKaTSssLeZnzcgqAPl47fT3psLstpEqyvuKFuAvA/
+HtV1Y0VyyooY9SByab5EP/PJOufujrQBBbuZLlHbq0AJ/OnQbM3Hm7c7zu3enapxGgIIRQQMDA6C
+hoo3YMyKzDoSMkUAVWnkxJIH+5JsEeByP55plw8myVZJGG5W27QCpA/WrpjQvvKKXH8WOaBFGGLC
+NQT1OOtACQgiFcsW46nFPpERUXaihR6AYpaACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACoy7knGMA45qSoh3+p/nQAb5P9n8qN8n+z+VIGBJwc4ODQHV
+jhWBOM8HtQAu+T/Z/KjfJ/s/lTGmiVdzSIFJxksMUNNEmN0qLnkZYDNAD98n+z+VG+T/AGfyo3DO
+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
+FFABsT+6v5UUUUAf/9k=
+			</helperscreenshot>
+		</mouseitem>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		scancode="0"
+		searchpropertyid="7251561b-a8dc-4786-bf48-b6f3ff866c96"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a7951a87-5961-450c-a7c6-e8e7f16ca0ca"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_source']//a[@href='javascript:void(0)']/span[@innertext='SAMS']
+				</path>
+			</info>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="{delete}"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="dd16fe52-b060-4a22-9fc6-32728212342f">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a7951a87-5961-450c-a7c6-e8e7f16ca0ca"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_source']//a[@href='javascript:void(0)']/span[@innertext='SAMS']
+				</path>
+			</info>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="EDITABILITY TEST"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		presstime="100ms"
+		searchpropertyid="2878df90-0eb0-4c5f-bf19-1d4b3ade98b5">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a7951a87-5961-450c-a7c6-e8e7f16ca0ca"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_source']//a[@href='javascript:void(0)']/span[@innertext='SAMS']
+				</path>
+			</info>
+		</keysequenceitem>
+		<validationitem
+		action="AttributeNotEqual"
+		enabled="True"
+		optional="False"
+		searchpropertyid="8a11d570-8574-487c-a4dd-cee448f96204">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a7951a87-5961-450c-a7c6-e8e7f16ca0ca"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="0,71,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_source']//a[@href='javascript:void(0)']/span[@innertext='SAMS']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				EDITABILITY TEST
+			</matchvalue>
+		</validationitem>
+	</recorditems>
+	<repository
+	id="bc8eb910-3cf8-4d8e-8d15-b57254f8606a"
+	name="Service_Portal_Regression_STGRepository"
+	relativepath="Service_Portal_Regression_STGRepository.rxrep">
+		<codegen
+		classname="Service_Portal_Regression_STGRepository"
+		namespace="Service_Portal_Regression_STG">
+		</codegen>
+		<rootfolder
+		id="c66c0921-a4a6-4c30-8218-6aa696d3aa91"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		Recording2.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

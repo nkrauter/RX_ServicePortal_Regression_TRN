@@ -41,7 +41,6 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R1_05_HomePage_TilesHeader_RPMAdmin_Planning()
         {
-            RPM_Grantor_WM = "Hi, Gunther Central-Perk!";
             RPM_Admin_WM = "Hi, Chandler Bing!";
         }
 
@@ -54,18 +53,6 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
-
-        string _RPM_Grantor_WM;
-
-        /// <summary>
-        /// Gets or sets the value of variable RPM_Grantor_WM.
-        /// </summary>
-        [TestVariable("b0d76b23-1d04-4174-abed-1510e10208a1")]
-        public string RPM_Grantor_WM
-        {
-            get { return _RPM_Grantor_WM; }
-            set { _RPM_Grantor_WM = value; }
-        }
 
         string _RPM_Admin_WM;
 

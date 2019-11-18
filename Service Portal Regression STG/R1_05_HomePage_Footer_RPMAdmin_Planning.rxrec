@@ -1,0 +1,1936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="ab6daf9f-0b7e-47c9-a2ae-a9061b6822b2"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="R1_05_HomePage_Footer_RPMAdmin_Planning"
+	namespace="Service_Portal_Regression_STG">
+	</codegen>
+	<variables>
+		<var
+		id="e55be45e-9b8e-4c9e-b807-499ac0d861c1"
+		name="RPM_Admin_WM">
+			Hi, Chandler Bing!
+		</var>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Footer Links
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="500ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="08589429-e752-4ded-a593-b70ef1af5be2">
+			<comment>
+				Footer - Planning
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="627b2982-892e-4f51-837e-5c2712b5a3b2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/h2[@innertext='Planning']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Planning
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="3f1d3bcc-508b-4178-b055-77ece573d41b">
+			<comment>
+				Footer - Programs
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a8d20d92-e5b4-426f-a023-06264ab480f5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/?/?/a[@innertext='Programs']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Programs
+			</matchvalue>
+		</validationitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="3ee82d27-0038-4eda-8be7-34c5c3f6bba3">
+			<comment>
+				Footer - Projects
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4835e55b-1383-4d0a-b837-b71a522da149"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/?/?/a[@innertext='Projects']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Projects
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="34;7"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f17e45a9-0609-4072-a378-536b7bcf68e7"
+		sx="572"
+		sy="1136"
+		warnoutofbounds="False">
+			<comment>
+				Footer - Programs
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="627b2982-892e-4f51-837e-5c2712b5a3b2"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/h2[@innertext='Planning']
+				</path>
+			</info>
+		</mouseitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6e1c70c2-423d-4f3c-8cce-9aa5d08d898b">
+			<comment>
+				Planning Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Programs
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="34;7"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f17e45a9-0609-4072-a378-536b7bcf68e7"
+		sx="572"
+		sy="1136"
+		warnoutofbounds="False">
+			<comment>
+				Footer - Programs
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="a8d20d92-e5b4-426f-a023-06264ab480f5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/?/?/a[@innertext='Programs']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="db65055e-d2e1-4884-be7f-2bf76994ab10">
+			<comment>
+				Program Table
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="5471a2fb-28a8-4203-bc60-aa9022ae112b"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext&gt;'Federal Assistance Progra']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Federal Assistance Programs
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Program Table Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="880827b3-2ce9-4485-9455-975ebddaabda"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RPM_Admin_WM">
+				</binding>
+			</bindings>
+			<info
+			id="1961e187-750a-41b9-bb2e-17306202a378"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Chandler Bing!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Chandler Bing!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Projects
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="500ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="70;14"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="0ceabc0b-2547-4c94-850c-66de8cc4f221"
+		sx="608"
+		sy="1195"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="4835e55b-1383-4d0a-b837-b71a522da149"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/?/?/a[@innertext='Projects']
+				</path>
+			</info>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		createscreenshot="OnFail"
+		duration="100ms"
+		enabled="True"
+		optional="True"
+		searchpropertyid="bf1f01d1-fc77-48b5-95cb-a55b7eaf6e7f">
+			<comment>
+				Project Table
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="636dda58-2073-4882-a681-0ee60df4da44"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext&gt;'Federal Assistance Projec']
+				</path>
+			</info>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Federal Assistance Projects
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Project Table Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="880827b3-2ce9-4485-9455-975ebddaabda"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RPM_Admin_WM">
+				</binding>
+			</bindings>
+			<info
+			id="1961e187-750a-41b9-bb2e-17306202a378"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Chandler Bing!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Chandler Bing!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Themes
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="b07d8fc5-35df-4620-b9c3-f088613bd90d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc999407-a332-44a6-8068-a4f8b3f54321"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="359,937,165,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Themes
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_theme&amp;id=grants_theme_list&amp;table=u_domestic_rmp_themes&amp;o=u_theme_title&amp;d=asc
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						link
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[3]/a[@innertext='Themes']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="411196a9-2d97-4ce7-9e67-e9f9b51aa214">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADDANcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+Ky7+VmvhGDdbFTJFv1yT3rUqOOBUnkmBYtJjOe2PSgDOha4BtYpHlG+VnG5vm2AdGq7fXItrYuCA
+5+VM+tJc2S3EqyGWaNlGB5bYpFsIsoZXknCA4EpDDnvQBWtpzHZXWZzMYicPuznI45+tMimn2Q2s
+kjecJRuOeSuM/wD1quNp8BEqrlFlxuVcAcenFSNaxtdLc8iRV2jHSgDOF5LG1zI7ny5A/lZPQrT5
+JZImVTI58m2LN8x5Y8DNWm0+FrZIGLFUbcDnnNLLZRytKWZ/3oUNgjoPSgClFNPshtZJG84Sjcc8
+lcZ/+tTpJPNEk9xdSwQrIY0EZx09fWrzWsZu1ued6rtHpUT6fG0rOss0Yc5ZEfCk0AS2jbrZG83z
+cjh9u3P4VNTY0WONUQYVRgCnUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVOSZRcSL
+JeeSFxhcqO3uKuUxI9skj5zvIOPTjFNAQRXMh8tSgLFN5YnbxnGcY/GlS6J2O8e2KT7rbsnpnkdu
+KlMWbjzSeNhTGPeoltWARXk3xxj5FC4PTHJzzx9KegtRBdSbo98IVZASp354Azzx1pRcSG3WXykV
+WGctJgAY7nH+NQxJJLJECz7Y1I+aMrjIxznqfpUzWp2QBXXdCMAum4H3xnrxQ7CVxsd40qx+XGrM
++7+PgYPrjpSx3bv5ZaHasmQPmycj2/A06G1Mboxk3bS56YzuOaVbfasQ3/6sk5x1yD/jRoPULW4N
+wN21NuOCr7sex9DU9V4rdln86R1Zwu3KptJ+vPPSrFJ26AgooopDCiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAqFpyJGRIJH24yVK4/UipqrCGRriYiWSMEjG0DB49waaAlW4iZFYuq7ugY4
+OfSlWWNnZFkVmXqoYZFQLDsulCAhRCQGPrn1qOJTstoxEyvF98lSAOCDz3yaLIRaNxEsau8iIH6b
+mHNK8scZAkkRC3TcwGaz4VZUjdmmVGhUDy0DfUHg+tTIogY+ZHI6NGqqNu48ZyDjj+lNoLlgXUJa
+QGRR5RwxLDipEdXUMjBlPQg5Bqm6jdLuWVfnVlKJnHAHuDU1mXMR8wD73DbNpb3I7GlbQLk9FFFI
+YUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFI6h1KnOD6HFLRQAiKqIFU
+YVRgD0paKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAp6v/yD
+Jv8AgP8AMVVt9Ht5beKRnlBdAxwR3H0q1q//ACDJv+A/zFRR28DRWJaGMlgNxKjn5D1qLJy1M2k5
+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
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Themes
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="34;11"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="ae890d4e-e0cb-41c2-97bc-cd21cfa93528"
+		sx="393"
+		sy="948"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="cc999407-a332-44a6-8068-a4f8b3f54321"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="359,937,165,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Themes
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_theme&amp;id=grants_theme_list&amp;table=u_domestic_rmp_themes&amp;o=u_theme_title&amp;d=asc
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[3]/a[@innertext='Themes']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="ff871285-dceb-4599-a380-64e087084003">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADDANcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+Ky7+VmvhGDdbFTJFv1yT3rUqOOBUnkmBYtJjOe2PSgDOha4BtYpHlG+VnG5vm2AdGq7fXItrYuCA
+5+VM+tJc2S3EqyGWaNlGB5bYpFsIsoZXknCA4EpDDnvQBWtpzHZXWZzMYicPuznI45+tMimn2Q2s
+kjecJRuOeSuM/wD1quNp8BEqrlFlxuVcAcenFSNaxtdLc8iRV2jHSgDOF5LG1zI7ny5A/lZPQrT5
+JZImVTI58m2LN8x5Y8DNWm0+FrZIGLFUbcDnnNLLZRytKWZ/3oUNgjoPSgClFNPshtZJG84Sjcc8
+lcZ/+tTpJPNEk9xdSwQrIY0EZx09fWrzWsZu1ued6rtHpUT6fG0rOss0Yc5ZEfCk0AS2jbrZG83z
+cjh9u3P4VNTY0WONUQYVRgCnUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVOSZRcSL
+JeeSFxhcqO3uKuUxI9skj5zvIOPTjFNAQRXMh8tSgLFN5YnbxnGcY/GlS6J2O8e2KT7rbsnpnkdu
+KlMWbjzSeNhTGPeoltWARXk3xxj5FC4PTHJzzx9KegtRBdSbo98IVZASp354Azzx1pRcSG3WXykV
+WGctJgAY7nH+NQxJJLJECz7Y1I+aMrjIxznqfpUzWp2QBXXdCMAum4H3xnrxQ7CVxsd40qx+XGrM
++7+PgYPrjpSx3bv5ZaHasmQPmycj2/A06G1Mboxk3bS56YzuOaVbfasQ3/6sk5x1yD/jRoPULW4N
+wN21NuOCr7sex9DU9V4rdln86R1Zwu3KptJ+vPPSrFJ26AgooopDCiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAqFpyJGRIJH24yVK4/UipqrCGRriYiWSMEjG0DB49waaAlW4iZFYuq7ugY4
+OfSlWWNnZFkVmXqoYZFQLDsulCAhRCQGPrn1qOJTstoxEyvF98lSAOCDz3yaLIRaNxEsau8iIH6b
+mHNK8scZAkkRC3TcwGaz4VZUjdmmVGhUDy0DfUHg+tTIogY+ZHI6NGqqNu48ZyDjj+lNoLlgXUJa
+QGRR5RwxLDipEdXUMjBlPQg5Bqm6jdLuWVfnVlKJnHAHuDU1mXMR8wD73DbNpb3I7GlbQLk9FFFI
+YUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFI6h1KnOD6HFLRQAiKqIFU
+YVRgD0paKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAp6v/yD
+Jvw/mKq2+j28tvHIzygugY4I7j6Va1f/AJBk34fzFRR28DRWJaGMlgNxKjn5D1qOVOWp0xqShRvF
+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
+			</helperscreenshot>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="6b22b33d-bd9e-4846-8f92-1e97b392b48b">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b61481df-a0b5-4988-afc7-860bec9ddd30"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="292,287,53,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						panel-title ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Themes
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding panel-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext='Themes']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="b95bc85a-6bc0-451d-85f9-68b19041ed2c">
+				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
+/dNHP900+igBnP8AdNHP900+igD/2Q==
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Themes
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Theme Table Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="880827b3-2ce9-4485-9455-975ebddaabda"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RPM_Admin_WM">
+				</binding>
+			</bindings>
+			<info
+			id="1961e187-750a-41b9-bb2e-17306202a378"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Chandler Bing!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Chandler Bing!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Indicators
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="a7ba4f2a-8ac2-4477-9677-cc6151ae3934">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23f67f08-07c1-48a6-9da2-89e38dea8d44"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="359,972,165,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Indicators
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_indicator&amp;id=grants_indicator_list&amp;table=u_domestic_rmp_indicators&amp;o=u_indicator_title&amp;d=asc
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+						link
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[4]/a[@innertext='Indicators']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="188367a1-ed04-4788-9b43-21fa45575ec8">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADDANcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+Ky7+VmvhGDdbFTJFv1yT3rUqOOBUnkmBYtJjOe2PSgDOha4BtYpHlG+VnG5vm2AdGq7fXItrYuCA
+5+VM+tJc2S3EqyGWaNlGB5bYpFsIsoZXknCA4EpDDnvQBWtpzHZXWZzMYicPuznI45+tMimn2Q2s
+kjecJRuOeSuM/wD1quNp8BEqrlFlxuVcAcenFSNaxtdLc8iRV2jHSgDOF5LG1zI7ny5A/lZPQrT5
+JZImVTI58m2LN8x5Y8DNWm0+FrZIGLFUbcDnnNLLZRytKWZ/3oUNgjoPSgClFNPshtZJG84Sjcc8
+lcZ/+tTpJPNEk9xdSwQrIY0EZx09fWrzWsZu1ued6rtHpUT6fG0rOss0Yc5ZEfCk0AS2jbrZG83z
+cjh9u3P4VNTY0WONUQYVRgCnUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVOSZRcSL
+JeeSFxhcqO3uKuUxI9skj5zvIOPTjFNAQRXMh8tSgLFN5YnbxnGcY/GlS6J2O8e2KT7rbsnpnkdu
+KlMWbjzSeNhTGPeoltWARXk3xxj5FC4PTHJzzx9KegtRBdSbo98IVZASp354Azzx1pRcSG3WXykV
+WGctJgAY7nH+NQxJJLJECz7Y1I+aMrjIxznqfpUzWp2QBXXdCMAum4H3xnrxQ7CVxsd40qx+XGrM
++7+PgYPrjpSx3bv5ZaHasmQPmycj2/A06G1Mboxk3bS56YzuOaVbfasQ3/6sk5x1yD/jRoPULW4N
+wN21NuOCr7sex9DU9V4rdln86R1Zwu3KptJ+vPPSrFJ26AgooopDCiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAqFpyJGRIJH24yVK4/UipqrCGRriYiWSMEjG0DB49waaAlW4iZFYuq7ugY4
+OfSlWWNnZFkVmXqoYZFQLDsulCAhRCQGPrn1qOJTstoxEyvF98lSAOCDz3yaLIRaNxEsau8iIH6b
+mHNK8scZAkkRC3TcwGaz4VZUjdmmVGhUDy0DfUHg+tTIogY+ZHI6NGqqNu48ZyDjj+lNoLlgXUJa
+QGRR5RwxLDipEdXUMjBlPQg5Bqm6jdLuWVfnVlKJnHAHuDU1mXMR8wD73DbNpb3I7GlbQLk9FFFI
+YUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFI6h1KnOD6HFLRQAiKqIFU
+YVRgD0paKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKqXN
+vA1xAWhjJZzuJUc/KetNAy3RVCRWjmuWhfyxHEpCqowcZ4+lK81xJI4iWT5AMbQuCcZ5yc/lRYVy
+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
+oAKKKKAP/9k=
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Indicators
+			</matchvalue>
+		</validationitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="27;1"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="e4743f81-f178-4035-8621-9665b552a7dd"
+		sx="386"
+		sy="973"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="23f67f08-07c1-48a6-9da2-89e38dea8d44"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="359,972,165,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						True
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Indicators
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<attribute
+					name="href"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?grants_pid=grants_indicator&amp;id=grants_indicator_list&amp;table=u_domestic_rmp_indicators&amp;o=u_indicator_title&amp;d=asc
+					</attribute>
+					<attribute
+					name="target"
+					type="System.String">
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[4]/a[@innertext='Indicators']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="15f9990f-dc76-437d-81d1-0b837502c8a6">
+				/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCADDANcDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDoqKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+Ky7+VmvhGDdbFTJFv1yT3rUqOOBUnkmBYtJjOe2PSgDOha4BtYpHlG+VnG5vm2AdGq7fXItrYuCA
+5+VM+tJc2S3EqyGWaNlGB5bYpFsIsoZXknCA4EpDDnvQBWtpzHZXWZzMYicPuznI45+tMimn2Q2s
+kjecJRuOeSuM/wD1quNp8BEqrlFlxuVcAcenFSNaxtdLc8iRV2jHSgDOF5LG1zI7ny5A/lZPQrT5
+JZImVTI58m2LN8x5Y8DNWm0+FrZIGLFUbcDnnNLLZRytKWZ/3oUNgjoPSgClFNPshtZJG84Sjcc8
+lcZ/+tTpJPNEk9xdSwQrIY0EZx09fWrzWsZu1ued6rtHpUT6fG0rOss0Yc5ZEfCk0AS2jbrZG83z
+cjh9u3P4VNTY0WONUQYVRgCnUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFF
+FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABVOSZRcSL
+JeeSFxhcqO3uKuUxI9skj5zvIOPTjFNAQRXMh8tSgLFN5YnbxnGcY/GlS6J2O8e2KT7rbsnpnkdu
+KlMWbjzSeNhTGPeoltWARXk3xxj5FC4PTHJzzx9KegtRBdSbo98IVZASp354Azzx1pRcSG3WXykV
+WGctJgAY7nH+NQxJJLJECz7Y1I+aMrjIxznqfpUzWp2QBXXdCMAum4H3xnrxQ7CVxsd40qx+XGrM
++7+PgYPrjpSx3bv5ZaHasmQPmycj2/A06G1Mboxk3bS56YzuOaVbfasQ3/6sk5x1yD/jRoPULW4N
+wN21NuOCr7sex9DU9V4rdln86R1Zwu3KptJ+vPPSrFJ26AgooopDCiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAqFpyJGRIJH24yVK4/UipqrCGRriYiWSMEjG0DB49waaAlW4iZFYuq7ugY4
+OfSlWWNnZFkVmXqoYZFQLDsulCAhRCQGPrn1qOJTstoxEyvF98lSAOCDz3yaLIRaNxEsau8iIH6b
+mHNK8scZAkkRC3TcwGaz4VZUjdmmVGhUDy0DfUHg+tTIogY+ZHI6NGqqNu48ZyDjj+lNoLlgXUJa
+QGRR5RwxLDipEdXUMjBlPQg5Bqm6jdLuWVfnVlKJnHAHuDU1mXMR8wD73DbNpb3I7GlbQLk9FFFI
+YUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFI6h1KnOD6HFLRQAiKqIFU
+YVRgD0paKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKqXN
+vA1xAWhjJZzuJUc/KetNAy3RVCRWjmuWhfyxHEpCqowcZ4+lK81xJI4iWT5AMbQuCcZ5yc/lRYVy
+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
+			</helperscreenshot>
+		</mouseitem>
+		<validationitem
+		action="AttributeEqual"
+		duration="100ms"
+		enabled="True"
+		optional="False"
+		searchpropertyid="0b9fa419-9876-415c-b878-4e918a744145">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="66dca6c3-c199-42e9-82b0-570ae1d4000d"
+			sourcename="ElementTree">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="spantag"
+				rect="292,287,67,20"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						panel-title ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Indicators
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						ng-binding panel-title
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[@innertext='Indicators']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="cc534681-7405-4681-8199-4185d4a6ec1c">
+				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
+			</helperscreenshot>
+			<matchname>
+				InnerText
+			</matchname>
+			<matchvalue>
+				Indicators
+			</matchvalue>
+		</validationitem>
+		<loggingrecorditem
+		action="Screenshot"
+		category="User"
+		enabled="True"
+		message=""
+		optional="False"
+		reportlevel="Success;110"
+		searchpropertyid="6ebf7967-70d6-444a-9b27-037f7174c29a">
+			<comment>
+				Indicator Table Screenshot
+			</comment>
+			<bindings>
+			</bindings>
+		</loggingrecorditem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="12;9"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9b8e1a16-df77-44c9-9126-6269e0ca8a50"
+		sx="483"
+		sy="224"
+		warnoutofbounds="False">
+			<comment>
+				Home Button
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="880827b3-2ce9-4485-9455-975ebddaabda"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, spantag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="spantag"
+				rect="471,215,26,28"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						fa fa-home fa-2x
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						fa fa-2x fa-home
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						span
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[1]/a[@innertext=' Home ']/span
+				</path>
+			</info>
+			<helperscreenshot
+			guid="1eeb99e2-f3e6-47d8-8b0c-a086bc69f51e">
+				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
+ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
+			</helperscreenshot>
+		</mouseitem>
+		<WaitForRecordItem
+		enabled="True"
+		matchname="InnerText"
+		matchvalue="Hi, Gunther Central-Perk!"
+		optional="False"
+		searchpropertyid="74a9b911-7f24-4283-a5d1-6e02b9fd8f2c"
+		waitaction="AttributeEqual"
+		waittimeout="5000ms">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="MatchValue"
+				variable="RPM_Admin_WM">
+				</binding>
+			</bindings>
+			<info
+			id="1961e187-750a-41b9-bb2e-17306202a378"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, h1tag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="h1tag"
+				rect="322,324,1020,69"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Hi, Chandler Bing!
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						jumbotron-heading ng-binding
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						h1
+					</attribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Chandler Bing!']
+				</path>
+			</info>
+		</WaitForRecordItem>
+	</recorditems>
+	<repository
+	id="bc8eb910-3cf8-4d8e-8d15-b57254f8606a"
+	name="Service_Portal_Regression_STGRepository"
+	relativepath="Service_Portal_Regression_STGRepository.rxrep">
+		<codegen
+		classname="Service_Portal_Regression_STGRepository"
+		namespace="Service_Portal_Regression_STG">
+		</codegen>
+		<rootfolder
+		id="c66c0921-a4a6-4c30-8218-6aa696d3aa91"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		R1_05_HomePage_Footer_RPMAdmin_Planning.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

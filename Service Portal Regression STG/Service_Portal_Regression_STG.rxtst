@@ -16,6 +16,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="04ccd21e-a778-473c-a0b2-fcc7e24dabce"
+			name="R1_05_HomePage_TilesHeader_RPMAdmin_Support"
+			ref="5212cf86-9edd-4a92-908b-e7e00668dba2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="6407394a-2b57-45aa-98e4-3e79308e159f"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -60,6 +74,76 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="e2f28ddc-5a0f-4dc6-b68e-7e938e1c4631"
 					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="141dc9b3-7470-4c28-9acd-7bf0bd9ec5e8"
+			name="R1_06_HomePage_Footer_OSGrantor_Administration"
+			ref="b256e349-5d65-4b42-aa28-91dcbb392b52"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="6be11eba-aa45-40a4-87ae-e6a25d68fbe1"
+					variablename="OSGrantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1761fa10-8fe7-45a0-9749-72d1ee4cee48"
+			name="R1_05_HomePage_Footer_RPMAdmin_Support"
+			ref="55da7795-0178-4639-9e98-4c603d8da408"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="8c446112-15bd-4bae-9530-96e48bc7cb15"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1a49eff0-0f86-4630-8932-48c4e8408e28"
+			name="R1_05_HomePage_Footer_RPMAdmin_Award"
+			ref="aede8026-86f2-4ad5-bc08-5011d53dcba2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="4fec9310-c51b-4f1d-9707-7d2eacb498db"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="24b662e2-2906-407f-ae02-832b4325b54e"
+			name="R1_05_HomePage_TilesHeader_RPMAdmin_Award"
+			ref="846a2075-05ad-4d0a-a003-d968c1d15c4d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="7d8d4644-d186-4ee8-9ade-4dde732146cf"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="24f5bdc9-1ba2-4e33-b672-ea10eaca87ea"
+			name="R1_06_HomePage_TilesHeader_OSGrantor_Support"
+			ref="930b718f-0b1a-4be1-9c28-a22403fa0849"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="b4c95f4c-060b-4944-abf3-05e59958e364"
+					variablename="OSGrantor_WM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -176,11 +260,45 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="40123ecc-946f-4bb8-931f-b554d8732db9"
+			name="R1_05_HomePage_Footer_RPMAdmin_Administration"
+			ref="8fd49483-2b7a-49b7-9492-bedaba0615fd"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="f180a8ee-ab36-4944-91d3-77c343b477f3"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="40941c28-a1a8-470b-98ee-bfe25900713e"
 			name="Service_Portal_Regression_STG"
 			reportlevel="Info;20">
 			</testcase>
+			<testmodule
+			id="44662937-d9a7-4678-bd7a-535866fcc70a"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="OS Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="44a28e97-150f-49b1-b23c-bbe57179cfc4"
 			name="R1_03_HomePage_Footer_RPMGrantor_Administration"
@@ -209,15 +327,35 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			datasource="Users"
+			id="571ff049-f58e-491a-97db-40a86e9571d9"
+			name="1.06_Grants_HomePage_Tiles/Header/Footer_OSGrantor">
+			</testcase>
 			<testmodule
 			id="582b4f73-f825-4da5-925b-401667b3779f"
 			name="Login"
 			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+					<var
+					dataname="RPM Admin Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
+			datasource="Users"
 			id="5a678c55-e524-40f1-b136-a68d3160d17a"
-			name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMGrantee">
+			name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMAdmin">
 			</testcase>
 			<testmodule
 			id="5c8664ba-a7f9-4795-9bc6-75387c1cf093"
@@ -240,6 +378,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5e9216a0-7049-4201-b12a-33b99228c8ce"
+			name="R1_06_HomePage_Footer_OSGrantor_Support"
+			ref="bc10315f-f5bd-4972-8b7d-1b39369ffdec"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="d6935795-a664-4939-84c9-94ea6f0fcc9c"
+					variablename="OSGrantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6132143f-5301-4720-8471-ee1ff4037014"
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_Administration"
 			ref="dd274591-fcaa-4e8e-8ea1-26dc62fb27b2"
@@ -250,6 +402,20 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="9e2cb52e-78b7-4c1c-afb4-b5eddb5939a6"
 					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="65f482ef-a606-4145-b419-8d9a86b84ca6"
+			name="R1_05_HomePage_Footer_RPMAdmin_Planning"
+			ref="ab6daf9f-0b7e-47c9-a2ae-a9061b6822b2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="e55be45e-9b8e-4c9e-b807-499ac0d861c1"
+					variablename="RPM_Admin_WM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -379,6 +545,34 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="82a6f2de-39ad-43be-a677-c2d79b74cd5e"
+			name="R1_06_HomePage_TilesHeader_OSGrantor_Award"
+			ref="8c10cc18-faad-4259-959d-b82fff870ed2"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="65b302d0-3480-40c3-a87d-ed52dc952898"
+					variablename="OSGrantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="87183a0f-b8b8-42d7-9491-1ca25ae76ea4"
+			name="R1_05_HomePage_TilesHeader_RPMAdmin_PreAward"
+			ref="11b3fca3-b6ae-4001-a7ac-d8935466a5cf"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="7d6e5b50-7963-40e8-a5d0-a1b370e91308"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="878c69c1-be2f-4426-86d1-4f59e66a3557"
 			name="R1_04_HomePage_Footer_RPMGrantee_MyApplications"
 			ref="53b75efd-db30-4678-b828-e059b85fa9e0"
@@ -411,6 +605,14 @@
 			name="R1_05_HomePage_TilesHeader_RPMAdmin_Planning"
 			ref="abb785a4-c2d3-456f-8b64-d228d5166594"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="dcaee271-eb61-4f1d-975a-84d1a5fae004"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="8c96887f-0bc4-49d7-b650-27efe6621a0e"
@@ -525,6 +727,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c29481b4-7388-4946-a3a6-0b05e2781954"
+			name="R1_05_HomePage_Footer_RPMAdmin_PreAward"
+			ref="ce11f37c-aa10-47bd-a27a-6dd3f9f9377a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="e41bcd52-b054-494b-9f8c-883778f63df5"
+					variablename="RPM_Admin_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c43569c1-5183-467c-817b-37397b95d0ea"
 			name="R1_02_HomePage_Footer_DomesticGrantee_Support"
 			ref="0753aec0-5189-4a06-8438-9b79a93ec017"
@@ -535,6 +751,34 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="ab9fa78c-f466-414c-bdc3-59ecd1c432ce"
 					variablename="Domestic_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c45b04d6-9739-4af6-9cf1-7d53ef831cc6"
+			name="R1_06_HomePage_TilesHeader_OSGrantor_Administration"
+			ref="5007274e-566c-4bf7-a8e3-8d43c0dddf0a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="75c09a1a-9cbc-4fe8-8ff6-6e95ea48ec22"
+					variablename="OSGrantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c7733311-d8ef-4e2e-beab-ccda3fcab0d4"
+			name="R1_05_HomePage_TIlesHeader_RPMAdmin_Administration"
+			ref="01b4d963-a578-4e30-9214-c758720165c8"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="931e8b28-e2f2-47d9-b00a-a2cf950d9b40"
+					variablename="RPM_Admin_WM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -605,6 +849,20 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="000c60ab-97a0-45a0-a5d8-4eec77016a7a"
 					variablename="Domestic_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d9443b65-8e0e-4715-95bb-13f8c68c39f2"
+			name="R1_06_HomePage_Footer_OSGrantor_Award"
+			ref="404621d9-a4be-4d3b-b39c-51eb4299c836"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantor WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="612ade43-1965-4ee7-848c-6c6e16ac9124"
+					variablename="OSGrantor_WM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -875,7 +1133,7 @@
 						</testcase>
 						<testcase
 						id="5a678c55-e524-40f1-b136-a68d3160d17a"
-						name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMGrantee">
+						name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMAdmin">
 							<testmodule
 							id="582b4f73-f825-4da5-925b-401667b3779f"
 							name="Login">
@@ -883,6 +1141,74 @@
 							<testmodule
 							id="890af1fe-8fc7-4b1f-aa31-40659d4f1457"
 							name="R1_05_HomePage_TilesHeader_RPMAdmin_Planning">
+							</testmodule>
+							<testmodule
+							id="87183a0f-b8b8-42d7-9491-1ca25ae76ea4"
+							name="R1_05_HomePage_TilesHeader_RPMAdmin_PreAward">
+							</testmodule>
+							<testmodule
+							id="24b662e2-2906-407f-ae02-832b4325b54e"
+							name="R1_05_HomePage_TilesHeader_RPMAdmin_Award">
+							</testmodule>
+							<testmodule
+							id="c7733311-d8ef-4e2e-beab-ccda3fcab0d4"
+							name="R1_05_HomePage_TIlesHeader_RPMAdmin_Administration">
+							</testmodule>
+							<testmodule
+							id="04ccd21e-a778-473c-a0b2-fcc7e24dabce"
+							name="R1_05_HomePage_TilesHeader_RPMAdmin_Support">
+							</testmodule>
+							<testmodule
+							id="65f482ef-a606-4145-b419-8d9a86b84ca6"
+							name="R1_05_HomePage_Footer_RPMAdmin_Planning">
+							</testmodule>
+							<testmodule
+							id="c29481b4-7388-4946-a3a6-0b05e2781954"
+							name="R1_05_HomePage_Footer_RPMAdmin_PreAward">
+							</testmodule>
+							<testmodule
+							id="1a49eff0-0f86-4630-8932-48c4e8408e28"
+							name="R1_05_HomePage_Footer_RPMAdmin_Award">
+							</testmodule>
+							<testmodule
+							id="40123ecc-946f-4bb8-931f-b554d8732db9"
+							name="R1_05_HomePage_Footer_RPMAdmin_Administration">
+							</testmodule>
+							<testmodule
+							id="1761fa10-8fe7-45a0-9749-72d1ee4cee48"
+							name="R1_05_HomePage_Footer_RPMAdmin_Support">
+							</testmodule>
+						</testcase>
+						<testcase
+						id="571ff049-f58e-491a-97db-40a86e9571d9"
+						name="1.06_Grants_HomePage_Tiles/Header/Footer_OSGrantor">
+							<testmodule
+							id="44662937-d9a7-4678-bd7a-535866fcc70a"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="82a6f2de-39ad-43be-a677-c2d79b74cd5e"
+							name="R1_06_HomePage_TilesHeader_OSGrantor_Award">
+							</testmodule>
+							<testmodule
+							id="c45b04d6-9739-4af6-9cf1-7d53ef831cc6"
+							name="R1_06_HomePage_TilesHeader_OSGrantor_Administration">
+							</testmodule>
+							<testmodule
+							id="24f5bdc9-1ba2-4e33-b672-ea10eaca87ea"
+							name="R1_06_HomePage_TilesHeader_OSGrantor_Support">
+							</testmodule>
+							<testmodule
+							id="d9443b65-8e0e-4715-95bb-13f8c68c39f2"
+							name="R1_06_HomePage_Footer_OSGrantor_Award">
+							</testmodule>
+							<testmodule
+							id="141dc9b3-7470-4c28-9acd-7bf0bd9ec5e8"
+							name="R1_06_HomePage_Footer_OSGrantor_Administration">
+							</testmodule>
+							<testmodule
+							id="5e9216a0-7049-4201-b12a-33b99228c8ce"
+							name="R1_06_HomePage_Footer_OSGrantor_Support">
 							</testmodule>
 						</testcase>
 					</smartfoldernode>
@@ -946,6 +1272,15 @@
 				<column>
 					RPM Admin WM
 				</column>
+				<column>
+					OS Grantor Username
+				</column>
+				<column>
+					OS Grantor Password
+				</column>
+				<column>
+					OS Grantor WM
+				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
 			</maskedcolumns>
@@ -955,15 +1290,6 @@
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
-			<testcontainer
-			id="31b804de-90d1-4d17-a6d3-1ceb9505eeb9">
-			</testcontainer>
-			<testcontainer
-			id="3651c15e-45f0-43e8-9199-feb725998984">
-			</testcontainer>
-			<testcontainer
-			id="40941c28-a1a8-470b-98ee-bfe25900713e">
-			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
 	<references>
