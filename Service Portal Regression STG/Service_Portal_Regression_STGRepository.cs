@@ -213,6 +213,8 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _divtagrowInfo;
             RepoItemInfo _samsInfo;
             RepoItemInfo _overseasgrantorsupportInfo;
+            RepoItemInfo _hiphoebebuffayInfo;
+            RepoItemInfo _overseasgranteesupportpageInfo;
 
             /// <summary>
             /// Creates a new Login1  folder.
@@ -249,6 +251,8 @@ namespace Service_Portal_Regression_STG
                 _divtagrowInfo = new RepoItemInfo(this, "DivTagRow", "body/div[1]/section/main/div/?/?/tag[@tagname='sp-page-row']/div/?/?/span/div/div/div/div[2]/div[2]/tag[@tagname='ng-include']/div/div[2]/div", 30000, null, "b8be0de0-fbfc-49f2-8252-5709a1431c84");
                 _samsInfo = new RepoItemInfo(this, "SAMS", ".//div[#'u_source']//a[@href='javascript:void(0)']/span[@innertext='SAMS']", 30000, null, "a7951a87-5961-450c-a7c6-e8e7f16ca0ca");
                 _overseasgrantorsupportInfo = new RepoItemInfo(this, "OverseasGrantorSupport", "body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext='Overseas Grantor Support ']", 30000, null, "3c869b3a-1866-4c57-ac19-274d786d2f88");
+                _hiphoebebuffayInfo = new RepoItemInfo(this, "HiPhoebeBuffay", ".//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Phoebe Buffay!']", 30000, null, "9d194ff9-03fa-4733-8edc-90932c34928c");
+                _overseasgranteesupportpageInfo = new RepoItemInfo(this, "OverseasGranteeSupportPage", "body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext>'Overseas Grantee Support Page']", 30000, null, "6a6d562a-2b6d-47fa-a41d-3cd928dc9660");
             }
 
             /// <summary>
@@ -800,6 +804,54 @@ namespace Service_Portal_Regression_STG
                 get
                 {
                     return _overseasgrantorsupportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HiPhoebeBuffay item.
+            /// </summary>
+            [RepositoryItem("9d194ff9-03fa-4733-8edc-90932c34928c")]
+            public virtual Ranorex.H1Tag HiPhoebeBuffay
+            {
+                get
+                {
+                    return _hiphoebebuffayInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HiPhoebeBuffay item info.
+            /// </summary>
+            [RepositoryItemInfo("9d194ff9-03fa-4733-8edc-90932c34928c")]
+            public virtual RepoItemInfo HiPhoebeBuffayInfo
+            {
+                get
+                {
+                    return _hiphoebebuffayInfo;
+                }
+            }
+
+            /// <summary>
+            /// The OverseasGranteeSupportPage item.
+            /// </summary>
+            [RepositoryItem("6a6d562a-2b6d-47fa-a41d-3cd928dc9660")]
+            public virtual Ranorex.H2Tag OverseasGranteeSupportPage
+            {
+                get
+                {
+                    return _overseasgranteesupportpageInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The OverseasGranteeSupportPage item info.
+            /// </summary>
+            [RepositoryItemInfo("6a6d562a-2b6d-47fa-a41d-3cd928dc9660")]
+            public virtual RepoItemInfo OverseasGranteeSupportPageInfo
+            {
+                get
+                {
+                    return _overseasgranteesupportpageInfo;
                 }
             }
 
@@ -1401,6 +1453,12 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _grantortrainingresources1Info;
             RepoItemInfo _granteetrainingresources2Info;
             RepoItemInfo _support3Info;
+            RepoItemInfo _atagpaymentsInfo;
+            RepoItemInfo _requestpaymentInfo;
+            RepoItemInfo _atagsupport3Info;
+            RepoItemInfo _granteetrainingresources3Info;
+            RepoItemInfo _support4Info;
+            RepoItemInfo _ataghomeInfo;
 
             /// <summary>
             /// Creates a new NavNavbarNavSamsNavbarNav  folder.
@@ -1480,6 +1538,12 @@ namespace Service_Portal_Regression_STG
                 _grantortrainingresources1Info = new RepoItemInfo(this, "GrantorTrainingResources1", "li[4]/ul/?/?/a[@innertext>'Grantor Training Resource']", 30000, null, "dd2d4b65-02e7-402f-9b1b-fb10bb3d8db7");
                 _granteetrainingresources2Info = new RepoItemInfo(this, "GranteeTrainingResources2", "li[4]/ul/?/?/a[@innertext>'Grantee Training Resource']", 30000, null, "d451c905-da1d-48c8-8e6e-e7b7ac74475c");
                 _support3Info = new RepoItemInfo(this, "Support3", "li[4]/ul/?/?/a[@innertext='Support']", 30000, null, "afe86beb-c76d-4591-8b84-5e30070ba548");
+                _atagpaymentsInfo = new RepoItemInfo(this, "ATagPayments", "?/?/a[@innertext=' Payments ']", 30000, null, "cc782cec-2aa4-4aab-8e8b-f63387a73cde");
+                _requestpaymentInfo = new RepoItemInfo(this, "RequestPayment", "?/?/ul/?/?/a[@innertext='Request Payment']", 30000, null, "7b75ce0c-3ac3-48df-ad1e-13bf167cfa7f");
+                _atagsupport3Info = new RepoItemInfo(this, "ATagSupport3", "?/?/a[@innertext=' Support ']", 30000, null, "9b39c567-a1a4-4347-a99b-882c0c970f1d");
+                _granteetrainingresources3Info = new RepoItemInfo(this, "GranteeTrainingResources3", "li[3]/ul/?/?/a[@innertext>'Grantee Training Resource']", 30000, null, "112fd62f-70f2-4b8a-b381-6c152bce4b6b");
+                _support4Info = new RepoItemInfo(this, "Support4", "li[3]/ul/?/?/a[@innertext='Support']", 30000, null, "131f5621-16c4-4ec2-94b5-b12e6a50dfd9");
+                _ataghomeInfo = new RepoItemInfo(this, "ATagHome", "?/?/a[@innertext=' Home ']", 30000, null, "9eb20abd-dee6-4022-90f1-9aea947c8548");
             }
 
             /// <summary>
@@ -3233,6 +3297,150 @@ namespace Service_Portal_Regression_STG
                     return _support3Info;
                 }
             }
+
+            /// <summary>
+            /// The ATagPayments item.
+            /// </summary>
+            [RepositoryItem("cc782cec-2aa4-4aab-8e8b-f63387a73cde")]
+            public virtual Ranorex.ATag ATagPayments
+            {
+                get
+                {
+                    return _atagpaymentsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ATagPayments item info.
+            /// </summary>
+            [RepositoryItemInfo("cc782cec-2aa4-4aab-8e8b-f63387a73cde")]
+            public virtual RepoItemInfo ATagPaymentsInfo
+            {
+                get
+                {
+                    return _atagpaymentsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RequestPayment item.
+            /// </summary>
+            [RepositoryItem("7b75ce0c-3ac3-48df-ad1e-13bf167cfa7f")]
+            public virtual Ranorex.ATag RequestPayment
+            {
+                get
+                {
+                    return _requestpaymentInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RequestPayment item info.
+            /// </summary>
+            [RepositoryItemInfo("7b75ce0c-3ac3-48df-ad1e-13bf167cfa7f")]
+            public virtual RepoItemInfo RequestPaymentInfo
+            {
+                get
+                {
+                    return _requestpaymentInfo;
+                }
+            }
+
+            /// <summary>
+            /// The ATagSupport3 item.
+            /// </summary>
+            [RepositoryItem("9b39c567-a1a4-4347-a99b-882c0c970f1d")]
+            public virtual Ranorex.ATag ATagSupport3
+            {
+                get
+                {
+                    return _atagsupport3Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ATagSupport3 item info.
+            /// </summary>
+            [RepositoryItemInfo("9b39c567-a1a4-4347-a99b-882c0c970f1d")]
+            public virtual RepoItemInfo ATagSupport3Info
+            {
+                get
+                {
+                    return _atagsupport3Info;
+                }
+            }
+
+            /// <summary>
+            /// The GranteeTrainingResources3 item.
+            /// </summary>
+            [RepositoryItem("112fd62f-70f2-4b8a-b381-6c152bce4b6b")]
+            public virtual Ranorex.ATag GranteeTrainingResources3
+            {
+                get
+                {
+                    return _granteetrainingresources3Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GranteeTrainingResources3 item info.
+            /// </summary>
+            [RepositoryItemInfo("112fd62f-70f2-4b8a-b381-6c152bce4b6b")]
+            public virtual RepoItemInfo GranteeTrainingResources3Info
+            {
+                get
+                {
+                    return _granteetrainingresources3Info;
+                }
+            }
+
+            /// <summary>
+            /// The Support4 item.
+            /// </summary>
+            [RepositoryItem("131f5621-16c4-4ec2-94b5-b12e6a50dfd9")]
+            public virtual Ranorex.ATag Support4
+            {
+                get
+                {
+                    return _support4Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Support4 item info.
+            /// </summary>
+            [RepositoryItemInfo("131f5621-16c4-4ec2-94b5-b12e6a50dfd9")]
+            public virtual RepoItemInfo Support4Info
+            {
+                get
+                {
+                    return _support4Info;
+                }
+            }
+
+            /// <summary>
+            /// The ATagHome item.
+            /// </summary>
+            [RepositoryItem("9eb20abd-dee6-4022-90f1-9aea947c8548")]
+            public virtual Ranorex.ATag ATagHome
+            {
+                get
+                {
+                    return _ataghomeInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The ATagHome item info.
+            /// </summary>
+            [RepositoryItemInfo("9eb20abd-dee6-4022-90f1-9aea947c8548")]
+            public virtual RepoItemInfo ATagHomeInfo
+            {
+                get
+                {
+                    return _ataghomeInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3255,6 +3463,8 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _viewpaymentrequestsInfo;
             RepoItemInfo _navigatetoaribaInfo;
             RepoItemInfo _navigatetoefilingInfo;
+            RepoItemInfo _paymentsInfo;
+            RepoItemInfo _requestpaymentInfo;
 
             /// <summary>
             /// Creates a new NgScope  folder.
@@ -3276,6 +3486,8 @@ namespace Service_Portal_Regression_STG
                 _viewpaymentrequestsInfo = new RepoItemInfo(this, "ViewPaymentRequests", "?/?/ul/li[2]/a[@innertext='View Payment Requests']", 30000, null, "f6751a90-a46b-4f4f-8ec9-b013c545db9b");
                 _navigatetoaribaInfo = new RepoItemInfo(this, "NavigateToAriba", "?/?/ul/li[3]/a[@innertext='Navigate to Ariba']", 30000, null, "122d1750-d0ed-490f-9fe3-d2a2ac31ec41");
                 _navigatetoefilingInfo = new RepoItemInfo(this, "NavigateToEFiling", "?/?/ul/li[4]/a[@innertext='Navigate to eFiling']", 30000, null, "496dad02-891a-45fc-9792-59a1774aa85e");
+                _paymentsInfo = new RepoItemInfo(this, "Payments", "?/?/h2[@innertext='Payments']", 30000, null, "7b80f13b-54ff-4c5b-a2a6-3fb38f631b0c");
+                _requestpaymentInfo = new RepoItemInfo(this, "RequestPayment", "?/?/ul/?/?/a[@innertext='Request Payment']", 30000, null, "100984b1-2602-496e-9d37-f77cdb9175a7");
             }
 
             /// <summary>
@@ -3637,6 +3849,54 @@ namespace Service_Portal_Regression_STG
                     return _navigatetoefilingInfo;
                 }
             }
+
+            /// <summary>
+            /// The Payments item.
+            /// </summary>
+            [RepositoryItem("7b80f13b-54ff-4c5b-a2a6-3fb38f631b0c")]
+            public virtual Ranorex.H2Tag Payments
+            {
+                get
+                {
+                    return _paymentsInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Payments item info.
+            /// </summary>
+            [RepositoryItemInfo("7b80f13b-54ff-4c5b-a2a6-3fb38f631b0c")]
+            public virtual RepoItemInfo PaymentsInfo
+            {
+                get
+                {
+                    return _paymentsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The RequestPayment item.
+            /// </summary>
+            [RepositoryItem("100984b1-2602-496e-9d37-f77cdb9175a7")]
+            public virtual Ranorex.ATag RequestPayment
+            {
+                get
+                {
+                    return _requestpaymentInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The RequestPayment item info.
+            /// </summary>
+            [RepositoryItemInfo("100984b1-2602-496e-9d37-f77cdb9175a7")]
+            public virtual RepoItemInfo RequestPaymentInfo
+            {
+                get
+                {
+                    return _requestpaymentInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -3657,6 +3917,9 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _granteeaccountsInfo;
             RepoItemInfo _organizationsrecordsInfo;
             RepoItemInfo _pendinguserregistrationsInfo;
+            RepoItemInfo _supportInfo;
+            RepoItemInfo _granteetrainingresourcesInfo;
+            RepoItemInfo _support1Info;
 
             /// <summary>
             /// Creates a new NgScope1  folder.
@@ -3676,6 +3939,9 @@ namespace Service_Portal_Regression_STG
                 _granteeaccountsInfo = new RepoItemInfo(this, "GranteeAccounts", "?/?/ul/li[1]/a[@innertext='Grantee Accounts']", 30000, null, "d330fb6a-a848-4039-95fd-943eb698debe");
                 _organizationsrecordsInfo = new RepoItemInfo(this, "OrganizationsRecords", "?/?/ul/li[2]/a[@innertext='Organizations Records']", 30000, null, "ded58774-4428-4af1-aca9-9af586f9d619");
                 _pendinguserregistrationsInfo = new RepoItemInfo(this, "PendingUserRegistrations", "?/?/ul/li[3]/a[@innertext>'Pending User Registration']", 30000, null, "c6a36e56-83aa-449f-bec5-be17f49b4354");
+                _supportInfo = new RepoItemInfo(this, "Support", "?/?/h2[@innertext='Support']", 30000, null, "c13071f3-0d5a-4160-9cc0-2e75b879d38c");
+                _granteetrainingresourcesInfo = new RepoItemInfo(this, "GranteeTrainingResources", "?/?/ul/?/?/a[@innertext>'Grantee Training Resource']", 30000, null, "878e5a35-40a4-4b6f-bbbb-ce1993dcbf8b");
+                _support1Info = new RepoItemInfo(this, "Support1", "?/?/ul/?/?/a[@innertext='Support']", 30000, null, "fc236018-98e2-4f72-812a-fd44dc94ad5b");
             }
 
             /// <summary>
@@ -3987,6 +4253,78 @@ namespace Service_Portal_Regression_STG
                 get
                 {
                     return _pendinguserregistrationsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Support item.
+            /// </summary>
+            [RepositoryItem("c13071f3-0d5a-4160-9cc0-2e75b879d38c")]
+            public virtual Ranorex.H2Tag Support
+            {
+                get
+                {
+                    return _supportInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Support item info.
+            /// </summary>
+            [RepositoryItemInfo("c13071f3-0d5a-4160-9cc0-2e75b879d38c")]
+            public virtual RepoItemInfo SupportInfo
+            {
+                get
+                {
+                    return _supportInfo;
+                }
+            }
+
+            /// <summary>
+            /// The GranteeTrainingResources item.
+            /// </summary>
+            [RepositoryItem("878e5a35-40a4-4b6f-bbbb-ce1993dcbf8b")]
+            public virtual Ranorex.ATag GranteeTrainingResources
+            {
+                get
+                {
+                    return _granteetrainingresourcesInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GranteeTrainingResources item info.
+            /// </summary>
+            [RepositoryItemInfo("878e5a35-40a4-4b6f-bbbb-ce1993dcbf8b")]
+            public virtual RepoItemInfo GranteeTrainingResourcesInfo
+            {
+                get
+                {
+                    return _granteetrainingresourcesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Support1 item.
+            /// </summary>
+            [RepositoryItem("fc236018-98e2-4f72-812a-fd44dc94ad5b")]
+            public virtual Ranorex.ATag Support1
+            {
+                get
+                {
+                    return _support1Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Support1 item info.
+            /// </summary>
+            [RepositoryItemInfo("fc236018-98e2-4f72-812a-fd44dc94ad5b")]
+            public virtual RepoItemInfo Support1Info
+            {
+                get
+                {
+                    return _support1Info;
                 }
             }
         }

@@ -358,6 +358,20 @@
 			name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMAdmin">
 			</testcase>
 			<testmodule
+			id="5c6c0615-2c2d-4c95-8f5f-cec16a225861"
+			name="R1_07_HomePage_TilesHeader_OSGrantee_Payments"
+			ref="b85293f1-e030-40a0-b091-cb10292e4ece"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="d5006bb2-938a-4446-8d7b-f553fc4594b9"
+					variablename="OSGrantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="5c8664ba-a7f9-4795-9bc6-75387c1cf093"
 			name="Login"
 			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
@@ -615,6 +629,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8bfa00d7-8085-408f-ac18-e9fcef6e326b"
+			name="R1_07_HomePage_TilesHeader_OSGrantee_Support"
+			ref="9e44cf18-6016-43ae-97a9-5ee97472f99d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ae38aab9-0543-4c39-91f6-99f5dd9ec4f7"
+					variablename="OSGrantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8c96887f-0bc4-49d7-b650-27efe6621a0e"
 			name="R1_04_HomePage_Footer_RPMGrantee_Monitoring"
 			ref="42f79a04-3270-48ef-ba83-06dad57e783c"
@@ -642,6 +670,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="9681eec3-aacf-4413-92b8-f7f501165a73"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantee Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+					<var
+					dataname="OS Grantee Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			datasource="Users"
+			id="988fb41a-2391-466e-a593-a304d4d27960"
+			name="1.06_Grants_HomePage_Tiles/Header/Footer_OSGrantee">
+			</testcase>
 			<testmodule
 			id="a1137264-6285-4ac1-a3b2-bbee203fdafa"
 			name="R1_03_HomePage_Footer_RPMGrantor_Support"
@@ -681,6 +734,20 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="204475d5-69d9-49bc-a9f3-7b5b709e3486"
 					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="aa5ba481-905d-42dc-a3a0-f5fc38a86436"
+			name="R1_07_HomePage_Footer_OSGrantee_Support"
+			ref="350225ff-7caf-4e7d-b389-3ef17c85dff9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="b1098710-af37-4b57-98e4-ca70b52f8fc0"
+					variablename="OSGrantee_WM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -919,6 +986,20 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="8e905888-bbb5-441a-ba12-75ef7ca4d73a"
 					variablename="Domestic_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f71f7fed-b247-4586-a711-1f7b6ee1c971"
+			name="R1_07_HomePage_Footer_OSGrantee_Payments"
+			ref="75605baf-5266-45a3-bf97-20497ab302d9"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OS Grantee WM"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="40ca7a51-4b13-456b-a12f-ce54e5455e7c"
+					variablename="OSGrantee_WM">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1211,6 +1292,30 @@
 							name="R1_06_HomePage_Footer_OSGrantor_Support">
 							</testmodule>
 						</testcase>
+						<testcase
+						id="988fb41a-2391-466e-a593-a304d4d27960"
+						name="1.06_Grants_HomePage_Tiles/Header/Footer_OSGrantee">
+							<testmodule
+							id="9681eec3-aacf-4413-92b8-f7f501165a73"
+							name="Login">
+							</testmodule>
+							<testmodule
+							id="5c6c0615-2c2d-4c95-8f5f-cec16a225861"
+							name="R1_07_HomePage_TilesHeader_OSGrantee_Payments">
+							</testmodule>
+							<testmodule
+							id="8bfa00d7-8085-408f-ac18-e9fcef6e326b"
+							name="R1_07_HomePage_TilesHeader_OSGrantee_Support">
+							</testmodule>
+							<testmodule
+							id="f71f7fed-b247-4586-a711-1f7b6ee1c971"
+							name="R1_07_HomePage_Footer_OSGrantee_Payments">
+							</testmodule>
+							<testmodule
+							id="aa5ba481-905d-42dc-a3a0-f5fc38a86436"
+							name="R1_07_HomePage_Footer_OSGrantee_Support">
+							</testmodule>
+						</testcase>
 					</smartfoldernode>
 				</testcase>
 			</testsuite>
@@ -1280,6 +1385,24 @@
 				</column>
 				<column>
 					OS Grantor WM
+				</column>
+				<column>
+					OS Grantee Username
+				</column>
+				<column>
+					OS Grantee Password
+				</column>
+				<column>
+					OS Grantee WM
+				</column>
+				<column>
+					OSDS Grantor Username
+				</column>
+				<column>
+					OSDS Grantor Password
+				</column>
+				<column>
+					OSDS Grantor WM
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>

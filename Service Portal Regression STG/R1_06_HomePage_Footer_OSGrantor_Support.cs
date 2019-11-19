@@ -203,6 +203,10 @@ namespace Service_Portal_Regression_STG
             Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(26));
             repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
             
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.HiPhoebeBuffay' at 275;47.", repo.Login1.HiPhoebeBuffayInfo, new RecordItemIndex(27));
+            repo.Login1.HiPhoebeBuffay.Click("275;47");
+            Delay.Milliseconds(200);
+            
         }
 
 #region Image Feature Data
