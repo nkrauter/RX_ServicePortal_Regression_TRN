@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="63d75886-fedc-4821-bf71-d2863735800f"
+id="a5baa17f-d43f-45e6-a49f-5b3b1d041979"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="R1_04_HomePage_TilesHeader_RPMGrantee_Apply"
+	classname="R1_09_HomePage_TilesHeader_OSDSGrantee_Apply"
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
 		<var
-		id="7066e907-e9b4-4c80-8ee5-f1cb8224ec8c"
-		name="RPM_Grantee_WM">
-			Hi, Monica Geller!
+		id="b8f801c4-82f6-4454-97db-b24198f5e87f"
+		name="OSDS_Grantee_WM">
+			Hi, Ross Geller!
 		</var>
 	</variables>
 	<recorditems>
@@ -623,6 +623,90 @@ mode="Global">
 				</path>
 			</info>
 		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24452dfa-3989-4117-95af-19f02606a30d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
+			</arguments>
+		</invokeactionrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		createscreenshot="OnFail"
@@ -763,9 +847,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<WaitForRecordItem
+		duration="100ms"
 		enabled="True"
 		matchname="InnerText"
-		matchvalue="Hi, Monica Geller!"
+		matchvalue="Hi, Rachel Green!"
 		optional="False"
 		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
@@ -775,11 +860,11 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="RPM_Grantee_WM">
+				variable="OSDS_Grantee_WM">
 				</binding>
 			</bindings>
 			<info
-			id="7c6362aa-5a7d-482f-863c-091046bfe754"
+			id="ebd0486c-253e-4b15-8322-7bfb059bfafb"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -812,7 +897,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Monica Geller!
+						Hi, Ross Geller!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -826,7 +911,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Ross Geller!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1027,8 +1112,28 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				</path>
 			</info>
 		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="False"
+		optional="False"
+		searchpropertyid="a377f00e-983a-4200-97da-698571d1bad9">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b8f78547-b880-47b5-92cd-f3906c1bc3d7"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='training.grants.gov']
+				</path>
+			</info>
+			<arguments
+			id="b3b23931-7a8a-4ad7-9a8e-4eb36338b54b">
+			</arguments>
+		</invokeactionrecorditem>
 		<validationitem
-		action="Exists"
+		action="AttributeEqual"
 		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="False"
@@ -1284,6 +1389,90 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				</path>
 			</info>
 		</mouseitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24452dfa-3989-4117-95af-19f02606a30d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
+			</arguments>
+		</invokeactionrecorditem>
 		<validationitem
 		action="AttributeEqual"
 		duration="100ms"
@@ -1352,6 +1541,90 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				About the Process
 			</matchvalue>
 		</validationitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="da1d6eca-dbcf-4c4d-9fff-bc8707a2dd72">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24452dfa-3989-4117-95af-19f02606a30d"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webdocument"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="webdocument"
+				rect="0,71,1680,939"
+				role="container"
+				snapElem=""
+				uidroot="True"
+				valid="True"
+				visible="True">
+					<attribute
+					name="caption"
+					type="System.String">
+						Knowledge Article View - My Grants - Service Portal
+					</attribute>
+					<attribute
+					name="browsername"
+					type="System.String">
+						Chrome
+					</attribute>
+					<attribute
+					name="browserversion"
+					type="System.String">
+						78.0.3904.87
+					</attribute>
+					<attribute
+					name="domain"
+					type="System.String">
+						mygrantstrain.service-now.com
+					</attribute>
+					<attribute
+					name="fullscreen"
+					type="System.Boolean">
+						False
+					</attribute>
+					<attribute
+					name="page"
+					type="System.String">
+						grants
+					</attribute>
+					<attribute
+					name="pageurl"
+					type="System.String">
+						https://mygrantstrain.service-now.com/grants?id=kb_article_view&amp;sys_kb_id=c3f88c87dbb7e200dff9f81d0f96192a
+					</attribute>
+					<attribute
+					name="path"
+					type="System.String">
+						/grants
+					</attribute>
+					<attribute
+					name="state"
+					type="System.String">
+						complete
+					</attribute>
+					<dynamicaction
+					description="Enables the Chrome accessible renderer mode."
+					displayName="EnableAccessibleRenderer">
+					</dynamicaction>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="84b6b447-c5eb-47c4-b339-267e90a025c8">
+			</arguments>
+		</invokeactionrecorditem>
 		<loggingrecorditem
 		action="Screenshot"
 		category="User"
@@ -1467,9 +1740,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<WaitForRecordItem
+		duration="100ms"
 		enabled="True"
 		matchname="InnerText"
-		matchvalue="Hi, Monica Geller!"
+		matchvalue="Hi, Rachel Green!"
 		optional="False"
 		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
@@ -1479,11 +1753,11 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="RPM_Grantee_WM">
+				variable="OSDS_Grantee_WM">
 				</binding>
 			</bindings>
 			<info
-			id="7c6362aa-5a7d-482f-863c-091046bfe754"
+			id="ebd0486c-253e-4b15-8322-7bfb059bfafb"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -1516,7 +1790,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Monica Geller!
+						Hi, Ross Geller!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1530,7 +1804,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Ross Geller!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1550,7 +1824,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		R1_04_HomePage_TilesHeader_RPMGrantee_Apply.UserCode.cs
+		R1_09_HomePage_TilesHeader_OSDSGrantee_Apply.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

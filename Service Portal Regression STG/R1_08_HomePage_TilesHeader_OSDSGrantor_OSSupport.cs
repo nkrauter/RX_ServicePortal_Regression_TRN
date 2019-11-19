@@ -24,46 +24,46 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R1_06_HomePage_Footer_OSGrantor_Support recording.
+    ///The R1_08_HomePage_TilesHeader_OSDSGrantor_OSSupport recording.
     /// </summary>
-    [TestModule("bc10315f-f5bd-4972-8b7d-1b39369ffdec", ModuleType.Recording, 1)]
-    public partial class R1_06_HomePage_Footer_OSGrantor_Support : ITestModule
+    [TestModule("bcdf7410-0844-4f32-b42b-ad1e1fdf54cb", ModuleType.Recording, 1)]
+    public partial class R1_08_HomePage_TilesHeader_OSDSGrantor_OSSupport : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R1_06_HomePage_Footer_OSGrantor_Support instance = new R1_06_HomePage_Footer_OSGrantor_Support();
+        static R1_08_HomePage_TilesHeader_OSDSGrantor_OSSupport instance = new R1_08_HomePage_TilesHeader_OSDSGrantor_OSSupport();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R1_06_HomePage_Footer_OSGrantor_Support()
+        public R1_08_HomePage_TilesHeader_OSDSGrantor_OSSupport()
         {
-            OSGrantor_WM = "Hi, Frank Buffay!";
+            OSDS_Grantor_WM = "Hi, Mike Hannigan!";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R1_06_HomePage_Footer_OSGrantor_Support Instance
+        public static R1_08_HomePage_TilesHeader_OSDSGrantor_OSSupport Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _OSGrantor_WM;
+        string _OSDS_Grantor_WM;
 
         /// <summary>
-        /// Gets or sets the value of variable OSGrantor_WM.
+        /// Gets or sets the value of variable OSDS_Grantor_WM.
         /// </summary>
-        [TestVariable("d6935795-a664-4939-84c9-94ea6f0fcc9c")]
-        public string OSGrantor_WM
+        [TestVariable("3ea3915c-aab0-4abc-9b4a-658c32c372ce")]
+        public string OSDS_Grantor_WM
         {
-            get { return _OSGrantor_WM; }
-            set { _OSGrantor_WM = value; }
+            get { return _OSDS_Grantor_WM; }
+            set { _OSDS_Grantor_WM = value; }
         }
 
 #endregion
@@ -92,46 +92,46 @@ namespace Service_Portal_Regression_STG
 
             Init();
 
-            // Footer Links
-            Report.Log(ReportLevel.Info, "Section", "Footer Links", new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(1));
-            Mouse.ScrollWheel(-840);
-            Delay.Milliseconds(100);
+            // Header Links
+            Report.Log(ReportLevel.Info, "Section", "Header Links", new RecordItemIndex(0));
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NgScope2.Support'.", repo.Login1.NgScope2.SupportInfo, new RecordItemIndex(2));
-                Validate.AttributeEqual(repo.Login1.NgScope2.SupportInfo, "InnerText", "Support", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText=' Support ') on item 'Login1.NavNavbarNavSamsNavbarNav.ATagSupport2'.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2Info, new RecordItemIndex(1));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2Info, "InnerText", " Support ", null, false);
                 Delay.Milliseconds(100);
-            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(2)); }
+            } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(1)); }
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagSupport2' at 57;38.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2Info, new RecordItemIndex(2));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2.Click("57;38");
+            Delay.Milliseconds(200);
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantor Training Resources') on item 'Login1.NgScope2.GrantorTrainingResources'.", repo.Login1.NgScope2.GrantorTrainingResourcesInfo, new RecordItemIndex(3));
-                Validate.AttributeEqual(repo.Login1.NgScope2.GrantorTrainingResourcesInfo, "InnerText", "Grantor Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantor Training Resources') on item 'Login1.NavNavbarNavSamsNavbarNav.GrantorTrainingResources1'.", repo.Login1.NavNavbarNavSamsNavbarNav.GrantorTrainingResources1Info, new RecordItemIndex(3));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.GrantorTrainingResources1Info, "InnerText", "Grantor Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(3)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantee Training Resources') on item 'Login1.NgScope2.GranteeTrainingResources'.", repo.Login1.NgScope2.GranteeTrainingResourcesInfo, new RecordItemIndex(4));
-                Validate.AttributeEqual(repo.Login1.NgScope2.GranteeTrainingResourcesInfo, "InnerText", "Grantee Training Resources", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Grantee Training Resources') on item 'Login1.NavNavbarNavSamsNavbarNav.GranteeTrainingResources2'.", repo.Login1.NavNavbarNavSamsNavbarNav.GranteeTrainingResources2Info, new RecordItemIndex(4));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.GranteeTrainingResources2Info, "InnerText", "Grantee Training Resources", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(4)); }
             
             try {
-                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NgScope2.Support1'.", repo.Login1.NgScope2.Support1Info, new RecordItemIndex(5));
-                Validate.AttributeEqual(repo.Login1.NgScope2.Support1Info, "InnerText", "Support", null, false);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (InnerText='Support') on item 'Login1.NavNavbarNavSamsNavbarNav.Support3'.", repo.Login1.NavNavbarNavSamsNavbarNav.Support3Info, new RecordItemIndex(5));
+                Validate.AttributeEqual(repo.Login1.NavNavbarNavSamsNavbarNav.Support3Info, "InnerText", "Support", null, false);
                 Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(5)); }
             
-            // Support Footer Screenshot
+            // Support Tile Screenshot
             Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(6));
             
             // Grantor Training Resources
             Report.Log(ReportLevel.Info, "Section", "Grantor Training Resources", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.GrantorTrainingResources' at 47;5.", repo.Login1.NgScope2.GrantorTrainingResourcesInfo, new RecordItemIndex(8));
-            repo.Login1.NgScope2.GrantorTrainingResources.Click("47;5");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.GrantorTrainingResources1' at 87;14.", repo.Login1.NavNavbarNavSamsNavbarNav.GrantorTrainingResources1Info, new RecordItemIndex(8));
+            repo.Login1.NavNavbarNavSamsNavbarNav.GrantorTrainingResources1.Click("87;14");
+            Delay.Milliseconds(0);
             
             try {
                 Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating Exists on item 'Login1.HttpsMygrantstrainServiceNowComDe'.", repo.Login1.HttpsMygrantstrainServiceNowComDeInfo, new RecordItemIndex(9));
@@ -146,18 +146,18 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(12));
-            repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $OSDS_Grantor_WM. Associated repository item: 'Login1.HiMikeHannigan'", repo.Login1.HiMikeHanniganInfo, new RecordItemIndex(12));
+            repo.Login1.HiMikeHanniganInfo.WaitForAttributeEqual(5000, "InnerText", OSDS_Grantor_WM);
             
             // Grantee Training Resources
             Report.Log(ReportLevel.Info, "Section", "Grantee Training Resources", new RecordItemIndex(13));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(14));
-            Mouse.ScrollWheel(-840);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagSupport2' at 53;38.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2Info, new RecordItemIndex(14));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2.Click("53;38");
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.GranteeTrainingResources' at 29;12.", repo.Login1.NgScope2.GranteeTrainingResourcesInfo, new RecordItemIndex(15));
-            repo.Login1.NgScope2.GranteeTrainingResources.Click("29;12");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.GranteeTrainingResources2' at 89;9.", repo.Login1.NavNavbarNavSamsNavbarNav.GranteeTrainingResources2Info, new RecordItemIndex(15));
+            repo.Login1.NavNavbarNavSamsNavbarNav.GranteeTrainingResources2.Click("89;9");
             Delay.Milliseconds(200);
             
             try {
@@ -173,18 +173,18 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(19));
-            repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $OSDS_Grantor_WM. Associated repository item: 'Login1.HiMikeHannigan'", repo.Login1.HiMikeHanniganInfo, new RecordItemIndex(19));
+            repo.Login1.HiMikeHanniganInfo.WaitForAttributeEqual(5000, "InnerText", OSDS_Grantor_WM);
             
             // Support
             Report.Log(ReportLevel.Info, "Section", "Support", new RecordItemIndex(20));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(21));
-            Mouse.ScrollWheel(-840);
-            Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagSupport2' at 53;38.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2Info, new RecordItemIndex(21));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagSupport2.Click("53;38");
+            Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope2.Support1' at 29;10.", repo.Login1.NgScope2.Support1Info, new RecordItemIndex(22));
-            repo.Login1.NgScope2.Support1.Click("29;10");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.Support3' at 51;6.", repo.Login1.NavNavbarNavSamsNavbarNav.Support3Info, new RecordItemIndex(22));
+            repo.Login1.NavNavbarNavSamsNavbarNav.Support3.Click("51;6");
             Delay.Milliseconds(200);
             
             try {
@@ -200,8 +200,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(26));
-            repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $OSDS_Grantor_WM. Associated repository item: 'Login1.HiMikeHannigan'", repo.Login1.HiMikeHanniganInfo, new RecordItemIndex(26));
+            repo.Login1.HiMikeHanniganInfo.WaitForAttributeEqual(5000, "InnerText", OSDS_Grantor_WM);
             
         }
 

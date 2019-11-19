@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="63d75886-fedc-4821-bf71-d2863735800f"
+id="798de1cf-c908-4322-915b-100381f1f62f"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="R1_04_HomePage_TilesHeader_RPMGrantee_Apply"
+	classname="R1_09_HomePage_Footer_OSDSGrantee_Apply"
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
 		<var
-		id="7066e907-e9b4-4c80-8ee5-f1cb8224ec8c"
-		name="RPM_Grantee_WM">
-			Hi, Monica Geller!
+		id="3152c386-e9ca-467c-9fe2-ef73917e18de"
+		name="OSDS_Grantee_WM">
+			Hi, Ross Geller!
 		</var>
 	</variables>
 	<recorditems>
@@ -34,43 +34,52 @@ mode="Global">
 		enabled="True"
 		optional="False">
 			<comment>
-				Header
+				Footer Links
 			</comment>
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="500ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
 		<validationitem
 		action="AttributeEqual"
-		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="7dcb78a3-b5fa-4500-bef4-b25f68a599eb">
+		searchpropertyid="d4c4e788-044b-4825-af3a-9478bbd687f1">
 			<comment>
-				Apply
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
+			id="69548ad1-e982-4508-b099-07200b318ce3"
 			sourcename="RepositoryEditor">
 				<element
-				capabilities="webelement, atag"
+				capabilities="webelement, h2tag"
 				dontcache="True"
 				enabled="True"
 				flavor="chromeweb"
 				hasfocus="False"
 				index="0"
-				prefcap="atag"
-				rect="633,195,103,69"
+				prefcap="h2tag"
+				rect="359,2044,165,15"
 				role="unknown"
 				snapElem=""
 				valid="True"
-				visible="True">
+				visible="False">
 					<attribute
 					name="class"
 					type="System.String">
-						dropdown-toggle ng-binding ng-scope
+						ng-binding
 					</attribute>
 					<attribute
 					name="draggable"
@@ -85,172 +94,42 @@ mode="Global">
 					<attribute
 					name="innertext"
 					type="System.String">
-						&#32;Apply&#32;
+						Apply
 					</attribute>
 					<attribute
 					name="safeclass"
 					type="System.String">
-						dropdown-toggle ng-binding ng-scope
+						ng-binding
 					</attribute>
 					<attribute
 					name="tagname"
 					type="System.String">
-						a
+						h2
 					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-expanded"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-haspopup"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-toggle"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="ng-if"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/h2[@innertext='Apply']
 				</path>
 			</info>
 			<matchname>
 				InnerText
 			</matchname>
 			<matchvalue>
-				&#32;Apply&#32;
+				Apply
 			</matchvalue>
 		</validationitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="True"
-		loc="93;58"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="1cb1b5fb-ed83-4e49-bb03-3ca47aacbf6b"
-		sx="1042"
-		sy="380"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, atag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="atag"
-				rect="633,195,103,69"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						dropdown-toggle ng-binding ng-scope
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						&#32;Apply&#32;
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						dropdown-toggle ng-binding ng-scope
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						a
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-expanded"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-haspopup"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-toggle"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="ng-if"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
-				</path>
-			</info>
-		</mouseitem>
 		<validationitem
 		action="AttributeEqual"
-		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="48a31f9b-25e1-4fbe-95d2-eeb4a5268237">
+		searchpropertyid="a0d289f0-aa58-4d2e-ad9d-a1c77304e5ac">
 			<comment>
-				Funding Opportunity
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="10408d9b-dae3-46f3-b350-4f1629914394"
+			id="ff10cf33-ec36-4b61-ba0b-da20175d2e09"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -260,7 +139,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="0,71,0,0"
+				rect="359,2074,165,20"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -306,19 +185,13 @@ mode="Global">
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="ng-href"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
 					name="role"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Funding Opportunities']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[1]/a[@innertext='Funding Opportunities']
 				</path>
 			</info>
 			<matchname>
@@ -330,18 +203,16 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="98bff875-3b93-4dee-8e00-fdcf6e621acb">
+		searchpropertyid="f72c45cc-f715-4cf9-b557-ad96b522c52f">
 			<comment>
-				Navigate to Grants.gov
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="863f6add-f0e7-4abb-aaad-a201774d5091"
+			id="1bed858e-7d14-4aea-80dd-7b7c7ef519bb"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -351,7 +222,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="0,71,0,0"
+				rect="359,2109,165,20"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -398,19 +269,13 @@ mode="Global">
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="ng-href"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
 					name="role"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Navigate to Grants.gov']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[2]/a[@innertext='Navigate to Grants.gov']
 				</path>
 			</info>
 			<matchname>
@@ -422,18 +287,16 @@ mode="Global">
 		</validationitem>
 		<validationitem
 		action="AttributeEqual"
-		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="True"
 		optional="True"
-		searchpropertyid="8fc91210-4f85-48cb-a070-cc495f943eee">
+		searchpropertyid="7bf0cab8-7fa1-4189-934b-5e437893ccc4">
 			<comment>
-				About the Process
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="bab60436-0264-43aa-b4d1-67a605caaf76"
+			id="5345d923-1def-4cc1-9ff0-b6bd066020bf"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -443,7 +306,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="0,71,0,0"
+				rect="359,2144,165,20"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -489,19 +352,13 @@ mode="Global">
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="ng-href"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
 					name="role"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='About the Process']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[3]/a[@innertext='About the Process']
 				</path>
 			</info>
 			<matchname>
@@ -511,20 +368,6 @@ mode="Global">
 				About the Process
 			</matchvalue>
 		</validationitem>
-		<loggingrecorditem
-		action="Screenshot"
-		category="User"
-		enabled="True"
-		message=""
-		optional="False"
-		reportlevel="Success;110"
-		searchpropertyid="4e8b7041-97f9-4200-85c4-d3b50e213414">
-			<comment>
-				Apply Screenshot
-			</comment>
-			<bindings>
-			</bindings>
-		</loggingrecorditem>
 		<separatoritem
 		enabled="True"
 		optional="False">
@@ -539,19 +382,19 @@ mode="Global">
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc="92;18"
+		loc="70;14"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="12155cda-dec5-4288-acc1-9120ce7af06c"
-		sx="1043"
-		sy="452"
+		searchpropertyid="0ceabc0b-2547-4c94-850c-66de8cc4f221"
+		sx="608"
+		sy="1195"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="10408d9b-dae3-46f3-b350-4f1629914394"
+			id="ff10cf33-ec36-4b61-ba0b-da20175d2e09"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -561,7 +404,7 @@ mode="Global">
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="0,71,0,0"
+				rect="359,2074,165,20"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -607,19 +450,13 @@ mode="Global">
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="ng-href"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
 					name="role"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Funding Opportunities']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[1]/a[@innertext='Funding Opportunities']
 				</path>
 			</info>
 		</mouseitem>
@@ -763,9 +600,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<WaitForRecordItem
+		duration="100ms"
 		enabled="True"
 		matchname="InnerText"
-		matchvalue="Hi, Monica Geller!"
+		matchvalue="Hi, Rachel Green!"
 		optional="False"
 		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
@@ -775,11 +613,11 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="RPM_Grantee_WM">
+				variable="OSDS_Grantee_WM">
 				</binding>
 			</bindings>
 			<info
-			id="7c6362aa-5a7d-482f-863c-091046bfe754"
+			id="ebd0486c-253e-4b15-8322-7bfb059bfafb"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -812,7 +650,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Monica Geller!
+						Hi, Ross Geller!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -826,7 +664,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Ross Geller!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -839,24 +677,35 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="500ms"
+		enabled="False"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
 		enabled="False"
-		loc="93;58"
+		loc="70;14"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="1cb1b5fb-ed83-4e49-bb03-3ca47aacbf6b"
-		sx="1042"
-		sy="380"
+		searchpropertyid="0ceabc0b-2547-4c94-850c-66de8cc4f221"
+		sx="608"
+		sy="1195"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
+			id="1bed858e-7d14-4aea-80dd-7b7c7ef519bb"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -866,105 +715,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="633,195,103,69"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						dropdown-toggle ng-binding ng-scope
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						&#32;Apply&#32;
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						dropdown-toggle ng-binding ng-scope
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						a
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-expanded"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-haspopup"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-toggle"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="ng-if"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="500ms"
-		enabled="False"
-		loc="112;14"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="d49c8d1d-97d2-47bb-b614-cd4ff600fbcb"
-		sx="1063"
-		sy="487"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="863f6add-f0e7-4abb-aaad-a201774d5091"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, atag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="atag"
-				rect="0,71,0,0"
+				rect="359,2109,165,20"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -1011,24 +762,18 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="ng-href"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
 					name="role"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='Navigate to Grants.gov']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[2]/a[@innertext='Navigate to Grants.gov']
 				</path>
 			</info>
 		</mouseitem>
 		<validationitem
-		action="Exists"
+		action="AttributeEqual"
 		createscreenshot="OnFail"
 		duration="100ms"
 		enabled="False"
@@ -1097,24 +842,35 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 			</bindings>
 		</separatoritem>
+		<mousewheelitem
+		delta="-840"
+		duration="500ms"
+		enabled="True"
+		optional="False"
+		orientation="Vertical">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</mousewheelitem>
 		<mouseitem
 		action="Click"
 		button="Left"
 		duration="500ms"
 		enabled="True"
-		loc="72;58"
+		loc="70;14"
 		movetime="300ms"
 		optional="False"
-		searchpropertyid="8e75b177-491b-4343-bfe2-9e6e01bfbd8b"
-		sx="1021"
-		sy="380"
+		searchpropertyid="0ceabc0b-2547-4c94-850c-66de8cc4f221"
+		sx="608"
+		sy="1195"
 		warnoutofbounds="False">
 			<comment>
 			</comment>
 			<bindings>
 			</bindings>
 			<info
-			id="4c21c3f6-f81c-4a43-8619-bf88a937caa0"
+			id="5345d923-1def-4cc1-9ff0-b6bd066020bf"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, atag"
@@ -1124,105 +880,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 				hasfocus="False"
 				index="0"
 				prefcap="atag"
-				rect="633,195,103,69"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						dropdown-toggle ng-binding ng-scope
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						&#32;Apply&#32;
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						dropdown-toggle ng-binding ng-scope
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						a
-					</attribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-expanded"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="aria-haspopup"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="data-toggle"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="ng-if"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
-					name="role"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-				</element>
-				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/a[@innertext=' Apply ']
-				</path>
-			</info>
-		</mouseitem>
-		<mouseitem
-		action="Click"
-		button="Left"
-		duration="100ms"
-		enabled="True"
-		loc="100;21"
-		movetime="300ms"
-		optional="False"
-		searchpropertyid="db3f34cf-4312-44bb-aeaf-ae0d3654cad6"
-		sx="1051"
-		sy="532"
-		warnoutofbounds="False">
-			<comment>
-			</comment>
-			<bindings>
-			</bindings>
-			<info
-			id="bab60436-0264-43aa-b4d1-67a605caaf76"
-			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, atag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="atag"
-				rect="0,71,0,0"
+				rect="359,2144,165,20"
 				role="unknown"
 				snapElem=""
 				valid="True"
@@ -1268,19 +926,13 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 					<dynamicattribute
 					description="Dynamic HTML attribute."
-					name="ng-href"
-					readonly="False"
-					type="System.String">
-					</dynamicattribute>
-					<dynamicattribute
-					description="Dynamic HTML attribute."
 					name="role"
 					readonly="False"
 					type="System.String">
 					</dynamicattribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']/body/div/header/div/div[3]/nav//ul/li[2]/ul/?/?/a[@innertext='About the Process']
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/footer/div/footer/div[2]/div/div/div[3]/?/?/ul/li[3]/a[@innertext='About the Process']
 				</path>
 			</info>
 		</mouseitem>
@@ -1297,50 +949,6 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<info
 			id="b22cd960-dabb-403e-b933-e979cf4ef408"
 			sourcename="RepositoryEditor">
-				<element
-				capabilities="webelement, h2tag"
-				dontcache="True"
-				enabled="True"
-				flavor="chromeweb"
-				hasfocus="False"
-				index="0"
-				prefcap="h2tag"
-				rect="288,341,1088,30"
-				role="unknown"
-				snapElem=""
-				valid="True"
-				visible="True">
-					<attribute
-					name="class"
-					type="System.String">
-						widget-header kb-title-header ng-binding
-					</attribute>
-					<attribute
-					name="draggable"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="hidden"
-					type="System.String">
-						False
-					</attribute>
-					<attribute
-					name="innertext"
-					type="System.String">
-						About the Process
-					</attribute>
-					<attribute
-					name="safeclass"
-					type="System.String">
-						kb-title-header ng-binding widget-header
-					</attribute>
-					<attribute
-					name="tagname"
-					type="System.String">
-						h2
-					</attribute>
-				</element>
 				<path>
 					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext='About the Process']
 				</path>
@@ -1467,9 +1075,10 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			</helperscreenshot>
 		</mouseitem>
 		<WaitForRecordItem
+		duration="100ms"
 		enabled="True"
 		matchname="InnerText"
-		matchvalue="Hi, Monica Geller!"
+		matchvalue="Hi, Rachel Green!"
 		optional="False"
 		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
@@ -1479,11 +1088,11 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="RPM_Grantee_WM">
+				variable="OSDS_Grantee_WM">
 				</binding>
 			</bindings>
 			<info
-			id="7c6362aa-5a7d-482f-863c-091046bfe754"
+			id="ebd0486c-253e-4b15-8322-7bfb059bfafb"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -1516,7 +1125,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Monica Geller!
+						Hi, Ross Geller!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1530,7 +1139,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Ross Geller!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1550,7 +1159,7 @@ ooAKKKKACiiigAooooAKKKKACiiigD//2Q==
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		R1_04_HomePage_TilesHeader_RPMGrantee_Apply.UserCode.cs
+		R1_09_HomePage_Footer_OSDSGrantee_Apply.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

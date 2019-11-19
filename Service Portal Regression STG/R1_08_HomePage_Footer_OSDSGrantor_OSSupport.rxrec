@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <recordtable
 embeddedrepository="False"
-id="bc10315f-f5bd-4972-8b7d-1b39369ffdec"
+id="81935956-05bb-4360-8b09-e592a733a6b0"
 mode="Global">
 	<repeatcount>
 		1
@@ -19,14 +19,14 @@ mode="Global">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="R1_06_HomePage_Footer_OSGrantor_Support"
+	classname="R1_08_HomePage_Footer_OSDSGrantor_OSSupport"
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
 		<var
-		id="d6935795-a664-4939-84c9-94ea6f0fcc9c"
-		name="OSGrantor_WM">
-			Hi, Frank Buffay!
+		id="9b001603-505e-4f29-89ea-2cd305bb1479"
+		name="OSDS_Grantor_WM">
+			Hi, Mike Hannigan!
 		</var>
 	</variables>
 	<recorditems>
@@ -1095,20 +1095,21 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 		<WaitForRecordItem
 		enabled="True"
 		matchname="InnerText"
+		matchvalue="Hi, Joey Tribbiani!"
 		optional="False"
-		searchpropertyid="a00aee66-f307-4a9d-95a4-b2b620a5cfdd"
+		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
-		waittimeout="10000ms">
+		waittimeout="5000ms">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="OSGrantor_WM">
+				variable="OSDS_Grantor_WM">
 				</binding>
 			</bindings>
 			<info
-			id="b4248425-26e4-428f-9236-f2299a7d440c"
+			id="6b37b64a-6ac1-4859-bfd8-9a0aa5b858ce"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -1141,7 +1142,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Frank Buffay!
+						Hi, Mike Hannigan!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1155,7 +1156,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Frank Buffay!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Mike Hannigan!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -1589,20 +1590,21 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 		<WaitForRecordItem
 		enabled="True"
 		matchname="InnerText"
+		matchvalue="Hi, Joey Tribbiani!"
 		optional="False"
-		searchpropertyid="a00aee66-f307-4a9d-95a4-b2b620a5cfdd"
+		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
-		waittimeout="10000ms">
+		waittimeout="5000ms">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="OSGrantor_WM">
+				variable="OSDS_Grantor_WM">
 				</binding>
 			</bindings>
 			<info
-			id="b4248425-26e4-428f-9236-f2299a7d440c"
+			id="6b37b64a-6ac1-4859-bfd8-9a0aa5b858ce"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -1635,7 +1637,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Frank Buffay!
+						Hi, Mike Hannigan!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -1649,7 +1651,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Frank Buffay!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Mike Hannigan!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -2271,20 +2273,21 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 		<WaitForRecordItem
 		enabled="True"
 		matchname="InnerText"
+		matchvalue="Hi, Joey Tribbiani!"
 		optional="False"
-		searchpropertyid="a00aee66-f307-4a9d-95a4-b2b620a5cfdd"
+		searchpropertyid="20824986-6f8c-4451-bcf8-8804b9ea0ec6"
 		waitaction="AttributeEqual"
-		waittimeout="10000ms">
+		waittimeout="5000ms">
 			<comment>
 			</comment>
 			<bindings>
 				<binding
 				target="MatchValue"
-				variable="OSGrantor_WM">
+				variable="OSDS_Grantor_WM">
 				</binding>
 			</bindings>
 			<info
-			id="b4248425-26e4-428f-9236-f2299a7d440c"
+			id="6b37b64a-6ac1-4859-bfd8-9a0aa5b858ce"
 			sourcename="RepositoryEditor">
 				<element
 				capabilities="webelement, h1tag"
@@ -2317,7 +2320,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 					<attribute
 					name="innertext"
 					type="System.String">
-						Hi, Frank Buffay!
+						Hi, Mike Hannigan!
 					</attribute>
 					<attribute
 					name="safeclass"
@@ -2331,7 +2334,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 					</attribute>
 				</element>
 				<path>
-					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Frank Buffay!']
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Mike Hannigan!']
 				</path>
 			</info>
 		</WaitForRecordItem>
@@ -2351,7 +2354,7 @@ BZkdFSfZ5v8AnjJ/3yaPs83/ADxk/wC+TRdBZkdFSfZ5v+eMn/fJo+zzf88ZP++TRdBZkdFSfZ5v
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		R1_06_HomePage_Footer_OSGrantor_Support.UserCode.cs
+		R1_08_HomePage_Footer_OSDSGrantor_OSSupport.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

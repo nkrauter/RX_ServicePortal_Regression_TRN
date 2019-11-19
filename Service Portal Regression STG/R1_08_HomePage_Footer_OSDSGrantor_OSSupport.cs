@@ -24,46 +24,46 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R1_06_HomePage_Footer_OSGrantor_Support recording.
+    ///The R1_08_HomePage_Footer_OSDSGrantor_OSSupport recording.
     /// </summary>
-    [TestModule("bc10315f-f5bd-4972-8b7d-1b39369ffdec", ModuleType.Recording, 1)]
-    public partial class R1_06_HomePage_Footer_OSGrantor_Support : ITestModule
+    [TestModule("81935956-05bb-4360-8b09-e592a733a6b0", ModuleType.Recording, 1)]
+    public partial class R1_08_HomePage_Footer_OSDSGrantor_OSSupport : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R1_06_HomePage_Footer_OSGrantor_Support instance = new R1_06_HomePage_Footer_OSGrantor_Support();
+        static R1_08_HomePage_Footer_OSDSGrantor_OSSupport instance = new R1_08_HomePage_Footer_OSDSGrantor_OSSupport();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R1_06_HomePage_Footer_OSGrantor_Support()
+        public R1_08_HomePage_Footer_OSDSGrantor_OSSupport()
         {
-            OSGrantor_WM = "Hi, Frank Buffay!";
+            OSDS_Grantor_WM = "Hi, Mike Hannigan!";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R1_06_HomePage_Footer_OSGrantor_Support Instance
+        public static R1_08_HomePage_Footer_OSDSGrantor_OSSupport Instance
         {
             get { return instance; }
         }
 
 #region Variables
 
-        string _OSGrantor_WM;
+        string _OSDS_Grantor_WM;
 
         /// <summary>
-        /// Gets or sets the value of variable OSGrantor_WM.
+        /// Gets or sets the value of variable OSDS_Grantor_WM.
         /// </summary>
-        [TestVariable("d6935795-a664-4939-84c9-94ea6f0fcc9c")]
-        public string OSGrantor_WM
+        [TestVariable("9b001603-505e-4f29-89ea-2cd305bb1479")]
+        public string OSDS_Grantor_WM
         {
-            get { return _OSGrantor_WM; }
-            set { _OSGrantor_WM = value; }
+            get { return _OSDS_Grantor_WM; }
+            set { _OSDS_Grantor_WM = value; }
         }
 
 #endregion
@@ -146,8 +146,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(12));
-            repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $OSDS_Grantor_WM. Associated repository item: 'Login1.HiMikeHannigan'", repo.Login1.HiMikeHanniganInfo, new RecordItemIndex(12));
+            repo.Login1.HiMikeHanniganInfo.WaitForAttributeEqual(5000, "InnerText", OSDS_Grantor_WM);
             
             // Grantee Training Resources
             Report.Log(ReportLevel.Info, "Section", "Grantee Training Resources", new RecordItemIndex(13));
@@ -173,8 +173,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(19));
-            repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $OSDS_Grantor_WM. Associated repository item: 'Login1.HiMikeHannigan'", repo.Login1.HiMikeHanniganInfo, new RecordItemIndex(19));
+            repo.Login1.HiMikeHanniganInfo.WaitForAttributeEqual(5000, "InnerText", OSDS_Grantor_WM);
             
             // Support
             Report.Log(ReportLevel.Info, "Section", "Support", new RecordItemIndex(20));
@@ -200,8 +200,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.HOME.Click("14;7");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s for the attribute 'InnerText' to equal the specified value $OSGrantor_WM. Associated repository item: 'Login1.HiFrankBuffay'", repo.Login1.HiFrankBuffayInfo, new RecordItemIndex(26));
-            repo.Login1.HiFrankBuffayInfo.WaitForAttributeEqual(10000, "InnerText", OSGrantor_WM);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 5s for the attribute 'InnerText' to equal the specified value $OSDS_Grantor_WM. Associated repository item: 'Login1.HiMikeHannigan'", repo.Login1.HiMikeHanniganInfo, new RecordItemIndex(26));
+            repo.Login1.HiMikeHanniganInfo.WaitForAttributeEqual(5000, "InnerText", OSDS_Grantor_WM);
             
         }
 
