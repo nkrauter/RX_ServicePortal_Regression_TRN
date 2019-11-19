@@ -191,6 +191,7 @@ namespace Service_Portal_Regression_STG
             Service_Portal_Regression_STGRepositoryFolders.NgScope2Folder _ngscope2;
             Service_Portal_Regression_STGRepositoryFolders.NgScope3Folder _ngscope3;
             Service_Portal_Regression_STGRepositoryFolders.NgScope4Folder _ngscope4;
+            Service_Portal_Regression_STGRepositoryFolders.Footer_Pre_AwardFolder _footer_pre_award;
             RepoItemInfo _hirachelgreenInfo;
             RepoItemInfo _abouttheprocessInfo;
             RepoItemInfo _himonicagellerInfo;
@@ -215,6 +216,11 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _overseasgrantorsupportInfo;
             RepoItemInfo _hiphoebebuffayInfo;
             RepoItemInfo _overseasgranteesupportpageInfo;
+            RepoItemInfo _hijoeytribbianiInfo;
+            RepoItemInfo _himikehanniganInfo;
+            RepoItemInfo _paymentportalInfo;
+            RepoItemInfo _httpsmygrantstrainservicenowcom4aInfo;
+            RepoItemInfo _httpsmygrantstrainservicenowcom73Info;
 
             /// <summary>
             /// Creates a new Login1  folder.
@@ -229,6 +235,7 @@ namespace Service_Portal_Regression_STG
                 _ngscope2 = new Service_Portal_Regression_STGRepositoryFolders.NgScope2Folder(this);
                 _ngscope3 = new Service_Portal_Regression_STGRepositoryFolders.NgScope3Folder(this);
                 _ngscope4 = new Service_Portal_Regression_STGRepositoryFolders.NgScope4Folder(this);
+                _footer_pre_award = new Service_Portal_Regression_STGRepositoryFolders.Footer_Pre_AwardFolder(this);
                 _hirachelgreenInfo = new RepoItemInfo(this, "HiRachelGreen", ".//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Rachel Green!']", 30000, null, "bd3e1ceb-6820-4392-9bd2-2c92945ad2b3");
                 _abouttheprocessInfo = new RepoItemInfo(this, "AboutTheProcess", "body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext='About the Process']", 30000, null, "b22cd960-dabb-403e-b933-e979cf4ef408");
                 _himonicagellerInfo = new RepoItemInfo(this, "HiMonicaGeller", ".//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Monica Geller!']", 30000, null, "7c6362aa-5a7d-482f-863c-091046bfe754");
@@ -253,6 +260,11 @@ namespace Service_Portal_Regression_STG
                 _overseasgrantorsupportInfo = new RepoItemInfo(this, "OverseasGrantorSupport", "body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext='Overseas Grantor Support ']", 30000, null, "3c869b3a-1866-4c57-ac19-274d786d2f88");
                 _hiphoebebuffayInfo = new RepoItemInfo(this, "HiPhoebeBuffay", ".//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Phoebe Buffay!']", 30000, null, "9d194ff9-03fa-4733-8edc-90932c34928c");
                 _overseasgranteesupportpageInfo = new RepoItemInfo(this, "OverseasGranteeSupportPage", "body/div/section/main/div[1]//span/div/div/?/?/h2[@innertext>'Overseas Grantee Support Page']", 30000, null, "6a6d562a-2b6d-47fa-a41d-3cd928dc9660");
+                _hijoeytribbianiInfo = new RepoItemInfo(this, "HiJoeyTribbiani", ".//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Joey Tribbiani!']", 30000, null, "aa2f436a-f61e-4bb9-ab5c-6876e9904a60");
+                _himikehanniganInfo = new RepoItemInfo(this, "HiMikeHannigan", ".//div[#'homepage-search']/?/?/section//h1[@innertext='Hi, Mike Hannigan!']", 30000, null, "6b37b64a-6ac1-4859-bfd8-9a0aa5b858ce");
+                _paymentportalInfo = new RepoItemInfo(this, "PaymentPortal", ".//div[#'pnProductNavContents']/a[@innertext='Payment Portal']", 30000, null, "feddd85e-b5cb-4fef-968a-c9bc309ec05d");
+                _httpsmygrantstrainservicenowcom4aInfo = new RepoItemInfo(this, "HttpsMygrantstrainServiceNowCom4a", "body/div/header//nav/?/?/a[@href>'https://mygrantstrain.ser']/img[@src='https://mygrantstrain.service-now.com/4ae74823dbfcc85016bc300f7c961951.iix']", 30000, null, "18b85299-05f9-4351-a5ae-207f2ec00185");
+                _httpsmygrantstrainservicenowcom73Info = new RepoItemInfo(this, "HttpsMygrantstrainServiceNowCom73", "body/div/header//nav/?/?/a[@href>'https://mygrantstrain.ser']/img[@src='https://mygrantstrain.service-now.com/7300bcd5dbf88c1016bc300f7c9619fc.iix']", 30000, null, "8b9f797c-d37e-4ebb-9d63-f210d6e3fff5");
             }
 
             /// <summary>
@@ -856,6 +868,126 @@ namespace Service_Portal_Regression_STG
             }
 
             /// <summary>
+            /// The HiJoeyTribbiani item.
+            /// </summary>
+            [RepositoryItem("aa2f436a-f61e-4bb9-ab5c-6876e9904a60")]
+            public virtual Ranorex.H1Tag HiJoeyTribbiani
+            {
+                get
+                {
+                    return _hijoeytribbianiInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HiJoeyTribbiani item info.
+            /// </summary>
+            [RepositoryItemInfo("aa2f436a-f61e-4bb9-ab5c-6876e9904a60")]
+            public virtual RepoItemInfo HiJoeyTribbianiInfo
+            {
+                get
+                {
+                    return _hijoeytribbianiInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HiMikeHannigan item.
+            /// </summary>
+            [RepositoryItem("6b37b64a-6ac1-4859-bfd8-9a0aa5b858ce")]
+            public virtual Ranorex.H1Tag HiMikeHannigan
+            {
+                get
+                {
+                    return _himikehanniganInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HiMikeHannigan item info.
+            /// </summary>
+            [RepositoryItemInfo("6b37b64a-6ac1-4859-bfd8-9a0aa5b858ce")]
+            public virtual RepoItemInfo HiMikeHanniganInfo
+            {
+                get
+                {
+                    return _himikehanniganInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PaymentPortal item.
+            /// </summary>
+            [RepositoryItem("feddd85e-b5cb-4fef-968a-c9bc309ec05d")]
+            public virtual Ranorex.ATag PaymentPortal
+            {
+                get
+                {
+                    return _paymentportalInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PaymentPortal item info.
+            /// </summary>
+            [RepositoryItemInfo("feddd85e-b5cb-4fef-968a-c9bc309ec05d")]
+            public virtual RepoItemInfo PaymentPortalInfo
+            {
+                get
+                {
+                    return _paymentportalInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HttpsMygrantstrainServiceNowCom4a item.
+            /// </summary>
+            [RepositoryItem("18b85299-05f9-4351-a5ae-207f2ec00185")]
+            public virtual Ranorex.ImgTag HttpsMygrantstrainServiceNowCom4a
+            {
+                get
+                {
+                    return _httpsmygrantstrainservicenowcom4aInfo.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HttpsMygrantstrainServiceNowCom4a item info.
+            /// </summary>
+            [RepositoryItemInfo("18b85299-05f9-4351-a5ae-207f2ec00185")]
+            public virtual RepoItemInfo HttpsMygrantstrainServiceNowCom4aInfo
+            {
+                get
+                {
+                    return _httpsmygrantstrainservicenowcom4aInfo;
+                }
+            }
+
+            /// <summary>
+            /// The HttpsMygrantstrainServiceNowCom73 item.
+            /// </summary>
+            [RepositoryItem("8b9f797c-d37e-4ebb-9d63-f210d6e3fff5")]
+            public virtual Ranorex.ImgTag HttpsMygrantstrainServiceNowCom73
+            {
+                get
+                {
+                    return _httpsmygrantstrainservicenowcom73Info.CreateAdapter<Ranorex.ImgTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The HttpsMygrantstrainServiceNowCom73 item info.
+            /// </summary>
+            [RepositoryItemInfo("8b9f797c-d37e-4ebb-9d63-f210d6e3fff5")]
+            public virtual RepoItemInfo HttpsMygrantstrainServiceNowCom73Info
+            {
+                get
+                {
+                    return _httpsmygrantstrainservicenowcom73Info;
+                }
+            }
+
+            /// <summary>
             /// The FormInlinePanelHeading folder.
             /// </summary>
             [RepositoryFolder("2b28fea5-024b-4446-9682-1673b75b7e97")]
@@ -916,6 +1048,15 @@ namespace Service_Portal_Regression_STG
             public virtual Service_Portal_Regression_STGRepositoryFolders.NgScope4Folder NgScope4
             {
                 get { return _ngscope4; }
+            }
+
+            /// <summary>
+            /// The Footer_Pre_Award folder.
+            /// </summary>
+            [RepositoryFolder("08dd102b-ef59-41c8-b9d4-ceb4561ec8a2")]
+            public virtual Service_Portal_Regression_STGRepositoryFolders.Footer_Pre_AwardFolder Footer_Pre_Award
+            {
+                get { return _footer_pre_award; }
             }
         }
 
@@ -1459,6 +1600,10 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _granteetrainingresources3Info;
             RepoItemInfo _support4Info;
             RepoItemInfo _ataghomeInfo;
+            RepoItemInfo _navigatetoariba11Info;
+            RepoItemInfo _navigatetoefiling11Info;
+            RepoItemInfo _navigatetoariba12Info;
+            RepoItemInfo _navigatetoefiling12Info;
 
             /// <summary>
             /// Creates a new NavNavbarNavSamsNavbarNav  folder.
@@ -1544,6 +1689,10 @@ namespace Service_Portal_Regression_STG
                 _granteetrainingresources3Info = new RepoItemInfo(this, "GranteeTrainingResources3", "li[3]/ul/?/?/a[@innertext>'Grantee Training Resource']", 30000, null, "112fd62f-70f2-4b8a-b381-6c152bce4b6b");
                 _support4Info = new RepoItemInfo(this, "Support4", "li[3]/ul/?/?/a[@innertext='Support']", 30000, null, "131f5621-16c4-4ec2-94b5-b12e6a50dfd9");
                 _ataghomeInfo = new RepoItemInfo(this, "ATagHome", "?/?/a[@innertext=' Home ']", 30000, null, "9eb20abd-dee6-4022-90f1-9aea947c8548");
+                _navigatetoariba11Info = new RepoItemInfo(this, "NavigateToAriba11", "li[4]/ul/li[4]/a[@innertext='Navigate to Ariba']", 30000, null, "ab468b1d-ce40-4d2a-a576-71f84385022a");
+                _navigatetoefiling11Info = new RepoItemInfo(this, "NavigateToEFiling11", "li[4]/ul/li[5]/a[@innertext='Navigate to eFiling']", 30000, null, "0e35f537-ea8c-4cb7-abaf-c89a6e52779a");
+                _navigatetoariba12Info = new RepoItemInfo(this, "NavigateToAriba12", "li[4]/ul/li[4]/a[@innertext='Navigate to Ariba']", 30000, null, "4fb6d655-9b13-4ef2-bef2-2c0ee8f07491");
+                _navigatetoefiling12Info = new RepoItemInfo(this, "NavigateToEFiling12", "li[4]/ul/li[5]/a[@innertext='Navigate to eFiling']", 30000, null, "c5958e81-d173-47ee-acd6-d29196e6bad4");
             }
 
             /// <summary>
@@ -3441,6 +3590,102 @@ namespace Service_Portal_Regression_STG
                     return _ataghomeInfo;
                 }
             }
+
+            /// <summary>
+            /// The NavigateToAriba11 item.
+            /// </summary>
+            [RepositoryItem("ab468b1d-ce40-4d2a-a576-71f84385022a")]
+            public virtual Ranorex.ATag NavigateToAriba11
+            {
+                get
+                {
+                    return _navigatetoariba11Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToAriba11 item info.
+            /// </summary>
+            [RepositoryItemInfo("ab468b1d-ce40-4d2a-a576-71f84385022a")]
+            public virtual RepoItemInfo NavigateToAriba11Info
+            {
+                get
+                {
+                    return _navigatetoariba11Info;
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToEFiling11 item.
+            /// </summary>
+            [RepositoryItem("0e35f537-ea8c-4cb7-abaf-c89a6e52779a")]
+            public virtual Ranorex.ATag NavigateToEFiling11
+            {
+                get
+                {
+                    return _navigatetoefiling11Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToEFiling11 item info.
+            /// </summary>
+            [RepositoryItemInfo("0e35f537-ea8c-4cb7-abaf-c89a6e52779a")]
+            public virtual RepoItemInfo NavigateToEFiling11Info
+            {
+                get
+                {
+                    return _navigatetoefiling11Info;
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToAriba12 item.
+            /// </summary>
+            [RepositoryItem("4fb6d655-9b13-4ef2-bef2-2c0ee8f07491")]
+            public virtual Ranorex.ATag NavigateToAriba12
+            {
+                get
+                {
+                    return _navigatetoariba12Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToAriba12 item info.
+            /// </summary>
+            [RepositoryItemInfo("4fb6d655-9b13-4ef2-bef2-2c0ee8f07491")]
+            public virtual RepoItemInfo NavigateToAriba12Info
+            {
+                get
+                {
+                    return _navigatetoariba12Info;
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToEFiling12 item.
+            /// </summary>
+            [RepositoryItem("c5958e81-d173-47ee-acd6-d29196e6bad4")]
+            public virtual Ranorex.ATag NavigateToEFiling12
+            {
+                get
+                {
+                    return _navigatetoefiling12Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToEFiling12 item info.
+            /// </summary>
+            [RepositoryItemInfo("c5958e81-d173-47ee-acd6-d29196e6bad4")]
+            public virtual RepoItemInfo NavigateToEFiling12Info
+            {
+                get
+                {
+                    return _navigatetoefiling12Info;
+                }
+            }
         }
 
         /// <summary>
@@ -4353,6 +4598,9 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _grantortrainingresourcesInfo;
             RepoItemInfo _granteetrainingresourcesInfo;
             RepoItemInfo _support1Info;
+            RepoItemInfo _awardsdashboardInfo;
+            RepoItemInfo _navigatetoaribaInfo;
+            RepoItemInfo _navigatetoefilingInfo;
 
             /// <summary>
             /// Creates a new NgScope2  folder.
@@ -4378,6 +4626,9 @@ namespace Service_Portal_Regression_STG
                 _grantortrainingresourcesInfo = new RepoItemInfo(this, "GrantorTrainingResources", "?/?/ul/li[1]/a[@innertext>'Grantor Training Resource']", 30000, null, "d014bc8b-4f30-4ca2-810c-bb9592e63582");
                 _granteetrainingresourcesInfo = new RepoItemInfo(this, "GranteeTrainingResources", "?/?/ul/li[2]/a[@innertext>'Grantee Training Resource']", 30000, null, "ec675101-4775-4f7a-9c74-332bebcbd26a");
                 _support1Info = new RepoItemInfo(this, "Support1", "?/?/ul/li[3]/a[@innertext='Support']", 30000, null, "496405aa-f4f6-4078-a1ae-cf6018370d3c");
+                _awardsdashboardInfo = new RepoItemInfo(this, "AwardsDashboard", "?/?/ul/li[3]/a[@innertext='Awards Dashboard']", 30000, null, "e5d8095f-5fe1-4a1b-9754-4f49142d4cac");
+                _navigatetoaribaInfo = new RepoItemInfo(this, "NavigateToAriba", "?/?/ul/li[4]/a[@innertext='Navigate to Ariba']", 30000, null, "37dbb7d2-2c25-4be7-8036-ad5381ef4bfa");
+                _navigatetoefilingInfo = new RepoItemInfo(this, "NavigateToEFiling", "?/?/ul/li[5]/a[@innertext='Navigate to eFiling']", 30000, null, "4951516d-c09b-49fe-8f97-65dd86d25869");
             }
 
             /// <summary>
@@ -4835,6 +5086,78 @@ namespace Service_Portal_Regression_STG
                     return _support1Info;
                 }
             }
+
+            /// <summary>
+            /// The AwardsDashboard item.
+            /// </summary>
+            [RepositoryItem("e5d8095f-5fe1-4a1b-9754-4f49142d4cac")]
+            public virtual Ranorex.ATag AwardsDashboard
+            {
+                get
+                {
+                    return _awardsdashboardInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AwardsDashboard item info.
+            /// </summary>
+            [RepositoryItemInfo("e5d8095f-5fe1-4a1b-9754-4f49142d4cac")]
+            public virtual RepoItemInfo AwardsDashboardInfo
+            {
+                get
+                {
+                    return _awardsdashboardInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToAriba item.
+            /// </summary>
+            [RepositoryItem("37dbb7d2-2c25-4be7-8036-ad5381ef4bfa")]
+            public virtual Ranorex.ATag NavigateToAriba
+            {
+                get
+                {
+                    return _navigatetoaribaInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToAriba item info.
+            /// </summary>
+            [RepositoryItemInfo("37dbb7d2-2c25-4be7-8036-ad5381ef4bfa")]
+            public virtual RepoItemInfo NavigateToAribaInfo
+            {
+                get
+                {
+                    return _navigatetoaribaInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToEFiling item.
+            /// </summary>
+            [RepositoryItem("4951516d-c09b-49fe-8f97-65dd86d25869")]
+            public virtual Ranorex.ATag NavigateToEFiling
+            {
+                get
+                {
+                    return _navigatetoefilingInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NavigateToEFiling item info.
+            /// </summary>
+            [RepositoryItemInfo("4951516d-c09b-49fe-8f97-65dd86d25869")]
+            public virtual RepoItemInfo NavigateToEFilingInfo
+            {
+                get
+                {
+                    return _navigatetoefilingInfo;
+                }
+            }
         }
 
         /// <summary>
@@ -5100,6 +5423,7 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _resultsperformancemonitoringgrantortInfo;
             RepoItemInfo _resultsperformancemonitoringgranteet1Info;
             RepoItemInfo _support2Info;
+            RepoItemInfo _granteetrainingresources2Info;
 
             /// <summary>
             /// Creates a new NgScope4  folder.
@@ -5116,6 +5440,7 @@ namespace Service_Portal_Regression_STG
                 _resultsperformancemonitoringgrantortInfo = new RepoItemInfo(this, "ResultsPerformanceMonitoringGrantorT", "?/?/ul/li[3]/a[@innertext>'Results Performance Monitoring']", 30000, null, "a2bfabe4-b2a2-472f-8757-944f82f6a9d3");
                 _resultsperformancemonitoringgranteet1Info = new RepoItemInfo(this, "ResultsPerformanceMonitoringGranteeT1", "?/?/ul/li[4]/a[@innertext>'Results Performance Monitoring']", 30000, null, "8033f659-d38a-47ce-8325-d672d43e3200");
                 _support2Info = new RepoItemInfo(this, "Support2", "?/?/ul/li[5]/a[@innertext='Support']", 30000, null, "102f3c2b-d9f5-4539-8125-1865e7bbb294");
+                _granteetrainingresources2Info = new RepoItemInfo(this, "GranteeTrainingResources2", "?/?/ul/li[2]/a[@innertext>'Grantee Training Resource']", 30000, null, "2365638b-b62b-45b1-8c44-03395b177e7c");
             }
 
             /// <summary>
@@ -5355,6 +5680,174 @@ namespace Service_Portal_Regression_STG
                 get
                 {
                     return _support2Info;
+                }
+            }
+
+            /// <summary>
+            /// The GranteeTrainingResources2 item.
+            /// </summary>
+            [RepositoryItem("2365638b-b62b-45b1-8c44-03395b177e7c")]
+            public virtual Ranorex.ATag GranteeTrainingResources2
+            {
+                get
+                {
+                    return _granteetrainingresources2Info.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The GranteeTrainingResources2 item info.
+            /// </summary>
+            [RepositoryItemInfo("2365638b-b62b-45b1-8c44-03395b177e7c")]
+            public virtual RepoItemInfo GranteeTrainingResources2Info
+            {
+                get
+                {
+                    return _granteetrainingresources2Info;
+                }
+            }
+        }
+
+        /// <summary>
+        /// The Footer_Pre_AwardFolder folder.
+        /// </summary>
+        [RepositoryFolder("08dd102b-ef59-41c8-b9d4-ceb4561ec8a2")]
+        public partial class Footer_Pre_AwardFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _preawardInfo;
+            RepoItemInfo _fundingopportunitiesInfo;
+            RepoItemInfo _applicationsInfo;
+            RepoItemInfo _fundingpackagesInfo;
+
+            /// <summary>
+            /// Creates a new Footer_Pre_Award  folder.
+            /// </summary>
+            public Footer_Pre_AwardFolder(RepoGenBaseFolder parentFolder) :
+                    base("Footer_Pre_Award", "body/div/section/footer/div/footer/div[2]/div/div/div[4]", parentFolder, 30000, null, false, "08dd102b-ef59-41c8-b9d4-ceb4561ec8a2", "")
+            {
+                _preawardInfo = new RepoItemInfo(this, "PreAward", "?/?/h2[@innertext='Pre-award']", 30000, null, "da51eeb0-5148-4130-87d3-7d4c2a41324b");
+                _fundingopportunitiesInfo = new RepoItemInfo(this, "FundingOpportunities", "?/?/ul/li[1]/a[@innertext='Funding Opportunities']", 30000, null, "43555f1e-fea6-44d3-82f9-c1c21bc44206");
+                _applicationsInfo = new RepoItemInfo(this, "Applications", "?/?/ul/li[2]/a[@innertext='Applications']", 30000, null, "8d6af79d-fbe8-438c-9a9a-6a6661f2ffb1");
+                _fundingpackagesInfo = new RepoItemInfo(this, "FundingPackages", "?/?/ul/li[3]/a[@innertext='Funding Packages']", 30000, null, "455a618f-cf97-4ffb-b35f-8d80558b787f");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("08dd102b-ef59-41c8-b9d4-ceb4561ec8a2")]
+            public virtual Ranorex.DivTag Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("08dd102b-ef59-41c8-b9d4-ceb4561ec8a2")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The PreAward item.
+            /// </summary>
+            [RepositoryItem("da51eeb0-5148-4130-87d3-7d4c2a41324b")]
+            public virtual Ranorex.H2Tag PreAward
+            {
+                get
+                {
+                    return _preawardInfo.CreateAdapter<Ranorex.H2Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The PreAward item info.
+            /// </summary>
+            [RepositoryItemInfo("da51eeb0-5148-4130-87d3-7d4c2a41324b")]
+            public virtual RepoItemInfo PreAwardInfo
+            {
+                get
+                {
+                    return _preawardInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FundingOpportunities item.
+            /// </summary>
+            [RepositoryItem("43555f1e-fea6-44d3-82f9-c1c21bc44206")]
+            public virtual Ranorex.ATag FundingOpportunities
+            {
+                get
+                {
+                    return _fundingopportunitiesInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FundingOpportunities item info.
+            /// </summary>
+            [RepositoryItemInfo("43555f1e-fea6-44d3-82f9-c1c21bc44206")]
+            public virtual RepoItemInfo FundingOpportunitiesInfo
+            {
+                get
+                {
+                    return _fundingopportunitiesInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Applications item.
+            /// </summary>
+            [RepositoryItem("8d6af79d-fbe8-438c-9a9a-6a6661f2ffb1")]
+            public virtual Ranorex.ATag Applications
+            {
+                get
+                {
+                    return _applicationsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Applications item info.
+            /// </summary>
+            [RepositoryItemInfo("8d6af79d-fbe8-438c-9a9a-6a6661f2ffb1")]
+            public virtual RepoItemInfo ApplicationsInfo
+            {
+                get
+                {
+                    return _applicationsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The FundingPackages item.
+            /// </summary>
+            [RepositoryItem("455a618f-cf97-4ffb-b35f-8d80558b787f")]
+            public virtual Ranorex.ATag FundingPackages
+            {
+                get
+                {
+                    return _fundingpackagesInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FundingPackages item info.
+            /// </summary>
+            [RepositoryItemInfo("455a618f-cf97-4ffb-b35f-8d80558b787f")]
+            public virtual RepoItemInfo FundingPackagesInfo
+            {
+                get
+                {
+                    return _fundingpackagesInfo;
                 }
             }
         }
