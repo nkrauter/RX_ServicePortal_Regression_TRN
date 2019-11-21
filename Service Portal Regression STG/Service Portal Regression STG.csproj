@@ -134,6 +134,18 @@
       <UserCode>true</UserCode>
       <id>c56cb4eb-1003-4044-b628-56d0cda58b9b</id>
     </Compile>
+    <Compile Include="GoogelCalculator.cs">
+      <BoundTo>79eeb3b8-5509-42da-9b0c-56de9ca7e921</BoundTo>
+      <DependentUpon>GoogelCalculator.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2eeb8f82-6d9e-40f0-a322-df7d58333579</id>
+    </Compile>
+    <Compile Include="GoogelCalculator.UserCode.cs">
+      <BoundTo>79eeb3b8-5509-42da-9b0c-56de9ca7e921</BoundTo>
+      <DependentUpon>GoogelCalculator.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5a01d848-d37e-44c3-996b-f349e650317a</id>
+    </Compile>
     <Compile Include="Login.cs">
       <DependentUpon>Login.rxrec</DependentUpon>
       <id>67dbf70b-8328-4650-b5e2-77f3d2ffd3f5</id>
@@ -145,6 +157,18 @@
       <id>d1b1b5ca-6968-442b-87d8-f44320c45431</id>
       <BoundTo>2ba446aa-9406-4804-8f62-5ed9be563416</BoundTo>
       <UserCode>true</UserCode>
+    </Compile>
+    <Compile Include="OSTEst.cs">
+      <BoundTo>300502dd-683d-4b9f-982b-e8c521291f74</BoundTo>
+      <DependentUpon>OSTEst.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ff575acf-7c72-4a32-9cb7-2fb3a7ba043d</id>
+    </Compile>
+    <Compile Include="OSTEst.UserCode.cs">
+      <BoundTo>300502dd-683d-4b9f-982b-e8c521291f74</BoundTo>
+      <DependentUpon>OSTEst.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>28bf1fda-f2c3-4493-b59d-a88f8a2df3f5</id>
     </Compile>
     <Compile Include="Program.cs">
       <id>bf56f88b-1e97-4de9-8a07-2e280f1b53ae</id>
@@ -1242,10 +1266,20 @@
       <id>b2e0cb53-9451-49db-a2c1-7eb06e109a71</id>
       <recordtableid>d782d612-e93c-4bca-92e0-e4c2de82d5c5</recordtableid>
     </None>
+    <None Include="GoogelCalculator.rxrec">
+      <BoundTo>465bf5ca-bf72-44d2-832b-12e0c8b532ba</BoundTo>
+      <id>79eeb3b8-5509-42da-9b0c-56de9ca7e921</id>
+      <recordtableid>0e2eeac0-44c8-49b2-bb21-0f6638bfbd19</recordtableid>
+    </None>
     <None Include="Login.rxrec">
       <id>2ba446aa-9406-4804-8f62-5ed9be563416</id>
       <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
       <recordtableid>68086a46-1ad9-4c16-a525-de0c870322a0</recordtableid>
+    </None>
+    <None Include="OSTEst.rxrec">
+      <BoundTo>465bf5ca-bf72-44d2-832b-12e0c8b532ba</BoundTo>
+      <id>300502dd-683d-4b9f-982b-e8c521291f74</id>
+      <recordtableid>101fc8cc-85b6-4bc6-8281-46c450daa40b</recordtableid>
     </None>
     <None Include="R1_01_HomePage_Footer_DomesticGrantor_Administration.rxrec">
       <id>94818e00-cb18-4a25-a72e-692d70c400a3</id>
