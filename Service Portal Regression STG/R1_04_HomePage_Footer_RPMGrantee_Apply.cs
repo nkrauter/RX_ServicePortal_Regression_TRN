@@ -87,7 +87,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -147,21 +147,21 @@ namespace Service_Portal_Regression_STG
             // Grants.gov
             Report.Log(ReportLevel.Info, "Section", "Grants.gov", new RecordItemIndex(14));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope.NavigateToGrantsGov' at 80;9.", repo.Login1.NgScope.NavigateToGrantsGovInfo, new RecordItemIndex(15));
-            //repo.Login1.NgScope.NavigateToGrantsGov.Click("80;9");
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope.NavigateToGrantsGov' at 80;9.", repo.Login1.NgScope.NavigateToGrantsGovInfo, new RecordItemIndex(15));
+            repo.Login1.NgScope.NavigateToGrantsGov.Click("80;9");
+            Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(16));
-            //Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png");
-            //Delay.Milliseconds(100);
+            Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(16));
+            Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png");
+            Delay.Milliseconds(100);
             
             // Grants.gov Screenshot
-            //Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(17));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(17));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(18));
-            //Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
-            //Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(18));
+            Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, 100, 1, true);
+            Delay.Milliseconds(0);
             
             // About the Process
             Report.Log(ReportLevel.Info, "Section", "About the Process", new RecordItemIndex(19));

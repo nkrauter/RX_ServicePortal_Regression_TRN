@@ -87,7 +87,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -161,31 +161,31 @@ namespace Service_Portal_Regression_STG
             // Navigate to Grants.gov
             Report.Log(ReportLevel.Info, "Section", "Navigate to Grants.gov", new RecordItemIndex(14));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagApply' at 93;58.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagApplyInfo, new RecordItemIndex(15));
-            //repo.Login1.NavNavbarNavSamsNavbarNav.ATagApply.Click("93;58");
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagApply' at 93;58.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagApplyInfo, new RecordItemIndex(15));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagApply.Click("93;58");
+            Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov' at 112;14.", repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGovInfo, new RecordItemIndex(16));
-            //repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov.Click("112;14");
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov' at 112;14.", repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGovInfo, new RecordItemIndex(16));
+            repo.Login1.NavNavbarNavSamsNavbarNav.NavigateToGrantsGov.Click("112;14");
+            Delay.Milliseconds(200);
             
-            //Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(17));
-            //repo.HomeGRANTSGOV.Self.WaitForDocumentLoaded();
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(17));
+            repo.HomeGRANTSGOV.Self.WaitForDocumentLoaded();
+            Delay.Milliseconds(0);
             
             try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(18));
-                //Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
-                //Delay.Milliseconds(100);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(18));
+                Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(18)); }
             
             // Grants.gov Screenshot
-            //Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(19));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(19));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(20));
-            //Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
-            //Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(20));
+            Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, 100, 1, true);
+            Delay.Milliseconds(0);
             
             // About the Process
             Report.Log(ReportLevel.Info, "Section", "About the Process", new RecordItemIndex(21));

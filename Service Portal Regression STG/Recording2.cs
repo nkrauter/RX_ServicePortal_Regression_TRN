@@ -74,7 +74,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -84,15 +84,15 @@ namespace Service_Portal_Regression_STG
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.SpFormfieldUScoreString'.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(1));
             Keyboard.PrepareFocus(repo.Login1.SpFormfieldUScoreString);
-            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, 100, 1, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{delete}' with focus on 'Login1.SpFormfieldUScoreString'.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(2));
-            repo.Login1.SpFormfieldUScoreString.PressKeys("{delete}");
+            repo.Login1.SpFormfieldUScoreString.PressKeys("{delete}", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'EDITABILITY TEST' with focus on 'Login1.SpFormfieldUScoreString'.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(3));
-            repo.Login1.SpFormfieldUScoreString.PressKeys("EDITABILITY TEST");
+            repo.Login1.SpFormfieldUScoreString.PressKeys("EDITABILITY TEST", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeEqual (Value='EDITABILITY TEST') on item 'Login1.SpFormfieldUScoreString'.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(4));
@@ -112,15 +112,15 @@ namespace Service_Portal_Regression_STG
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.SAMS'.", repo.Login1.SAMSInfo, new RecordItemIndex(8));
             Keyboard.PrepareFocus(repo.Login1.SAMS);
-            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, 100, 1, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{delete}' with focus on 'Login1.SAMS'.", repo.Login1.SAMSInfo, new RecordItemIndex(9));
-            repo.Login1.SAMS.PressKeys("{delete}");
+            repo.Login1.SAMS.PressKeys("{delete}", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'EDITABILITY TEST' with focus on 'Login1.SAMS'.", repo.Login1.SAMSInfo, new RecordItemIndex(10));
-            repo.Login1.SAMS.PressKeys("EDITABILITY TEST");
+            repo.Login1.SAMS.PressKeys("EDITABILITY TEST", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Validation", "Validating AttributeNotEqual (InnerText!='EDITABILITY TEST') on item 'Login1.SAMS'.", repo.Login1.SAMSInfo, new RecordItemIndex(11));

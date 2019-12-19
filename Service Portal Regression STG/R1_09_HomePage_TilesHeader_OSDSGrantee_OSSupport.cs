@@ -87,7 +87,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();

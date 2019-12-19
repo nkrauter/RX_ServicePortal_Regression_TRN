@@ -150,27 +150,27 @@ namespace Service_Portal_Regression_STG
             // Navigate to Grants.gov
             Report.Log(ReportLevel.Info, "Section", "Navigate to Grants.gov", new RecordItemIndex(12));
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(13));
-            //Mouse.ScrollWheel(-840);
-            //Delay.Milliseconds(500);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by -840 units.", new RecordItemIndex(13));
+            Mouse.ScrollWheel(-840);
+            Delay.Milliseconds(500);
             
-            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope.NavigateToGrantsGov' at 70;14.", repo.Login1.NgScope.NavigateToGrantsGovInfo, new RecordItemIndex(14));
-            //repo.Login1.NgScope.NavigateToGrantsGov.Click("70;14");
-            //Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NgScope.NavigateToGrantsGov' at 70;14.", repo.Login1.NgScope.NavigateToGrantsGovInfo, new RecordItemIndex(14));
+            repo.Login1.NgScope.NavigateToGrantsGov.Click("70;14");
+            Delay.Milliseconds(200);
             
             try {
-                //Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(15));
-                //Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
-                //Delay.Milliseconds(100);
+                Report.Log(ReportLevel.Info, "Validation", "(Optional Action)\r\nValidating AttributeEqual (Src='https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png') on item 'HomeGRANTSGOV.GRANTSGOV'.", repo.HomeGRANTSGOV.GRANTSGOVInfo, new RecordItemIndex(15));
+                Validate.AttributeEqual(repo.HomeGRANTSGOV.GRANTSGOVInfo, "Src", "https://training.grants.gov/o/grants-blue-theme/images/grants/grants-gov-logo.png", null, new Validate.Options(){ReportScreenshot=Validate.ResultOption.OnFail});
+                Delay.Milliseconds(100);
             } catch(Exception ex) { Report.Log(ReportLevel.Warn, "Module", "(Optional Action) " + ex.Message, new RecordItemIndex(15)); }
             
             // Grants.gov Screenshot
-            //Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(16));
+            Report.Screenshot(ReportLevel.Success, "User", "", null, false, new RecordItemIndex(16));
             
-            //Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(17));
-            //Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
-            //Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
-            //Delay.Milliseconds(0);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+W' Press with focus on 'HomeGRANTSGOV'.", repo.HomeGRANTSGOV.SelfInfo, new RecordItemIndex(17));
+            Keyboard.PrepareFocus(repo.HomeGRANTSGOV.Self);
+            Keyboard.Press(System.Windows.Forms.Keys.W | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
             
             // About the Process
             Report.Log(ReportLevel.Info, "Section", "About the Process", new RecordItemIndex(18));

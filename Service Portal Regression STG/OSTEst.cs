@@ -87,7 +87,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -100,19 +100,19 @@ namespace Service_Portal_Regression_STG
             Payment_Request_Number = repo.Login1.FormInlinePanelHeading.SpanTag8.Element.GetAttributeValueText("InnerText");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'Login1.FormInlinePanelHeading.ButtonTagNew'", repo.Login1.FormInlinePanelHeading.ButtonTagNewInfo, new ActionTimeout(10000), new RecordItemIndex(2));
-            repo.Login1.FormInlinePanelHeading.ButtonTagNewInfo.WaitForExists(10000);
+            Report.Log(ReportLevel.Info, "Wait", "Waiting 10s to exist. Associated repository item: 'Login1.FormInlinePanelHeading.NEW_FO'", repo.Login1.FormInlinePanelHeading.NEW_FOInfo, new ActionTimeout(10000), new RecordItemIndex(2));
+            repo.Login1.FormInlinePanelHeading.NEW_FOInfo.WaitForExists(10000);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FormInlinePanelHeading1' at 335;32.", repo.Login1.FormInlinePanelHeading1Info, new RecordItemIndex(3));
             repo.Login1.FormInlinePanelHeading1.Click("335;32");
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{tab 2}'.", new RecordItemIndex(4));
-            Keyboard.Press("{tab 2}");
+            Keyboard.Press("{tab 2}", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Payment_Request_Number'.", new RecordItemIndex(5));
-            Keyboard.Press(Payment_Request_Number);
+            Keyboard.Press(Payment_Request_Number, 100);
             Delay.Milliseconds(100);
             
         }

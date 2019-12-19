@@ -74,7 +74,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -90,8 +90,8 @@ namespace Service_Portal_Regression_STG
             repo.Login1.NavNavbarNavSamsNavbarNav.Programs1.Click("46;9");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FormInlinePanelHeading.ButtonTagNew' at 21;13.", repo.Login1.FormInlinePanelHeading.ButtonTagNewInfo, new RecordItemIndex(3));
-            repo.Login1.FormInlinePanelHeading.ButtonTagNew.Click("21;13");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FormInlinePanelHeading.NEW_FO' at 21;13.", repo.Login1.FormInlinePanelHeading.NEW_FOInfo, new RecordItemIndex(3));
+            repo.Login1.FormInlinePanelHeading.NEW_FO.Click("21;13");
             Delay.Milliseconds(200);
             
         }

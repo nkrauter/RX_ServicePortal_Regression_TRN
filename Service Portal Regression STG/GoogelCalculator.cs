@@ -87,13 +87,13 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
 
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '33 + 1 {Enter}'.", new RecordItemIndex(0));
-            Keyboard.Press("33 + 1 {Enter}");
+            Keyboard.Press("33 + 1 {Enter}", 100);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'InnerText' from item 'AlgebraCalculatorMathPapa.WebElement34' and assigning its value to variable 'Increment'.", repo.AlgebraCalculatorMathPapa.WebElement34Info, new RecordItemIndex(1));
@@ -101,7 +101,7 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Increment' with focus on 'AlgebraCalculatorMathPapa.MqRootBlock'.", repo.AlgebraCalculatorMathPapa.MqRootBlockInfo, new RecordItemIndex(2));
-            repo.AlgebraCalculatorMathPapa.MqRootBlock.PressKeys(Increment);
+            repo.AlgebraCalculatorMathPapa.MqRootBlock.PressKeys(Increment, 100);
             Delay.Milliseconds(0);
             
         }

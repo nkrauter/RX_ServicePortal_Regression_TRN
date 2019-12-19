@@ -191,7 +191,7 @@ namespace Service_Portal_Regression_STG
         void ITestModule.Run()
         {
             Mouse.DefaultMoveTime = 300;
-            Keyboard.DefaultKeyPressTime = 100;
+            Keyboard.DefaultKeyPressTime = 30;
             Delay.SpeedFactor = 1.00;
 
             Init();
@@ -200,25 +200,25 @@ namespace Service_Portal_Regression_STG
             Report.Log(ReportLevel.Info, "Section", "Program Period From/To", new RecordItemIndex(0));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Program_Period_From' with focus on 'Login1.Project___Project_Period_From'.", repo.Login1.Project___Project_Period_FromInfo, new RecordItemIndex(1));
-            repo.Login1.Project___Project_Period_From.PressKeys(Program_Period_From, 30);
+            repo.Login1.Project___Project_Period_From.PressKeys(Program_Period_From);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Program_Period_To' with focus on 'Login1.Project___Project_Period_To'.", repo.Login1.Project___Project_Period_ToInfo, new RecordItemIndex(2));
-            repo.Login1.Project___Project_Period_To.PressKeys(Program_Period_To, 30);
+            repo.Login1.Project___Project_Period_To.PressKeys(Program_Period_To);
             Delay.Milliseconds(100);
             
             // Program Title
             Report.Log(ReportLevel.Info, "Section", "Program Title", new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Program_Title' with focus on 'Login1.Proect___Project_Title'.", repo.Login1.Proect___Project_TitleInfo, new RecordItemIndex(4));
-            repo.Login1.Proect___Project_Title.PressKeys(Program_Title, 30);
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Program_Title' with focus on 'Login1.Internal_Opportunity_Title'.", repo.Login1.Internal_Opportunity_TitleInfo, new RecordItemIndex(4));
+            repo.Login1.Internal_Opportunity_Title.PressKeys(Program_Title);
             Delay.Milliseconds(100);
             
             // Program Description
             Report.Log(ReportLevel.Info, "Section", "Program Description", new RecordItemIndex(5));
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Program_Description' with focus on 'Login1.Project_Project_Description'.", repo.Login1.Project_Project_DescriptionInfo, new RecordItemIndex(6));
-            repo.Login1.Project_Project_Description.PressKeys(Program_Description, 30);
+            repo.Login1.Project_Project_Description.PressKeys(Program_Description);
             Delay.Milliseconds(100);
             
             // Primary Requesting Office
@@ -229,11 +229,11 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Primary_Requesting_Office' with focus on 'Login1.Project___Primary_Requesting_Office'.", repo.Login1.Project___Primary_Requesting_OfficeInfo, new RecordItemIndex(9));
-            repo.Login1.Project___Primary_Requesting_Office.PressKeys(Primary_Requesting_Office, 30);
+            repo.Login1.Project___Primary_Requesting_Office.PressKeys(Primary_Requesting_Office);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}' with focus on 'Login1.Project___Primary_Requesting_Office'.", repo.Login1.Project___Primary_Requesting_OfficeInfo, new RecordItemIndex(10));
-            repo.Login1.Project___Primary_Requesting_Office.PressKeys("{enter}", 30);
+            repo.Login1.Project___Primary_Requesting_Office.PressKeys("{enter}");
             Delay.Milliseconds(70);
             
             // Awarding Office
@@ -244,11 +244,11 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Awarding_Office' with focus on 'Login1.Project___Awarding_Office'.", repo.Login1.Project___Awarding_OfficeInfo, new RecordItemIndex(13));
-            repo.Login1.Project___Awarding_Office.PressKeys(Awarding_Office, 30);
+            repo.Login1.Project___Awarding_Office.PressKeys(Awarding_Office);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}' with focus on 'Login1.Project___Awarding_Office'.", repo.Login1.Project___Awarding_OfficeInfo, new RecordItemIndex(14));
-            repo.Login1.Project___Awarding_Office.PressKeys("{enter}", 30);
+            repo.Login1.Project___Awarding_Office.PressKeys("{enter}");
             Delay.Milliseconds(70);
             
             // CFDA Number
@@ -259,11 +259,11 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$CFDA1_Number' with focus on 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_Number'.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_NumberInfo, new RecordItemIndex(17));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_Number.PressKeys(CFDA1_Number, 30);
+            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_Number.PressKeys(CFDA1_Number);
             Delay.Milliseconds(100);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}' with focus on 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_Number'.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_NumberInfo, new RecordItemIndex(18));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_Number.PressKeys("{enter}", 30);
+            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Project___Associated_Program_Number.PressKeys("{enter}");
             Delay.Milliseconds(70);
             
             // Planned Program Spend
@@ -271,15 +271,15 @@ namespace Service_Portal_Regression_STG
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.Project___Planned_Project_Spend'.", repo.Login1.Project___Planned_Project_SpendInfo, new RecordItemIndex(20));
             Keyboard.PrepareFocus(repo.Login1.Project___Planned_Project_Spend);
-            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, 100, 1, true);
             Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{delete}' with focus on 'Login1.Project___Planned_Project_Spend'.", repo.Login1.Project___Planned_Project_SpendInfo, new RecordItemIndex(21));
-            repo.Login1.Project___Planned_Project_Spend.PressKeys("{delete}", 30);
+            repo.Login1.Project___Planned_Project_Spend.PressKeys("{delete}");
             Delay.Milliseconds(70);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Planned_Program_Spend' with focus on 'Login1.Project___Planned_Project_Spend'.", repo.Login1.Project___Planned_Project_SpendInfo, new RecordItemIndex(22));
-            repo.Login1.Project___Planned_Project_Spend.PressKeys(Planned_Program_Spend, 30);
+            repo.Login1.Project___Planned_Project_Spend.PressKeys(Planned_Program_Spend);
             Delay.Milliseconds(70);
             
             Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.DivTagRow1' at 837;188.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.DivTagRow1Info, new RecordItemIndex(23));
@@ -294,7 +294,7 @@ namespace Service_Portal_Regression_STG
             Delay.Milliseconds(200);
             
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Additional_Comments' with focus on 'Login1.Project___Additional_Comments'.", repo.Login1.Project___Additional_CommentsInfo, new RecordItemIndex(26));
-            repo.Login1.Project___Additional_Comments.PressKeys(Additional_Comments, 30);
+            repo.Login1.Project___Additional_Comments.PressKeys(Additional_Comments);
             Delay.Milliseconds(100);
             
             // Save
