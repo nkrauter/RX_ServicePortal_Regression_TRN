@@ -38,8 +38,39 @@ mode="Global">
 		name="Recipient_Share_of_Cost">
 			321
 		</var>
+		<var
+		id="f2775220-ab2a-47d0-8f90-bc65ed5e6b62"
+		name="Application_Number">
+		</var>
 	</variables>
 	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Capture Application Number
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7d723ae5-c20b-42b6-b48f-6f3397856753"
+		varname="Application_Number">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3c27677f-9cf4-478c-be97-10f88437a876"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_number']
+				</path>
+			</info>
+		</getvaluerecorditem>
 		<separatoritem
 		enabled="True"
 		optional="False">

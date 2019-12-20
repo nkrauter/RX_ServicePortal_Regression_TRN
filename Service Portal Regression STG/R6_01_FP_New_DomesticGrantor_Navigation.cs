@@ -24,29 +24,29 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R5_01_App_New_DomesticGrantor_SaveSubmit recording.
+    ///The R6_01_FP_New_DomesticGrantor_Navigation recording.
     /// </summary>
-    [TestModule("89d75974-620f-4f9a-886a-b06f3651009d", ModuleType.Recording, 1)]
-    public partial class R5_01_App_New_DomesticGrantor_SaveSubmit : ITestModule
+    [TestModule("a46ae042-8800-4a91-b21f-9915c622822f", ModuleType.Recording, 1)]
+    public partial class R6_01_FP_New_DomesticGrantor_Navigation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R5_01_App_New_DomesticGrantor_SaveSubmit instance = new R5_01_App_New_DomesticGrantor_SaveSubmit();
+        static R6_01_FP_New_DomesticGrantor_Navigation instance = new R6_01_FP_New_DomesticGrantor_Navigation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R5_01_App_New_DomesticGrantor_SaveSubmit()
+        public R6_01_FP_New_DomesticGrantor_Navigation()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R5_01_App_New_DomesticGrantor_SaveSubmit Instance
+        public static R6_01_FP_New_DomesticGrantor_Navigation Instance
         {
             get { return instance; }
         }
@@ -79,37 +79,20 @@ namespace Service_Portal_Regression_STG
 
             Init();
 
-            // Save
-            Report.Log(ReportLevel.Info, "Section", "Save", new RecordItemIndex(0));
+            // Navigation to NEW Funding Package
+            Report.Log(ReportLevel.Info, "Section", "Navigation to NEW Funding Package", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1' at 40;22.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1Info, new RecordItemIndex(1));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1.Click("40;22");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.ATagPreAward' at 109;51.", repo.Login1.NavNavbarNavSamsNavbarNav.ATagPreAwardInfo, new RecordItemIndex(1));
+            repo.Login1.NavNavbarNavSamsNavbarNav.ATagPreAward.Click("109;51");
             Delay.Milliseconds(200);
             
-            // Save Application
-            Report.Log(ReportLevel.Info, "Section", "Save Application", new RecordItemIndex(2));
-            
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActions'", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActionsInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActionsInfo.WaitForExists(30000);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 1500 units.", new RecordItemIndex(4));
-            Mouse.ScrollWheel(1500);
-            Delay.Milliseconds(500);
-            
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
-            Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FO_Number' at 177;21.", repo.Login1.FO_NumberInfo, new RecordItemIndex(6));
-            repo.Login1.FO_Number.Click("177;21");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.NavNavbarNavSamsNavbarNav.FundingPackages' at 72;21.", repo.Login1.NavNavbarNavSamsNavbarNav.FundingPackagesInfo, new RecordItemIndex(2));
+            repo.Login1.NavNavbarNavSamsNavbarNav.FundingPackages.Click("72;21");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}{Tab}{LShiftKey up}{Return}' with focus on 'Login1.FO_Number'.", repo.Login1.FO_NumberInfo, new RecordItemIndex(7));
-            repo.Login1.FO_Number.PressKeys("{LShiftKey down}{Tab}{LShiftKey up}{Return}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}'.", new RecordItemIndex(8));
-            Keyboard.Press("{enter}");
-            Delay.Milliseconds(70);
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FormInlinePanelHeading.NEW_FO' at 27;15.", repo.Login1.FormInlinePanelHeading.NEW_FOInfo, new RecordItemIndex(3));
+            repo.Login1.FormInlinePanelHeading.NEW_FO.Click("27;15");
+            Delay.Milliseconds(200);
             
         }
 

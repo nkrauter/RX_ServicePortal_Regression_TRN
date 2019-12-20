@@ -1,0 +1,402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="9c112276-67d5-4cf1-a7cd-52454095f833"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="R7_01_IR_All_DomesticGrantor_Navigation"
+	namespace="Service_Portal_Regression_STG">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<WaitForRecordItem
+		enabled="True"
+		optional="False"
+		searchpropertyid="b996fbf4-1781-430c-a604-e412ae1ad156"
+		waitaction="Exists"
+		waittimeout="30000ms">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1ec6fa6c-086e-4b33-85d7-323d5055c5de"
+			sourcename="RepositoryEditor">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="0,88,0,0"
+				role="unknown"
+				snapElem=""
+				valid="False"
+				visible="False">
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[4]/a[@innertext='Intake Reviews ']
+				</path>
+			</info>
+		</WaitForRecordItem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="51;8"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="9978ecac-8210-40c9-84fe-653ced74ad06"
+		sx="1082"
+		sy="499"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="1ec6fa6c-086e-4b33-85d7-323d5055c5de"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, atag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="0"
+				prefcap="atag"
+				rect="1031,491,112,22"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						grants ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						Intake Reviews&#32;
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						grants ng-binding ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						a
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/span[4]/a[@innertext='Intake Reviews ']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="aa165a5f-8cb8-4221-b0bd-9c09de7a6cdd">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="34;24"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="c4e2642f-7801-41da-a732-ca20fd359719"
+		sx="206"
+		sy="368"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="b3a07217-515c-4cfb-81a5-d50446538baf"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, buttontag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="2"
+				prefcap="buttontag"
+				rect="172,344,55,36"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						btn btn-primary btn-sm m-l-xs ng-scope
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+						New
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						btn btn-primary btn-sm m-l-xs ng-scope
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						button
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						new
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						button
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-click"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-if"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="role"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']/body/div/section/main/div/div/tag/div/?/?/span/div/div/div/div/div/div/div[1]/button[@innertext='New']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="525a22fc-c983-4f09-8094-c8886bc15905">
+				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
+RRRQAUUUUAFFFFABRRRQAUUUUAf/2Q==
+			</helperscreenshot>
+		</mouseitem>
+	</recorditems>
+	<repository
+	id="bc8eb910-3cf8-4d8e-8d15-b57254f8606a"
+	name="Service_Portal_Regression_STGRepository"
+	relativepath="Service_Portal_Regression_STGRepository.rxrep">
+		<codegen
+		classname="Service_Portal_Regression_STGRepository"
+		namespace="Service_Portal_Regression_STG">
+		</codegen>
+		<rootfolder
+		id="c66c0921-a4a6-4c30-8218-6aa696d3aa91"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		R7_01_IR_All_DomesticGrantor_Navigation.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

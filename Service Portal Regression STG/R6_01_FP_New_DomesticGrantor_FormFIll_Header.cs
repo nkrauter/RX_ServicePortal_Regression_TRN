@@ -24,34 +24,47 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R5_01_App_New_DomesticGrantor_SaveSubmit recording.
+    ///The R6_01_FP_New_DomesticGrantor_FormFIll_Header recording.
     /// </summary>
-    [TestModule("89d75974-620f-4f9a-886a-b06f3651009d", ModuleType.Recording, 1)]
-    public partial class R5_01_App_New_DomesticGrantor_SaveSubmit : ITestModule
+    [TestModule("e8d78e1f-ae8a-47a4-819b-34dc68cc3563", ModuleType.Recording, 1)]
+    public partial class R6_01_FP_New_DomesticGrantor_FormFIll_Header : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R5_01_App_New_DomesticGrantor_SaveSubmit instance = new R5_01_App_New_DomesticGrantor_SaveSubmit();
+        static R6_01_FP_New_DomesticGrantor_FormFIll_Header instance = new R6_01_FP_New_DomesticGrantor_FormFIll_Header();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R5_01_App_New_DomesticGrantor_SaveSubmit()
+        public R6_01_FP_New_DomesticGrantor_FormFIll_Header()
         {
+            Application_Number = "";
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R5_01_App_New_DomesticGrantor_SaveSubmit Instance
+        public static R6_01_FP_New_DomesticGrantor_FormFIll_Header Instance
         {
             get { return instance; }
         }
 
 #region Variables
+
+        string _Application_Number;
+
+        /// <summary>
+        /// Gets or sets the value of variable Application_Number.
+        /// </summary>
+        [TestVariable("8914fecf-f3e9-4418-b0ad-868e8f7babab")]
+        public string Application_Number
+        {
+            get { return _Application_Number; }
+            set { _Application_Number = value; }
+        }
 
 #endregion
 
@@ -79,37 +92,31 @@ namespace Service_Portal_Regression_STG
 
             Init();
 
-            // Save
-            Report.Log(ReportLevel.Info, "Section", "Save", new RecordItemIndex(0));
+            // Expand All
+            Report.Log(ReportLevel.Info, "Section", "Expand All", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1' at 40;22.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1Info, new RecordItemIndex(1));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1.Click("40;22");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAll' at 58;30.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAllInfo, new RecordItemIndex(1));
+            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAll.Click("58;30");
             Delay.Milliseconds(200);
             
-            // Save Application
-            Report.Log(ReportLevel.Info, "Section", "Save Application", new RecordItemIndex(2));
+            // Application Number
+            Report.Log(ReportLevel.Info, "Section", "Application Number", new RecordItemIndex(2));
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActions'", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActionsInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActionsInfo.WaitForExists(30000);
+            //Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FO_Number' at 291;23.", repo.Login1.FO_NumberInfo, new RecordItemIndex(3));
+            //repo.Login1.FO_Number.Click("291;23");
+            //Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 1500 units.", new RecordItemIndex(4));
-            Mouse.ScrollWheel(1500);
-            Delay.Milliseconds(500);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{tab}'.", new RecordItemIndex(4));
+            //Keyboard.Press("{tab}");
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
-            Delay.Duration(3000, false);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Application_Number'.", new RecordItemIndex(5));
+            //Keyboard.Press(Application_Number);
+            //Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FO_Number' at 177;21.", repo.Login1.FO_NumberInfo, new RecordItemIndex(6));
-            repo.Login1.FO_Number.Click("177;21");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}{Tab}{LShiftKey up}{Return}' with focus on 'Login1.FO_Number'.", repo.Login1.FO_NumberInfo, new RecordItemIndex(7));
-            repo.Login1.FO_Number.PressKeys("{LShiftKey down}{Tab}{LShiftKey up}{Return}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}'.", new RecordItemIndex(8));
-            Keyboard.Press("{enter}");
-            Delay.Milliseconds(70);
+            //Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}'.", new RecordItemIndex(6));
+            //Keyboard.Press("{enter}");
+            //Delay.Milliseconds(0);
             
         }
 

@@ -22,7 +22,7 @@ using Ranorex.Core.Testing;
 
 namespace Service_Portal_Regression_STG
 {
-    public partial class R5_01_App_New_RPMGrantor_FormFill_Header
+    public partial class R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo
     {
         /// <summary>
         /// This method gets called right after the recording has been started.

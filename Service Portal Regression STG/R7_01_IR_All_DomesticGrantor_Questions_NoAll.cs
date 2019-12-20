@@ -24,29 +24,29 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R5_01_App_New_DomesticGrantor_SaveSubmit recording.
+    ///The R7_01_IR_All_DomesticGrantor_Questions_NoAll recording.
     /// </summary>
-    [TestModule("89d75974-620f-4f9a-886a-b06f3651009d", ModuleType.Recording, 1)]
-    public partial class R5_01_App_New_DomesticGrantor_SaveSubmit : ITestModule
+    [TestModule("b12075d5-599b-49df-a136-e008b6b80f1e", ModuleType.Recording, 1)]
+    public partial class R7_01_IR_All_DomesticGrantor_Questions_NoAll : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R5_01_App_New_DomesticGrantor_SaveSubmit instance = new R5_01_App_New_DomesticGrantor_SaveSubmit();
+        static R7_01_IR_All_DomesticGrantor_Questions_NoAll instance = new R7_01_IR_All_DomesticGrantor_Questions_NoAll();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R5_01_App_New_DomesticGrantor_SaveSubmit()
+        public R7_01_IR_All_DomesticGrantor_Questions_NoAll()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R5_01_App_New_DomesticGrantor_SaveSubmit Instance
+        public static R7_01_IR_All_DomesticGrantor_Questions_NoAll Instance
         {
             get { return instance; }
         }
@@ -79,37 +79,26 @@ namespace Service_Portal_Regression_STG
 
             Init();
 
-            // Save
-            Report.Log(ReportLevel.Info, "Section", "Save", new RecordItemIndex(0));
+            // No All
+            Report.Log(ReportLevel.Info, "Section", "No All", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1' at 40;22.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1Info, new RecordItemIndex(1));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.Save1.Click("40;22");
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FormInlinePanelHeading.NoAll' at 31;17.", repo.Login1.FormInlinePanelHeading.NoAllInfo, new RecordItemIndex(1));
+            repo.Login1.FormInlinePanelHeading.NoAll.Click("31;17");
             Delay.Milliseconds(200);
             
-            // Save Application
-            Report.Log(ReportLevel.Info, "Section", "Save Application", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}'.", new RecordItemIndex(2));
+            Keyboard.Press("{enter}");
+            Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Wait", "Waiting 30s to exist. Associated repository item: 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActions'", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActionsInfo, new ActionTimeout(30000), new RecordItemIndex(3));
-            repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.AdditionalActionsInfo.WaitForExists(30000);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 25s.", new RecordItemIndex(3));
+            Delay.Duration(25000, false);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse scroll Vertical by 1500 units.", new RecordItemIndex(4));
-            Mouse.ScrollWheel(1500);
-            Delay.Milliseconds(500);
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded('120000ms') on item 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(4));
+            repo.Login1.Self.WaitForDocumentLoaded(ValueConverter.ArgumentFromString<Ranorex.Duration>("timeout", "120000ms"));
+            Delay.Milliseconds(0);
             
             Report.Log(ReportLevel.Info, "Delay", "Waiting for 3s.", new RecordItemIndex(5));
             Delay.Duration(3000, false);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.FO_Number' at 177;21.", repo.Login1.FO_NumberInfo, new RecordItemIndex(6));
-            repo.Login1.FO_Number.Click("177;21");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{LShiftKey down}{Tab}{LShiftKey up}{Return}' with focus on 'Login1.FO_Number'.", repo.Login1.FO_NumberInfo, new RecordItemIndex(7));
-            repo.Login1.FO_Number.PressKeys("{LShiftKey down}{Tab}{LShiftKey up}{Return}");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}'.", new RecordItemIndex(8));
-            Keyboard.Press("{enter}");
-            Delay.Milliseconds(70);
             
         }
 

@@ -293,6 +293,8 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _spformfieldustateInfo;
             RepoItemInfo _spformfielduprovinceInfo;
             RepoItemInfo _spformfielduzippostalcodeInfo;
+            RepoItemInfo _select2dropmaskInfo;
+            RepoItemInfo _spformfieldcompanystreetInfo;
 
             /// <summary>
             /// Creates a new Login1  folder.
@@ -376,6 +378,8 @@ namespace Service_Portal_Regression_STG
                 _spformfieldustateInfo = new RepoItemInfo(this, "SpFormfieldUState", ".//input[#'sp_formfield_u_state']", 30000, null, "f9f75aa1-d354-41a4-b153-bb16c18551be");
                 _spformfielduprovinceInfo = new RepoItemInfo(this, "SpFormfieldUProvince", ".//input[#'sp_formfield_u_province']", 30000, null, "4fd75ae0-3175-4ac9-85a5-00f508b114a9");
                 _spformfielduzippostalcodeInfo = new RepoItemInfo(this, "SpFormfieldUZipPostalCode", ".//input[#'sp_formfield_u_zip_postal_code']", 30000, null, "41124d64-5b21-4618-b076-aba2a640a872");
+                _select2dropmaskInfo = new RepoItemInfo(this, "Select2DropMask", "body/div[8]", 30000, null, "6a5f98d1-9cf0-464e-ba09-36616391ab95");
+                _spformfieldcompanystreetInfo = new RepoItemInfo(this, "SpFormfieldCompanyStreet", ".//textarea[#'sp_formfield_company.street']", 30000, null, "95b81a63-164f-405d-9c1f-d4d7a7cfac3b");
             }
 
             /// <summary>
@@ -2011,6 +2015,54 @@ namespace Service_Portal_Regression_STG
             }
 
             /// <summary>
+            /// The Select2DropMask item.
+            /// </summary>
+            [RepositoryItem("6a5f98d1-9cf0-464e-ba09-36616391ab95")]
+            public virtual Ranorex.DivTag Select2DropMask
+            {
+                get
+                {
+                    return _select2dropmaskInfo.CreateAdapter<Ranorex.DivTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Select2DropMask item info.
+            /// </summary>
+            [RepositoryItemInfo("6a5f98d1-9cf0-464e-ba09-36616391ab95")]
+            public virtual RepoItemInfo Select2DropMaskInfo
+            {
+                get
+                {
+                    return _select2dropmaskInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SpFormfieldCompanyStreet item.
+            /// </summary>
+            [RepositoryItem("95b81a63-164f-405d-9c1f-d4d7a7cfac3b")]
+            public virtual Ranorex.TextAreaTag SpFormfieldCompanyStreet
+            {
+                get
+                {
+                    return _spformfieldcompanystreetInfo.CreateAdapter<Ranorex.TextAreaTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SpFormfieldCompanyStreet item info.
+            /// </summary>
+            [RepositoryItemInfo("95b81a63-164f-405d-9c1f-d4d7a7cfac3b")]
+            public virtual RepoItemInfo SpFormfieldCompanyStreetInfo
+            {
+                get
+                {
+                    return _spformfieldcompanystreetInfo;
+                }
+            }
+
+            /// <summary>
             /// The FormInlinePanelHeading folder.
             /// </summary>
             [RepositoryFolder("2b28fea5-024b-4446-9682-1673b75b7e97")]
@@ -2123,6 +2175,13 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _datatablesearch2Info;
             RepoItemInfo _datatablesearch3Info;
             RepoItemInfo _datatablesearch4Info;
+            RepoItemInfo _intakereviewsInfo;
+            RepoItemInfo _questionsInfo;
+            RepoItemInfo _yesallInfo;
+            RepoItemInfo _noallInfo;
+            RepoItemInfo _naallInfo;
+            RepoItemInfo _datatablesearch5Info;
+            RepoItemInfo _datatablesearch6Info;
 
             /// <summary>
             /// Creates a new FormInlinePanelHeading  folder.
@@ -2155,6 +2214,13 @@ namespace Service_Portal_Regression_STG
                 _datatablesearch2Info = new RepoItemInfo(this, "DatatableSearch2", "div[1]/form[@action='https://mygrantstrain.service-now.com/payments?id=grants_lf&grants_pid=grants_overseas_sf_270&table=u_overseas_sf_270&parent_table=u_domestic_notice_of_award&filter=u_award_number%3D85c91146dbb46b00cbf034cc7c961909&view=overseas_grantee']/?/?/input", 30000, null, "73d746a4-ef38-4fe3-99b4-30c9e0c5a283");
                 _datatablesearch3Info = new RepoItemInfo(this, "DatatableSearch3", "div[1]/form[@action='https://mygrantstrain.service-now.com/grants?grants_pid=grants_funding_opportunity&id=grants_funding_opportunity_list&table=u_domestic_funding_opportunity&view=Default&o=number&d=desc']/?/?/input[@name='datatable-search']", 30000, null, "da9cef89-6e9e-4c7d-a531-b245a2ad249a");
                 _datatablesearch4Info = new RepoItemInfo(this, "DatatableSearch4", "div[1]/form[@action='https://mygrantstrain.service-now.com/grants?grants_pid=grants_funding_opportunity&id=grants_funding_opportunity_list&table=u_domestic_funding_opportunity&view=Grantee&d=desc&o=number']/?/?/input[@name='datatable-search']", 30000, null, "23012dce-181f-4d00-a9b8-087e90a5fadc");
+                _intakereviewsInfo = new RepoItemInfo(this, "IntakeReviews", "span[4]/a[@innertext='Intake Reviews ']", 30000, null, "1ec6fa6c-086e-4b33-85d7-323d5055c5de");
+                _questionsInfo = new RepoItemInfo(this, "Questions", "?/?/a[@innertext='Questions ']", 30000, null, "eb2ee8b3-76c8-4a2f-a475-2a6b96808ab4");
+                _yesallInfo = new RepoItemInfo(this, "YesAll", "button[@innertext='Yes All']", 30000, null, "9ee98d8e-5388-4e97-836d-e4fd640fed06");
+                _noallInfo = new RepoItemInfo(this, "NoAll", "button[@innertext='No All']", 30000, null, "8646e820-58e8-4377-943f-a3ba366b214f");
+                _naallInfo = new RepoItemInfo(this, "NAAll", "button[@innertext='N/A All']", 30000, null, "e3aa3a40-6169-4beb-a588-00d44b090596");
+                _datatablesearch5Info = new RepoItemInfo(this, "DatatableSearch5", "div[1]/form[@action='https://mygrantstrain.service-now.com/grants?grants_pid=grants_application&id=grants_application_list&table=u_domestic_application&view=Default&p=1&o=number&d=desc']/?/?/input[@name='datatable-search']", 30000, null, "c045f227-ce38-4123-bbf8-753e6f27c4f2");
+                _datatablesearch6Info = new RepoItemInfo(this, "DatatableSearch6", "div[1]/form[@action='https://mygrantstrain.service-now.com/grants?grants_pid=grants_notice_of_award&id=grants_notice_of_award_list&table=u_domestic_notice_of_award&view=Default&spa=1&filter=&p=1&o=u_ariba_award_number&d=desc']/?/?/input[@name='datatable-search']", 30000, null, "dc8cf461-56bc-4fcd-8356-bc56d8e8c975");
             }
 
             /// <summary>
@@ -2778,6 +2844,174 @@ namespace Service_Portal_Regression_STG
                 get
                 {
                     return _datatablesearch4Info;
+                }
+            }
+
+            /// <summary>
+            /// The IntakeReviews item.
+            /// </summary>
+            [RepositoryItem("1ec6fa6c-086e-4b33-85d7-323d5055c5de")]
+            public virtual Ranorex.ATag IntakeReviews
+            {
+                get
+                {
+                    return _intakereviewsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The IntakeReviews item info.
+            /// </summary>
+            [RepositoryItemInfo("1ec6fa6c-086e-4b33-85d7-323d5055c5de")]
+            public virtual RepoItemInfo IntakeReviewsInfo
+            {
+                get
+                {
+                    return _intakereviewsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Questions item.
+            /// </summary>
+            [RepositoryItem("eb2ee8b3-76c8-4a2f-a475-2a6b96808ab4")]
+            public virtual Ranorex.ATag Questions
+            {
+                get
+                {
+                    return _questionsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Questions item info.
+            /// </summary>
+            [RepositoryItemInfo("eb2ee8b3-76c8-4a2f-a475-2a6b96808ab4")]
+            public virtual RepoItemInfo QuestionsInfo
+            {
+                get
+                {
+                    return _questionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The YesAll item.
+            /// </summary>
+            [RepositoryItem("9ee98d8e-5388-4e97-836d-e4fd640fed06")]
+            public virtual Ranorex.ButtonTag YesAll
+            {
+                get
+                {
+                    return _yesallInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The YesAll item info.
+            /// </summary>
+            [RepositoryItemInfo("9ee98d8e-5388-4e97-836d-e4fd640fed06")]
+            public virtual RepoItemInfo YesAllInfo
+            {
+                get
+                {
+                    return _yesallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NoAll item.
+            /// </summary>
+            [RepositoryItem("8646e820-58e8-4377-943f-a3ba366b214f")]
+            public virtual Ranorex.ButtonTag NoAll
+            {
+                get
+                {
+                    return _noallInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NoAll item info.
+            /// </summary>
+            [RepositoryItemInfo("8646e820-58e8-4377-943f-a3ba366b214f")]
+            public virtual RepoItemInfo NoAllInfo
+            {
+                get
+                {
+                    return _noallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NAAll item.
+            /// </summary>
+            [RepositoryItem("e3aa3a40-6169-4beb-a588-00d44b090596")]
+            public virtual Ranorex.ButtonTag NAAll
+            {
+                get
+                {
+                    return _naallInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NAAll item info.
+            /// </summary>
+            [RepositoryItemInfo("e3aa3a40-6169-4beb-a588-00d44b090596")]
+            public virtual RepoItemInfo NAAllInfo
+            {
+                get
+                {
+                    return _naallInfo;
+                }
+            }
+
+            /// <summary>
+            /// The DatatableSearch5 item.
+            /// </summary>
+            [RepositoryItem("c045f227-ce38-4123-bbf8-753e6f27c4f2")]
+            public virtual Ranorex.InputTag DatatableSearch5
+            {
+                get
+                {
+                    return _datatablesearch5Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DatatableSearch5 item info.
+            /// </summary>
+            [RepositoryItemInfo("c045f227-ce38-4123-bbf8-753e6f27c4f2")]
+            public virtual RepoItemInfo DatatableSearch5Info
+            {
+                get
+                {
+                    return _datatablesearch5Info;
+                }
+            }
+
+            /// <summary>
+            /// The DatatableSearch6 item.
+            /// </summary>
+            [RepositoryItem("dc8cf461-56bc-4fcd-8356-bc56d8e8c975")]
+            public virtual Ranorex.InputTag DatatableSearch6
+            {
+                get
+                {
+                    return _datatablesearch6Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The DatatableSearch6 item info.
+            /// </summary>
+            [RepositoryItemInfo("dc8cf461-56bc-4fcd-8356-bc56d8e8c975")]
+            public virtual RepoItemInfo DatatableSearch6Info
+            {
+                get
+                {
+                    return _datatablesearch6Info;
                 }
             }
         }
@@ -7281,6 +7515,13 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _additionalactionsInfo;
             RepoItemInfo _divtaglegacynumberInfo;
             RepoItemInfo _btngroupInfo;
+            RepoItemInfo _spantagnone1Info;
+            RepoItemInfo _savedraftInfo;
+            RepoItemInfo _submitInfo;
+            RepoItemInfo _submit1Info;
+            RepoItemInfo _fafaplussquareo2Info;
+            RepoItemInfo _questionsInfo;
+            RepoItemInfo _ngscopeInfo;
 
             /// <summary>
             /// Creates a new C8d73b9a2db393b0016bc300f7c961903NgSco  folder.
@@ -7315,6 +7556,13 @@ namespace Service_Portal_Regression_STG
                 _additionalactionsInfo = new RepoItemInfo(this, "AdditionalActions", ".//span/div/div/div/div[2]/div[2]/div/label[@innertext='Additional Actions']", 30000, null, "1ce7b5ae-2c4d-4f70-b63e-eb7b336dc0b5");
                 _divtaglegacynumberInfo = new RepoItemInfo(this, "DivTagLegacyNumber", "?/?/tag[@tagname='sp-page-row']/div/?/?/span/div/div/div/div/div/div/div[2]/table/thead/tr/th[2]/div[@innertext>'        Legacy Number']", 30000, null, "9ab167a0-7f61-436f-9864-d683b09dde18");
                 _btngroupInfo = new RepoItemInfo(this, "BtnGroup", "div/tag/div/?/?/span/div/div/div/div/div/div/div[3]/div[1]/div[2]", 30000, null, "4504c38c-a6ec-41ed-9f29-f887a938784b");
+                _spantagnone1Info = new RepoItemInfo(this, "SpanTagNone1", ".//a[@href='javascript:void(0)']/span[@innertext='-- None --']", 30000, null, "e59bd8a8-00c3-4525-a848-182caf70a0f5");
+                _savedraftInfo = new RepoItemInfo(this, "SaveDraft", ".//span/div/div/div/div[3]/div[1]/button[@innertext='Save Draft']", 30000, null, "50e22dd3-d09b-473b-a036-386eb14779aa");
+                _submitInfo = new RepoItemInfo(this, "Submit", ".//span/div/div/div/div[1]/div[2]/button[@innertext='Submit']", 30000, null, "9c6a4900-d834-41e9-bb1f-4b2d4bde09db");
+                _submit1Info = new RepoItemInfo(this, "Submit1", ".//span/div/div/div/div[3]/div[1]/button[@innertext='Submit']", 30000, null, "696bd060-ff50-46c3-a412-a6de12c00779");
+                _fafaplussquareo2Info = new RepoItemInfo(this, "FaFaPlusSquareO2", ".//span/div/div/div/div[2]/div[2]//h4/a[@innertext=' Intake Review ']/span[1]/i[1]", 30000, null, "8e1c8667-e529-45d8-b602-5fbb11c9e883");
+                _questionsInfo = new RepoItemInfo(this, "Questions", ".//span/div/div/div/div[2]/div[3]/div/?/?/a[@innertext='Questions ']", 30000, null, "28ef86b5-218c-4490-b88d-debcf3de6d75");
+                _ngscopeInfo = new RepoItemInfo(this, "NgScope", "?/?/tag[@tagname='sp-page-row']/div/div[1]/span/div/div/div/div/div/div/div[2]/table/thead/tr/th[1]", 30000, null, "0c2e675c-4cdd-483b-bdaf-77622298e3ed");
             }
 
             /// <summary>
@@ -7986,6 +8234,174 @@ namespace Service_Portal_Regression_STG
                 get
                 {
                     return _btngroupInfo;
+                }
+            }
+
+            /// <summary>
+            /// The SpanTagNone1 item.
+            /// </summary>
+            [RepositoryItem("e59bd8a8-00c3-4525-a848-182caf70a0f5")]
+            public virtual Ranorex.SpanTag SpanTagNone1
+            {
+                get
+                {
+                    return _spantagnone1Info.CreateAdapter<Ranorex.SpanTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SpanTagNone1 item info.
+            /// </summary>
+            [RepositoryItemInfo("e59bd8a8-00c3-4525-a848-182caf70a0f5")]
+            public virtual RepoItemInfo SpanTagNone1Info
+            {
+                get
+                {
+                    return _spantagnone1Info;
+                }
+            }
+
+            /// <summary>
+            /// The SaveDraft item.
+            /// </summary>
+            [RepositoryItem("50e22dd3-d09b-473b-a036-386eb14779aa")]
+            public virtual Ranorex.ButtonTag SaveDraft
+            {
+                get
+                {
+                    return _savedraftInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The SaveDraft item info.
+            /// </summary>
+            [RepositoryItemInfo("50e22dd3-d09b-473b-a036-386eb14779aa")]
+            public virtual RepoItemInfo SaveDraftInfo
+            {
+                get
+                {
+                    return _savedraftInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Submit item.
+            /// </summary>
+            [RepositoryItem("9c6a4900-d834-41e9-bb1f-4b2d4bde09db")]
+            public virtual Ranorex.ButtonTag Submit
+            {
+                get
+                {
+                    return _submitInfo.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Submit item info.
+            /// </summary>
+            [RepositoryItemInfo("9c6a4900-d834-41e9-bb1f-4b2d4bde09db")]
+            public virtual RepoItemInfo SubmitInfo
+            {
+                get
+                {
+                    return _submitInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Submit1 item.
+            /// </summary>
+            [RepositoryItem("696bd060-ff50-46c3-a412-a6de12c00779")]
+            public virtual Ranorex.ButtonTag Submit1
+            {
+                get
+                {
+                    return _submit1Info.CreateAdapter<Ranorex.ButtonTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Submit1 item info.
+            /// </summary>
+            [RepositoryItemInfo("696bd060-ff50-46c3-a412-a6de12c00779")]
+            public virtual RepoItemInfo Submit1Info
+            {
+                get
+                {
+                    return _submit1Info;
+                }
+            }
+
+            /// <summary>
+            /// The FaFaPlusSquareO2 item.
+            /// </summary>
+            [RepositoryItem("8e1c8667-e529-45d8-b602-5fbb11c9e883")]
+            public virtual Ranorex.ITag FaFaPlusSquareO2
+            {
+                get
+                {
+                    return _fafaplussquareo2Info.CreateAdapter<Ranorex.ITag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The FaFaPlusSquareO2 item info.
+            /// </summary>
+            [RepositoryItemInfo("8e1c8667-e529-45d8-b602-5fbb11c9e883")]
+            public virtual RepoItemInfo FaFaPlusSquareO2Info
+            {
+                get
+                {
+                    return _fafaplussquareo2Info;
+                }
+            }
+
+            /// <summary>
+            /// The Questions item.
+            /// </summary>
+            [RepositoryItem("28ef86b5-218c-4490-b88d-debcf3de6d75")]
+            public virtual Ranorex.ATag Questions
+            {
+                get
+                {
+                    return _questionsInfo.CreateAdapter<Ranorex.ATag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Questions item info.
+            /// </summary>
+            [RepositoryItemInfo("28ef86b5-218c-4490-b88d-debcf3de6d75")]
+            public virtual RepoItemInfo QuestionsInfo
+            {
+                get
+                {
+                    return _questionsInfo;
+                }
+            }
+
+            /// <summary>
+            /// The NgScope item.
+            /// </summary>
+            [RepositoryItem("0c2e675c-4cdd-483b-bdaf-77622298e3ed")]
+            public virtual Ranorex.ThTag NgScope
+            {
+                get
+                {
+                    return _ngscopeInfo.CreateAdapter<Ranorex.ThTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The NgScope item info.
+            /// </summary>
+            [RepositoryItemInfo("0c2e675c-4cdd-483b-bdaf-77622298e3ed")]
+            public virtual RepoItemInfo NgScopeInfo
+            {
+                get
+                {
+                    return _ngscopeInfo;
                 }
             }
         }

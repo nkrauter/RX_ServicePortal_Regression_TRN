@@ -1,0 +1,1333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="c96ebd2d-15f4-40ae-be69-67f4e451d26a"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo"
+	namespace="Service_Portal_Regression_STG">
+	</codegen>
+	<variables>
+		<var
+		id="c9073810-89aa-428f-8920-1fd4f1210048"
+		name="Statutory_Authority">
+			Fulbright-Hays
+		</var>
+		<var
+		id="7213b9b5-95f2-41f4-9242-c87098f4c172"
+		name="US_Share_of_Cost">
+			1000
+		</var>
+		<var
+		id="a39a39b4-015a-4802-81f2-301709877e50"
+		name="Recipient_Share_of_Cost">
+			375
+		</var>
+	</variables>
+	<recorditems>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Statutory Authority
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="440;18"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="73995d2d-b810-4837-93ee-19f5b6572d21"
+		sx="881"
+		sy="801"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ce3c2d7-37f7-4ff5-a385-713c43cea20c"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="441,783,1291,42"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control decimal ng-pristine ng-valid ng-not-empty ng-valid-maxlength ng-touched
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_us_share_of_cost
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						decimal form-control ng-not-empty ng-pristine ng-touched ng-valid ng-valid-maxlength
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						14
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_us_share_of_cost
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_us_share_of_cost']/div/span/?/?/input[@name='u_us_share_of_cost']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="bc1ed110-0fea-48f3-be74-4b525971040b">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABhAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiikf7tAC0VH+J/Oj8T+dAE
+lFR/ifzo/E/nQBJRUf4n86PxP50ASUVH+J/Oj8T+dAElFR/ifzo/E/nQBJRUf4n86KAJKKyP7Ft/
++ekv5j/Cj+xbf/npL+Y/wqby7G/JS/m/D/gmvRWR/Ytv/wA9JfzH+FH9i2//AD0l/Mf4UXl2Dkpf
+zfh/wTXorI/sW3/56S/mP8KP7Ft/+ekv5j/Ci8uwclL+b8P+Ca9FZH9i2/8Az0l/Mf4Uf2Lb/wDP
+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
+++BR9jtf+faH/vgUe8F6PZ/h/kQf2tY/89//ABxv8KP7Wsf+e/8A443+FT/Y7X/n2h/74FH2O1/5
+9of++BR7wXo9n+H+RB/a1j/z3/8AHG/wpG1WyK8Tf+ON/hVj7Ha/8+0P/fApr2ltt/494f8AvgUe
+8F6PZ/h/kV/7Usv+e3/jp/wo/tSy/wCe3/jp/wAKm+yW3/PvF/3wKPslt/z7xf8AfAo94L0ez/D/
+ACIf7Usv+e3/AI6f8KP7Usv+e3/jp/wqb7Jbf8+8X/fAo+yW3/PvF/3wKPeC9Hs/w/yIf7Usv+e3
+/jp/wo/tSy/57f8Ajp/wqb7Jbf8APvF/3wKPslt/z7xf98Cj3gvR7P8AD/Ih/tSy/wCe3/jp/wAK
+P7Usv+e3/jp/wqb7Jbf8+8X/AHwKPslt/wA+8X/fAo94L0ez/D/Ih/tSy/57f+On/Cj+1LL/AJ7f
++On/AAqb7Jbf8+8X/fAo+yW3/PvF/wB8Cj3gvR7P8P8AIh/tSy/57f8Ajp/woqb7Jbf8+8X/AHwK
+KPeC9Hs/w/yLVFFFUYBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSP92l
+pH+7QAyiiigAooooAKKKKACiiigAooooAKKKKAJKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACkf7tFFADKKKKACiiigAooooAKKKKACiiigAooooA//Z
+			</helperscreenshot>
+		</mouseitem>
+		<keysequenceitem
+		KeySequence="{LShiftKey down}{Tab}{Tab}{LShiftKey up}"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		searchpropertyid="1f0ce6ae-d766-497b-a357-c2900f54bb48">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ce3c2d7-37f7-4ff5-a385-713c43cea20c"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="441,783,1291,42"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control decimal ng-pristine ng-valid ng-not-empty ng-valid-maxlength ng-touched
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_us_share_of_cost
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						decimal form-control ng-not-empty ng-pristine ng-touched ng-valid ng-valid-maxlength
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						14
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_us_share_of_cost
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_us_share_of_cost']/div/span/?/?/input[@name='u_us_share_of_cost']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="fa1aa8de-cb5b-4194-85ae-58018156d3cb">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCAH0AfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+AGp938T/ADp1NT7v4n+dOoAKR/uH6UtFAAOgopNvoSKTb/tNQA6im7f9pqNv+01ADqKbt/2mo2/7
+TUAOopu3/aajb/tNQA6im7f9pqNv+01ADqKbt/2mo2/7TUAOopu3/aajb/tNQA6im7f9pqNv+01A
+DqKbt/2mo2/7TUAOopu3/aajb/tNQA6im7f9pqNv+01ADqKbt/2mo2/7TUAOopu3/aajb/tNQA6i
+m7f9pqNv+01ADqKbt/2mo2/7TUAOopu3/aajb/tNQA6im7f9pqNv+01ADqKbt/2mo2/7TUAOopu3
+/aajb/tNQA6im7f9pqNv+01ADqKbt/2mo2/7TUAOopu3/aajb/tNQA6im7f9pqNv+01ADqKbt/2m
+o2/7TUAOopu3/aajb/tNQA6im7f9pqNv+01ADqKbt/2mo2/7TUAOopu3/aajb/tNQA6im7f9pqKA
+Df7N+VG72b8qdRQAijA5paKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAo
+oooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKMe9GPegAoox70Y96ACijHv
+Rj3oAKKMe9GPegAoox70Y96ACijHvRj3oAKKMe9GPegAoox70Y96ACijHvRj3oAKKMe9GPegAoox
+70Y96ACijHvRj3oAKKMe9GPegAoox70Y96ACijHvRj3oAKKMe9GPegAoox70Y96ACijHvRj3oAKK
+Me9GPegAoox70Y96ACijHvRj3oAKKMe9GPegAoox70Y96ACijHvRj3oAKKMe9GPegAoox70Y96AC
+ijHvRj3oAKKMe9GPegAoox70Y96ACijHvRj3oAKKMe9GPegAoox70UAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFA
+BRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBDvl/55N+Y/xo3y/wDPJvzH
++NTUU7isQ75f+eTfmP8AGjfL/wA8m/Mf41NRRcLEO+X/AJ5N+Y/xo3y/88m/Mf41NRRcLEO+X/nk
+35j/ABo3y/8APJvzH+NTUUXCxDvl/wCeTfmP8aN8v/PJvzH+NTUUXCxDvl/55N+Y/wAaN8v/ADyb
+8x/jU1FFwsQ75f8Ank35j/GjfL/zyb8x/jU1FFwsQ75f+eTfmP8AGjfL/wA8m/Mf41NRRcLEO+X/
+AJ5N+Y/xo3y/88m/Mf41NRRcLEO+X/nk35j/ABo3y/8APJvzH+NTUUXCxDvl/wCeTfmP8aN8v/PJ
+vzH+NTUUXCxDvl/55N+Y/wAaN8v/ADyb8x/jU1FFwsQ75f8Ank35j/GjfL/zyb8x/jU1FFwsQ75f
++eTfmP8AGjfL/wA8m/Mf41NRRcLEO+X/AJ5N+Y/xo3y/88m/Mf41NRRcLEO+X/nk35j/ABo3y/8A
+PJvzH+NTUUXCxDvl/wCeTfmP8aN8v/PJvzH+NTUUXCxDvl/55N+Y/wAaN8v/ADyb8x/jU1FFwsQ7
+5f8Ank35j/GjfL/zyb8x/jU1FFwsQ75f+eTfmP8AGjfL/wA8m/Mf41NRRcLEO+X/AJ5N+Y/xo3y/
+88m/Mf41NRRcLEO+X/nk35j/ABo3y/8APJvzH+NTUUXCxDvl/wCeTfmP8aN8v/PJvzH+NTUUXCxD
+vl/55N+Y/wAaN8v/ADyb8x/jU1FFwsQ75f8Ank35j/GjfL/zyb8x/jU1FFwsQ75f+eTfmP8AGjfL
+/wA8m/Mf41NRRcLEO+X/AJ5N+Y/xo3y/88m/Mf41NRRcLEO+X/nk35j/ABo3y/8APJvzH+NTUUXC
+xDvl/wCeTfmP8aN8v/PJvzH+NTUUXCxDvl/55N+Y/wAaN8v/ADyb8x/jU1FFwsQ75f8Ank35j/Gj
+fL/zyb8x/jU1FFwsQ75f+eTfmP8AGipqKLhYKKKKQwooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAj8+L++KPPi/vinbBRsFPQ
+Wo3z4v74o8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4v74o
+8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4v74o8+L++KdsF
+GwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4v74o8+L++KdsFGwUaBqN8+
+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4v74o8+L++KdsFGwUaBqN8+L++KPPi/v
+inbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4v74o8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGg
+ajfPi/vijz4v74p2wUbBRoGo3z4v74o8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vij
+z4v74p2wUbBRoGo3z4v74o8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wU
+bBRoGo3z4v74o8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4
+v74o8+L++KdsFGwUaBqN8+L++KPPi/vinbBRsFGgajfPi/vijz4v74p2wUbBRoGo3z4v74op2wUU
+aBqOooopDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACii
+igAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAopNw9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw
+9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw9R+dG4eo/OgBaKTcPUfnRuHqPzo
+AWik3D1H50bh6j86AFopNw9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw9R+dG
+4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3
+D1H50bh6j86AFopNw9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw9R+dG4eo/O
+gBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50
+bh6j86AFopNw9R+dG4eo/OgBaKTcPUfnRuHqPzoAWik3D1H50bh6j86AFopNw9R+dG4eo/OgBaKT
+cPUfnRQAbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6
+CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACb
+R6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFA
+CbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUt
+FACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CjaPQ
+UtFACbR6CjaPQUtFACbR6CjaPQUtFACbR6CilooAKKKKACiiigAooooAKKKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBNi/3RRsX+6KWigBNi
+/wB0UbF/uilooATYv90UbF/uilooATYv90UbF/uilooATYv90UbF/uilooATYv8AdFGxf7opaKAE
+2L/dFGxf7opaKAE2L/dFGxf7opaKAE2L/dFGxf7opaKAE2L/AHRRsX+6KWigBNi/3RRsX+6KWigB
+Ni/3RRsX+6KWigBNi/3RRsX+6KWigBNi/wB0UbF/uilooATYv90UbF/uilooATYv90UbF/uilooA
+TYv90UbF/uilooATYv8AdFGxf7opaKAE2L/dFGxf7opaKAE2L/dFGxf7opaKAE2L/dFGxf7opaKA
+E2L/AHRRsX+6KWigBNi/3RRsX+6KWigBNi/3RRsX+6KWigBNi/3RRsX+6KWigBNi/wB0UbF/uilo
+oATYv90UbF/uilooATYv90UbF/uilooATYv90UbF/uilooATYv8AdFGxf7opaKAE2L/dFGxf7opa
+KAE2L/dFFLRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQ
+AUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAB
+RRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRTdzf3f1o3N/d/WgB1FN3N/d/Wjc3939aAHUU3c3939a
+Nzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/d/Wjc3939aAHUU3c3939aNzf3f1oAdRTdzf3f1o3N/d/
+WgB1FN3N/d/Wjc3939aAHUU3c3939aNzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/d/Wjc3939aAHUU
+3c3939aNzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/d/Wjc3939aAHUU3c3939aNzf3f1oAdRTdzf3f
+1o3N/d/WgB1FN3N/d/Wjc3939aAHUU3c3939aNzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/d/Wjc39
+39aAHUU3c3939aNzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/d/Wjc3939aAHUU3c3939aNzf3f1oAd
+RTdzf3f1o3N/d/WgB1FN3N/d/Wjc3939aAHUU3c3939aNzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/
+d/Wjc3939aAHUU3c3939aNzf3f1oAdRTdzf3f1o3N/d/WgB1FN3N/d/WigB1FFFABRRRQAUUUUAF
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRR
+QAUUm4/3TRuP900ALRSbj/dNG4/3TQAtFJuP900bj/dNAC0Um4/3TRuP900ALRSbj/dNG4/3TQAt
+FJuP900bj/dNAC0Um4/3TRuP900ALRSbj/dNG4/3TQAtFJuP900bj/dNAC0Um4/3TRuP900ALRSb
+j/dNG4/3TQAtFJuP900bj/dNAC0Um4/3TRuP900ALRSbj/dNG4/3TQAtFJuP900bj/dNAC0Um4/3
+TRuP900ALRSbj/dNG4/3TQAtFJuP900bj/dNAC0Um4/3TRuP900ALRSbj/dNG4/3TQAtFJuP900b
+j/dNAC0Um4/3TRuP900ALRSbj/dNG4/3TQAtFJuP900bj/dNAC0Um4/3TRuP900ALRSbj/dNG4/3
+TQAtFJuP900bj/dNAC0Um4/3TRuP900ALRSbj/dNG4/3TQAtFJuP900bj/dNAC0Um4/3TRuP900A
+LRSbj/dNFAC0UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAU
+UUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRR
+RQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUVGwG48UmB6CgCWiosD0FGB6CgCWiosD0FGB6CgCWiosD0FFA
+EtFQ4P8AeP50YP8AeP50ATUVDg/3j+dGD/eP50ATUVDg/wB4/nRg/wB4/nQBNRUOD/eP50YP94/n
+QBNRUOD/AHj+dGD/AHj+dAE1FQ4P94/nRg/3j+dAE1FQ4P8AeP50YP8AeP50ATUVDg/3j+dGD/eP
+50ATUVDg/wB4/nRg/wB4/nQBNRUOD/eP50YP94/nQBNRUOD/AHj+dGD/AHj+dAE1FQ4P94/nRg/3
+j+dAE1FQ4P8AeP50YP8AeP50ATUVDg/3j+dGD/eP50ATUVDg/wB4/nRg/wB4/nQBNRUOD/eP50YP
+94/nQBNRUOD/AHj+dGD/AHj+dAE1FQ4P94/nRg/3j+dAE1FQ4P8AeP50YP8AeP50ATUVDg/3j+dG
+D/eP50ATUVDg/wB4/nRg/wB4/nQBNRUOD/eP50YP94/nQBNRUOD/AHj+dGD/AHj+dAE1FQ4P94/n
+Rg/3j+dAE1FQ4P8AeP50YP8AeP50ATUVDg/3j+dGD/eP50ATUVDg/wB4/nRg/wB4/nQBNRUOD/eP
+50YP94/nQA4/eNRTXEUBAlfbnpxUg71TvYpJLmLymKkK3zAZ9KALiMrqGQgqeQRS1jyvIII0iikj
+KJx97rnnpUxWbe8mZdwmUAZOMcZ4oA0qKy087zF/13m7m8zOduOenb0pGWZYLfLSAMuXJ3E57dOa
+ANWise4EwZQr3DEKNxUEAmigDXooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoo
+ooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiii
+gAooooAKKKKACiiigAooooAB3paQd6WgAooooAKKKKACiiigBKKf5Y9TR5Y9TQAyin+WPU0eWPU0
+AMop/lj1NHlj1NADKKf5Y9TR5Y9TQAyin+WPU0eWPU0AMop/lj1NHlj1NADKKf5Y9TR5Y9TQAyin
++WPU0eWPU0AMop/lj1NHlj1NADKKf5Y9TR5Y9TQAyin+WPU0eWPU0AMop/lj1NHlj1NADKKf5Y9T
+R5Y9TQAyin+WPU0eWPU0AMop/lj1NHlj1NADKKf5Y9TR5Y9TQAyin+WPU0eWPU0AMop/lj1NHlj1
+NADKKf5Y9TR5Y9TQAyin+WPU0eWPU0AMop/lj1NHlj1NADKKf5Y9TR5Y9TQAyin+WPU0eWPU0AMo
+p/lj1NHlj1NADKKf5Y9TR5Y9TQAyin+WPU0eWPU0AMop/lj1NHlj1NADKKf5Y9TR5Y9TQA0d6KMY
+JFNcAnAHPr6UAPpCQBk9KWo5v9S/0oAXzE/vD86UOpOAwJqsgLICM4wPShcidAc55PNAFuiiigB9
+FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUU
+UUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFADD94
+00qpOSATTiPmNGKACkIBGDyKXFGKAGeUn90UojQHIUA07FGKACijFFAD6KKKACiiigAooooAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAG/xH60UfxH61XuQwlgYOwG/
+BUdDwaALFFFFAFee+t4H2SSfN3AGcVJDPHOm+JgwrMijnlikEcSNmYkszYJw309qsWW8X9xvRYyV
+U4U5FAF+iiigB2BRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUU
+AGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBR
+gUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUUAGBRgUUU
+AGBRgUUUAN/iP1pGRWxuGdpyPrRnDH60ZoAWikzRmgCobSaOR2tpgiuclWXIz7VLa2xhLu7mSR/v
+NU2aM0ALRSZooAfRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFF
+FABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQBGfvGig/eNFABRRRQAUUUUAFFFFAElFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFF
+ABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUA
+FFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAEZ+8aKD940UAFFFFABRRRQAUUUUASUUUUAFFFFA
+BRRRQAm4ZxkZ9M0tU8CKTJ2urvww+8pNMgaQRwKspG9jngUAX6KqLLM0hIyQH2kcYx/PNMWSaSMt
+lsMGz04+lAF6gEEZBzUNsM2qBjuyo602x4tgB6n+dAFiiiigAooooAKKKKACiiigAooooAKKKKAC
+iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKK
+KKACiiigCM/eNFB+8aKACiiigAooooAKKKKAJKKKKACiiigAooooAYIow+4Iu71xQIo1bIRQc5zi
+iigBfLTfv2Dd64oESBiwRQT1OKKKAARoEKhQFPbFCRpGPkULn0FFFADqKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKAIz940UUUAFFFFABRRRQAUUUUAf/Z
+			</helperscreenshot>
+		</keysequenceitem>
+		<keysequenceitem
+		KeySequence="Fulbright-Hays"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		searchpropertyid="71a8125e-c9c2-4077-a72c-507bd91aeab8">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Statutory_Authority">
+				</binding>
+			</bindings>
+		</keysequenceitem>
+		<explicitdelayitem
+		duration="1000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<keysequenceitem
+		KeySequence="{enter}"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		searchpropertyid="71a8125e-c9c2-4077-a72c-507bd91aeab8">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</keysequenceitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				U.S. Share of Cost
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="440;18"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="73995d2d-b810-4837-93ee-19f5b6572d21"
+		sx="881"
+		sy="801"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ce3c2d7-37f7-4ff5-a385-713c43cea20c"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="441,783,1291,42"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control decimal ng-pristine ng-valid ng-not-empty ng-valid-maxlength ng-touched
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_us_share_of_cost
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						decimal form-control ng-not-empty ng-pristine ng-touched ng-valid ng-valid-maxlength
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						14
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_us_share_of_cost
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="style"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_us_share_of_cost']/div/span/?/?/input[@name='u_us_share_of_cost']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="bc1ed110-0fea-48f3-be74-4b525971040b">
+				/9j/4AAQSkZJRgABAQEAeAB4AAD/2wBDABwTFRgVERwYFhgfHRwhKUUtKSYmKVQ8QDJFZFhpZ2JY
+YF9ufJ6GbnWWd19giruLlqOpsbOxa4TC0MGszp6usar/2wBDAR0fHykkKVEtLVGqcmByqqqqqqqq
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/wAARCABhAfQDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDpKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA
+KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiikf7tAC0VH+J/Oj8T+dAE
+lFR/ifzo/E/nQBJRUf4n86PxP50ASUVH+J/Oj8T+dAElFR/ifzo/E/nQBJRUf4n86KAJKKyP7Ft/
++ekv5j/Cj+xbf/npL+Y/wqby7G/JS/m/D/gmvRWR/Ytv/wA9JfzH+FH9i2//AD0l/Mf4UXl2Dkpf
+zfh/wTXorI/sW3/56S/mP8KP7Ft/+ekv5j/Ci8uwclL+b8P+Ca9FZH9i2/8Az0l/Mf4Uf2Lb/wDP
+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
+++BR9jtf+faH/vgUe8F6PZ/h/kQf2tY/89//ABxv8KP7Wsf+e/8A443+FT/Y7X/n2h/74FH2O1/5
+9of++BR7wXo9n+H+RB/a1j/z3/8AHG/wpG1WyK8Tf+ON/hVj7Ha/8+0P/fApr2ltt/494f8AvgUe
+8F6PZ/h/kV/7Usv+e3/jp/wo/tSy/wCe3/jp/wAKm+yW3/PvF/3wKPslt/z7xf8AfAo94L0ez/D/
+ACIf7Usv+e3/AI6f8KP7Usv+e3/jp/wqb7Jbf8+8X/fAo+yW3/PvF/3wKPeC9Hs/w/yIf7Usv+e3
+/jp/wo/tSy/57f8Ajp/wqb7Jbf8APvF/3wKPslt/z7xf98Cj3gvR7P8AD/Ih/tSy/wCe3/jp/wAK
+P7Usv+e3/jp/wqb7Jbf8+8X/AHwKPslt/wA+8X/fAo94L0ez/D/Ih/tSy/57f+On/Cj+1LL/AJ7f
++On/AAqb7Jbf8+8X/fAo+yW3/PvF/wB8Cj3gvR7P8P8AIh/tSy/57f8Ajp/woqb7Jbf8+8X/AHwK
+KPeC9Hs/w/yLVFFFUYBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUU
+AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABSP92l
+pH+7QAyiiigAooooAKKKKACiiigAooooAKKKKAJKKKKACiiigAooooAKKKKACiiigAooooAKKKKA
+CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK
+KKKACiiigAooooAKKKKACkf7tFFADKKKKACiiigAooooAKKKKACiiigAooooA//Z
+			</helperscreenshot>
+		</mouseitem>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		scancode="0"
+		searchpropertyid="5fed8623-2fdc-4522-b8fe-850e061adf89"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="8ce3c2d7-37f7-4ff5-a385-713c43cea20c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_us_share_of_cost']/div/span/?/?/input[@name='u_us_share_of_cost']
+				</path>
+			</info>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="{enter}"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		searchpropertyid="71a8125e-c9c2-4077-a72c-507bd91aeab8">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="US_Share_of_Cost">
+				</binding>
+			</bindings>
+			<info
+			id="8ce3c2d7-37f7-4ff5-a385-713c43cea20c"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//div[#'u_us_share_of_cost']/div/span/?/?/input[@name='u_us_share_of_cost']
+				</path>
+			</info>
+		</keysequenceitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Recipient Share of Cost
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<mouseitem
+		action="Click"
+		button="Left"
+		duration="500ms"
+		enabled="True"
+		loc="1042;19"
+		movetime="300ms"
+		optional="False"
+		searchpropertyid="f45cdcba-1029-4e7e-9411-a1cf6e60425d"
+		sx="1483"
+		sy="898"
+		warnoutofbounds="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f27fd327-4c1b-455a-84a3-8fbdd7ffadc5"
+			sourcename="Recorder">
+				<element
+				capabilities="webelement, inputtag"
+				dontcache="True"
+				enabled="True"
+				flavor="chromeweb"
+				hasfocus="False"
+				index="1"
+				prefcap="inputtag"
+				rect="441,879,1291,42"
+				role="unknown"
+				snapElem=""
+				valid="True"
+				visible="True">
+					<attribute
+					name="class"
+					type="System.String">
+						form-control decimal ng-pristine ng-untouched ng-valid ng-not-empty ng-valid-maxlength
+					</attribute>
+					<attribute
+					name="draggable"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="hidden"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="id"
+					type="System.String">
+						sp_formfield_u_recipient_share_of_cost
+					</attribute>
+					<attribute
+					name="innertext"
+					type="System.String">
+					</attribute>
+					<attribute
+					name="safeclass"
+					type="System.String">
+						decimal form-control ng-not-empty ng-pristine ng-untouched ng-valid ng-valid-maxlength
+					</attribute>
+					<attribute
+					name="tagname"
+					type="System.String">
+						input
+					</attribute>
+					<attribute
+					name="tagvalue"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="autocomplete"
+					type="System.String">
+						off
+					</attribute>
+					<attribute
+					name="autofocus"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="checked"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="disabled"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="height"
+					type="System.String">
+						0
+					</attribute>
+					<attribute
+					name="maxlength"
+					type="System.String">
+						14
+					</attribute>
+					<attribute
+					name="multiple"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="name"
+					type="System.String">
+						u_recipient_share_of_cost
+					</attribute>
+					<attribute
+					name="required"
+					type="System.String">
+						False
+					</attribute>
+					<attribute
+					name="size"
+					type="System.String">
+						20
+					</attribute>
+					<attribute
+					name="type"
+					type="System.String">
+						text
+					</attribute>
+					<attribute
+					name="value"
+					type="System.String">
+						0.00
+					</attribute>
+					<attribute
+					name="width"
+					type="System.String">
+						0
+					</attribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="aria-invalid"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="data-type"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-change"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-model-options"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+					<dynamicattribute
+					description="Dynamic HTML attribute."
+					name="ng-readonly"
+					readonly="False"
+					type="System.String">
+					</dynamicattribute>
+				</element>
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_recipient_share_of_cost']
+				</path>
+			</info>
+			<helperscreenshot
+			guid="d5514d99-6229-4d44-92ff-d530ce888c71">
+				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
+			</helperscreenshot>
+		</mouseitem>
+		<keyitem
+		action="Press"
+		data="A, Control"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		scancode="0"
+		searchpropertyid="5fed8623-2fdc-4522-b8fe-850e061adf89"
+		setModifiers="True">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="f27fd327-4c1b-455a-84a3-8fbdd7ffadc5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_recipient_share_of_cost']
+				</path>
+			</info>
+		</keyitem>
+		<keysequenceitem
+		KeySequence="{enter}"
+		duration="30ms"
+		enabled="True"
+		optional="False"
+		presstime="30ms"
+		searchpropertyid="71a8125e-c9c2-4077-a72c-507bd91aeab8">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="KeySequence"
+				variable="Recipient_Share_of_Cost">
+				</binding>
+			</bindings>
+			<info
+			id="f27fd327-4c1b-455a-84a3-8fbdd7ffadc5"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_u_recipient_share_of_cost']
+				</path>
+			</info>
+		</keysequenceitem>
+	</recorditems>
+	<repository
+	id="bc8eb910-3cf8-4d8e-8d15-b57254f8606a"
+	name="Service_Portal_Regression_STGRepository"
+	relativepath="Service_Portal_Regression_STGRepository.rxrep">
+		<codegen
+		classname="Service_Portal_Regression_STGRepository"
+		namespace="Service_Portal_Regression_STG">
+		</codegen>
+		<rootfolder
+		id="c66c0921-a4a6-4c30-8218-6aa696d3aa91"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

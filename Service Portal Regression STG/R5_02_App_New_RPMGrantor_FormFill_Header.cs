@@ -24,22 +24,22 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R5_01_App_New_RPMGrantor_FormFill_Header recording.
+    ///The R5_02_App_New_RPMGrantor_FormFill_Header recording.
     /// </summary>
     [TestModule("903d307c-6e20-47f2-9580-c8f50aa73a16", ModuleType.Recording, 1)]
-    public partial class R5_01_App_New_RPMGrantor_FormFill_Header : ITestModule
+    public partial class R5_02_App_New_RPMGrantor_FormFill_Header : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R5_01_App_New_RPMGrantor_FormFill_Header instance = new R5_01_App_New_RPMGrantor_FormFill_Header();
+        static R5_02_App_New_RPMGrantor_FormFill_Header instance = new R5_02_App_New_RPMGrantor_FormFill_Header();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R5_01_App_New_RPMGrantor_FormFill_Header()
+        public R5_02_App_New_RPMGrantor_FormFill_Header()
         {
             Score = "100";
             US_Share_of_Cost = "600";
@@ -50,7 +50,7 @@ namespace Service_Portal_Regression_STG
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R5_01_App_New_RPMGrantor_FormFill_Header Instance
+        public static R5_02_App_New_RPMGrantor_FormFill_Header Instance
         {
             get { return instance; }
         }

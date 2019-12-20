@@ -30,6 +30,32 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="01b8ca99-7b08-497e-a4d0-676b67ad27cf"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NAAll"
+			ref="1346667f-c82b-4b9b-90eb-1d961c7e5510"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="028e5321-2de2-4724-8b07-b152149f88bc"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments"
+			ref="24f1db2d-46e3-4f2a-aaf8-5efa761e6ad1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Primary Grants Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="21191957-e138-4974-9004-59a9992c3e21"
+					variablename="Primary_Grants_Officer">
+					</var>
+					<var
+					dataname="Primary Program Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="95ebb3d6-ac68-4baa-bdd3-d1b8a26c0629"
+					variablename="Primary_Program_Officer">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="02b6199c-9c01-49f9-b03f-bbe2e0f55fb6"
 			name="4.01_Grants_FO_New_DomesticGrantor">
@@ -103,6 +129,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="04967c99-a3d6-4c24-96b0-1324cbe03f96"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="OSDS Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+					<var
+					dataname="OSDS Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="04ccd21e-a778-473c-a0b2-fcc7e24dabce"
 			name="R1_05_HomePage_TilesHeader_RPMAdmin_Support"
 			ref="5212cf86-9edd-4a92-908b-e7e00668dba2"
@@ -136,6 +182,10 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testcase
+			id="05421627-8275-499f-8468-6103aa4a49ce"
+			name="6.01_Grants_FundingPackage_New_DomesticGrantor">
+			</testcase>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -200,10 +250,110 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="06db2840-71e3-48ed-83e1-f08ba23532e6"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo"
+			ref="87ef619f-40ba-4e64-9116-5f2e6eb36c5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Title"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c4b00197-e33a-49f1-9e72-d9761eb3d153"
+					variablename="Title">
+					</var>
+					<var
+					dataname="Award Purpose"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ed2f9f2f-d77d-4e64-8dd2-5b11363cd567"
+					variablename="Award_Purpose">
+					</var>
+					<var
+					dataname="Associated Program Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="44e65e54-3ea2-445c-94bf-6dce1e9b0836"
+					variablename="Associated_Program_Number">
+					</var>
+					<var
+					dataname="Associated Project Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ea321f08-6090-4aba-946b-ebfce0a34346"
+					variablename="Associated_Project_Number">
+					</var>
+					<var
+					dataname="Period of Performance From"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1c15a2-d8b3-4b2d-b817-0f46258bed1d"
+					variablename="Period_of_Performance_From">
+					</var>
+					<var
+					dataname="Period of Performance To"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="b6648fc8-dc9a-4b35-99e7-3d6c802b621b"
+					variablename="Period_of_Performance_To">
+					</var>
+					<var
+					dataname="Awarding Office"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="432976b5-5302-4207-826f-425ca84c0534"
+					variablename="Awarding_Office">
+					</var>
+					<var
+					dataname="Opportunity Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3b46c7ae-6fd5-40a0-8121-2737387c4a17"
+					variablename="Opportunity_Type">
+					</var>
+					<var
+					dataname="Funding Instrument Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c2a774de-839f-4d18-a450-1ab616a5225f"
+					variablename="Funding_Instrument_Type">
+					</var>
+					<var
+					dataname="Sensitive"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="62a243fc-bb0a-4ad3-b003-836ee3f43070"
+					variablename="Sensitive">
+					</var>
+					<var
+					dataname="Primary Country"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1b6b79-d56c-414c-a0dd-d30af576e346"
+					variablename="Primary_Country">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="072641e6-bf99-465c-8a14-2048c9680034"
-			name="R5_01_App_New_RPMGrantor_FormFill_Header"
+			name="R5_02_App_New_RPMGrantor_FormFill_Header"
 			ref="903d307c-6e20-47f2-9580-c8f50aa73a16"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="241e7944-eaee-4035-b132-bca68ba46f45"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="c5bfb9bf-7e46-4fcd-94a3-97142fbe2165"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="9063136e-212c-44e0-ad04-6c8f798a711c"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+					<var
+					dataname="Proposal Type"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="c5c9a030-5e93-432b-8a44-d7370fdd1328"
+					variablename="Proposal_Type">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="082acf86-58a1-4099-952d-02672361c1ab"
@@ -248,6 +398,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="095f75f5-4044-4e0f-9a15-e4f25dcdf92c"
+			name="R7_01_IR_All_DomesticGrantor_Questions_YesAll"
+			ref="ba52a4d6-87ce-4e8e-b2d9-7008332be5f5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="0a33c1cd-8988-4689-be32-109b783c3ed9"
 			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
 			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
@@ -290,6 +446,26 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="e2f28ddc-5a0f-4dc6-b68e-7e938e1c4631"
 					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="0b51d459-c87a-4b50-9426-ee10576271f2"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -441,6 +617,26 @@
 			ref="89d75974-620f-4f9a-886a-b06f3651009d"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="1038b982-97e4-41f7-ac7f-7820d707272a"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datasource="Planning__Project_"
 			id="11e2f187-743c-46f2-a1ff-703aece1bf78"
@@ -451,6 +647,63 @@
 			name="R4_01_FO_New_DomesticGrantor_SaveSubmit"
 			ref="dd981f76-dace-46ff-8237-a5c290a38f8f"
 			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			datasource="Users"
+			id="12ee8aaf-22c6-4906-aac5-4d47e782ff12"
+			name="Users_Funding_Package">
+			</smartfoldernode>
+			<testmodule
+			id="1337eebf-a88c-4d53-a5fb-df5c546420e2"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="134753f7-d3a6-4661-b50a-deb60ca81066"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="141dc9b3-7470-4c28-9acd-7bf0bd9ec5e8"
@@ -463,6 +716,92 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="6be11eba-aa45-40a4-87ae-e6a25d68fbe1"
 					variablename="OSGrantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="146e1cc9-0da4-4ee5-94a6-e18616e58231"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="146fd560-2c3d-4085-98fc-f52097878743"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="14cb630d-ca11-46ec-a4c5-926ccfd9288c"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo"
+			ref="87ef619f-40ba-4e64-9116-5f2e6eb36c5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Title"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c4b00197-e33a-49f1-9e72-d9761eb3d153"
+					variablename="Title">
+					</var>
+					<var
+					dataname="Award Purpose"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ed2f9f2f-d77d-4e64-8dd2-5b11363cd567"
+					variablename="Award_Purpose">
+					</var>
+					<var
+					dataname="Associated Program Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="44e65e54-3ea2-445c-94bf-6dce1e9b0836"
+					variablename="Associated_Program_Number">
+					</var>
+					<var
+					dataname="Associated Project Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ea321f08-6090-4aba-946b-ebfce0a34346"
+					variablename="Associated_Project_Number">
+					</var>
+					<var
+					dataname="Period of Performance From"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1c15a2-d8b3-4b2d-b817-0f46258bed1d"
+					variablename="Period_of_Performance_From">
+					</var>
+					<var
+					dataname="Period of Performance To"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="b6648fc8-dc9a-4b35-99e7-3d6c802b621b"
+					variablename="Period_of_Performance_To">
+					</var>
+					<var
+					dataname="Awarding Office"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="432976b5-5302-4207-826f-425ca84c0534"
+					variablename="Awarding_Office">
+					</var>
+					<var
+					dataname="Opportunity Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3b46c7ae-6fd5-40a0-8121-2737387c4a17"
+					variablename="Opportunity_Type">
+					</var>
+					<var
+					dataname="Funding Instrument Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c2a774de-839f-4d18-a450-1ab616a5225f"
+					variablename="Funding_Instrument_Type">
+					</var>
+					<var
+					dataname="Sensitive"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="62a243fc-bb0a-4ad3-b003-836ee3f43070"
+					variablename="Sensitive">
+					</var>
+					<var
+					dataname="Primary Country"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1b6b79-d56c-414c-a0dd-d30af576e346"
+					variablename="Primary_Country">
 					</var>
 				</databinding>
 			</testmodule>
@@ -525,6 +864,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="178ed3b3-34d8-417b-ac47-df16a37c1212"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="181a4b13-acaf-4b82-b0e7-c00b5fca26ba"
 			name="R1_08_HomePage_TilesHeader_OSDSGrantor_Planning"
 			ref="f5395c28-291e-4ca0-9d32-d792d4e991ab"
@@ -545,6 +904,34 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="185fdca6-5d8f-4860-b76a-acf221aa2fd6"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1a08329f-3338-418b-890f-849890f3c3de"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="1a49eff0-0f86-4630-8932-48c4e8408e28"
 			name="R1_05_HomePage_Footer_RPMAdmin_Award"
 			ref="aede8026-86f2-4ad5-bc08-5011d53dcba2"
@@ -560,8 +947,40 @@
 			</testmodule>
 			<testmodule
 			id="1ad166cf-df9d-46bc-abe6-07643ac12beb"
-			name="R5_01_App_New_RPMGrantor_FormFill_Header"
+			name="R5_02_App_New_RPMGrantor_FormFill_Header"
 			ref="903d307c-6e20-47f2-9580-c8f50aa73a16"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="241e7944-eaee-4035-b132-bca68ba46f45"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="c5bfb9bf-7e46-4fcd-94a3-97142fbe2165"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="9063136e-212c-44e0-ad04-6c8f798a711c"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+					<var
+					dataname="Proposal Type"
+					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
+					variableid="c5c9a030-5e93-432b-8a44-d7370fdd1328"
+					variablename="Proposal_Type">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="1b3b75ea-11e6-451b-88cc-f2fec96c41de"
+			name="R6_01_FP_New_DomesticGrantor_SaveSubmit"
+			ref="290925aa-333c-42fd-a312-87e16c0c875d"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -652,6 +1071,26 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="1ebdcb82-10db-422a-ac8d-b64846f7a62d"
+			name="Users_Closeout_Checklist">
+			</smartfoldernode>
+			<testmodule
+			id="1edb1989-212d-4aa3-b3ad-f5d0e68ad466"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="1f88d45e-5cff-4865-82e2-ad09a468c5dd"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="208106d1-5e10-4ce0-b86f-5ac10385bd25"
+			name="7.03_Grants_IntakeReview_All_RPMAdmin">
+			</testcase>
 			<testmodule
 			id="2236982b-f2bf-41c3-bd95-81e763c341e5"
 			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
@@ -675,6 +1114,20 @@
 					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
 					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
 					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="22c41051-d609-4912-a148-ba30ff77236d"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
 					</var>
 				</databinding>
 			</testmodule>
@@ -733,6 +1186,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="264dea83-f15a-440f-8ee5-b536c15b9885"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments"
+			ref="24f1db2d-46e3-4f2a-aaf8-5efa761e6ad1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Primary Grants Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="21191957-e138-4974-9004-59a9992c3e21"
+					variablename="Primary_Grants_Officer">
+					</var>
+					<var
+					dataname="Primary Program Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="95ebb3d6-ac68-4baa-bdd3-d1b8a26c0629"
+					variablename="Primary_Program_Officer">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="265b6a06-81a0-443d-9ddc-66debeccce0a"
 			name="Login"
 			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
@@ -756,6 +1229,118 @@
 			id="26625600-a726-4621-a83e-d4372218b9a4"
 			name="R4_01_FO_New_DomesticGrantor_Navigation"
 			ref="5b7edc0b-9d9b-4d05-996f-9dc12b2c048c"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="27b3985a-48c7-441e-9fba-8f5f151bba6e"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo"
+			ref="87ef619f-40ba-4e64-9116-5f2e6eb36c5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Title"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c4b00197-e33a-49f1-9e72-d9761eb3d153"
+					variablename="Title">
+					</var>
+					<var
+					dataname="Award Purpose"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ed2f9f2f-d77d-4e64-8dd2-5b11363cd567"
+					variablename="Award_Purpose">
+					</var>
+					<var
+					dataname="Associated Program Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="44e65e54-3ea2-445c-94bf-6dce1e9b0836"
+					variablename="Associated_Program_Number">
+					</var>
+					<var
+					dataname="Associated Project Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ea321f08-6090-4aba-946b-ebfce0a34346"
+					variablename="Associated_Project_Number">
+					</var>
+					<var
+					dataname="Period of Performance From"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1c15a2-d8b3-4b2d-b817-0f46258bed1d"
+					variablename="Period_of_Performance_From">
+					</var>
+					<var
+					dataname="Period of Performance To"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="b6648fc8-dc9a-4b35-99e7-3d6c802b621b"
+					variablename="Period_of_Performance_To">
+					</var>
+					<var
+					dataname="Awarding Office"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="432976b5-5302-4207-826f-425ca84c0534"
+					variablename="Awarding_Office">
+					</var>
+					<var
+					dataname="Opportunity Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3b46c7ae-6fd5-40a0-8121-2737387c4a17"
+					variablename="Opportunity_Type">
+					</var>
+					<var
+					dataname="Funding Instrument Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c2a774de-839f-4d18-a450-1ab616a5225f"
+					variablename="Funding_Instrument_Type">
+					</var>
+					<var
+					dataname="Sensitive"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="62a243fc-bb0a-4ad3-b003-836ee3f43070"
+					variablename="Sensitive">
+					</var>
+					<var
+					dataname="Primary Country"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1b6b79-d56c-414c-a0dd-d30af576e346"
+					variablename="Primary_Country">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="27c8257a-0a34-4419-8a6d-b1a33fd09d86"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="27ee8124-58b6-49d6-9972-18c7574af2e0"
+			name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo"
+			ref="c96ebd2d-15f4-40ae-be69-67f4e451d26a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Statutory Authority"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c9073810-89aa-428f-8920-1fd4f1210048"
+					variablename="Statutory_Authority">
+					</var>
+					<var
+					dataname="U.S. Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="7213b9b5-95f2-41f4-9242-c87098f4c172"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recipient Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="a39a39b4-015a-4802-81f2-301709877e50"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="282b6f3f-ec79-4709-8871-bc79b0c569a8"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
 			type="Recording">
 			</testmodule>
 			<teardown
@@ -782,6 +1367,46 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="7066e907-e9b4-4c80-8ee5-f1cb8224ec8c"
 					variablename="RPM_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2ec31887-9386-48f9-a34d-2496e433fa2b"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="2f9a3f22-8b06-46f4-bda7-22cc82268892"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
 					</var>
 				</databinding>
 			</testmodule>
@@ -847,6 +1472,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="3344f385-8140-47d0-9c54-a8cec4fda515"
+			name="Select_All_N/A">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="N/A">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="3425b89a-63d8-4e12-88ac-4f4ba9fdbf61"
 			name="R4_01_FO_New_DomesticGrantor_FormFIll_Header"
@@ -991,6 +1641,68 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="3497ac26-c626-4082-857d-9d37211db0e8"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3533df30-9927-483f-ae85-24c36834b185"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NAAll"
+			ref="1346667f-c82b-4b9b-90eb-1d961c7e5510"
+			type="Recording">
+			</testmodule>
 			<smartfoldernode
 			datasource="Users"
 			id="35515174-0f4a-4351-8c75-c740820369b1"
@@ -1015,6 +1727,68 @@
 					variablename="Password">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="3580cfb0-c1ac-4928-accc-1110980db839"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="35922ed2-52b8-42cf-9a56-519b58c1c8fb"
+			name="R7_01_IR_All_DomesticGrantor_Questions_YesAll"
+			ref="ba52a4d6-87ce-4e8e-b2d9-7008332be5f5"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="35ac592f-7513-439d-8a56-6907249326c5"
@@ -1148,6 +1922,46 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="3ad58260-9b64-4920-b807-a28fed495229"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3bb5b33c-e11b-4797-9a6b-656aba21a447"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="3e0ad01b-0cfe-4a3f-9a77-7942e4a50869"
 			name="R1_03_HomePage_Footer_RPMGrantor_Award"
 			ref="651966e7-7522-4081-8aa4-484db859120b"
@@ -1202,6 +2016,32 @@
 					datasourceid="a44d41d0-0b4c-4bc8-84e3-4603c63a7008"
 					variableid="89d41cd6-9e76-4370-808c-49043e99c425"
 					variablename="Expected_Number_of_Awards">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="3f33a7b1-b12e-4373-8f1a-b5d8053e2768"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1369,6 +2209,26 @@
 			reportlevel="Info;20">
 			</testcase>
 			<testmodule
+			id="421833f6-f306-4008-bbe8-e9610a260299"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="4247e482-8949-40aa-bcd7-2226d126fee8"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="424cdb37-e29e-4d1b-8046-1b322c3f8490"
 			name="R1_09_HomePage_Footer_OSDSGrantee_MyApplications"
 			ref="90280df0-b7f8-4151-9358-84a65203fe9c"
@@ -1475,6 +2335,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="47d87715-4569-4b52-aaad-f5764e3f6993"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="47df12b1-c375-4fe1-a16c-30a806ed774f"
 			name="R4_01_FO_New_DomesticGrantor_FormFIll_SubmissionInformation"
 			ref="983e2e2a-543f-4ac9-a71b-df7c0aa37170"
@@ -1497,6 +2363,32 @@
 					datasourceid="a44d41d0-0b4c-4bc8-84e3-4603c63a7008"
 					variableid="8c8b7133-c113-494c-b58c-6faa6ec0ecce"
 					variablename="Optional_eForms">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="47fb2373-8efc-4660-b24c-9cfe3bf340da"
+			name="R6_01_FP_New_DomesticGrantor_RecipientInformation"
+			ref="8f88b9a5-d461-490b-b24a-edeb50fc1fa5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Vendor/Recipient Contact"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="20399cbf-2d05-4ae4-84e5-3b9665e24c4e"
+					variablename="VendorRecipient_Contact">
+					</var>
+					<var
+					dataname="Type of Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1cf7b551-97e6-464a-9053-6c4c4ad673dd"
+					variablename="Type_of_Recipient">
+					</var>
+					<var
+					dataname="Vendor/Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1ce723a0-c88b-4340-817d-5d1256301d76"
+					variablename="Vendor_Recipient">
 					</var>
 				</databinding>
 			</testmodule>
@@ -1527,16 +2419,90 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="4afc1063-af46-4a87-84ce-1ef77303b1fa"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_Header"
+			ref="e8d78e1f-ae8a-47a4-819b-34dc68cc3563"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Application Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="8914fecf-f3e9-4418-b0ad-868e8f7babab"
+					variablename="Application_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="4bb56f20-0c47-468f-8bba-8883554fdbb8"
 			name="R3_01_Project_New_DomesticGrantor_Navigation"
 			ref="1a207973-decd-4540-ab8a-b20816fe5129"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="4c58ef11-e389-4519-9c05-d619f76a26d0"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			datasource="Planning__Program_"
 			id="4d4f060c-bc1b-435d-9d9a-dd900648e573"
 			name="2.02_Grants_Program_New_RPMGrantor">
 			</testcase>
+			<testmodule
+			id="4f7f00a2-6c8e-4193-8142-d1c99a8a741b"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+					<var
+					dataname="RPM Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="50c82e87-326e-40b1-bdf1-4fc96cdd0b54"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments"
+			ref="24f1db2d-46e3-4f2a-aaf8-5efa761e6ad1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Primary Grants Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="21191957-e138-4974-9004-59a9992c3e21"
+					variablename="Primary_Grants_Officer">
+					</var>
+					<var
+					dataname="Primary Program Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="95ebb3d6-ac68-4baa-bdd3-d1b8a26c0629"
+					variablename="Primary_Program_Officer">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="51883b7f-a235-4143-bc57-82ebc470f464"
 			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
@@ -1564,6 +2530,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="51cf8969-b4b4-4dc7-b953-3db32e927b0d"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS"
+			ref="856fc703-a4dd-4e98-a7a6-29576752b452"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Recipient Signatory"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="5c00001a-5296-4b2c-a150-dc7e0a0ce025"
+					variablename="Recipient_Signatory">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="535d824f-a440-48fa-af1b-cf1cd3b01f82"
 			name="R1_03_HomePage_Footer_RPMGrantor_PreAward"
 			ref="9c002048-383c-4165-a458-b779adef7105"
@@ -1577,10 +2557,30 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="54bb62f0-b124-4720-941b-220401a65605"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="551cd816-419a-461a-9b4d-f05795b60133"
 			name="5.06_Grants_Application_New_RPMGrantee">
 			</testcase>
+			<testmodule
+			id="5551f794-87c7-4d51-a77c-454e5e78d904"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
 			<testcase
 			datasource="Users"
 			id="571ff049-f58e-491a-97db-40a86e9571d9"
@@ -1677,16 +2677,93 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="58304c3b-6c99-4736-a160-feb77ac0d2bd"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="5835f166-e961-43a8-ba02-0f2389097ce6"
+			name="CloseoutChecklist_Select_All_Yes">
+			</smartfoldernode>
+			<testmodule
+			enabled="False"
+			id="589fb8b8-e7fa-4b1a-93ca-50d3d2871309"
+			name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation"
+			ref="1fe7bbdd-9dcf-4f6e-b776-89caf1808f55"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="5918de7e-2515-4624-9afd-2925f8cc1c72"
 			name="R4_01_FO_New_DomesticGrantor_Navigation"
 			ref="5b7edc0b-9d9b-4d05-996f-9dc12b2c048c"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="59d09210-b362-4379-84d2-9f7163572e11"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			datasource="Users"
 			id="5a678c55-e524-40f1-b136-a68d3160d17a"
 			name="1.05_Grants_HomePage_Tiles/Header/Footer_RPMAdmin">
 			</testcase>
+			<testmodule
+			id="5b2301e5-cd83-4a30-aa79-09eadd28fd80"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="5b68c434-9968-4ee2-bb76-627e65b105ce"
 			name="R2_01_Program_New_DomesticGrantor_Navigation"
@@ -1776,6 +2853,63 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="5eae85dd-e628-4af8-b771-12627a2f1a54"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="5ee501d0-c935-45bc-bfb4-2d8aab1cfe1b"
+			name="R8_01_CC_All_DomesticGrantor_Navigation"
+			ref="35a6c852-e11d-4c0b-a043-7f154e8e6cf7"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="5f41c83f-804a-4862-8715-d235ad8dbb06"
+			name="Select_All_No111">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
 			id="601ae1cb-1633-4db7-a58a-8118e72c3655"
 			name="Domestic_To_Overseas"
 			ref="d782d612-e93c-4bca-92e0-e4c2de82d5c5"
@@ -1795,6 +2929,80 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="6147c5a4-26b7-4a3d-8f78-b4c64805fcfb"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="62146e95-c28a-4a74-866f-60f17d6a7630"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS"
+			ref="856fc703-a4dd-4e98-a7a6-29576752b452"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Recipient Signatory"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="5c00001a-5296-4b2c-a150-dc7e0a0ce025"
+					variablename="Recipient_Signatory">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="623d4539-5673-4383-bc20-ab53715235b7"
+			name="7.04_Grants_IntakeReview_All_OSDSGrantor">
+			</testcase>
 			<testmodule
 			id="6277cf1f-44a5-483a-8675-959c792050c3"
 			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
@@ -1902,6 +3110,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="65e1d7d1-5695-4ca7-ad26-1900729f2d3f"
+			name="R7_01_IR_All_DomesticGrantor_Questions_YesAll"
+			ref="ba52a4d6-87ce-4e8e-b2d9-7008332be5f5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="65f482ef-a606-4145-b419-8d9a86b84ca6"
 			name="R1_05_HomePage_Footer_RPMAdmin_Planning"
 			ref="ab6daf9f-0b7e-47c9-a2ae-a9061b6822b2"
@@ -1920,6 +3134,62 @@
 			name="R3_01_Project_New_DomesticGrantor_Navigation"
 			ref="1a207973-decd-4540-ab8a-b20816fe5129"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="67b9e62f-3748-4b35-a34f-ca0b6c7464f1"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="6847d883-832d-43f3-85af-bdca0b882fb5"
@@ -2001,6 +3271,32 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="6a3184d3-3b5c-4b8c-a8d1-ff42b375ad67"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="6a5b79be-c6e1-4f5d-a44e-35a9598a9501"
 			name="Login"
 			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
@@ -2017,6 +3313,62 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
 					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6a8ee264-f1fe-437b-a9a5-062c2e23d8cf"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="6bb0d345-cc21-4ccc-9371-8e3814c96056"
+			name="6.04_Grants_FundingPackage_New_OSDSGrantor">
+			</testcase>
+			<testmodule
+			id="6c5a0ab8-d069-40f2-94ee-33b33d452e2d"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="6c6b4cd4-e3d3-4df1-9a6a-c9ee5e7f2bec"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2040,6 +3392,16 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="6e0f927c-37e5-4b03-8c9d-ccf0d1db395b"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<smartfoldernode
+			id="6f055d02-a515-4dab-805b-1f75c990c7c6"
+			name="Scenario_8_Closeout_Checklist">
+			</smartfoldernode>
 			<testmodule
 			id="6f4124fc-2d3c-4142-90d0-924246630059"
 			name="R4_01_FO_New_DomesticGrantor_FormFill_SynopsisDates"
@@ -2081,6 +3443,32 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="7186204f-d1f0-4c5b-9ed7-52ebf103eff8"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="7278122f-ff5b-4da2-8f8b-1f6827850c85"
 			name="R1_08_HomePage_TilesHeader_OSDSGrantor_Support"
 			ref="20016a0b-990c-4c73-9b5a-6d602f178888"
@@ -2091,6 +3479,26 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="0dbb20bb-a988-4836-8514-09f10a3d6113"
 					variablename="OSDS_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="729958a2-36a8-4782-9304-cedcb2757e0c"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2109,6 +3517,20 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="9b001603-505e-4f29-89ea-2cd305bb1479"
 					variablename="OSDS_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7396130b-a1e2-492f-a576-d0098dedbfe8"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2137,10 +3559,30 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="751b3dd5-4f32-4a4a-87ff-c5cf50165c3e"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="764b713d-6420-42f4-bdac-fc7e0dc34b68"
 			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
 			ref="89d75974-620f-4f9a-886a-b06f3651009d"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="76f03a80-a7fa-43fd-93de-7f7468274dd3"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="770a059c-29bc-4a5d-80be-ec75ef2f3bd4"
@@ -2198,15 +3640,122 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="PreAward_FundingPackage"
+			id="78af9999-c98c-430d-adf4-b1c23341ff7f"
+			name="Scenario_6_Funding_Package">
+			</smartfoldernode>
+			<testmodule
+			id="78fc6e7c-ad89-462e-97d7-a5cefdc696de"
+			name="R6_01_FP_New_DomesticGrantor_Navigation"
+			ref="a46ae042-8800-4a91-b21f-9915c622822f"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="79bcb04a-1177-4788-aa39-251c8b423061"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<smartfoldernode
+			id="79d8e420-7b8d-43ab-8275-a65a6b15747e"
+			name="Select_All_No11">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			datasource="Users"
 			id="79e673f0-78e8-474e-af87-e8da54fbc6ce"
 			name="1.08_Grants_HomePage_Tiles/Header/Footer_OSDSGrantor">
 			</testcase>
+			<smartfoldernode
+			id="7bb75d1e-adba-4792-942c-cdd3d8d83a8a"
+			name="Select_All_N/A11">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="N/A">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testcase
 			id="7bdf6704-10f0-4ab1-960f-5368c5d665b7"
 			name="5.02_Grants_Application_New_RPMGrantor">
 			</testcase>
+			<testmodule
+			id="7cf2bdd4-a531-4f1a-ba2e-e46f3d53e99e"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="7db7ad29-fc01-492b-88d8-f503c7550e98"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NoAll"
+			ref="b12075d5-599b-49df-a136-e008b6b80f1e"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="7ed98da9-1d8a-4322-8a92-adda2c9b9030"
 			name="R1_09_HomePage_Footer_OSDSGrantee_OSPayments"
@@ -2246,6 +3795,12 @@
 					variablename="Username">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="80a5a9cf-4e92-404a-a672-11608fa08f90"
+			name="R6_01_FP_New_DomesticGrantor_SaveSubmit"
+			ref="290925aa-333c-42fd-a312-87e16c0c875d"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="810acf43-204d-4b11-b432-4a8de59c5b91"
@@ -2332,6 +3887,80 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="82713222-2eb0-4787-bda2-d75205298a93"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo"
+			ref="87ef619f-40ba-4e64-9116-5f2e6eb36c5d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Title"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c4b00197-e33a-49f1-9e72-d9761eb3d153"
+					variablename="Title">
+					</var>
+					<var
+					dataname="Award Purpose"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ed2f9f2f-d77d-4e64-8dd2-5b11363cd567"
+					variablename="Award_Purpose">
+					</var>
+					<var
+					dataname="Associated Program Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="44e65e54-3ea2-445c-94bf-6dce1e9b0836"
+					variablename="Associated_Program_Number">
+					</var>
+					<var
+					dataname="Associated Project Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="ea321f08-6090-4aba-946b-ebfce0a34346"
+					variablename="Associated_Project_Number">
+					</var>
+					<var
+					dataname="Period of Performance From"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1c15a2-d8b3-4b2d-b817-0f46258bed1d"
+					variablename="Period_of_Performance_From">
+					</var>
+					<var
+					dataname="Period of Performance To"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="b6648fc8-dc9a-4b35-99e7-3d6c802b621b"
+					variablename="Period_of_Performance_To">
+					</var>
+					<var
+					dataname="Awarding Office"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="432976b5-5302-4207-826f-425ca84c0534"
+					variablename="Awarding_Office">
+					</var>
+					<var
+					dataname="Opportunity Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3b46c7ae-6fd5-40a0-8121-2737387c4a17"
+					variablename="Opportunity_Type">
+					</var>
+					<var
+					dataname="Funding Instrument Type"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c2a774de-839f-4d18-a450-1ab616a5225f"
+					variablename="Funding_Instrument_Type">
+					</var>
+					<var
+					dataname="Sensitive"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="62a243fc-bb0a-4ad3-b003-836ee3f43070"
+					variablename="Sensitive">
+					</var>
+					<var
+					dataname="Primary Country"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="3f1b6b79-d56c-414c-a0dd-d30af576e346"
+					variablename="Primary_Country">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="829b457c-ee25-4cdc-bdc2-ac2b7f647f8b"
 			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
 			ref="51e69325-1487-4cfe-b889-0b394960d618"
@@ -2405,6 +4034,31 @@
 			id="82a892c2-b551-4350-a129-057c36f315f1"
 			name="5.03_Grants_Application_New_RPMAdmin">
 			</testcase>
+			<smartfoldernode
+			id="84c15790-ab52-4fbf-8408-0dc832129765"
+			name="Select_All_No1">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="851ca84e-a6e6-4b48-9213-fe24fd4df9a3"
 			name="R1_08_HomePage_TilesHeader_OSDSGrantor_OSAward"
@@ -2416,6 +4070,32 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="f4764709-5463-4135-968f-fac212c4398e"
 					variablename="OSDS_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="85bea60e-3937-4530-b490-8c2d24275c2a"
+			name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo"
+			ref="c96ebd2d-15f4-40ae-be69-67f4e451d26a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Statutory Authority"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c9073810-89aa-428f-8920-1fd4f1210048"
+					variablename="Statutory_Authority">
+					</var>
+					<var
+					dataname="U.S. Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="7213b9b5-95f2-41f4-9242-c87098f4c172"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recipient Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="a39a39b4-015a-4802-81f2-301709877e50"
+					variablename="Recipient_Share_of_Cost">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2487,6 +4167,46 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="86e42155-3448-4a1e-beb8-a165ed43808e"
+			name="R6_01_FP_New_DomesticGrantor_RecipientInformation"
+			ref="8f88b9a5-d461-490b-b24a-edeb50fc1fa5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Vendor/Recipient Contact"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="20399cbf-2d05-4ae4-84e5-3b9665e24c4e"
+					variablename="VendorRecipient_Contact">
+					</var>
+					<var
+					dataname="Type of Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1cf7b551-97e6-464a-9053-6c4c4ad673dd"
+					variablename="Type_of_Recipient">
+					</var>
+					<var
+					dataname="Vendor/Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1ce723a0-c88b-4340-817d-5d1256301d76"
+					variablename="Vendor_Recipient">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="8712554b-0202-4145-aa34-930b1810a6ef"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="87183a0f-b8b8-42d7-9491-1ca25ae76ea4"
 			name="R1_05_HomePage_TilesHeader_RPMAdmin_PreAward"
 			ref="11b3fca3-b6ae-4001-a7ac-d8935466a5cf"
@@ -2515,6 +4235,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="87c3bb20-e9e9-4522-93e6-4c998d54c45c"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="882cff20-4e87-40a9-98b3-1dd50ba6b9d6"
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_PreAward"
 			ref="3a756bcc-c399-45e0-9317-d97c1eaea98d"
@@ -2525,6 +4251,32 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="693db3e4-3fab-4455-9b81-6069b39bb52b"
 					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="88f18431-8ec4-4ea2-a6bc-60c69cb66421"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2587,6 +4339,12 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8a9362d8-e249-41a1-b414-a46e21ccf160"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NoAll"
+			ref="b12075d5-599b-49df-a136-e008b6b80f1e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="8aaa93cd-8c5f-4d0c-a1f8-a80868ae819d"
 			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
 			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
@@ -2647,6 +4405,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8c949d96-67c4-49b0-9468-04a4c877cfbf"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="8c96887f-0bc4-49d7-b650-27efe6621a0e"
 			name="R1_04_HomePage_Footer_RPMGrantee_Monitoring"
 			ref="42f79a04-3270-48ef-ba83-06dad57e783c"
@@ -2659,6 +4437,12 @@
 					variablename="RPM_Grantee_WM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="8de30161-aa3b-4be5-a883-b3d08c3f9e50"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="8f935c23-cc56-406f-b80e-fd0754038d8d"
@@ -2695,6 +4479,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="8fddca86-cd16-498d-983c-c0bd3802b6a1"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="901206c7-6f92-4072-aff8-a3cb575db351"
 			name="R1_08_HomePage_Footer_OSDSGrantor_Support"
 			ref="922ca23b-0b37-43e2-86b7-fb7aaf6b2a81"
@@ -2707,6 +4505,26 @@
 					variablename="OSDS_Grantor_WM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="92152127-7494-46f3-9333-3a4b031c90be"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="929ce7ca-2c30-4966-a32f-4a81afaf5d8c"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="934e25b2-b9fc-4e52-948e-509c6163b990"
@@ -2767,6 +4585,46 @@
 					datasourceid="1d6a52cb-5bb9-44cc-82d0-1808f583f636"
 					variableid="785ae5b5-742c-4f0b-8406-646c7731b754"
 					variablename="Additional_Comments">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="94f15dee-61fb-4400-b912-cb2d65ea8674"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="95020acb-3212-4c94-af7a-42af97137897"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
 					</var>
 				</databinding>
 			</testmodule>
@@ -2835,15 +4693,177 @@
 				</databinding>
 			</testmodule>
 			<testcase
+			id="97e2b6db-76f9-488d-9715-520bfecc8918"
+			name="8.01_Grants_CloseoutChecklist_All_DomesticGrantor">
+			</testcase>
+			<testcase
 			datasource="Users"
 			id="988fb41a-2391-466e-a593-a304d4d27960"
 			name="1.07_Grants_HomePage_Tiles/Header/Footer_OSGrantee">
 			</testcase>
 			<testmodule
+			id="9944ee16-c11f-4a53-a68c-2cae53794219"
+			name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo"
+			ref="c96ebd2d-15f4-40ae-be69-67f4e451d26a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Statutory Authority"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c9073810-89aa-428f-8920-1fd4f1210048"
+					variablename="Statutory_Authority">
+					</var>
+					<var
+					dataname="U.S. Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="7213b9b5-95f2-41f4-9242-c87098f4c172"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recipient Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="a39a39b4-015a-4802-81f2-301709877e50"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="995e7938-27d4-4fc3-b58f-2b5db0fd4f7a"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="99ebf7cb-9ca4-4c6e-9bf0-6f1efd68b7d8"
 			name="ReportToPDF"
 			ref="ffa0759d-37d2-4abb-89a7-411f0fcf2dfe"
 			type="UserCode">
+			</testmodule>
+			<testmodule
+			id="9a923170-795c-4c08-98bb-8d7c3f9bcf58"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9b3ebb7f-9cb6-4985-b70f-e16750118d18"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="9c17c064-7095-46c9-80eb-c336d964e7f9"
+			name="R6_01_FP_New_DomesticGrantor_Navigation"
+			ref="a46ae042-8800-4a91-b21f-9915c622822f"
+			type="Recording">
 			</testmodule>
 			<smartfoldernode
 			datasource="Users"
@@ -2856,6 +4876,31 @@
 			ref="330e807b-0211-43dc-a678-488a48f75f8f"
 			type="Recording">
 			</testmodule>
+			<smartfoldernode
+			id="a0154d4c-1988-4d21-9aa1-bcf6d35ef83b"
+			name="Select_All_Yes">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Yes">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="a1137264-6285-4ac1-a3b2-bbee203fdafa"
 			name="R1_03_HomePage_Footer_RPMGrantor_Support"
@@ -2869,6 +4914,18 @@
 					variablename="RPM_Grantor_WM">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="a1c23cbe-df21-4a9b-b010-854a1612746e"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NoAll"
+			ref="b12075d5-599b-49df-a136-e008b6b80f1e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a21c96a4-6f5e-4852-a635-df35d3646a83"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="a3b8d3ce-727f-4dbf-95b5-a171b1dce5ee"
@@ -2896,10 +4953,50 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="a5406403-6757-4987-8cc6-ba85fa13c477"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="a586b5d9-9353-4ca5-90fa-136824036cdc"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_Header"
+			ref="e8d78e1f-ae8a-47a4-819b-34dc68cc3563"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Application Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="8914fecf-f3e9-4418-b0ad-868e8f7babab"
+					variablename="Application_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="a5c46866-a82d-4841-b8ea-2c046be30007"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			id="a5c874de-a29b-4b95-aea7-6947492433a1"
 			name="5.07_Grants_Application_New_OSDSGrantee">
 			</testcase>
+			<testmodule
+			id="a5dc58fa-0f68-4318-9317-a0e6eef7413e"
+			name="R6_01_FP_New_DomesticGrantor_Navigation"
+			ref="a46ae042-8800-4a91-b21f-9915c622822f"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="a6216bf3-a07a-4e82-a9c6-271ed65d4700"
 			name="Login"
@@ -2921,6 +5018,32 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="a6469076-adb3-4170-90ff-15ab56de7aa0"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="a7daf711-b02e-470f-ad61-3d4c4e671e87"
 			name="R1_01_HomePage_Footer_DomesticGrantor_Support"
 			ref="81f3395c-00a6-445c-9216-cc28d35ccf96"
@@ -2934,6 +5057,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="a809100e-81fd-4732-bb8b-a57ed56c50e2"
+			name="Select_All_No">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="No">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="a9591226-165f-41fc-8bfd-ed7790f5cd66"
 			name="Login"
@@ -3013,6 +5161,36 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="ad0147e3-daaa-4b11-b0c8-c6c4ccca6e17"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="adcc5927-e569-492f-a777-6f0c90ceb6a1"
+			name="6.02_Grants_FundingPackage_New_RPMGrantor">
+			</testcase>
+			<testmodule
 			id="ae00abfb-c2a0-4d95-a1ec-b36716b360c0"
 			name="R1_04_HomePage_Footer_RPMGrantee_Apply"
 			ref="75911a7f-981a-4f62-a7d5-43d2d5473e9a"
@@ -3049,6 +5227,46 @@
 					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
 					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
 					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="ae9eca87-2ad4-4ab2-8525-bb1ba9b4ad82"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b24d8e40-055b-48f4-9706-97572647ab5d"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3100,6 +5318,45 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="b377f9dd-79e9-4c33-b98e-391479a01d6c"
+			name="Select_All_Yes11">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Yes">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testmodule
+			id="b3800c27-bef4-43b9-aa80-2f6ced39c1f4"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS"
+			ref="856fc703-a4dd-4e98-a7a6-29576752b452"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Recipient Signatory"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="5c00001a-5296-4b2c-a150-dc7e0a0ce025"
+					variablename="Recipient_Signatory">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datasource="Planning__Project_"
 			id="b3c498f8-f82e-4e37-a353-f961eb5e0dcd"
@@ -3125,6 +5382,20 @@
 			ref="89d75974-620f-4f9a-886a-b06f3651009d"
 			type="Recording">
 			</testmodule>
+			<testmodule
+			id="b4d9c376-4f03-49d1-8c15-1e7597886198"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datasource="Planning__Program_"
 			id="b649f7df-089a-4857-ab72-2c1e2f482ebb"
@@ -3136,6 +5407,20 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="b659ab3d-5f36-46a1-8e99-7e2d980809a3"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
 			<testcase
 			datasource="Planning__Program_"
 			id="b6a44bf2-f891-4965-8de7-a4c2930dd8e4"
@@ -3181,6 +5466,179 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="b744d213-53e1-4c6d-8be6-836e2089d788"
+			name="Select_All_N/A1">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="N/A">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<smartfoldernode
+			id="b756477c-b42a-4c29-b732-f2da13f3d33a"
+			name="Select_All_Yes111">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Yes">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
+			<testcase
+			id="b8b58dfe-3e6f-4750-a790-71d8d80c54eb"
+			name="7.02_Grants_IntakeReview_All_RPMGrantor">
+			</testcase>
+			<testmodule
+			id="b9431b4d-3fcd-4bbc-bf1c-1e9599df2d13"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="b989d47e-3efa-4279-a8cb-70ab822f984e"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="bb703b55-eded-423e-8cec-c79e9ec593f8"
+			name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation"
+			ref="1fe7bbdd-9dcf-4f6e-b776-89caf1808f55"
+			type="Recording">
+			</testmodule>
 			<testmodule
 			id="bc08c13d-b790-490a-b894-b0321c63a8fe"
 			name="R1_08_HomePage_TilesHeader_OSDSGrantor_PreAward"
@@ -3206,6 +5664,170 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="351b688e-b767-4c2a-b5f3-0e81714b79f9"
 					variablename="OSDS_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="be006a5d-34e5-4a19-b99a-c2c7fa2188bf"
+			name="R6_01_FP_New_DomesticGrantor_RecipientInformation"
+			ref="8f88b9a5-d461-490b-b24a-edeb50fc1fa5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Vendor/Recipient Contact"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="20399cbf-2d05-4ae4-84e5-3b9665e24c4e"
+					variablename="VendorRecipient_Contact">
+					</var>
+					<var
+					dataname="Type of Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1cf7b551-97e6-464a-9053-6c4c4ad673dd"
+					variablename="Type_of_Recipient">
+					</var>
+					<var
+					dataname="Vendor/Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1ce723a0-c88b-4340-817d-5d1256301d76"
+					variablename="Vendor_Recipient">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="be930a26-2655-478f-8836-2bdcd723480c"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c0388508-4447-4dbb-941e-03a8bdcb8d12"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c0f7a737-aac0-458d-bc33-62b4a4189180"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3315,6 +5937,12 @@
 			id="c2d065f2-4ce7-4134-96eb-277074bec0dc"
 			name="R3_01_Project_New_DomesticGrantor_Navigation"
 			ref="1a207973-decd-4540-ab8a-b20816fe5129"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="c37ab9db-8721-44f7-adef-701631b9456f"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NAAll"
+			ref="1346667f-c82b-4b9b-90eb-1d961c7e5510"
 			type="Recording">
 			</testmodule>
 			<testmodule
@@ -3430,6 +6058,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="c6c1b6e3-7709-48aa-b022-ba3ea5004695"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="RPM Admin Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="RPM Admin Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="c7733311-d8ef-4e2e-beab-ccda3fcab0d4"
 			name="R1_05_HomePage_TIlesHeader_RPMAdmin_Administration"
 			ref="01b4d963-a578-4e30-9214-c758720165c8"
@@ -3448,6 +6096,46 @@
 			id="c8677cb3-8b48-4e66-ad5c-986b641b4c2c"
 			name="Scenario_5_Application">
 			</smartfoldernode>
+			<testmodule
+			id="c8c4955f-7104-4748-bd25-e637ae9df223"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="c8e2620c-c9aa-42e1-8164-3fddc85ec192"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="c902a58f-06f3-404b-a61b-0c6a2b726bd6"
 			name="R5_01_App_New_DomesticGrantee_Navigation"
@@ -3500,6 +6188,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="Users"
+			id="cb9dc98e-1905-4b53-a48c-4915fd74fd64"
+			name="Users_Intake_Review">
+			</smartfoldernode>
 			<testmodule
 			id="cc134ad5-0427-4e96-a460-474a26428558"
 			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
@@ -3591,6 +6284,39 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="cf6888ef-23e9-4280-8353-5240b82dbb86"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="cf7bfad0-6a8a-4312-9c50-19d1f30f63c5"
+			name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation"
+			ref="1fe7bbdd-9dcf-4f6e-b776-89caf1808f55"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d01f1658-8efb-435f-8fb1-7de5a0727d11"
 			name="R5_01_App_New_DomesticGrantor_Navigation"
 			ref="0c9417ad-c875-4e24-a328-46a105efe107"
@@ -3601,6 +6327,20 @@
 					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
 					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
 					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d042a496-0abb-4e69-9a17-8d73986e1576"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS"
+			ref="856fc703-a4dd-4e98-a7a6-29576752b452"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Recipient Signatory"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="5c00001a-5296-4b2c-a150-dc7e0a0ce025"
+					variablename="Recipient_Signatory">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3624,6 +6364,18 @@
 			name="3.04_Grants_Program_New_OSDSGrantor">
 			</testcase>
 			<testmodule
+			id="d1a67da5-94ce-428f-9a54-485622df7e45"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d34fbd70-197b-4bb2-b2b4-80503c03db61"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="d350fbfe-7050-4459-8d34-7ad899b1e75c"
 			name="Login"
 			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
@@ -3642,6 +6394,18 @@
 					variablename="Username">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="d36a6e06-a644-4c31-8195-070e3e05cebe"
+			name="R6_01_FP_New_DomesticGrantor_SaveSubmit"
+			ref="290925aa-333c-42fd-a312-87e16c0c875d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d3f78712-7be5-4688-b96d-6d86cf3c5bfd"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="d47247d7-0bea-4b1e-a2f7-0af701929706"
@@ -3678,6 +6442,20 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d508e6b6-c369-40c6-80f2-9af3a47629ba"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d5528042-5280-4625-bee6-56145e3471e8"
 			name="R1_02_HomePage_TilesHeader_DomesticGrantee_Apply"
 			ref="0772a59b-a706-4091-918c-7575d2a6aed8"
@@ -3692,6 +6470,52 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="d63aad32-ce2b-4031-9317-06ebc9c5dacb"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d6a1d2c3-c699-449f-a5e3-f5432cbdf3ec"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d6b2e97d-655c-4bba-b4e1-8a580e5c17f5"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="d8193b0a-a408-470b-a3ad-9b87aa6596d3"
 			name="R1_09_HomePage_Footer_OSDSGrantee_OSSupport"
 			ref="5937d4c5-e38d-4feb-96e2-9e822f376e77"
@@ -3702,6 +6526,20 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="8152b1bf-b0e5-40f4-8f90-905709b5678e"
 					variablename="OSDS_Grantee_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="d880e42a-c47a-4662-81bf-17ec5d1f23f6"
+			name="R5_01_App_New_DomesticGrantor_Navigation"
+			ref="0c9417ad-c875-4e24-a328-46a105efe107"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Funding Opportunity Number"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
+					variablename="Funding_Opportunity_Number">
 					</var>
 				</databinding>
 			</testmodule>
@@ -3743,6 +6581,68 @@
 			id="d97d8ee8-b23b-4e3b-90fc-81183e22190e"
 			name="4.03_Grants_FO_New_RPMAdmin">
 			</testcase>
+			<testmodule
+			id="d99d44cf-4eb6-4b73-8f2e-eed5d507d3ef"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="d9db6ad1-f118-4ea5-b413-748f2b6ab910"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
 			<testmodule
 			id="da90c6c8-d8ad-40d8-8786-a12b89cdea8b"
 			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
@@ -3800,6 +6700,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="db6f3da1-e39b-4173-9693-46f9e9510ae2"
+			name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments"
+			ref="24f1db2d-46e3-4f2a-aaf8-5efa761e6ad1"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Primary Grants Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="21191957-e138-4974-9004-59a9992c3e21"
+					variablename="Primary_Grants_Officer">
+					</var>
+					<var
+					dataname="Primary Program Officer"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="95ebb3d6-ac68-4baa-bdd3-d1b8a26c0629"
+					variablename="Primary_Program_Officer">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="dbd6e2a9-d385-4a03-92e6-c08c3f462343"
 			name="R4_01_FO_New_DomesticGrantor_FormFill_OEI"
 			ref="6fb07900-9fc9-4adc-83f8-22d2051341ab"
@@ -3845,10 +6765,124 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="dd9a5232-18b4-4a1f-a234-15bc2dcb2fa9"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="de29dd9a-4fce-468c-9866-4615263df585"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="de75e5a2-70d1-424b-a31c-497195b9c197"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_Header"
+			ref="e8d78e1f-ae8a-47a4-819b-34dc68cc3563"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Application Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="8914fecf-f3e9-4418-b0ad-868e8f7babab"
+					variablename="Application_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
 			id="deedd38e-a5a8-4db3-b4a1-6803f41287a4"
 			name="R4_01_FO_New_DomesticGrantor_SaveSubmit"
 			ref="dd981f76-dace-46ff-8237-a5c290a38f8f"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e03f3c65-1db8-4e0d-8091-8cf79c61f2d8"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="e0487125-4d79-4ecc-b162-038653ad2fc8"
+			name="7.01_Grants_IntakeReview_All_DomesticGrantor">
+			</testcase>
+			<testmodule
+			id="e14d0800-9935-4067-b6c1-355d4e5b71e2"
+			name="R7_01_IR_All_DomesticGrantor_Navigation"
+			ref="9c112276-67d5-4cf1-a7cd-52454095f833"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e1e63fb8-061d-4331-a098-21625695d387"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NoAll"
+			ref="b12075d5-599b-49df-a136-e008b6b80f1e"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e2008592-13c5-4407-b227-71a6cf86922e"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
+					</var>
+				</databinding>
 			</testmodule>
 			<testmodule
 			id="e31c450b-447b-466c-8e57-083c24547194"
@@ -3891,6 +6925,26 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="e4301728-c848-4ad4-84c1-a8c9b77007ae"
+			name="R6_01_FP_New_DomesticGrantor_FormFIll_Header"
+			ref="e8d78e1f-ae8a-47a4-819b-34dc68cc3563"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Application Number"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="8914fecf-f3e9-4418-b0ad-868e8f7babab"
+					variablename="Application_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e5d2fb4d-f91e-4992-8cb4-8b7bf4b5c98a"
+			name="R7_01_IR_All_DomesticGrantor_Questions_YesAll"
+			ref="ba52a4d6-87ce-4e8e-b2d9-7008332be5f5"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="e5f86097-b6dd-4c3d-8047-8a8ed5177a81"
 			name="R1_04_HomePage_TilesHeader_RPMGrantee_Monitoring"
 			ref="6425adbf-6320-49cf-85ec-15dfa0b21c53"
@@ -3904,6 +6958,17 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="Intake_Reviews"
+			id="e664c8eb-51b1-4ea2-a1fe-ca13bca01bde"
+			name="Scenario_7_Intake_Review">
+				<parameters>
+					<param
+					name="Select All Type"
+					value="">
+					</param>
+				</parameters>
+			</smartfoldernode>
 			<testmodule
 			id="e6c147c6-2bfe-42f6-ba4d-db9973ffb995"
 			name="Login"
@@ -3921,6 +6986,102 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
 					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e82e32bb-f02d-459d-ab6d-1e7c24c0298c"
+			name="R6_01_FP_New_DomesticGrantor_RecipientInformation"
+			ref="8f88b9a5-d461-490b-b24a-edeb50fc1fa5"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Vendor/Recipient Contact"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="20399cbf-2d05-4ae4-84e5-3b9665e24c4e"
+					variablename="VendorRecipient_Contact">
+					</var>
+					<var
+					dataname="Type of Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1cf7b551-97e6-464a-9053-6c4c4ad673dd"
+					variablename="Type_of_Recipient">
+					</var>
+					<var
+					dataname="Vendor/Recipient"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="1ce723a0-c88b-4340-817d-5d1256301d76"
+					variablename="Vendor_Recipient">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="e8e02248-73a2-4938-805a-4b6e79c4f76c"
+			name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo"
+			ref="51e69325-1487-4cfe-b889-0b394960d618"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Street Address 1"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="250bc3f5-ff71-457d-a2f2-0e3c047ab1a4"
+					variablename="Street_Address1">
+					</var>
+					<var
+					dataname="Street Address 2"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="86ac769e-778e-41d0-a2f2-ff249f24cff9"
+					variablename="Street_Address2">
+					</var>
+					<var
+					dataname="City"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="1a014afb-8a55-412c-a2b0-168f674843f0"
+					variablename="City">
+					</var>
+					<var
+					dataname="County/Parish"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="794fbf4b-040d-499e-bc07-67cdcb18d0ff"
+					variablename="County_Parish">
+					</var>
+					<var
+					dataname="State"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="4aad2789-bf92-4a90-b95e-ad3d0125914b"
+					variablename="State">
+					</var>
+					<var
+					dataname="Province"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="60a6ae02-9e57-4acc-b0f7-336634e652a8"
+					variablename="Province">
+					</var>
+					<var
+					dataname="Country"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="9c94f9ac-aab7-4610-802f-3003bdb2d175"
+					variablename="Country">
+					</var>
+					<var
+					dataname="Zip/Postal Code"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="97ce0b3e-6a3c-499f-a5c6-16fb5537a872"
+					variablename="Zip">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="eaa8d9cf-d463-4a2e-8bf4-262b4a9089e1"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4059,6 +7220,30 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="ee371f8f-3001-4d75-b281-a09bb65df411"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="eea8d518-8fd3-4f85-a856-339194dc59dc"
+			name="6.03_Grants_FundingPackage_New_RPMAdmin">
+			</testcase>
+			<testmodule
 			id="ef4bebb7-183f-4579-b058-5ae1c6142623"
 			name="R5_01_App_New_DomesticGrantor_Navigation"
 			ref="0c9417ad-c875-4e24-a328-46a105efe107"
@@ -4069,6 +7254,38 @@
 					datasourceid="380ccbb3-1cd3-4324-b0e7-74b8b47f879b"
 					variableid="ea36d5d3-a154-468f-8125-24c6b995a73c"
 					variablename="Funding_Opportunity_Number">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f0019474-7c47-4fce-afac-4444e55c0070"
+			name="R5_01_App_New_DomesticGrantor_SaveSubmit"
+			ref="89d75974-620f-4f9a-886a-b06f3651009d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f0338cc4-11ca-4077-acaf-a9d637ddb194"
+			name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo"
+			ref="3a46c439-dafb-40a5-bda5-0bb11d27322d"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Applicant Organization/Indivdual"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="503ef68e-a520-4f38-85af-44b1a6050575"
+					variablename="Applicant_Organization_Individual">
+					</var>
+					<var
+					dataname="Applicant Name"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="2ec11dd8-cef8-4710-adbb-6f84690f42b5"
+					variablename="Applicant_Name">
+					</var>
+					<var
+					dataname="Applicant DUNS"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="f6f19610-597b-4d63-bbcb-5e32d39efff0"
+					variablename="Applicant_DUNS">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4097,6 +7314,19 @@
 					variablename="Estimated_Project_End_Date">
 					</var>
 				</databinding>
+			</testmodule>
+			<testmodule
+			id="f0faea9c-a3cd-42dc-b69d-050142729390"
+			name="R6_01_FP_New_DomesticGrantor_SaveSubmit"
+			ref="290925aa-333c-42fd-a312-87e16c0c875d"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			enabled="False"
+			id="f192d8d2-ccb8-464d-afa9-af8431b014f1"
+			name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation"
+			ref="1fe7bbdd-9dcf-4f6e-b776-89caf1808f55"
+			type="Recording">
 			</testmodule>
 			<testmodule
 			id="f3536bb7-8d67-457a-8183-784a8cd1649d"
@@ -4147,6 +7377,38 @@
 				</databinding>
 			</testmodule>
 			<testmodule
+			id="f47b8394-609e-4927-9d3a-3fee02d74b1c"
+			name="R7_01_IR_All_DomesticGrantor_Questions_NAAll"
+			ref="1346667f-c82b-4b9b-90eb-1d961c7e5510"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="f48a0629-5e4f-4ff9-b8c4-c5cc0a68061a"
+			name="Login"
+			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Domestic Grantor Username"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
+					variablename="Username">
+					</var>
+					<var
+					dataname="Domestic Grantor Password"
+					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
+					variableid="57d69770-8e2b-4ea9-8f5f-70a16ffeabd5"
+					variablename="Password">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f4ce623f-8266-418d-9961-5c729d671f57"
+			name="R6_01_FP_New_DomesticGrantor_Navigation"
+			ref="a46ae042-8800-4a91-b21f-9915c622822f"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="f51a11cf-fe5a-4919-a244-54459bf32745"
 			name="Login"
 			ref="68086a46-1ad9-4c16-a525-de0c870322a0"
@@ -4166,6 +7428,31 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			id="f62aa206-c4ca-4466-b53c-683d02d8f7c0"
+			name="Select_All_N/A111">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="N/A">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="f6ae7fcd-4f05-451a-9cc1-9a7884e83826"
 			name="R4_01_FO_New_DomesticGrantor_FormFill_OEI"
@@ -4183,6 +7470,20 @@
 					datasourceid="a44d41d0-0b4c-4bc8-84e3-4603c63a7008"
 					variableid="d2322e93-9849-4743-9d7e-f6627039fdbd"
 					variablename="Primary_Eligible_Applicant">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="f6cf6366-94ee-43ff-b6ab-a1fe0aca0b68"
+			name="R7_01_IR_All_DomesticGrantor_IRForm"
+			ref="b4dd8e8c-9429-4aad-a561-57cb497a8b8c"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Question Set"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ea197e83-34df-4197-83fc-415f36815d2a"
+					variablename="Question_Set">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4233,6 +7534,31 @@
 			id="fa34c085-cb45-42d1-ba79-949fb84acb41"
 			name="3.02_Grants_Program_New_RPMGrantor">
 			</testcase>
+			<smartfoldernode
+			id="fb4c476c-8aa5-4438-a196-0f3b514057c6"
+			name="Select_All_Yes_Yes1">
+				<conditiongroup
+				comparison="AND"
+				enabled="True">
+					<condition
+					comparison="IsEqual">
+						<leftvalue>
+							<datavaluesource>
+								<databinding
+								bindingtype="DataConnector"
+								dataname="Select All Type"
+								id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed">
+								</databinding>
+							</datavaluesource>
+						</leftvalue>
+						<rightvalue>
+							<simplevaluesource
+							value="Yes">
+							</simplevaluesource>
+						</rightvalue>
+					</condition>
+				</conditiongroup>
+			</smartfoldernode>
 			<testmodule
 			id="fb734ca4-a0f1-4b98-aa52-ef4d5b66b22d"
 			name="R1_03_HomePage_TilesHeader_RPMGrantor_Planning"
@@ -4244,6 +7570,32 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="b66e7411-b33c-4391-bbce-81573adcdd55"
 					variablename="RPM_Grantor_WM">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fc5b4ea1-454d-4582-95ba-c183ff28f7df"
+			name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo"
+			ref="c96ebd2d-15f4-40ae-be69-67f4e451d26a"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Statutory Authority"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="c9073810-89aa-428f-8920-1fd4f1210048"
+					variablename="Statutory_Authority">
+					</var>
+					<var
+					dataname="U.S. Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="7213b9b5-95f2-41f4-9242-c87098f4c172"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recipient Share of Cost"
+					datasourceid="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+					variableid="a39a39b4-015a-4802-81f2-301709877e50"
+					variablename="Recipient_Share_of_Cost">
 					</var>
 				</databinding>
 			</testmodule>
@@ -4264,6 +7616,32 @@
 					datasourceid="590a308d-22d6-47b5-a223-694d4ecfa04a"
 					variableid="ed9d26da-d4f7-4fae-a551-17fef2425a20"
 					variablename="Username">
+					</var>
+				</databinding>
+			</testmodule>
+			<testmodule
+			id="fe571471-6dae-443c-8ab5-3661dc455158"
+			name="R5_01_App_New_DomesticGrantor_FormFill_Header"
+			ref="26f612c9-9700-4870-a166-0829bca92a8f"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="Score"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="467f48f2-b799-418e-87c0-6a0c4ed8914b"
+					variablename="Score">
+					</var>
+					<var
+					dataname="Recommended U.S. Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="aa461f63-3734-4f97-a2a4-9556cd59e363"
+					variablename="US_Share_of_Cost">
+					</var>
+					<var
+					dataname="Recommended Recipient Share of Cost"
+					datasourceid="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+					variableid="ae8db598-a9d9-4234-a82a-5aaf6bd8b6e8"
+					variablename="Recipient_Share_of_Cost">
 					</var>
 				</databinding>
 			</testmodule>
@@ -5074,7 +8452,7 @@
 								</testmodule>
 								<testmodule
 								id="072641e6-bf99-465c-8a14-2048c9680034"
-								name="R5_01_App_New_RPMGrantor_FormFill_Header">
+								name="R5_02_App_New_RPMGrantor_FormFill_Header">
 								</testmodule>
 								<testmodule
 								id="2236982b-f2bf-41c3-bd95-81e763c341e5"
@@ -5102,7 +8480,7 @@
 								</testmodule>
 								<testmodule
 								id="1ad166cf-df9d-46bc-abe6-07643ac12beb"
-								name="R5_01_App_New_RPMGrantor_FormFill_Header">
+								name="R5_02_App_New_RPMGrantor_FormFill_Header">
 								</testmodule>
 								<testmodule
 								id="23c47fda-9cdc-43ab-ac05-330cd6f517b3"
@@ -5235,6 +8613,718 @@
 							</testcase>
 						</smartfoldernode>
 					</smartfoldernode>
+					<smartfoldernode
+					id="78af9999-c98c-430d-adf4-b1c23341ff7f"
+					name="Scenario_6_Funding_Package">
+						<smartfoldernode
+						id="12ee8aaf-22c6-4906-aac5-4d47e782ff12"
+						name="Users_Funding_Package">
+							<testcase
+							id="05421627-8275-499f-8468-6103aa4a49ce"
+							name="6.01_Grants_FundingPackage_New_DomesticGrantor">
+								<testmodule
+								id="729958a2-36a8-4782-9304-cedcb2757e0c"
+								name="Login">
+								</testmodule>
+								<testmodule
+								id="78fc6e7c-ad89-462e-97d7-a5cefdc696de"
+								name="R6_01_FP_New_DomesticGrantor_Navigation">
+								</testmodule>
+								<testmodule
+								id="a586b5d9-9353-4ca5-90fa-136824036cdc"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_Header">
+								</testmodule>
+								<testmodule
+								id="028e5321-2de2-4724-8b07-b152149f88bc"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments">
+								</testmodule>
+								<testmodule
+								id="06db2840-71e3-48ed-83e1-f08ba23532e6"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo">
+								</testmodule>
+								<testmodule
+								id="85bea60e-3937-4530-b490-8c2d24275c2a"
+								name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo">
+								</testmodule>
+								<testmodule
+								id="86e42155-3448-4a1e-beb8-a165ed43808e"
+								name="R6_01_FP_New_DomesticGrantor_RecipientInformation">
+								</testmodule>
+								<testmodule
+								id="51cf8969-b4b4-4dc7-b953-3db32e927b0d"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS">
+								</testmodule>
+								<testmodule
+								id="80a5a9cf-4e92-404a-a672-11608fa08f90"
+								name="R6_01_FP_New_DomesticGrantor_SaveSubmit">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="adcc5927-e569-492f-a777-6f0c90ceb6a1"
+							name="6.02_Grants_FundingPackage_New_RPMGrantor">
+								<testmodule
+								id="4f7f00a2-6c8e-4193-8142-d1c99a8a741b"
+								name="Login">
+								</testmodule>
+								<testmodule
+								id="f4ce623f-8266-418d-9961-5c729d671f57"
+								name="R6_01_FP_New_DomesticGrantor_Navigation">
+								</testmodule>
+								<testmodule
+								id="e4301728-c848-4ad4-84c1-a8c9b77007ae"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_Header">
+								</testmodule>
+								<testmodule
+								id="50c82e87-326e-40b1-bdf1-4fc96cdd0b54"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments">
+								</testmodule>
+								<testmodule
+								id="14cb630d-ca11-46ec-a4c5-926ccfd9288c"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo">
+								</testmodule>
+								<testmodule
+								id="fc5b4ea1-454d-4582-95ba-c183ff28f7df"
+								name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo">
+								</testmodule>
+								<testmodule
+								id="be006a5d-34e5-4a19-b99a-c2c7fa2188bf"
+								name="R6_01_FP_New_DomesticGrantor_RecipientInformation">
+								</testmodule>
+								<testmodule
+								id="b3800c27-bef4-43b9-aa80-2f6ced39c1f4"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS">
+								</testmodule>
+								<testmodule
+								id="f0faea9c-a3cd-42dc-b69d-050142729390"
+								name="R6_01_FP_New_DomesticGrantor_SaveSubmit">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="eea8d518-8fd3-4f85-a856-339194dc59dc"
+							name="6.03_Grants_FundingPackage_New_RPMAdmin">
+								<testmodule
+								id="c6c1b6e3-7709-48aa-b022-ba3ea5004695"
+								name="Login">
+								</testmodule>
+								<testmodule
+								id="a5dc58fa-0f68-4318-9317-a0e6eef7413e"
+								name="R6_01_FP_New_DomesticGrantor_Navigation">
+								</testmodule>
+								<testmodule
+								id="de75e5a2-70d1-424b-a31c-497195b9c197"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_Header">
+								</testmodule>
+								<testmodule
+								id="264dea83-f15a-440f-8ee5-b536c15b9885"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments">
+								</testmodule>
+								<testmodule
+								id="82713222-2eb0-4787-bda2-d75205298a93"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo">
+								</testmodule>
+								<testmodule
+								id="9944ee16-c11f-4a53-a68c-2cae53794219"
+								name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo">
+								</testmodule>
+								<testmodule
+								id="e82e32bb-f02d-459d-ab6d-1e7c24c0298c"
+								name="R6_01_FP_New_DomesticGrantor_RecipientInformation">
+								</testmodule>
+								<testmodule
+								id="62146e95-c28a-4a74-866f-60f17d6a7630"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS">
+								</testmodule>
+								<testmodule
+								id="d36a6e06-a644-4c31-8195-070e3e05cebe"
+								name="R6_01_FP_New_DomesticGrantor_SaveSubmit">
+								</testmodule>
+							</testcase>
+							<testcase
+							id="6bb0d345-cc21-4ccc-9371-8e3814c96056"
+							name="6.04_Grants_FundingPackage_New_OSDSGrantor">
+								<testmodule
+								id="04967c99-a3d6-4c24-96b0-1324cbe03f96"
+								name="Login">
+								</testmodule>
+								<testmodule
+								id="9c17c064-7095-46c9-80eb-c336d964e7f9"
+								name="R6_01_FP_New_DomesticGrantor_Navigation">
+								</testmodule>
+								<testmodule
+								id="4afc1063-af46-4a87-84ce-1ef77303b1fa"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_Header">
+								</testmodule>
+								<testmodule
+								id="db6f3da1-e39b-4173-9693-46f9e9510ae2"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_AwardAssignments">
+								</testmodule>
+								<testmodule
+								id="27b3985a-48c7-441e-9fba-8f5f151bba6e"
+								name="R6_01_FP_New_DomesticGrantor_FormFill_FPInfo">
+								</testmodule>
+								<testmodule
+								id="27ee8124-58b6-49d6-9972-18c7574af2e0"
+								name="R6_01_FP_New_DomesticGrantor_Formfill_FinancialInfo">
+								</testmodule>
+								<testmodule
+								id="47fb2373-8efc-4660-b24c-9cfe3bf340da"
+								name="R6_01_FP_New_DomesticGrantor_RecipientInformation">
+								</testmodule>
+								<testmodule
+								id="d042a496-0abb-4e69-9a17-8d73986e1576"
+								name="R6_01_FP_New_DomesticGrantor_FormFIll_FPRS">
+								</testmodule>
+								<testmodule
+								id="1b3b75ea-11e6-451b-88cc-f2fec96c41de"
+								name="R6_01_FP_New_DomesticGrantor_SaveSubmit">
+								</testmodule>
+							</testcase>
+						</smartfoldernode>
+					</smartfoldernode>
+					<smartfoldernode
+					id="e664c8eb-51b1-4ea2-a1fe-ca13bca01bde"
+					name="Scenario_7_Intake_Review">
+						<smartfoldernode
+						id="cb9dc98e-1905-4b53-a48c-4915fd74fd64"
+						name="Users_Intake_Review">
+							<testcase
+							id="e0487125-4d79-4ecc-b162-038653ad2fc8"
+							name="7.01_Grants_IntakeReview_All_DomesticGrantor">
+								<smartfoldernode
+								id="a0154d4c-1988-4d21-9aa1-bcf6d35ef83b"
+								name="Select_All_Yes">
+									<testmodule
+									id="f48a0629-5e4f-4ff9-b8c4-c5cc0a68061a"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="d508e6b6-c369-40c6-80f2-9af3a47629ba"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="7cf2bdd4-a531-4f1a-ba2e-e46f3d53e99e"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="3f33a7b1-b12e-4373-8f1a-b5d8053e2768"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="c0388508-4447-4dbb-941e-03a8bdcb8d12"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="6a8ee264-f1fe-437b-a9a5-062c2e23d8cf"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="d63aad32-ce2b-4031-9317-06ebc9c5dacb"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="185fdca6-5d8f-4860-b76a-acf221aa2fd6"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="65e1d7d1-5695-4ca7-ad26-1900729f2d3f"
+									name="R7_01_IR_All_DomesticGrantor_Questions_YesAll">
+									</testmodule>
+									<testmodule
+									id="f192d8d2-ccb8-464d-afa9-af8431b014f1"
+									name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="a809100e-81fd-4732-bb8b-a57ed56c50e2"
+								name="Select_All_No">
+									<testmodule
+									id="ae9eca87-2ad4-4ab2-8525-bb1ba9b4ad82"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="b659ab3d-5f36-46a1-8e99-7e2d980809a3"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="3bb5b33c-e11b-4797-9a6b-656aba21a447"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="58304c3b-6c99-4736-a160-feb77ac0d2bd"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="3497ac26-c626-4082-857d-9d37211db0e8"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="dd9a5232-18b4-4a1f-a234-15bc2dcb2fa9"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="6e0f927c-37e5-4b03-8c9d-ccf0d1db395b"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="22c41051-d609-4912-a148-ba30ff77236d"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="8a9362d8-e249-41a1-b414-a46e21ccf160"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NoAll">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="3344f385-8140-47d0-9c54-a8cec4fda515"
+								name="Select_All_N/A">
+									<testmodule
+									id="4c58ef11-e389-4519-9c05-d619f76a26d0"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="1a08329f-3338-418b-890f-849890f3c3de"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="94f15dee-61fb-4400-b912-cb2d65ea8674"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="e2008592-13c5-4407-b227-71a6cf86922e"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="3580cfb0-c1ac-4928-accc-1110980db839"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="4247e482-8949-40aa-bcd7-2226d126fee8"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="e14d0800-9935-4067-b6c1-355d4e5b71e2"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="92152127-7494-46f3-9333-3a4b031c90be"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="01b8ca99-7b08-497e-a4d0-676b67ad27cf"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NAAll">
+									</testmodule>
+								</smartfoldernode>
+							</testcase>
+							<testcase
+							id="b8b58dfe-3e6f-4750-a790-71d8d80c54eb"
+							name="7.02_Grants_IntakeReview_All_RPMGrantor">
+								<smartfoldernode
+								id="fb4c476c-8aa5-4438-a196-0f3b514057c6"
+								name="Select_All_Yes_Yes1">
+									<testmodule
+									id="ee371f8f-3001-4d75-b281-a09bb65df411"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="59d09210-b362-4379-84d2-9f7163572e11"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="5b2301e5-cd83-4a30-aa79-09eadd28fd80"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="1337eebf-a88c-4d53-a5fb-df5c546420e2"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="b9431b4d-3fcd-4bbc-bf1c-1e9599df2d13"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="27c8257a-0a34-4419-8a6d-b1a33fd09d86"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="282b6f3f-ec79-4709-8871-bc79b0c569a8"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="c8c4955f-7104-4748-bd25-e637ae9df223"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="095f75f5-4044-4e0f-9a15-e4f25dcdf92c"
+									name="R7_01_IR_All_DomesticGrantor_Questions_YesAll">
+									</testmodule>
+									<testmodule
+									id="cf7bfad0-6a8a-4312-9c50-19d1f30f63c5"
+									name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="84c15790-ab52-4fbf-8408-0dc832129765"
+								name="Select_All_No1">
+									<testmodule
+									id="6c6b4cd4-e3d3-4df1-9a6a-c9ee5e7f2bec"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="3ad58260-9b64-4920-b807-a28fed495229"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="6a3184d3-3b5c-4b8c-a8d1-ff42b375ad67"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="ad0147e3-daaa-4b11-b0c8-c6c4ccca6e17"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="e8e02248-73a2-4938-805a-4b6e79c4f76c"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="5551f794-87c7-4d51-a77c-454e5e78d904"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="a5406403-6757-4987-8cc6-ba85fa13c477"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="9b3ebb7f-9cb6-4985-b70f-e16750118d18"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="e1e63fb8-061d-4331-a098-21625695d387"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NoAll">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="b744d213-53e1-4c6d-8be6-836e2089d788"
+								name="Select_All_N/A1">
+									<testmodule
+									id="1038b982-97e4-41f7-ac7f-7820d707272a"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="7396130b-a1e2-492f-a576-d0098dedbfe8"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="2ec31887-9386-48f9-a34d-2496e433fa2b"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="be930a26-2655-478f-8836-2bdcd723480c"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="d9db6ad1-f118-4ea5-b413-748f2b6ab910"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="87c3bb20-e9e9-4522-93e6-4c998d54c45c"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="1edb1989-212d-4aa3-b3ad-f5d0e68ad466"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="95020acb-3212-4c94-af7a-42af97137897"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="3533df30-9927-483f-ae85-24c36834b185"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NAAll">
+									</testmodule>
+								</smartfoldernode>
+							</testcase>
+							<testcase
+							id="208106d1-5e10-4ce0-b86f-5ac10385bd25"
+							name="7.03_Grants_IntakeReview_All_RPMAdmin">
+								<smartfoldernode
+								id="b377f9dd-79e9-4c33-b98e-391479a01d6c"
+								name="Select_All_Yes11">
+									<testmodule
+									id="b24d8e40-055b-48f4-9706-97572647ab5d"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="d880e42a-c47a-4662-81bf-17ec5d1f23f6"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="88f18431-8ec4-4ea2-a6bc-60c69cb66421"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="de29dd9a-4fce-468c-9866-4615263df585"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="6147c5a4-26b7-4a3d-8f78-b4c64805fcfb"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="1f88d45e-5cff-4865-82e2-ad09a468c5dd"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="8de30161-aa3b-4be5-a883-b3d08c3f9e50"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="eaa8d9cf-d463-4a2e-8bf4-262b4a9089e1"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="e5d2fb4d-f91e-4992-8cb4-8b7bf4b5c98a"
+									name="R7_01_IR_All_DomesticGrantor_Questions_YesAll">
+									</testmodule>
+									<testmodule
+									id="bb703b55-eded-423e-8cec-c79e9ec593f8"
+									name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="79d8e420-7b8d-43ab-8275-a65a6b15747e"
+								name="Select_All_No11">
+									<testmodule
+									id="178ed3b3-34d8-417b-ac47-df16a37c1212"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="79bcb04a-1177-4788-aa39-251c8b423061"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="fe571471-6dae-443c-8ab5-3661dc455158"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="cf6888ef-23e9-4280-8353-5240b82dbb86"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="9a923170-795c-4c08-98bb-8d7c3f9bcf58"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="f0019474-7c47-4fce-afac-4444e55c0070"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="751b3dd5-4f32-4a4a-87ff-c5cf50165c3e"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="a5c46866-a82d-4841-b8ea-2c046be30007"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="7db7ad29-fc01-492b-88d8-f503c7550e98"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NoAll">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="7bb75d1e-adba-4792-942c-cdd3d8d83a8a"
+								name="Select_All_N/A11">
+									<testmodule
+									id="d6a1d2c3-c699-449f-a5e3-f5432cbdf3ec"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="8fddca86-cd16-498d-983c-c0bd3802b6a1"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="e03f3c65-1db8-4e0d-8091-8cf79c61f2d8"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="6c5a0ab8-d069-40f2-94ee-33b33d452e2d"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="b989d47e-3efa-4279-a8cb-70ab822f984e"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="a21c96a4-6f5e-4852-a635-df35d3646a83"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="47d87715-4569-4b52-aaad-f5764e3f6993"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="76f03a80-a7fa-43fd-93de-7f7468274dd3"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="f47b8394-609e-4927-9d3a-3fee02d74b1c"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NAAll">
+									</testmodule>
+								</smartfoldernode>
+							</testcase>
+							<testcase
+							id="623d4539-5673-4383-bc20-ab53715235b7"
+							name="7.04_Grants_IntakeReview_All_OSDSGrantor">
+								<smartfoldernode
+								id="b756477c-b42a-4c29-b732-f2da13f3d33a"
+								name="Select_All_Yes111">
+									<testmodule
+									id="8c949d96-67c4-49b0-9468-04a4c877cfbf"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="2f9a3f22-8b06-46f4-bda7-22cc82268892"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="7186204f-d1f0-4c5b-9ed7-52ebf103eff8"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="f0338cc4-11ca-4077-acaf-a9d637ddb194"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="995e7938-27d4-4fc3-b58f-2b5db0fd4f7a"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="146fd560-2c3d-4085-98fc-f52097878743"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="d1a67da5-94ce-428f-9a54-485622df7e45"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="54bb62f0-b124-4720-941b-220401a65605"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="35922ed2-52b8-42cf-9a56-519b58c1c8fb"
+									name="R7_01_IR_All_DomesticGrantor_Questions_YesAll">
+									</testmodule>
+									<testmodule
+									id="589fb8b8-e7fa-4b1a-93ca-50d3d2871309"
+									name="R7_01_IR_All_DomesticGrantor_DirectIRNavigation">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="5f41c83f-804a-4862-8715-d235ad8dbb06"
+								name="Select_All_No111">
+									<testmodule
+									id="0b51d459-c87a-4b50-9426-ee10576271f2"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="421833f6-f306-4008-bbe8-e9610a260299"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="c8e2620c-c9aa-42e1-8164-3fddc85ec192"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="5eae85dd-e628-4af8-b771-12627a2f1a54"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="c0f7a737-aac0-458d-bc33-62b4a4189180"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="929ce7ca-2c30-4966-a32f-4a81afaf5d8c"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="d34fbd70-197b-4bb2-b2b4-80503c03db61"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="b4d9c376-4f03-49d1-8c15-1e7597886198"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="a1c23cbe-df21-4a9b-b010-854a1612746e"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NoAll">
+									</testmodule>
+								</smartfoldernode>
+								<smartfoldernode
+								id="f62aa206-c4ca-4466-b53c-683d02d8f7c0"
+								name="Select_All_N/A111">
+									<testmodule
+									id="d6b2e97d-655c-4bba-b4e1-8a580e5c17f5"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="8712554b-0202-4145-aa34-930b1810a6ef"
+									name="R5_01_App_New_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="a6469076-adb3-4170-90ff-15ab56de7aa0"
+									name="R5_01_App_New_DomesticGrantor_FormFill_Header">
+									</testmodule>
+									<testmodule
+									id="134753f7-d3a6-4661-b50a-deb60ca81066"
+									name="R5_01_App_New_DomesticGrantor_FormFill_ApplicantInfo">
+									</testmodule>
+									<testmodule
+									id="67b9e62f-3748-4b35-a34f-ca0b6c7464f1"
+									name="R5_01_App_New_DomesticGrantor_FormFill_AppAddressInfo">
+									</testmodule>
+									<testmodule
+									id="146e1cc9-0da4-4ee5-94a6-e18616e58231"
+									name="R5_01_App_New_DomesticGrantor_SaveSubmit">
+									</testmodule>
+									<testmodule
+									id="d99d44cf-4eb6-4b73-8f2e-eed5d507d3ef"
+									name="R7_01_IR_All_DomesticGrantor_Navigation">
+									</testmodule>
+									<testmodule
+									id="f6cf6366-94ee-43ff-b6ab-a1fe0aca0b68"
+									name="R7_01_IR_All_DomesticGrantor_IRForm">
+									</testmodule>
+									<testmodule
+									id="c37ab9db-8721-44f7-adef-701631b9456f"
+									name="R7_01_IR_All_DomesticGrantor_Questions_NAAll">
+									</testmodule>
+								</smartfoldernode>
+							</testcase>
+						</smartfoldernode>
+					</smartfoldernode>
+					<smartfoldernode
+					id="6f055d02-a515-4dab-805b-1f75c990c7c6"
+					name="Scenario_8_Closeout_Checklist">
+						<smartfoldernode
+						id="1ebdcb82-10db-422a-ac8d-b64846f7a62d"
+						name="Users_Closeout_Checklist">
+							<testcase
+							id="97e2b6db-76f9-488d-9715-520bfecc8918"
+							name="8.01_Grants_CloseoutChecklist_All_DomesticGrantor">
+								<smartfoldernode
+								id="5835f166-e961-43a8-ba02-0f2389097ce6"
+								name="CloseoutChecklist_Select_All_Yes">
+									<testmodule
+									id="d3f78712-7be5-4688-b96d-6d86cf3c5bfd"
+									name="Login">
+									</testmodule>
+									<testmodule
+									id="5ee501d0-c935-45bc-bfb4-2d8aab1cfe1b"
+									name="R8_01_CC_All_DomesticGrantor_Navigation">
+									</testmodule>
+								</smartfoldernode>
+							</testcase>
+						</smartfoldernode>
+					</smartfoldernode>
 					<teardown
 					id="28fa688b-c9f6-4e10-a85f-adae47fde575"
 					name="teardown">
@@ -5248,6 +9338,154 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="C:\Users\nick.m.krauter\Documents\Ranorex\RanorexStudio Projects\Service Portal Regression STG\Data\Intake Reviews.xlsx"
+		id="338791ef-13f6-43d7-86bf-81ea3ee28008"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="Intake_Review"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Application"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Funding Opportunity Number
+				</column>
+				<column>
+					Disposition
+				</column>
+				<column>
+					Score
+				</column>
+				<column>
+					Recommended U.S. Share of Cost
+				</column>
+				<column>
+					Recommended Recipient Share of Cost
+				</column>
+				<column>
+					Proposal Type
+				</column>
+				<column>
+					Applicant Organization/Indivdual
+				</column>
+				<column>
+					Applicant Name
+				</column>
+				<column>
+					Applicant DUNS
+				</column>
+				<column>
+					Street Address 1
+				</column>
+				<column>
+					Street Address 2
+				</column>
+				<column>
+					City
+				</column>
+				<column>
+					County/Parish
+				</column>
+				<column>
+					State
+				</column>
+				<column>
+					Province
+				</column>
+				<column>
+					Country
+				</column>
+				<column>
+					Zip/Postal Code
+				</column>
+				<column>
+					Applicant Notes
+				</column>
+				<column>
+					Question Set
+				</column>
+				<column>
+					Select All Type
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="C:\Users\nick.m.krauter\Documents\Ranorex\RanorexStudio Projects\Service Portal Regression STG\Data\Intake Reviews.xlsx"
+		id="e3ac6861-d8b9-455a-b84a-18d2bf02a1ed"
+		includefile="Unchecked"
+		lastknownrowcount="3"
+		name="Intake_Reviews"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Intake Reviews"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Funding Opportunity Number
+				</column>
+				<column>
+					Disposition
+				</column>
+				<column>
+					Score
+				</column>
+				<column>
+					Recommended U.S. Share of Cost
+				</column>
+				<column>
+					Recommended Recipient Share of Cost
+				</column>
+				<column>
+					Proposal Type
+				</column>
+				<column>
+					Applicant Organization/Indivdual
+				</column>
+				<column>
+					Applicant Name
+				</column>
+				<column>
+					Applicant DUNS
+				</column>
+				<column>
+					Street Address 1
+				</column>
+				<column>
+					Street Address 2
+				</column>
+				<column>
+					City
+				</column>
+				<column>
+					County/Parish
+				</column>
+				<column>
+					State
+				</column>
+				<column>
+					Province
+				</column>
+				<column>
+					Country
+				</column>
+				<column>
+					Zip/Postal Code
+				</column>
+				<column>
+					Applicant Notes
+				</column>
+				<column>
+					Question Set
+				</column>
+				<column>
+					Select All Type
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 		<DataSource
 		filename="C:\Users\nick.m.krauter\Documents\Ranorex\RanorexStudio Projects\Service Portal Regression STG\Data\Planning.xlsx"
 		id="1d6a52cb-5bb9-44cc-82d0-1808f583f636"
@@ -5538,6 +9776,89 @@
 				</column>
 				<column>
 					Applicant Notes
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
+		<DataSource
+		filename="C:\Users\nick.m.krauter\Documents\Ranorex\RanorexStudio Projects\Service Portal Regression STG\Data\Pre-Award.xlsx"
+		id="6b5747f7-54fc-4d14-81d2-b21dfd6e25b8"
+		includefile="Unchecked"
+		lastknownrowcount="1"
+		name="PreAward_FundingPackage"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Funding Package"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Application Number
+				</column>
+				<column>
+					Primary Grants Officer
+				</column>
+				<column>
+					Primary Program Officer
+				</column>
+				<column>
+					Title
+				</column>
+				<column>
+					Award Purpose
+				</column>
+				<column>
+					Associated Program Number
+				</column>
+				<column>
+					Associated Project Number
+				</column>
+				<column>
+					Requesting Office
+				</column>
+				<column>
+					Period of Performance From
+				</column>
+				<column>
+					Period of Performance To
+				</column>
+				<column>
+					Awarding Office
+				</column>
+				<column>
+					Opportunity Type
+				</column>
+				<column>
+					Funding Instrument Type
+				</column>
+				<column>
+					Sensitive
+				</column>
+				<column>
+					CFDA1 Number
+				</column>
+				<column>
+					Primary Country
+				</column>
+				<column>
+					Statutory Authority
+				</column>
+				<column>
+					U.S. Share of Cost
+				</column>
+				<column>
+					Recipient Share of Cost
+				</column>
+				<column>
+					Vendor/Recipient
+				</column>
+				<column>
+					Vendor/Recipient Contact
+				</column>
+				<column>
+					Type of Recipient
+				</column>
+				<column>
+					Recipient Signatory
 				</column>
 			</lastknowncolumns>
 			<maskedcolumns>
