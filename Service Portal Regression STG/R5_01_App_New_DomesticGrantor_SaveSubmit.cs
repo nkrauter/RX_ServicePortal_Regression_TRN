@@ -41,6 +41,7 @@ namespace Service_Portal_Regression_STG
         /// </summary>
         public R5_01_App_New_DomesticGrantor_SaveSubmit()
         {
+            Application_Number = "";
         }
 
         /// <summary>
@@ -52,6 +53,18 @@ namespace Service_Portal_Regression_STG
         }
 
 #region Variables
+
+        string _Application_Number;
+
+        /// <summary>
+        /// Gets or sets the value of variable Application_Number.
+        /// </summary>
+        [TestVariable("ecdd7f15-988d-4ddb-85dc-e02fa0e9134d")]
+        public string Application_Number
+        {
+            get { return _Application_Number; }
+            set { _Application_Number = value; }
+        }
 
 #endregion
 
@@ -110,6 +123,16 @@ namespace Service_Portal_Regression_STG
             Report.Log(ReportLevel.Info, "Keyboard", "Key sequence '{enter}'.", new RecordItemIndex(8));
             Keyboard.Press("{enter}");
             Delay.Milliseconds(70);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 10s.", new RecordItemIndex(9));
+            Delay.Duration(10000, false);
+            
+            // Capture Application Number
+            Report.Log(ReportLevel.Info, "Section", "Capture Application Number", new RecordItemIndex(10));
+            
+            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'Login1.FO_Number' and assigning its value to variable 'Application_Number'.", repo.Login1.FO_NumberInfo, new RecordItemIndex(11));
+            Application_Number = repo.Login1.FO_Number.Element.GetAttributeValueText("Value");
+            Delay.Milliseconds(0);
             
         }
 

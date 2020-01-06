@@ -24,22 +24,22 @@ namespace Service_Portal_Regression_STG
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The R5_01_App_New_DomesticGrantee_Navigation recording.
+    ///The R5_05_App_New_DomesticGrantee_Navigation recording.
     /// </summary>
     [TestModule("b04d0e8d-7295-4f4e-89e0-b761e2dabbe0", ModuleType.Recording, 1)]
-    public partial class R5_01_App_New_DomesticGrantee_Navigation : ITestModule
+    public partial class R5_05_App_New_DomesticGrantee_Navigation : ITestModule
     {
         /// <summary>
         /// Holds an instance of the Service_Portal_Regression_STGRepository repository.
         /// </summary>
         public static Service_Portal_Regression_STGRepository repo = Service_Portal_Regression_STGRepository.Instance;
 
-        static R5_01_App_New_DomesticGrantee_Navigation instance = new R5_01_App_New_DomesticGrantee_Navigation();
+        static R5_05_App_New_DomesticGrantee_Navigation instance = new R5_05_App_New_DomesticGrantee_Navigation();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public R5_01_App_New_DomesticGrantee_Navigation()
+        public R5_05_App_New_DomesticGrantee_Navigation()
         {
             Funding_Opportunity_Number = "SFOP0006111";
         }
@@ -47,7 +47,7 @@ namespace Service_Portal_Regression_STG
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static R5_01_App_New_DomesticGrantee_Navigation Instance
+        public static R5_05_App_New_DomesticGrantee_Navigation Instance
         {
             get { return instance; }
         }
@@ -115,22 +115,29 @@ namespace Service_Portal_Regression_STG
             Keyboard.Press("{tab}{enter}");
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.NMKRanorexInternalTitle' at 195;35.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.NMKRanorexInternalTitleInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Invoke action", "Invoking WaitForDocumentLoaded() on item 'Login1'.", repo.Login1.SelfInfo, new RecordItemIndex(6));
+            repo.Login1.Self.WaitForDocumentLoaded();
+            Delay.Milliseconds(0);
+            
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 2s.", new RecordItemIndex(7));
+            Delay.Duration(2000, false);
+            
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.NMKRanorexInternalTitle' at 195;35.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.NMKRanorexInternalTitleInfo, new RecordItemIndex(8));
             repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.NMKRanorexInternalTitle.Click("195;35");
             Delay.Milliseconds(200);
             
             // Navigate to Application
-            Report.Log(ReportLevel.Info, "Section", "Navigate to Application", new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Section", "Navigate to Application", new RecordItemIndex(9));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ApplyHere' at 66;27.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ApplyHereInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ApplyHere' at 66;27.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ApplyHereInfo, new RecordItemIndex(10));
             repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ApplyHere.Click("66;27");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.SpanTagNewApplication'.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.SpanTagNewApplicationInfo, new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.SpanTagNewApplication'.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.SpanTagNewApplicationInfo, new RecordItemIndex(11));
             Validate.Exists(repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.SpanTagNewApplicationInfo);
             Delay.Milliseconds(100);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAll' at 45;20.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAllInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAll' at 45;20.", repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAllInfo, new RecordItemIndex(12));
             repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.ExpandAll.Click("45;20");
             Delay.Milliseconds(200);
             

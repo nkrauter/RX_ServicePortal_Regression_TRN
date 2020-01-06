@@ -23,6 +23,10 @@ mode="Global">
 	namespace="Service_Portal_Regression_STG">
 	</codegen>
 	<variables>
+		<var
+		id="ecdd7f15-988d-4ddb-85dc-e02fa0e9134d"
+		name="Application_Number">
+		</var>
 	</variables>
 	<recorditems>
 		<separatoritem
@@ -1029,6 +1033,42 @@ KKKKACiiigAooooAKKKKACiiigBy9/rUVz96H/roP5GiigCamyf6tvoaKKAK9m5FnF0+6KjkObm3
 			<bindings>
 			</bindings>
 		</keysequenceitem>
+		<explicitdelayitem
+		duration="10000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+		<separatoritem
+		enabled="True"
+		optional="False">
+			<comment>
+				Capture Application Number
+			</comment>
+			<bindings>
+			</bindings>
+		</separatoritem>
+		<getvaluerecorditem
+		attrname="Value"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7d723ae5-c20b-42b6-b48f-6f3397856753"
+		varname="Application_Number">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="3c27677f-9cf4-478c-be97-10f88437a876"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']//input[#'sp_formfield_number']
+				</path>
+			</info>
+		</getvaluerecorditem>
 	</recorditems>
 	<repository
 	id="bc8eb910-3cf8-4d8e-8d15-b57254f8606a"

@@ -880,6 +880,35 @@ RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAf/Z
 			<bindings>
 			</bindings>
 		</keysequenceitem>
+		<invokeactionrecorditem
+		action="WaitForDocumentLoaded"
+		enabled="True"
+		optional="False"
+		searchpropertyid="76c6816d-afff-47c2-9894-39db83fbc97e">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="24452dfa-3989-4117-95af-19f02606a30d"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='mygrantstrain.service-now.com']
+				</path>
+			</info>
+			<arguments
+			id="6cca6ebd-2277-49df-a08b-7f238fbd4e1f">
+			</arguments>
+		</invokeactionrecorditem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
 		<mouseitem
 		action="Click"
 		button="Left"

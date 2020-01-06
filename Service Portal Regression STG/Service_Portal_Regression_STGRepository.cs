@@ -7522,6 +7522,10 @@ namespace Service_Portal_Regression_STG
             RepoItemInfo _fafaplussquareo2Info;
             RepoItemInfo _questionsInfo;
             RepoItemInfo _ngscopeInfo;
+            RepoItemInfo _ustreetaddress11Info;
+            RepoItemInfo _ustreetaddress21Info;
+            RepoItemInfo _ustreetaddress12Info;
+            RepoItemInfo _ustreetaddress22Info;
 
             /// <summary>
             /// Creates a new C8d73b9a2db393b0016bc300f7c961903NgSco  folder.
@@ -7563,6 +7567,10 @@ namespace Service_Portal_Regression_STG
                 _fafaplussquareo2Info = new RepoItemInfo(this, "FaFaPlusSquareO2", ".//span/div/div/div/div[2]/div[2]//h4/a[@innertext=' Intake Review ']/span[1]/i[1]", 30000, null, "8e1c8667-e529-45d8-b602-5fbb11c9e883");
                 _questionsInfo = new RepoItemInfo(this, "Questions", ".//span/div/div/div/div[2]/div[3]/div/?/?/a[@innertext='Questions ']", 30000, null, "28ef86b5-218c-4490-b88d-debcf3de6d75");
                 _ngscopeInfo = new RepoItemInfo(this, "NgScope", "?/?/tag[@tagname='sp-page-row']/div/div[1]/span/div/div/div/div/div/div/div[2]/table/thead/tr/th[1]", 30000, null, "0c2e675c-4cdd-483b-bdaf-77622298e3ed");
+                _ustreetaddress11Info = new RepoItemInfo(this, "UStreetAddress11", ".//span/div/div/div/div[2]/div[2]/tag/div/div[6]/div/div/div[1]/div/span/?/?/input[@title='']", 30000, null, "5312033e-b5a5-404e-bbf0-71f08107f3bc");
+                _ustreetaddress21Info = new RepoItemInfo(this, "UStreetAddress21", ".//span/div/div/div/div[2]/div[2]/tag/div/div[6]/div/div/div[2]/div/span/?/?/input[@title='']", 30000, null, "e1f53867-ac3e-4265-afbf-e4a6936b0a3c");
+                _ustreetaddress12Info = new RepoItemInfo(this, "UStreetAddress12", ".//span/div/div/div/div[2]/div[2]/tag/div/div[7]/div/div/div[1]/div/span/?/?/input[@title='']", 30000, null, "d2860214-1f30-47e9-bdcd-df4dbd268dd2");
+                _ustreetaddress22Info = new RepoItemInfo(this, "UStreetAddress22", ".//span/div/div/div/div[2]/div[2]/tag/div/div[7]/div/div/div[2]/div/span/?/?/input[@title='']", 30000, null, "a6129313-dfdf-47a0-8a3d-e7848512cd30");
             }
 
             /// <summary>
@@ -8402,6 +8410,102 @@ namespace Service_Portal_Regression_STG
                 get
                 {
                     return _ngscopeInfo;
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress11 item.
+            /// </summary>
+            [RepositoryItem("5312033e-b5a5-404e-bbf0-71f08107f3bc")]
+            public virtual Ranorex.InputTag UStreetAddress11
+            {
+                get
+                {
+                    return _ustreetaddress11Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress11 item info.
+            /// </summary>
+            [RepositoryItemInfo("5312033e-b5a5-404e-bbf0-71f08107f3bc")]
+            public virtual RepoItemInfo UStreetAddress11Info
+            {
+                get
+                {
+                    return _ustreetaddress11Info;
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress21 item.
+            /// </summary>
+            [RepositoryItem("e1f53867-ac3e-4265-afbf-e4a6936b0a3c")]
+            public virtual Ranorex.InputTag UStreetAddress21
+            {
+                get
+                {
+                    return _ustreetaddress21Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress21 item info.
+            /// </summary>
+            [RepositoryItemInfo("e1f53867-ac3e-4265-afbf-e4a6936b0a3c")]
+            public virtual RepoItemInfo UStreetAddress21Info
+            {
+                get
+                {
+                    return _ustreetaddress21Info;
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress12 item.
+            /// </summary>
+            [RepositoryItem("d2860214-1f30-47e9-bdcd-df4dbd268dd2")]
+            public virtual Ranorex.InputTag UStreetAddress12
+            {
+                get
+                {
+                    return _ustreetaddress12Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress12 item info.
+            /// </summary>
+            [RepositoryItemInfo("d2860214-1f30-47e9-bdcd-df4dbd268dd2")]
+            public virtual RepoItemInfo UStreetAddress12Info
+            {
+                get
+                {
+                    return _ustreetaddress12Info;
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress22 item.
+            /// </summary>
+            [RepositoryItem("a6129313-dfdf-47a0-8a3d-e7848512cd30")]
+            public virtual Ranorex.InputTag UStreetAddress22
+            {
+                get
+                {
+                    return _ustreetaddress22Info.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The UStreetAddress22 item info.
+            /// </summary>
+            [RepositoryItemInfo("a6129313-dfdf-47a0-8a3d-e7848512cd30")]
+            public virtual RepoItemInfo UStreetAddress22Info
+            {
+                get
+                {
+                    return _ustreetaddress22Info;
                 }
             }
         }

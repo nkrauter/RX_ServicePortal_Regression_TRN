@@ -44,7 +44,6 @@ namespace Service_Portal_Regression_STG
             Score = "100";
             US_Share_of_Cost = "600";
             Recipient_Share_of_Cost = "321";
-            Application_Number = "";
         }
 
         /// <summary>
@@ -93,18 +92,6 @@ namespace Service_Portal_Regression_STG
             set { _Recipient_Share_of_Cost = value; }
         }
 
-        string _Application_Number;
-
-        /// <summary>
-        /// Gets or sets the value of variable Application_Number.
-        /// </summary>
-        [TestVariable("f2775220-ab2a-47d0-8f90-bc65ed5e6b62")]
-        public string Application_Number
-        {
-            get { return _Application_Number; }
-            set { _Application_Number = value; }
-        }
-
 #endregion
 
         /// <summary>
@@ -131,53 +118,46 @@ namespace Service_Portal_Regression_STG
 
             Init();
 
-            // Capture Application Number
-            Report.Log(ReportLevel.Info, "Section", "Capture Application Number", new RecordItemIndex(0));
-            
-            Report.Log(ReportLevel.Info, "Get Value", "Getting attribute 'Value' from item 'Login1.FO_Number' and assigning its value to variable 'Application_Number'.", repo.Login1.FO_NumberInfo, new RecordItemIndex(1));
-            Application_Number = repo.Login1.FO_Number.Element.GetAttributeValueText("Value");
-            Delay.Milliseconds(0);
-            
             // Score
-            Report.Log(ReportLevel.Info, "Section", "Score", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Info, "Section", "Score", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.SpFormfieldUScoreString' at 376;29.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(3));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.SpFormfieldUScoreString' at 376;29.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(1));
             repo.Login1.SpFormfieldUScoreString.Click("376;29");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Score' with focus on 'Login1.SpFormfieldUScoreString'.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Score' with focus on 'Login1.SpFormfieldUScoreString'.", repo.Login1.SpFormfieldUScoreStringInfo, new RecordItemIndex(2));
             repo.Login1.SpFormfieldUScoreString.PressKeys(Score);
             Delay.Milliseconds(30);
             
             // Recommended U.S. Share of Cost
-            Report.Log(ReportLevel.Info, "Section", "Recommended U.S. Share of Cost", new RecordItemIndex(5));
+            Report.Log(ReportLevel.Info, "Section", "Recommended U.S. Share of Cost", new RecordItemIndex(3));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.UUsShareOfCost' at 506;24.", repo.Login1.UUsShareOfCostInfo, new RecordItemIndex(6));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.UUsShareOfCost' at 506;24.", repo.Login1.UUsShareOfCostInfo, new RecordItemIndex(4));
             repo.Login1.UUsShareOfCost.Click("506;24");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.UUsShareOfCost'.", repo.Login1.UUsShareOfCostInfo, new RecordItemIndex(7));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.UUsShareOfCost'.", repo.Login1.UUsShareOfCostInfo, new RecordItemIndex(5));
             Keyboard.PrepareFocus(repo.Login1.UUsShareOfCost);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$US_Share_of_Cost' with focus on 'Login1.UUsShareOfCost'.", repo.Login1.UUsShareOfCostInfo, new RecordItemIndex(8));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$US_Share_of_Cost' with focus on 'Login1.UUsShareOfCost'.", repo.Login1.UUsShareOfCostInfo, new RecordItemIndex(6));
             repo.Login1.UUsShareOfCost.PressKeys(US_Share_of_Cost);
             Delay.Milliseconds(30);
             
             // Recommended Recipient Share of Cost
-            Report.Log(ReportLevel.Info, "Section", "Recommended Recipient Share of Cost", new RecordItemIndex(9));
+            Report.Log(ReportLevel.Info, "Section", "Recommended Recipient Share of Cost", new RecordItemIndex(7));
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.SpFormfieldURecipientShareOfCost' at 364;21.", repo.Login1.SpFormfieldURecipientShareOfCostInfo, new RecordItemIndex(10));
+            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Login1.SpFormfieldURecipientShareOfCost' at 364;21.", repo.Login1.SpFormfieldURecipientShareOfCostInfo, new RecordItemIndex(8));
             repo.Login1.SpFormfieldURecipientShareOfCost.Click("364;21");
             Delay.Milliseconds(200);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.SpFormfieldURecipientShareOfCost'.", repo.Login1.SpFormfieldURecipientShareOfCostInfo, new RecordItemIndex(11));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'Ctrl+A' Press with focus on 'Login1.SpFormfieldURecipientShareOfCost'.", repo.Login1.SpFormfieldURecipientShareOfCostInfo, new RecordItemIndex(9));
             Keyboard.PrepareFocus(repo.Login1.SpFormfieldURecipientShareOfCost);
             Keyboard.Press(System.Windows.Forms.Keys.A | System.Windows.Forms.Keys.Control, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Recipient_Share_of_Cost' with focus on 'Login1.SpFormfieldURecipientShareOfCost'.", repo.Login1.SpFormfieldURecipientShareOfCostInfo, new RecordItemIndex(12));
+            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence from variable '$Recipient_Share_of_Cost' with focus on 'Login1.SpFormfieldURecipientShareOfCost'.", repo.Login1.SpFormfieldURecipientShareOfCostInfo, new RecordItemIndex(10));
             repo.Login1.SpFormfieldURecipientShareOfCost.PressKeys(Recipient_Share_of_Cost);
             Delay.Milliseconds(30);
             
