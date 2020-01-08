@@ -1841,6 +1841,18 @@
       <BoundTo>ed59620c-d1f0-4100-9675-f4a777e0dc40</BoundTo>
       <RepositoryCode>true</RepositoryCode>
     </Compile>
+    <Compile Include="TestRecording.cs">
+      <BoundTo>d195e98a-6271-4cc2-9674-55b74890fee0</BoundTo>
+      <DependentUpon>TestRecording.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b7c91a05-c3c9-41d5-929a-1c7555d8f89c</id>
+    </Compile>
+    <Compile Include="TestRecording.UserCode.cs">
+      <BoundTo>d195e98a-6271-4cc2-9674-55b74890fee0</BoundTo>
+      <DependentUpon>TestRecording.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fb135a5a-6f5b-465d-ad59-c68f60695993</id>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config">
@@ -2572,6 +2584,11 @@
       <id>ed59620c-d1f0-4100-9675-f4a777e0dc40</id>
       <repoid>397b7e53-e586-48d3-9e3a-97c6142574e7</repoid>
       <reporootid>a0fd5e98-cc86-407f-8298-a96653699a20</reporootid>
+    </None>
+    <None Include="TestRecording.rxrec">
+      <BoundTo>465bf5ca-bf72-44d2-832b-12e0c8b532ba</BoundTo>
+      <id>d195e98a-6271-4cc2-9674-55b74890fee0</id>
+      <recordtableid>fea768a7-4f6e-4e41-b192-8282dd5bad66</recordtableid>
     </None>
   </ItemGroup>
   <ItemGroup>

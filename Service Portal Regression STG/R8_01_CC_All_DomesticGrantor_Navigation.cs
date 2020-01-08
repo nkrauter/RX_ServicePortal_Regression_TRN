@@ -132,6 +132,10 @@ namespace Service_Portal_Regression_STG
             repo.Login1.C8d73b9a2db393b0016bc300f7c961903NgSco.NMKRanorexInternalTitle.Click("36;5");
             Delay.Milliseconds(200);
             
+            Report.Log(ReportLevel.Info, "Keyboard", "Key 'X' Press.", new RecordItemIndex(7));
+            Keyboard.Press(System.Windows.Forms.Keys.X, Keyboard.DefaultScanCode, Keyboard.DefaultKeyPressTime, 1, true);
+            Delay.Milliseconds(0);
+            
         }
 
 #region Image Feature Data
